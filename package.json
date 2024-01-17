@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "eslint and stylistic rules to help you follow the industry-recommended coding practices.",
   "author": "Nishant Kohli",
+  "scripts": {
+    "publish-manual": "npm publish --access public"
+  },
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -15,22 +18,28 @@
   ],
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
+  "homepage": "https://github.com/nishkohli96/nish1896-lint-rules#readme",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nishkohli96/nish1896-lint-rules.git"
+    "url": "https://github.com/nishkohli96/nish1896-lint-rules"
   },
-  "devDependencies": {
+  "dependencies": {
     "@stylistic/eslint-plugin": "^1.5.3",
-    "eslint": "^8.19.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-node": "^11.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0"
   },
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=7",
+    "typescript": ">=4"
+  },
+  "eslintConfig": {
+    "extends": "."
   },
   "license": "ISC"
 }
