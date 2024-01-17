@@ -2,6 +2,7 @@
   "name": "@nish1896/lint-rules",
   "version": "1.0.0",
   "description": "eslint and stylistic rules",
+  "author": "Nishant Kohli",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -12,9 +13,12 @@
     "nish1896-plugin-react",
     "nish1896-lint-rules"
   ],
-  "author": "Nishant Kohli",
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nishkohli96/nish1896-lint-rules.git"
+  },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^1.5.3",
     "eslint": "^8.19.0",
