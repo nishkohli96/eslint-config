@@ -10,20 +10,20 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-nish1896-lint-rules`:
+Next, install `@nish1896/lint-rules`:
 
 ```sh
-npm install eslint-plugin-nish1896-lint-rules --save-dev
+npm install @nish1896/lint-rules --save-dev
 ```
 
 ## Usage
 
-Add `nish1896-lint-rules` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `@nish1896/lint-rules` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
     "plugins": [
-        "nish1896-lint-rules"
+        "@nish1896/lint-rules"
     ]
 }
 ```
