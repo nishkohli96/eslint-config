@@ -1,16 +1,16 @@
 {
-  "name": "@nish1896/lint-rules",
+  "name": "@nish1896/eslint-plugin-lint-rules",
   "version": "1.0.0",
-  "description": "eslint and stylistic rules",
+  "description": "eslint and stylistic rules to help you follow the industry-recommended coding practices.",
   "author": "Nishant Kohli",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin",
     "eslint-plugin-react",
-    "nish1896",
-    "nish1896-plugin",
-    "nish1896-plugin-react",
+    "@nish1896",
+    "nish1896-eslint-plugin",
+    "nish1896-eslint-plugin-lint-rules",
     "nish1896-lint-rules"
   ],
   "main": "./lib/index.js",
