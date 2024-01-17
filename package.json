@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-plugin-lint-rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "eslint and stylistic rules to help you follow the industry-recommended coding practices.",
   "author": "Nishant Kohli",
   "scripts": {
@@ -24,9 +24,9 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.5.3",
+    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-node": "^11.1.0"
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
     "eslint": "^8.19.0"
