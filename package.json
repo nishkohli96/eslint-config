@@ -26,10 +26,7 @@
   },
   "dependencies": {
     "@stylistic/eslint-plugin": "^1.5.3",
-<<<<<<< HEAD
     "eslint-plugin-jsx-a11y": "^6.8.0",
-=======
->>>>>>> b376775339a5ddb8770b279bde1894b812e41d88
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0"
