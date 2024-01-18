@@ -1,4 +1,4 @@
-# "@nish1896/eslint-config-lint-rules
+# @nish1896/eslint-config-lint-rules
 
 **[eslint](https://eslint.org/) and [stylistic](https://eslint.style/) rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity!**
 
@@ -11,29 +11,35 @@ You'll first need to install [ESLint](https://eslint.org/):
 ```
 npm i eslint --save-dev
 ```
+```
+yarn add -D eslint
+```
 
-Next, install `@nish1896/eslint-plugin-nish-lint`:
+Next, install `@nish1896/eslint-plugin-nish-lint` and `@stylistic/eslint-plugin` :
 
 ```
-npm install "@nish1896/eslint-config-lint-rules --save-dev
+npm install @nish1896/eslint-config-lint-rules @stylistic/eslint-plugin --save-dev
 ```
 ```
-yarn add -D "@nish1896/eslint-config-lint-rules
+yarn add -D @nish1896/eslint-config-lint-rules @stylistic/eslint-plugin
 ```
 
 ## Usage
 
-Add `"@nish1896/eslint-config-lint-rules` to the extends section of your `.eslintrc` configuration file.
+Add `@nish1896/eslint-config-lint-rules` to the extends section of your `.eslintrc` configuration file. The plugin also has `eslint-stylistic` rules defined, but unfortunately it needs to be manually configured in your `.eslintrc` or `eslint.config.js`.
 
 ```json
 {
     "extends": [
         "@nish1896/eslint-config-lint-rules"
+    ],
+    "plugins": [
+        "@stylistic/eslint-plugin"
     ]
 }
 ```
 
-To run linting across your project, add a *lint* command to your `package.json` file.
+To run linting across your project, add a *"lint"* command to your `package.json` file.
 
 ```
 npm pkg set scripts.lint="eslint --fix"
@@ -45,19 +51,16 @@ npm pkg set scripts.lint="eslint --fix"
 
 Check out the complete list of [eslint](https://eslint.org/docs/latest/rules/) and [stylistic](https://eslint.style/rules) rules.
 
-To view the complete list of rules used in this plugin, [click here](/lib/index.js).
-
 To search or read about the documentation of a specific rule, append the rule name as a suffix to [https://eslint.org/docs/latest/rules/](https://eslint.org/docs/latest/rules/) or [https://eslint.style/rules/default](https://eslint.style/rules/default). 
 
-All the [stylistic rules](https://eslint.style/rules) will start with a `@stylistic/` prefix.
+⚠️ Configurations set to warn in.
+❗ Set in the errors configuration.
+☑️ Set in the recommended configuration.
+🔧 Overridden the default values and specified custom values
+
+Checkout out other [recommended community plugins](/Recommendations.md)
 
 [Create your own plugin](https://eslint.org/docs/latest/extend/plugins).
-
-To publish your scoped public package to the npm registry, run:
-
-```
-npm publish --access public
-```
 
 # Support Me
 

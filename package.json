@@ -25,7 +25,6 @@
     "url": "https://github.com/nishkohli96/nish1896-lint-rules"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^1.5.4",
     "eslint": "^8.19.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
