@@ -1,4 +1,4 @@
-# @nish1896/eslint-plugin-lint-rules
+# "@nish1896/eslint-config-lint-rules
 
 **[eslint](https://eslint.org/) and [stylistic](https://eslint.style/) rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity!**
 
@@ -15,20 +15,20 @@ npm i eslint --save-dev
 Next, install `@nish1896/eslint-plugin-nish-lint`:
 
 ```
-npm install @nish1896/eslint-plugin-lint-rules --save-dev
+npm install "@nish1896/eslint-config-lint-rules --save-dev
 ```
 ```
-yarn add -D @nish1896/eslint-plugin-lint-rules
+yarn add -D "@nish1896/eslint-config-lint-rules
 ```
 
 ## Usage
 
-Add `@nish1896/lint-rules` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `"@nish1896/eslint-config-lint-rules` to the extends section of your `.eslintrc` configuration file.
 
 ```json
 {
-    "plugins": [
-        "@nish1896/lint-rules"
+    "extends": [
+        "@nish1896/eslint-config-lint-rules"
     ]
 }
 ```

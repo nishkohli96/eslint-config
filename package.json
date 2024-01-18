@@ -1,11 +1,11 @@
 {
-  "name": "@nish1896/eslint-plugin-lint-rules",
+  "name": "@nish1896/eslint-config-lint-rules",
   "version": "1.0.1",
   "description": "eslint and stylistic rules to help you follow the industry-recommended coding practices.",
   "author": "Nishant Kohli",
   "scripts": {
     "link:local": "npm link",
-    "unlink:local": "npm unlink @nish1896/eslint-plugin-lint-rules",
+    "unlink:local": "npm unlink @nish1896/eslint-config-lint-rules",
     "publish:manual": "npm publish --access public"
   },
   "keywords": [
@@ -24,15 +24,13 @@
   "repository": {
     "url": "https://github.com/nishkohli96/nish1896-lint-rules"
   },
-  "dependencies": {
-    "@stylistic/eslint-plugin": "^1.5.3",
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.5.4",
+    "eslint": "^8.19.0",
+    "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.19.0"
   },
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
