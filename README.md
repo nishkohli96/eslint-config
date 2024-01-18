@@ -1,12 +1,20 @@
-# @nish1896/eslint-config-lint-rules
+# @nish1896/eslint-config
 
-**[eslint](https://eslint.org/) and [stylistic](https://eslint.style/) rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity!**
+**[eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity!**
 
-The usage of `eslint-stylistic` over [prettier](https://prettier.io/) will give you additional options to format your code and hopefully avoid conflict of rules between `eslint` and `prettier` for which you additionally had to install [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier). Some of the rules imported from this plugin will give you a warning ⚠️ when running `eslint --fix` indicating that the code issue can be ignored while the rules triggering an error ❌ indicate that your code might not be as per the industry standards and that coding style should be avoided.
+The usage of [eslint-stylistic](https://eslint.style/) over [prettier](https://prettier.io/) will give you additional options to format your code and hopefully avoid conflict of rules between `eslint` and `prettier` for which you additionally had to install [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier).  
+
+On running `eslint --fix`, some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice.
+
+This config extends the following plugins - 
+- [eslint/recommended](https://eslint.org/docs/latest/rules/)
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+-  [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
 
 ## Installation
 
-You'll first need to install [ESLint](https://eslint.org/):
+You'll first need to install [ESLint](https://eslint.org/)
 
 ```
 npm i eslint --save-dev
@@ -15,23 +23,23 @@ npm i eslint --save-dev
 yarn add -D eslint
 ```
 
-Next, install `@nish1896/eslint-plugin-nish-lint` and `@stylistic/eslint-plugin` :
+Next, install `@nish1896/eslint-plugin-nish-lint` and `@stylistic/eslint-plugin`
 
 ```
-npm install @nish1896/eslint-config-lint-rules @stylistic/eslint-plugin --save-dev
+npm install @nish1896/eslint-config @stylistic/eslint-plugin --save-dev
 ```
 ```
-yarn add -D @nish1896/eslint-config-lint-rules @stylistic/eslint-plugin
+yarn add -D @nish1896/eslint-config @stylistic/eslint-plugin
 ```
 
 ## Usage
 
-Add `@nish1896/eslint-config-lint-rules` to the extends section of your `.eslintrc` configuration file. The plugin also has `eslint-stylistic` rules defined, but unfortunately it needs to be manually configured in your `.eslintrc` or `eslint.config.js`.
+Add `@nish1896/eslint-config` to the extends section of your *eslint configuration file*. The plugin also has `eslint-stylistic` rules defined, but unfortunately it needs to be manually configured in your `.eslintrc` or `eslint.config.js`.
 
 ```json
 {
     "extends": [
-        "@nish1896/eslint-config-lint-rules"
+        "@nish1896/eslint-config"
     ],
     "plugins": [
         "@stylistic/eslint-plugin"
@@ -39,27 +47,55 @@ Add `@nish1896/eslint-config-lint-rules` to the extends section of your `.eslint
 }
 ```
 
-To run linting across your project, add a *"lint"* command to your `package.json` file.
+To add a new rule, turn off or modify the existing list of rules, append the `rules` in your *eslint configuration file*.
+
+```json
+{
+  "rules": {
+    "<new-rule>": "error",
+    "no-unused-vars": "off",
+    "id-length": ["warn", { "min": 2, "max": 20 }]
+  }
+}
+```
+To disable one or more rules in the next line,
+
+```
+/* eslint-disable-next-line <rule1>, <rule2> */
+```
+
+Add a *"lint"* command to your `package.json` file.
 
 ```
 npm pkg set scripts.lint="eslint --fix"
+```
+
+To run linting on your codebase,
+```sh
+npm run lint
+```
+```
+yarn lint
 ```
 
 [Integrate with husky](https://typicode.github.io/husky/getting-started.html) as a `pre-commit` git hook to make sure no bad code passes through!
 
 ## List of Rules
 
-Check out the complete list of [eslint](https://eslint.org/docs/latest/rules/) and [stylistic](https://eslint.style/rules/default) rules.
-
-To search or read about the documentation of a specific rule, append the rule name as a suffix to [https://eslint.org/docs/latest/rules/](https://eslint.org/docs/latest/rules/) or [https://eslint.style/rules/default](https://eslint.style/rules/default). 
+View the complete list of rules
+- [eslint](https://eslint.org/docs/latest/rules/)
+- [stylistic](https://eslint.style/rules/default)
+- [typescript](https://typescript-eslint.io/rules/)
+- [react](https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules)
+- [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main/docs/rules)
 
 ⚠️ ***WARNING*** - avoid using this style of code.  
 ❌ ***ERROR*** - your code is 🗑️  
 🔧 ***FLEXIBLE*** - make eslint less strict and more developer-friendly.  
 
-## **Enabled Stylistic rules**
+## **stylistic rules**
 
-All rule names start with `@stylistic/` prefix.
+All rule names start with `@stylistic/` prefix.  
 
 |Rule Name|⚠️|❌|🔧|
 |-|-|-|-|
@@ -104,7 +140,7 @@ All rule names start with `@stylistic/` prefix.
 |[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)||✔️||
 |[wrap-regex](https://eslint.style/rules/default/wrap-regex)||✔️||
 
-## **Enabled eslint rules**
+## **eslint rules**
 
 |Rule Name|⚠️|❌|🔧|
 |-|-|-|-|
@@ -140,10 +176,20 @@ All rule names start with `@stylistic/` prefix.
 |[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)|✔️|||
 
 ## **eslint-plugin-react rules**
+
 | Rule Name |⚠️|❌|🔧|
 |-|-|-|-|
 |[react/jsx-uses-vars](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md)||✔️||
 |[react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)|✔️|| { extensions: ['.tsx, '.jsx] } |
+
+## **jsx-a11y rules**
+
+Enabled below rules that are disabled in the `jsx-a11y/recommended` plugin. All rule names start with `jsx-a11y/` prefix.
+
+| Rule Name |⚠️|❌|🔧|
+|-|-|-|-|
+|[anchor-ambiguous-text](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-ambiguous-text.md)||✔️||
+|[control-has-associated-label](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/control-has-associated-label.md)||✔️||
 
 ## **Disabled eslint rules**
 | Rule Name | reason |
