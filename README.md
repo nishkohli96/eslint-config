@@ -1,10 +1,10 @@
 # @nish1896/eslint-config
 
-**[eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity!**
+**A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
 The usage of [eslint-stylistic](https://eslint.style/) over [prettier](https://prettier.io/) will give you additional options to format your code and hopefully avoid conflict of rules between `eslint` and `prettier` for which you additionally had to install [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier).  
 
-On running `eslint --fix`, some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice.
+On running `eslint --fix`, some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice. It's okay to have a few warnings when developing, but they should be taken care of when pushing your code for production.
 
 This config extends the following plugins - 
 - [eslint/recommended](https://eslint.org/docs/latest/rules/)
@@ -125,11 +125,18 @@ All rule names start with `@stylistic/` prefix.
 |[indent](https://eslint.style/rules/default/indent)||✔️| 2 |
 |[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)||✔️||
 |[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||✔️||
+|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|✔️|| 
+consistent |
+|[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||✔️||
+|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||✔️||
 |[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)|✔️|| multiline-multiprop |
 |[jsx-indent](https://eslint.style/rules/default/jsx-indent)||✔️| 2 |
-|[jsx-indent-props](https://eslint.style/rules/jsx-indent-props)||✔️| 2 |
+|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)||✔️| { allow: 'literal' } |
+|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)||✔️| 2 |
+|[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||✔️||
 |[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)|✔️|| prefer-double |
 |[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||✔️||
+|[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)|✔️|| parens-new-line |
 |[key-spacing](https://eslint.style/rules/default/key-spacing)||✔️||
 |[linebreak-style](https://eslint.style/rules/default/linebreak-style)|✔️|||
 |[lines-around-comment](https://eslint.style/rules/default/lines-around-comment)|✔️|||
@@ -197,7 +204,7 @@ All rule names start with `@stylistic/` prefix.
 
 ## **jsx-a11y rules**
 
-Enabled below rules that are disabled in the `jsx-a11y/recommended` plugin. All rule names start with `jsx-a11y/` prefix.
+Enabled below rules that are not enabled by default in the `jsx-a11y/recommended` plugin. All rule names start with `jsx-a11y/` prefix.
 
 | Rule Name |⚠️|❌|🔧|
 |-|-|-|-|
@@ -214,8 +221,8 @@ Enabled below rules that are disabled in the `jsx-a11y/recommended` plugin. All 
 
 Checkout out other [recommended community plugins](/Recommendations.md)
 
-[Create your own plugin](https://eslint.org/docs/latest/extend/plugins).
+[To create your own plugin follow this guide](https://eslint.org/docs/latest/extend/plugins).
 
 # Support Me
 
-If you found this plugin useful, please don't forget to star the repository. It would make my day if you consider [buying me a coffee](https://www.buymeacoffee.com/nish1896)  
+If you found this config useful, please don't forget to star the repository. It would make my day if you consider [buying me a coffee](https://www.buymeacoffee.com/nish1896)  
