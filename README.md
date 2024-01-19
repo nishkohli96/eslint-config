@@ -23,13 +23,13 @@ npm i eslint --save-dev
 yarn add -D eslint
 ```
 
-Next, install `@nish1896/eslint-config` alongside `@stylistic/eslint-plugin`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-jsx-a11y` .
+Next, install `@nish1896/eslint-config` alongside `@stylistic/eslint-plugin`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-jsx-a11y`, `@typescript-eslint/eslint-plugin` .
 
 ```
-npm install eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @nish1896/eslint-config  --save-dev
+npm install eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin @nish1896/eslint-config  --save-dev
 ```
 ```
-yarn add -D eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @nish1896/eslint-config
+yarn add -D eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin @nish1896/eslint-config
 ```
 
 ## Usage
@@ -218,7 +218,7 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
 |[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | gave unwanted warnings when using enums |
-|[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` takes care of this |
+|[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` does it better |
 |[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ don't require `import React from react` |
 |[sort-keys](https://eslint.org/docs/latest/rules/sort-keys)| sometimes more crucial object keys should come first |
 [sort-vars](https://eslint.org/docs/latest/rules/sort-vars)| same as above |
