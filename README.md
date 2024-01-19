@@ -215,6 +215,7 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 
 | Rule Name | reason |
 |-|-|
+|[@typescript-eslint/no-this-alias]() | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
 |[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | gave unwanted warnings when using enums |
