@@ -124,18 +124,17 @@ All rule names start with `@stylistic/` prefix.
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||✔️||
 |[eol-last](https://eslint.style/rules/default/eol-last)||✔️||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)||✔️| consistent |
-|[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)||✔️| multiline |
+|[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)||✔️| consistent |
 |[indent](https://eslint.style/rules/default/indent)||✔️| 2 |
 |[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)||✔️||
 |[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||✔️||
-|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|✔️|| 
-consistent |
+|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|✔️|| consistent |
 |[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||✔️||
 |[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||✔️||
 |[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)|✔️|| multiline-multiprop |
 |[jsx-indent](https://eslint.style/rules/default/jsx-indent)||✔️| 2 |
-|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)||✔️| { allow: 'literal' } |
-|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)||✔️| 2 |
+|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)||✔️| 2 |
+|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)||✔️| { allow: 'literal' } |
 |[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||✔️||
 |[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)|✔️|| prefer-double |
 |[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||✔️||
@@ -176,15 +175,13 @@ consistent |
 |[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||✔️||
 |[eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)||✔️||
 |[func-names](https://eslint.org/docs/latest/rules/)|✔️|| as-needed |
-|[id-length](https://eslint.org/docs/latest/rules/id-length)||✔️| { min: 2, max: 30, exceptions: ['e'] } |
 |[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)||✔️| starred-block |
 |[no-await-in-loop](https://eslint.org/docs/latest/rules/no-await-in-loop)|✔️|||
 |[no-debugger](https://eslint.org/docs/latest/rules/no-debugger)|✔️|||
 |[no-eq-null](https://eslint.org/docs/latest/rules/no-eq-null)||✔️||
-|[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)||✔️||
-|[no-plusplus](https://eslint.org/docs/latest/rules/no-plusplus)||✔️||
+|[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)|✔️|||
+|[no-plusplus](https://eslint.org/docs/latest/rules/no-plusplus)|✔️|||
 |[no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable)|✔️|||
-|[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars)|✔️|| { caughtErrors: 'none', ignoreRestSiblings: true } |
 |[no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)||✔️||
 |[no-var](https://eslint.org/docs/latest/rules/no-var)|✔️|||
 |[object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)||✔️||
@@ -193,7 +190,7 @@ consistent |
 |[prefer-promise-reject-errors](https://eslint.org/docs/latest/rules/prefer-promise-reject-errors)|✔️|||
 |[prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params)||✔️||
 |[require-await](https://eslint.org/docs/latest/rules/require-await)||✔️||
-|[sort-vars](https://eslint.org/docs/latest/rules/sort-vars)||✔️| { ignoreCase: true } |
+|[semi](https://eslint.org/docs/latest/rules/semi)||✔️||
 |[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)|✔️|||
 
 ## **eslint-plugin-react rules**
@@ -201,7 +198,7 @@ consistent |
 | Rule Name |⚠️|❌|🔧|
 |-|-|-|-|
 |[react/jsx-uses-vars](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md)||✔️||
-|[react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)|✔️|| { extensions: ['.tsx, '.jsx] } |
+|[react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)|✔️|| { extensions: ['.tsx', '.jsx'] } |
 
 ## **jsx-a11y rules**
 
@@ -218,13 +215,15 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 
 | Rule Name | reason |
 |-|-|
-|[@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/) | set eslint `no-unused-vars` rule to `warn`
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
-|[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | using enums with this rule gave unwanted warnings |
-|[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ don't require `react` import |
+[id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
+|[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | gave unwanted warnings when using enums |
+|[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` takes care of this |
+|[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ don't require `import React from react` |
 |[sort-keys](https://eslint.org/docs/latest/rules/sort-keys)| sometimes more crucial object keys should come first |
- 
+[sort-vars](https://eslint.org/docs/latest/rules/sort-vars)| same as above |
 
+ 
 Checkout out other [recommended community plugins](/Recommendations.md)
 
 [To create your own plugin follow this guide](https://eslint.org/docs/latest/extend/plugins).
