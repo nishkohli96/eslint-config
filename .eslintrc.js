@@ -1,3 +1,9 @@
 const eslintConfig = require('./lib');
 
-module.exports = eslintConfig;
+module.exports = { 
+	...eslintConfig,
+	plugins: [
+		'@typescript-eslint', 
+		'@stylistic/eslint-plugin'
+	],
+};
