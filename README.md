@@ -14,7 +14,7 @@ This config extends the following plugins -
 
 ## Installation
 
-You'll first need to install [ESLint](https://eslint.org/)
+You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, add a `-W` flag to each of the commands below.
 
 ```
 npm i eslint --save-dev
@@ -23,13 +23,13 @@ npm i eslint --save-dev
 yarn add -D eslint
 ```
 
-Next, install `@nish1896/eslint-plugin-nish-lint` and `@stylistic/eslint-plugin`
+Next, install `@nish1896/eslint-config` alongside `@stylistic/eslint-plugin`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-jsx-a11y` .
 
 ```
-npm install @nish1896/eslint-config @stylistic/eslint-plugin --save-dev
+npm install eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @nish1896/eslint-config  --save-dev
 ```
 ```
-yarn add -D @nish1896/eslint-config @stylistic/eslint-plugin
+yarn add -D eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @nish1896/eslint-config
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ To add a new rule, turn off or modify the existing list of rules, append the `ru
   "rules": {
     "<new-rule>": "error",
     "no-unused-vars": "off",
-    "id-length": ["warn", { "min": 2, "max": 20 }]
+    "id-length": ["warn", { "min": 3, "max": 20 }]
   }
 }
 ```
@@ -64,10 +64,13 @@ To disable one or more rules in the next line,
 /* eslint-disable-next-line <rule1>, <rule2> */
 ```
 
-Add a *"lint"* command to your `package.json` file.
+Add a *"lint"* && *"lint:fix"* command to your `package.json` file.
 
 ```
-npm pkg set scripts.lint="eslint --fix"
+npm pkg set scripts.lint="eslint ."
+```
+```
+npm pkg set scripts.lint:fix="eslint --fix ."
 ```
 
 To run linting on your codebase,
@@ -173,16 +176,15 @@ consistent |
 |[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||✔️||
 |[eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)||✔️||
 |[func-names](https://eslint.org/docs/latest/rules/)|✔️|| as-needed |
-|[id-length](https://eslint.org/docs/latest/rules/id-length)||✔️| { min: 3, max: 25 } |
+|[id-length](https://eslint.org/docs/latest/rules/id-length)||✔️| { min: 2, max: 30, exceptions: ['e'] } |
 |[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)||✔️| starred-block |
 |[no-await-in-loop](https://eslint.org/docs/latest/rules/no-await-in-loop)|✔️|||
 |[no-debugger](https://eslint.org/docs/latest/rules/no-debugger)|✔️|||
 |[no-eq-null](https://eslint.org/docs/latest/rules/no-eq-null)||✔️||
 |[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)||✔️||
 |[no-plusplus](https://eslint.org/docs/latest/rules/no-plusplus)||✔️||
-|[no-shadow](https://eslint.org/docs/latest/rules/no-shadow)|✔️|||
 |[no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable)|✔️|||
-|[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars)|✔️|||
+|[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars)|✔️|| { caughtErrors: 'none', ignoreRestSiblings: true } |
 |[no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)||✔️||
 |[no-var](https://eslint.org/docs/latest/rules/no-var)|✔️|||
 |[object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)||✔️||
@@ -191,7 +193,6 @@ consistent |
 |[prefer-promise-reject-errors](https://eslint.org/docs/latest/rules/prefer-promise-reject-errors)|✔️|||
 |[prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params)||✔️||
 |[require-await](https://eslint.org/docs/latest/rules/require-await)||✔️||
-|[sort-keys](https://eslint.org/docs/latest/rules/sort-keys)|✔️|| 'asc', { caseSensitive: true, natural: false, minKeys: 2 } |
 |[sort-vars](https://eslint.org/docs/latest/rules/sort-vars)||✔️| { ignoreCase: true } |
 |[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)|✔️|||
 
@@ -211,12 +212,17 @@ Enabled below rules that are not enabled by default in the `jsx-a11y/recommended
 |[anchor-ambiguous-text](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-ambiguous-text.md)||✔️||
 |[control-has-associated-label](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/control-has-associated-label.md)||✔️||
 
-## **Disabled rules**
+## **Rules removed after initial testing**
+
+You will need to manually add them in the `rules` of your .eslintrc, if needed. 
+
 | Rule Name | reason |
 |-|-|
 |[@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/) | set eslint `no-unused-vars` rule to `warn`
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
+|[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | using enums with this rule gave unwanted warnings |
 |[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ don't require `react` import |
+|[sort-keys](https://eslint.org/docs/latest/rules/sort-keys)| sometimes more crucial object keys should come first |
  
 
 Checkout out other [recommended community plugins](/Recommendations.md)
