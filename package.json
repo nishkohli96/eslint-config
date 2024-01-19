@@ -4,6 +4,8 @@
   "description": "eslint and stylistic rules to help you follow the industry-recommended coding practices.",
   "author": "Nishant Kohli",
   "scripts": {
+    "test": "eslint __tests__",
+    "fix": "eslint --fix __tests__",
     "link:local": "npm link",
     "unlink:local": "npm unlink @nish1896/eslint-config",
     "publish:manual": "npm publish --access public"

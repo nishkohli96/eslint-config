@@ -152,7 +152,6 @@ All rule names start with `@stylistic/` prefix.
 |[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||✔️||
 |[eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)||✔️||
 |[func-names](https://eslint.org/docs/latest/rules/)|✔️|| as-needed |
-|[id-denylist](https://eslint.org/docs/latest/rules/id-denylist)|✔️|| 'e', 'cb', 'callback' |
 |[id-length](https://eslint.org/docs/latest/rules/id-length)||✔️| { min: 3, max: 25 } |
 |[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)||✔️| starred-block |
 |[no-await-in-loop](https://eslint.org/docs/latest/rules/no-await-in-loop)|✔️|||
@@ -191,11 +190,13 @@ Enabled below rules that are disabled in the `jsx-a11y/recommended` plugin. All 
 |[anchor-ambiguous-text](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-ambiguous-text.md)||✔️||
 |[control-has-associated-label](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/control-has-associated-label.md)||✔️||
 
-## **Disabled eslint rules**
+## **Disabled rules**
 | Rule Name | reason |
 |-|-|
 |[@typescript-eslint/no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/) | set eslint `no-unused-vars` rule to `warn`
-|[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ don't require `react` import | 
+|[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
+|[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ don't require `react` import |
+ 
 
 Checkout out other [recommended community plugins](/Recommendations.md)
 
