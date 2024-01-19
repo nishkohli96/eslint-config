@@ -78,6 +78,19 @@ npm run lint
 yarn lint
 ```
 
+Some folders have already been preconfigured to ignore when linting.
+```
+   ignorePatterns: [
+    'node_modules',
+    'dist',
+    'build',
+    'coverage',
+    '.next',
+    '.turbo',
+    '.eslintrc.js',
+  ]
+```
+
 [Integrate with husky](https://typicode.github.io/husky/getting-started.html) as a `pre-commit` git hook to make sure no bad code passes through!
 
 ## List of Rules
