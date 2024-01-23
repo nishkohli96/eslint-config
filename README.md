@@ -23,26 +23,23 @@ npm i eslint --save-dev
 yarn add -D eslint
 ```
 
-Next, install `@nish1896/eslint-config` alongside `@stylistic/eslint-plugin`, `eslint-plugin-react`, `eslint-plugin-react-hooks`, `eslint-plugin-jsx-a11y`, `@typescript-eslint/eslint-plugin` .
+Next, install `@nish1896/eslint-config`.
 
 ```
-npm install eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin @nish1896/eslint-config  --save-dev
+npm install @nish1896/eslint-config  --save-dev
 ```
 ```
-yarn add -D eslint-plugin-react eslint-plugin-react-hooks @stylistic/eslint-plugin eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin @nish1896/eslint-config
+yarn add -D @nish1896/eslint-config
 ```
 
 ## Usage
 
-Add `@nish1896/eslint-config` to the extends section of your *eslint configuration file*. The plugin also has `eslint-stylistic` rules defined, but unfortunately it needs to be manually configured in your `.eslintrc` or `eslint.config.js`.
+Add `@nish1896/eslint-config` to the extends section of your *eslint configuration file*. `eslint-config` suffix can be ignored.
 
 ```json
 {
     "extends": [
-        "@nish1896/eslint-config"
-    ],
-    "plugins": [
-        "@stylistic/eslint-plugin"
+        "@nish1896"
     ]
 }
 ```
