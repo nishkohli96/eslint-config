@@ -1,36 +1,53 @@
 {
-  "name": "@nish1896/lint-rules",
+  "name": "@nish1896/eslint-config",
   "version": "1.0.0",
-  "description": "eslint and stylistic rules",
+  "description": "eslint and stylistic rules to help you follow the industry-recommended coding practices.",
   "author": "Nishant Kohli",
+  "scripts": {
+    "test": "eslint __tests__",
+    "fix": "eslint --fix __tests__",
+    "link:local": "npm link",
+    "unlink:local": "npm unlink @nish1896/eslint-config",
+    "publish:manual": "npm publish --access public"
+  },
   "keywords": [
+    "@nish1896",
+    "@nish1896/eslint-config",
     "eslint",
-    "eslintplugin",
-    "eslint-plugin",
-    "eslint-plugin-react",
-    "nish1896",
-    "nish1896-plugin",
-    "nish1896-plugin-react",
-    "nish1896-lint-rules"
+    "eslintconfig",
+    "eslint-config",
+    "eslint-config-jsx",
+    "eslint-config-react",
+    "eslit-react",
+    "lint-config",
+    "lint-rules",
+    "react-eslint"
   ],
   "main": "./lib/index.js",
-  "exports": "./lib/index.js",
+  "homepage": "https://github.com/nishkohli96/eslint-config#readme",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nishkohli96/nish1896-lint-rules.git"
+    "url": "https://github.com/nishkohli96/eslint-config"
+  },
+  "dependencies": {
+    "@stylistic/eslint-plugin": "^1.5.4",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0"
   },
   "devDependencies": {
-    "@stylistic/eslint-plugin": "^1.5.3",
-    "eslint": "^8.19.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-node": "^11.1.0"
+    "eslint": "^8.19.0"
   },
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
   },
   "peerDependencies": {
-    "eslint": ">=7"
+    "eslint": ">=7",
+    "typescript": ">=4"
+  },
+  "eslintConfig": {
+    "extends": "."
   },
   "license": "ISC"
 }
