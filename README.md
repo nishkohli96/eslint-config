@@ -10,7 +10,8 @@ This config extends the following plugins -
 - [eslint/recommended](https://eslint.org/docs/latest/rules/)
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
--  [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
+- [@stylistic](https://eslint.style/)
 
 ## Installation
 
@@ -97,14 +98,14 @@ Some folders have already been preconfigured to ignore when linting.
 
 View the complete list of rules
 - [eslint](https://eslint.org/docs/latest/rules/)
-- [stylistic](https://eslint.style/rules/default)
+- [stylistic](https://eslint.style/rules)
 - [typescript](https://typescript-eslint.io/rules/)
 - [react](https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules)
 - [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main/docs/rules)
 
 ⚠️ ***WARNING*** - avoid using this style of code.  
 ❌ ***ERROR*** - your code is 🗑️  
-🔧 ***FLEXIBLE*** - make eslint less strict and more developer-friendly.  
+🔧 ***FLEXIBLE*** - specified or overwritten default cases for rules.  
 
 ## **stylistic rules**
 
