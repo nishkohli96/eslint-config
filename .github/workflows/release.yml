@@ -1,7 +1,8 @@
 name: Node.js CI
 
 on:
-  push: 
+  release:
+    types: [published]
 
 jobs:
   check:
@@ -10,13 +11,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        # Setup .npmrc file to publish to npm
+        uses: actions/setup-node@v3
         with:
-          node-version: 20.10.0
+          node-version: '20.10.0'
+          registry-url: 'https://registry.npmjs.org'
       - name: Install Dependencies
         run: npm ci
       - name: release
+        run: npm publish --access public
         env: 
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npm publish --access public
-

@@ -62,13 +62,12 @@ To disable one or more rules in the next line,
 /* eslint-disable-next-line <rule1>, <rule2> */
 ```
 
-Add a *"lint"* && *"lint:fix"* command to your `package.json` file.
+fyi, `// eslint-disable-next-line <rule1>, <rule2> ` won't work.
+
+Add  *"lint"* command to your `package.json` file.
 
 ```
-npm pkg set scripts.lint="eslint ."
-```
-```
-npm pkg set scripts.lint:fix="eslint --fix ."
+npm pkg set scripts.lint="eslint --fix ."
 ```
 
 To run linting on your codebase,
@@ -89,6 +88,7 @@ Some folders have already been preconfigured to ignore when linting.
     '.next',
     '.turbo',
     '.eslintrc.js',
+    '*.d.ts',
   ]
 ```
 
@@ -104,7 +104,7 @@ View the complete list of rules
 - [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main/docs/rules)
 
 ⚠️ ***WARNING*** - avoid using this style of code.  
-❌ ***ERROR*** - your code is 🗑️  
+❌ ***ERROR*** - your code is not as per industry standards.  
 🔧 ***FLEXIBLE*** - specified or overwritten default cases for rules.  
 
 ## **stylistic rules**
@@ -118,9 +118,9 @@ All rule names start with `@stylistic/` prefix.
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||✔️||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||✔️||
 |[brace-style](https://eslint.style/rules/default/brace-style)||✔️||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)||✔️|  always-multiline |
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)|✔️||  always-multiline |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||✔️||
-|[eol-last](https://eslint.style/rules/default/eol-last)||✔️||
+|[eol-last](https://eslint.style/rules/default/eol-last)|✔️|||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)||✔️| consistent |
 |[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)||✔️| consistent |
 |[indent](https://eslint.style/rules/default/indent)||✔️| 2 |
@@ -132,7 +132,7 @@ All rule names start with `@stylistic/` prefix.
 |[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)|✔️|| multiline-multiprop |
 |[jsx-indent](https://eslint.style/rules/default/jsx-indent)||✔️| 2 |
 |[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)||✔️| 2 |
-|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)||✔️| { allow: 'literal' } |
+|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)|✔️|| { allow: 'literal' } |
 |[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||✔️||
 |[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)|✔️|| prefer-double |
 |[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||✔️||
@@ -173,7 +173,6 @@ All rule names start with `@stylistic/` prefix.
 |[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||✔️||
 |[eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)||✔️||
 |[func-names](https://eslint.org/docs/latest/rules/)|✔️|| as-needed |
-|[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)||✔️| starred-block |
 |[no-await-in-loop](https://eslint.org/docs/latest/rules/no-await-in-loop)|✔️|||
 |[no-debugger](https://eslint.org/docs/latest/rules/no-debugger)|✔️|||
 |[no-eq-null](https://eslint.org/docs/latest/rules/no-eq-null)||✔️||
@@ -191,6 +190,12 @@ All rule names start with `@stylistic/` prefix.
 |[semi](https://eslint.org/docs/latest/rules/semi)||✔️||
 |[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)|✔️|||
 
+## **typescript-eslint rules**
+
+| Rule Name |⚠️|❌|🔧|
+|-|-|-|-|
+|[ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.md)|✔️|||
+
 ## **eslint-plugin-react rules**
 
 | Rule Name |⚠️|❌|🔧|
@@ -207,22 +212,23 @@ Enabled below rules that are not enabled by default in the `jsx-a11y/recommended
 |[anchor-ambiguous-text](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/anchor-ambiguous-text.md)||✔️||
 |[control-has-associated-label](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/HEAD/docs/rules/control-has-associated-label.md)||✔️||
 
-## **Rules removed after initial testing**
+## **Rules removed after initial or subsequent testing**
 
 You will need to manually add them in the `rules` of your .eslintrc, if needed. 
 
 | Rule Name | reason |
 |-|-|
-|[@typescript-eslint/no-this-alias]() | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
+|[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)| the default setting `starred-block` read commented code as a comment itself, which made it difficult to uncomment the code
 |[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | gave unwanted warnings when using enums |
+|[no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/n-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` does it better |
-|[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ don't require `import React from react` |
+|[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ doesn't require `import React from react` |
 |[sort-keys](https://eslint.org/docs/latest/rules/sort-keys)| sometimes more crucial object keys should come first |
 [sort-vars](https://eslint.org/docs/latest/rules/sort-vars)| same as above |
 
- 
+
 Checkout out other [recommended community plugins](/Recommendations.md)
 
 [To create your own plugin follow this guide](https://eslint.org/docs/latest/extend/plugins).
