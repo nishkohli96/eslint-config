@@ -6,7 +6,9 @@ The usage of [eslint-stylistic](https://eslint.style/) over [prettier](https://p
 
 On running `eslint .` some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice. `eslint --fix .` should hopefully fix most of the warnings or errors in your code. It's okay to have a few warnings when developing, but they should be taken care of when pushing your code for production. 
 
-*Ignored eslint warnings or errors in code will likely cause your app build to fail, unless resolved or specified eslint to ignore using the `eslint-ignore` syntax.* 
+>[!WARNING]
+>Ignored eslint warnings or errors in code will likely cause your app build to fail, unless resolved or specified eslint to ignore using the `eslint-ignore` syntax.
+>
 
 This config extends the following plugins - 
 - [eslint/recommended](https://eslint.org/docs/latest/rules/)
@@ -70,14 +72,16 @@ To disable one or more rules in the next line,
 /* eslint-disable-next-line <rule1>, <rule2> */
 ```
 
-fyi, the syntax below won't work 
-```
-// eslint-disable-next-line <rule1>, <rule2>
-or
-/** eslint-disable-next-line  @typescript-eslint/no-unused-vars */
-```
+> [!CAUTION]
+> The syntax below won't work 
+> ```
+> // eslint-disable-next-line <rule1>, <rule2>
+> or
+> /** eslint-disable-next-line  @typescript-eslint/no-unused-vars */
+> ```
+> 
 
-Add  *"lint"* command to your `package.json` file.
+Add *"lint"* command to your `package.json` file.
 
 ```
 npm pkg set scripts.lint="eslint --fix ."
@@ -116,63 +120,73 @@ View the complete list of rules
 - [react](https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules)
 - [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main/docs/rules)
 
-⚠️ ***WARNING*** - avoid using this style of code.  
-❌ ***ERROR*** - your code is not as per industry standards.  
-🔧 ***FLEXIBLE*** - specified or overwritten default cases for rules.  
+⚠️ ***WARNING*** - write your code neatly please, hopefully, eslint will clean up the mess.  
+❌ ***ERROR*** - you should AVOID this coding practice.   
+🔧 ***CONFIGURE*** - specified or overwritten default case for a rule.  
 
 ## **stylistic rules**
 
 All rule names start with `@stylistic/` prefix.  
 
-|Rule Name|⚠️|❌|🔧|
-|-|-|-|-|
-|[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline)|✔️|| { multiline: true, minItems: 4 } |
-|[arrow-parens](https://eslint.style/rules/default/arrow-parens)|✔️|| as-needed|
-|[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)|✔️|||
-|[block-spacing](https://eslint.style/rules/default/block-spacing)|✔️|||
-|[brace-style](https://eslint.style/rules/default/brace-style)|✔️|||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)|✔️||  always-multiline |
-|[comma-spacing](https://eslint.style/rules/default/comma-spacing)|✔️|||
-|[eol-last](https://eslint.style/rules/default/eol-last)|✔️|||
-|[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)|✔️|| consistent |
-|[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)|✔️|| consistent |
-|[indent](https://eslint.style/rules/default/indent)|✔️|| 2 |
-|[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)|✔️|||
-|[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)|✔️|||
-|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|✔️|| consistent |
-|[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)|✔️|||
-|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)|✔️|||
-|[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)|✔️|| multiline-multiprop |
-|[jsx-indent](https://eslint.style/rules/default/jsx-indent)|✔️|| 2 |
-|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)|✔️|| 2 |
-|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)|✔️|| { allow: 'literal' } |
-|[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)|✔️|||
-|[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)|✔️|| prefer-double |
-|[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)|✔️|||
-|[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)|✔️|| parens-new-line |
-|[key-spacing](https://eslint.style/rules/default/key-spacing)|✔️|||
-|[linebreak-style](https://eslint.style/rules/default/linebreak-style)|✔️|||
-|[lines-around-comment](https://eslint.style/rules/default/lines-around-comment)|✔️|||
-|[no-extra-semi](https://eslint.style/rules/default/no-extra-semi)|✔️|||
-|[no-floating-decimal](https://eslint.style/rules/default/no-floating-decimal)|✔️|||
-|[no-mixed-operators](https://eslint.style/rules/default/no-mixed-operators)||✔️||
-|[no-mixed-spaces-and-tabs](https://eslint.style/rules/default/no-mixed-spaces-and-tabs)|✔️|||
-|[no-multi-spaces](https://eslint.style/rules/default/no-multi-spaces)|✔️|||
-|[no-multiple-empty-lines](https://eslint.style/rules/default/no-multiple-empty-lines)|✔️|||
-|[no-trailing-spaces](https://eslint.style/rules/default/no-trailing-spaces)|✔️|||
-|[object-curly-newline](https://eslint.style/rules/default/object-curly-newline)|✔️|| { multiline: true } |
-|[object-curly-spacing](https://eslint.style/rules/default/object-curly-spacing)|✔️|| always |
-|[object-property-newline](https://eslint.style/rulesobject-property-newline)|✔️|||
-|[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)|✔️|| before |
-|[quotes](https://eslint.style/rules/default/quotes)|✔️|| single |
-|[semi-spacing](https://eslint.style/rules/default/semi-spacing)|✔️|||
-|[spaced-comment](https://eslint.style/rules/default/spaced-comment)|✔️|||
-|[switch-colon-spacing](https://eslint.style/rules/default/switch-colon-spacing)|✔️|||
-|[template-curly-spacing](https://eslint.style/rules/default/template-curly-spacing)|✔️|||
-|[type-annotation-spacing](https://eslint.style/rules/default/type-annotation-spacing)|✔️|||
-|[type-generic-spacing](https://eslint.style/rules/default/type-generic-spacing)|✔️|||
-|[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)|✔️|||
-|[wrap-regex](https://eslint.style/rules/default/wrap-regex)|✔️|||
+>[!NOTE]
+> Starting `v1.0.3` almost all of the `stylistic` rules will default to warn. These can be easily fixed by running linting and do not require  the attention of the developer.
+>
+
+|Rule Name|🔧|
+|-|-|
+|[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline)| { multiline: true, minItems: 4 } |
+|[arrow-parens](https://eslint.style/rules/default/arrow-parens)| as-needed |
+|[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
+|[block-spacing](https://eslint.style/rules/default/block-spacing)||
+|[brace-style](https://eslint.style/rules/default/brace-style)||
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)||  always-multiline |
+|[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
+|[eol-last](https://eslint.style/rules/default/eol-last)||
+|[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
+|[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)|| consistent |
+|[indent](https://eslint.style/rules/default/indent)|| 2 |
+|[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)||
+|[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||
+|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|consistent |
+|[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
+|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
+|[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)| multiline-multiprop |
+|[jsx-indent](https://eslint.style/rules/default/jsx-indent)| 2 |
+|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)| 2 |
+|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)| { allow: 'literal' } |
+|[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||
+|[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)| prefer-double |
+|[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||
+|[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
+|[key-spacing](https://eslint.style/rules/default/key-spacing)||
+|[linebreak-style](https://eslint.style/rules/default/linebreak-style)||
+|[lines-around-comment](https://eslint.style/rules/default/lines-around-comment)||
+|[no-extra-semi](https://eslint.style/rules/default/no-extra-semi)||
+|[no-floating-decimal](https://eslint.style/rules/default/no-floating-decimal)||
+|[no-mixed-spaces-and-tabs](https://eslint.style/rules/default/no-mixed-spaces-and-tabs)||
+|[no-multi-spaces](https://eslint.style/rules/default/no-multi-spaces)||
+|[no-multiple-empty-lines](https://eslint.style/rules/default/no-multiple-empty-lines)||
+|[no-trailing-spaces](https://eslint.style/rules/default/no-trailing-spaces)||
+|[object-curly-newline](https://eslint.style/rules/default/object-curly-newline)| { multiline: true } |
+|[object-curly-spacing](https://eslint.style/rules/default/object-curly-spacing)| always |
+|[object-property-newline](https://eslint.style/rulesobject-property-newline)||
+|[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
+|[quotes](https://eslint.style/rules/default/quotes)| single |
+|[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
+|[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
+|[switch-colon-spacing](https://eslint.style/rules/default/switch-colon-spacing)||
+|[template-curly-spacing](https://eslint.style/rules/default/template-curly-spacing)||
+|[type-annotation-spacing](https://eslint.style/rules/default/type-annotation-spacing)||
+|[type-generic-spacing](https://eslint.style/rules/default/type-generic-spacing)||
+|[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)||
+|[wrap-regex](https://eslint.style/rules/default/wrap-regex)||
+
+Only the stylistic rule(s) listed below will give an error and will have to be manually fixed.
+
+| Rule Name |
+|-|
+|[no-mixed-operators](https://eslint.style/rules/default/no-mixed-operators)|
+
 
 ## **eslint rules**
 
@@ -194,13 +208,13 @@ All rule names start with `@stylistic/` prefix.
 |[no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable)|✔️|||
 |[no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)||✔️||
 |[no-var](https://eslint.org/docs/latest/rules/no-var)|✔️|||
-|[object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)||✔️||
+|[object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)|✔️|||
 |[prefer-const](https://eslint.org/docs/latest/rules/prefer-const)||✔️||
 |[prefer-exponentiation-operator](https://eslint.org/docs/latest/rules/prefer-exponentiation-operator)|✔️|||
 |[prefer-promise-reject-errors](https://eslint.org/docs/latest/rules/prefer-promise-reject-errors)|✔️|||
 |[prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params)||✔️||
 |[require-await](https://eslint.org/docs/latest/rules/require-await)||✔️||
-|[semi](https://eslint.org/docs/latest/rules/semi)||✔️||
+|[semi](https://eslint.org/docs/latest/rules/semi)|✔️|||
 |[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)|✔️|||
 
 ## **typescript-eslint rules**
