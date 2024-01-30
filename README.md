@@ -129,12 +129,13 @@ View the complete list of rules
 All rule names start with `@stylistic/` prefix.  
 
 >[!NOTE]
-> Starting `v1.0.3` almost all of the `stylistic` rules will default to warn. These can be easily fixed by running linting and do not require  the attention of the developer.
+> Starting `v1.0.3` almost all of the `stylistic` rules will default to warn. These can be easily fixed by running linting and do not require the attention of the developer.
 >
 
 |Rule Name|🔧|
 |-|-|
 |[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline)| { multiline: true, minItems: 4 } |
+|[array-bracket-spacing](https://eslint.style/rules/default/array-bracket-spacing)||
 |[arrow-parens](https://eslint.style/rules/default/arrow-parens)| as-needed |
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
@@ -145,6 +146,7 @@ All rule names start with `@stylistic/` prefix.
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
 |[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)|| consistent |
 |[indent](https://eslint.style/rules/default/indent)|| 2 |
+|[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
 |[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)||
 |[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||
 |[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|consistent |
@@ -160,7 +162,6 @@ All rule names start with `@stylistic/` prefix.
 |[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
 |[key-spacing](https://eslint.style/rules/default/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/default/linebreak-style)||
-|[lines-around-comment](https://eslint.style/rules/default/lines-around-comment)||
 |[no-extra-semi](https://eslint.style/rules/default/no-extra-semi)||
 |[no-floating-decimal](https://eslint.style/rules/default/no-floating-decimal)||
 |[no-mixed-spaces-and-tabs](https://eslint.style/rules/default/no-mixed-spaces-and-tabs)||
@@ -172,6 +173,8 @@ All rule names start with `@stylistic/` prefix.
 |[object-property-newline](https://eslint.style/rulesobject-property-newline)||
 |[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/default/quotes)| single |
+|[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
+|[space-unary-ops](https://eslint.style/rules/default/sace-unary-ops)||
 |[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
 |[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
 |[switch-colon-spacing](https://eslint.style/rules/default/switch-colon-spacing)||
@@ -243,13 +246,14 @@ Enabled below rules that are not enabled by default in the `jsx-a11y/recommended
 
 You will need to manually add them in the `rules` of your .eslintrc, if needed. 
 
-| Rule Name | reason |
+| Rule Name | Reason |
 |-|-|
+|[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
+|[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
 |[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)| the default setting `starred-block` read commented code as a comment itself, which made it difficult to uncomment the code
 |[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | gave unwanted warnings when using enums |
-|[no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/n-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` does it better |
 |[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ doesn't require `import React from react` |
 |[sort-keys](https://eslint.org/docs/latest/rules/sort-keys)| sometimes more crucial object keys should come first |
