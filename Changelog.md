@@ -1,6 +1,6 @@
 # **What's changed?**
 
-## 1.0.3 
+## [1.0.3](https://github.com/nishkohli96/eslint-config/tree/v1.0.3) 
 
 **Released - 31 Jan, 2024**
 
@@ -8,9 +8,9 @@
 
 Approx 90% of the rules used now `warn` instead of throwing an error, so you can focus more on writing the logic, and not on formatting the code! Only the rules that throw an `error` and some exceptional `warn` rules like `'no-debugger'` must be fixed by the developer.
 
-Also, added some cool new badges in [README.md](/README.md) thanks to [Shields.io](https://shields.io/)!
+Also, added some cool new badges in [README.md](/README.md) thanks to [Shields.io](https://shields.io/) !
 
-## 1.0.2 
+## [1.0.2](https://github.com/nishkohli96/eslint-config/tree/v1.0.2) 
 
 **Released - 28 Jan, 2024**
 
