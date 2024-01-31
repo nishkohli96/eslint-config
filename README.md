@@ -1,5 +1,12 @@
 # @nish1896/eslint-config
 
+![NPM Version](https://img.shields.io/npm/v/%40nish1896%2Feslint-config)
+![NPM Downloads](https://img.shields.io/npm/dt/%40nish1896%2Feslint-config)
+![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40nish1896%2Feslint-config)
+![npm bundle size](https://img.shields.io/bundlephobia/min/%40nish1896%2Feslint-config)
+![node-current](https://img.shields.io/node/v/%40nish1896%2Feslint-config?color=%23e86267)
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/nishkohli96/eslint-config)
+
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
 The usage of [eslint-stylistic](https://eslint.style/) over [prettier](https://prettier.io/) will give you additional options to format your code and hopefully avoid conflict of rules between `eslint` and `prettier` for which you additionally had to install [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier).  
@@ -193,32 +200,36 @@ Only the stylistic rule(s) listed below will give an error and will have to be m
 
 ## **eslint rules**
 
-|Rule Name|⚠️|❌|🔧|
-|-|-|-|-|
-|[array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)|✔️|||
-|[arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)|✔️|| as-needed |
-|[curly](https://eslint.org/docs/latest/rules/curly)|✔️|||
-|[default-case](https://eslint.org/docs/latest/rules/default-case)|✔️|||
-|[default-param-last](https://eslint.org/docs/latest/rules/default-param-last)|✔️|||
-|[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||✔️||
-|[eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)||✔️||
-|[func-names](https://eslint.org/docs/latest/rules/)|✔️|| as-needed |
-|[no-await-in-loop](https://eslint.org/docs/latest/rules/no-await-in-loop)|✔️|||
-|[no-debugger](https://eslint.org/docs/latest/rules/no-debugger)|✔️|||
-|[no-eq-null](https://eslint.org/docs/latest/rules/no-eq-null)||✔️||
-|[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)|✔️|||
-|[no-plusplus](https://eslint.org/docs/latest/rules/no-plusplus)|✔️|||
-|[no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable)|✔️|||
-|[no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)||✔️||
-|[no-var](https://eslint.org/docs/latest/rules/no-var)|✔️|||
-|[object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)|✔️|||
-|[prefer-const](https://eslint.org/docs/latest/rules/prefer-const)||✔️||
-|[prefer-exponentiation-operator](https://eslint.org/docs/latest/rules/prefer-exponentiation-operator)|✔️|||
-|[prefer-promise-reject-errors](https://eslint.org/docs/latest/rules/prefer-promise-reject-errors)|✔️|||
-|[prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params)||✔️||
-|[require-await](https://eslint.org/docs/latest/rules/require-await)||✔️||
-|[semi](https://eslint.org/docs/latest/rules/semi)|✔️|||
-|[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)|✔️|||
+|Rule Name|🔧|
+|-|-|
+|[array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)||
+|[arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)|| as-needed |
+|[curly](https://eslint.org/docs/latest/rules/curly)||
+|[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||
+|[func-names](https://eslint.org/docs/latest/rules/)| as-needed |
+|[no-debugger](https://eslint.org/docs/latest/rules/no-debugger)||
+|[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)||
+|[no-plusplus](https://eslint.org/docs/latest/rules/no-plusplus)||
+|[no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable)||
+|[no-var](https://eslint.org/docs/latest/rules/no-var)||
+|[object-shorthand](https://eslint.org/docs/latest/rules/object-shorthand)||
+|[prefer-const](https://eslint.org/docs/latest/rules/prefer-const)||
+|[prefer-exponentiation-operator](https://eslint.org/docs/latest/rules/prefer-exponentiation-operator)||
+|[prefer-promise-reject-errors](https://eslint.org/docs/latest/rules/prefer-promise-reject-errors)||
+|[semi](https://eslint.org/docs/latest/rules/semi)||
+|[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)||
+
+Only the eslint rule(s) listed below will give an error and will have to be manually fixed.
+
+| Rule Name |
+|-|
+|[eqeqeq](https://eslint.org/docs/latest/rules/eqeqeq)|
+|[no-await-in-loop](https://eslint.org/docs/latest/rules/no-await-in-loop)|
+|[no-eq-null](https://eslint.org/docs/latest/rules/no-eq-null)|
+|[no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)|
+|[default-case](https://eslint.org/docs/latest/rules/default-case)|
+|[prefer-rest-params](https://eslint.org/docs/latest/rules/prefer-rest-params)|
+|[require-await](https://eslint.org/docs/latest/rules/require-await)|
 
 ## **typescript-eslint rules**
 
@@ -250,6 +261,7 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 |-|-|
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
+|[default-param-last](https://eslint.org/docs/latest/rules/default-param-last)| personal preference of the dev |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
 |[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)| the default setting `starred-block` read commented code as a comment itself, which made it difficult to uncomment the code

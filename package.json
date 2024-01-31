@@ -1,7 +1,7 @@
 {
   "name": "@nish1896/eslint-config",
   "version": "1.0.3",
-  "description": "eslint and stylistic rules to help you follow the industry-recommended coding practices.",
+  "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "scripts": {
     "test": "eslint __tests__",

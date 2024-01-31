@@ -4,17 +4,11 @@
 
 **Released - 31 Jan, 2024**
 
-"*More developer friendly, Yay*! 😊"
+"*More developer friendly, Yay*! 😃"
 
-`[n-1]` stylistic rules used now `warn` instead of throwing an error, so you can focus more on writing the logic, and not on formatting the code!
+Approx 90% of the rules used now `warn` instead of throwing an error, so you can focus more on writing the logic, and not on formatting the code! Only the rules that throw an `error` and some exceptional `warn` rules like `'no-debugger'` must be fixed by the developer.
 
-### Rules Removed
-
-| Rule Name | Reason |
-|-|-|
-|[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
-
-
+Also, added some cool new badges in [README.md](/README.md) thanks to [Shields.io](https://shields.io/)!
 
 ## 1.0.2 
 
