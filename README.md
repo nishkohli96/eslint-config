@@ -2,8 +2,6 @@
 
 ![NPM Version](https://img.shields.io/npm/v/%40nish1896%2Feslint-config)
 ![NPM Downloads](https://img.shields.io/npm/dt/%40nish1896%2Feslint-config)
-![npm bundle size](https://img.shields.io/bundlephobia/minzip/%40nish1896%2Feslint-config)
-![npm bundle size](https://img.shields.io/bundlephobia/min/%40nish1896%2Feslint-config)
 ![node-current](https://img.shields.io/node/v/%40nish1896%2Feslint-config?color=%23e86267)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/nishkohli96/eslint-config)
 
@@ -17,12 +15,14 @@ On running `eslint .` some of the rules imported from this config will give you 
 >Ignored eslint warnings or errors in code will likely cause your app build to fail, unless resolved or specified eslint to ignore using the `eslint-ignore` syntax.
 >
 
-This config extends the following plugins - 
-- [eslint/recommended](https://eslint.org/docs/latest/rules/)
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y)
-- [@stylistic](https://eslint.style/)
+This config extends the following plugins and parsers - 
+- [eslint/recommended](https://eslint.org/docs/latest/rules/) - 8.56.0
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.33.2
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.0
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.8.0
+- [@stylistic/eslint-plugin](https://eslint.style/) - 1.6.1
+- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) - 6.21.0
+- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) - 6.21.0
 
 ## Installation
 
@@ -102,21 +102,7 @@ npm run lint
 yarn lint
 ```
 
-Some folders have already been preconfigured to ignore when linting.
-```
-   ignorePatterns: [
-    'node_modules',
-    'dist',
-    'build',
-    'coverage',
-    '.next',
-    '.turbo',
-    '.eslintrc.js',
-    '*.d.ts',
-  ]
-```
-
-[Integrate with husky](https://typicode.github.io/husky/getting-started.html) as a `pre-commit` git hook to make sure no bad code passes through!
+For formatting non-js like `.css, .html` files you can use prettier alongside eslint. Prettier configuration, prettierignore and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/tree/main).
 
 ## List of Rules
 
@@ -261,10 +247,10 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 |-|-|
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
-|[default-param-last](https://eslint.org/docs/latest/rules/default-param-last)| personal preference of the dev |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
 |[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)| the default setting `starred-block` read commented code as a comment itself, which made it difficult to uncomment the code
+|[no-mixed-spaces-and-tabs](https://eslint.org/docs/latest/rules/no-mixed-spaces-and-tabs) | same rule in [eslint.style](https://eslint.style/rules/default/no-mixed-spaces-and-tabs) |
 |[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | gave unwanted warnings when using enums |
 |[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` does it better |
 |[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | react v17+ doesn't require `import React from react` |
@@ -278,4 +264,4 @@ Checkout out other [recommended community plugins](/Recommendations.md)
 
 # Support Me
 
-If you found this config useful, please don't forget to star the repository. It would make my day if you consider [buying me a coffee](https://www.buymeacoffee.com/nish1896)  
+If you found this config useful, please don't forget to star the repository. It would make my day if you consider [buying me a coffee](https://www.buymeacoffee.com/nish1896)
