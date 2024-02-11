@@ -1,5 +1,13 @@
 # **What's changed?**
 
+## [1.0.4](https://github.com/nishkohli96/eslint-config/tree/v1.0.4)
+
+**Released - 12 Feb, 2024**
+
+- Upgraded `@stylistic/eslint-plugin`, `@typescript-eslint/eslint-plugin` and `@typescript-eslint/parser` dependencies. 
+- Removed `es2024` key from `env`. 
+- Turn off [no-mixed-spaces-and-tabs](https://eslint.style/rules/default/no-mixed-spaces-and-tabs) rule.
+
 ## [1.0.3](https://github.com/nishkohli96/eslint-config/tree/v1.0.3) 
 
 **Released - 31 Jan, 2024**
