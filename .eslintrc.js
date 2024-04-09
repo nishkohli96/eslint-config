@@ -1,8 +1,11 @@
-const eslintConfig = require('./lib');
+var jsEslintConfig = require('./lib/js');
+var reactEslintConfig = require( './lib/react');
 
 module.exports = {
-  ...eslintConfig,
-  plugins: [
-	'@stylistic/eslint-plugin'
-  ],
+  ...reactEslintConfig,
+  rules: {
+    ...jsEslintConfig.rules,
+    ...reactEslintConfig.rules
+  },
+  plugins: ['@stylistic/eslint-plugin'],
 };
