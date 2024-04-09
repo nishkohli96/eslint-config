@@ -1,4 +1,4 @@
-var st = '122'
+var st = "122"
 
 const func = (e) => console.log('some function');
 

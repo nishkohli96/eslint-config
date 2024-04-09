@@ -1,5 +1,13 @@
 # **What's changed?**
 
+## [2.0.0](https://github.com/nishkohli96/eslint-config/tree/v2.0.0)
+
+**Released - 10 Apr, 2024**
+
+- Split `js` and `react-jsx` rules
+- Turn off [@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx)
+- Upgraded `@stylistic/eslint-plugin`, `@typescript-eslint/eslint-plugin`, `@typescript-eslint/parser` and `eslint-plugin-react` dependencies. 
+
 ## [1.0.4](https://github.com/nishkohli96/eslint-config/tree/v1.0.4)
 
 **Released - 12 Feb, 2024**
