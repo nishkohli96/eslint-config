@@ -21,8 +21,8 @@ This config extends the following plugins and parsers -
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.8.0
 - [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 1.7.0
-- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) - 6.21.0
-- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) - 6.21.0
+- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) - 7.0.0
+- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) - 7.6.0
 
 ## Installation
 
