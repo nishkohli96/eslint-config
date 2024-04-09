@@ -1,8 +1,8 @@
-const eslintConfig = require('./lib');
+import eslintConfig from './lib';
 
-module.exports = {
+export default {
   ...eslintConfig,
   plugins: [
-	'@stylistic/eslint-plugin'
+	  '@stylistic/eslint-plugin'
   ],
 };

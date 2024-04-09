@@ -145,7 +145,6 @@ All rule names start with `@stylistic/` prefix.
 |[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|consistent |
 |[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
 |[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
-|[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)| multiline-multiprop |
 |[jsx-indent](https://eslint.style/rules/default/jsx-indent)| 2 |
 |[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)| 2 |
 |[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)| { allow: 'literal' } |
@@ -245,7 +244,9 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 
 | Rule Name | Reason |
 |-|-|
+|[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)| |
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
+|[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
