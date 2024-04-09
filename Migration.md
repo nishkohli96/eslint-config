@@ -2,7 +2,7 @@
 
 **Starting v2 onwards, the linting rules for javascript and react have been split to purge out any unnecessary rules when using this config in a standalone nodejs application.** 
 
-For usage in a nodejs application use only the `js` eslint configuration of this package. 
+For usage in a nodejs application, use only the `js` eslint configuration of this package. 
 
 ```diff
 module.exports = {

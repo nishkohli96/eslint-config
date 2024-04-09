@@ -7,7 +7,7 @@
 
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
-The usage of [eslint-stylistic](https://eslint.style/) over [prettier](https://prettier.io/) will give you additional options to format your code and hopefully avoid conflict of rules between `eslint` and `prettier` for which you additionally had to install [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier).  
+The usage of [eslint-stylistic](https://eslint.style/) over [prettier](https://prettier.io/) will give you additional options to format your code and hopefully avoid conflict of rules between `eslint` and `prettier` for which you additionally had to install [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier). I personally use `prettier` only to format non `.js(x)` and `.ts(x)` files.  
 
 On running `eslint .` some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice. `eslint --fix .` should hopefully fix most of the warnings or errors in your code. It's okay to have a few warnings when developing, but they should be taken care of when pushing your code for production. 
 
@@ -16,11 +16,11 @@ On running `eslint .` some of the rules imported from this config will give you 
 >
 
 This config extends the following plugins and parsers - 
-- [eslint/recommended](https://eslint.org/docs/latest/rules/) - 8.56.0
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.33.2
+- [eslint/recommended](https://www.npmjs.com/package/eslint) - 8.56.0
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.34.1
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.8.0
-- [@stylistic/eslint-plugin](https://eslint.style/) - 1.6.1
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 1.7.0
 - [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) - 6.21.0
 - [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) - 6.21.0
 
@@ -46,13 +46,19 @@ yarn add -D @nish1896/eslint-config
 
 ## Usage
 
-Add `@nish1896/eslint-config` to the extends section of your *eslint configuration file*. `eslint-config` suffix can be ignored.
+In case you are migrating from v1.0.x, check the [Migration Guide](./Migration.md).
 
-```json
-{
-    "extends": [
-        "@nish1896"
-    ]
+For usage in a nodejs application, use only the `js` eslint configuration of this package. 
+```
+module.exports = {
+  extends: ['@nish1896/eslint-config/js']
+}
+```
+
+React applications would need both the `js` and `react` config of this package.
+```
+module.exports = {
+  extends: ['@nish1896/eslint-config/js', '@nish1896/eslint-config/react']
 }
 ```
 
@@ -104,6 +110,8 @@ yarn lint
 
 For formatting non-js like `.css, .html` files you can use prettier alongside eslint. Prettier configuration, prettierignore and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/tree/main).
 
+---
+
 ## List of Rules
 
 View the complete list of rules
@@ -113,11 +121,7 @@ View the complete list of rules
 - [react](https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules)
 - [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main/docs/rules)
 
-⚠️ ***WARNING*** - write your code neatly please, hopefully, eslint will clean up the mess.  
-❌ ***ERROR*** - you should AVOID this coding practice.   
-🔧 ***CONFIGURE*** - specified or overwritten default case for a rule.  
-
-## **stylistic rules**
+## **stylistic rules ( js only )**
 
 All rule names start with `@stylistic/` prefix.  
 
@@ -125,7 +129,7 @@ All rule names start with `@stylistic/` prefix.
 > Starting `v1.0.3` almost all of the `stylistic` rules will default to warn. These can be easily fixed by running linting and do not require the attention of the developer.
 >
 
-|Rule Name|🔧|
+|Rule Name| Configuration🔧|
 |-|-|
 |[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline)| { multiline: true, minItems: 4 } |
 |[array-bracket-spacing](https://eslint.style/rules/default/array-bracket-spacing)||
@@ -140,18 +144,6 @@ All rule names start with `@stylistic/` prefix.
 |[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)|| consistent |
 |[indent](https://eslint.style/rules/default/indent)|| 2 |
 |[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
-|[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)||
-|[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||
-|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|consistent |
-|[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
-|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
-|[jsx-indent](https://eslint.style/rules/default/jsx-indent)| 2 |
-|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)| 2 |
-|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)| { allow: 'literal' } |
-|[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||
-|[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)| prefer-double |
-|[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||
-|[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
 |[key-spacing](https://eslint.style/rules/default/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/default/linebreak-style)||
 |[no-extra-semi](https://eslint.style/rules/default/no-extra-semi)||
@@ -176,7 +168,7 @@ All rule names start with `@stylistic/` prefix.
 |[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)||
 |[wrap-regex](https://eslint.style/rules/default/wrap-regex)||
 
-Only the stylistic rule(s) listed below will give an error and will have to be manually fixed.
+The stylistic rule(s) listed below will give an error and will have to be manually fixed.
 
 | Rule Name |
 |-|
@@ -204,7 +196,7 @@ Only the stylistic rule(s) listed below will give an error and will have to be m
 |[semi](https://eslint.org/docs/latest/rules/semi)||
 |[use-isnan](https://eslint.org/docs/latest/rules/use-isnan)||
 
-Only the eslint rule(s) listed below will give an error and will have to be manually fixed.
+The eslint rule(s) listed below will give an error and will have to be manually fixed.
 
 | Rule Name |
 |-|
@@ -218,9 +210,33 @@ Only the eslint rule(s) listed below will give an error and will have to be manu
 
 ## **typescript-eslint rules**
 
-| Rule Name |⚠️|❌|🔧|
-|-|-|-|-|
-|[ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.md)|✔️|||
+| Rule Name | Status |
+|-|-|
+|[no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.md) | warn |
+|[no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.mdx) | off |
+
+---
+
+**The below rules are for `@nish1896/eslint-config/react`.**
+
+## **stylistic rules ( jsx )**
+
+All rule names start with `@stylistic/` prefix.  
+
+|Rule Name|🔧|
+|-|-|
+|[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)||
+|[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||
+|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|consistent |
+|[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
+|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
+|[jsx-indent](https://eslint.style/rules/default/jsx-indent)| 2 |
+|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)| 2 |
+|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)| { allow: 'literal' } |
+|[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||
+|[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)| prefer-double |
+|[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||
+|[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
 
 ## **eslint-plugin-react rules**
 
