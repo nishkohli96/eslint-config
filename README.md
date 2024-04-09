@@ -129,7 +129,7 @@ All rule names start with `@stylistic/` prefix.
 > Starting `v1.0.3` almost all of the `stylistic` rules will default to warn. These can be easily fixed by running linting and do not require the attention of the developer.
 >
 
-|Rule Name| Configuration🔧|
+|Rule Name| Configuration 🔧|
 |-|-|
 |[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline)| { multiline: true, minItems: 4 } |
 |[array-bracket-spacing](https://eslint.style/rules/default/array-bracket-spacing)||

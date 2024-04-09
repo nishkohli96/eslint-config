@@ -7,7 +7,5 @@ module.exports = {
     ...jsEslintConfig.rules,
     ...reactEslintConfig.rules
   },
-  plugins: [
-	  '@stylistic/eslint-plugin'
-  ],
+  plugins: ['@stylistic/eslint-plugin'],
 };
