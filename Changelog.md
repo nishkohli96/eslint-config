@@ -5,6 +5,7 @@
 **Released - 11 Apr, 2024**
 
 - Add [array-element-newline](https://eslint.style/rules/default/array-element-newline) rule in `js` config.
+- Modify [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.
 
 ## [2.0.0](https://github.com/nishkohli96/eslint-config/tree/v2.0.0)
 

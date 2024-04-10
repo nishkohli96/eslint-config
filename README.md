@@ -138,7 +138,8 @@ All rule names start with `@stylistic/` prefix.
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)||  always-multiline |
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)|
+{ arrays: 'always', objects: 'always', imports: 'never', exports: 'never' functions: 'never' } |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
