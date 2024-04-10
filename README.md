@@ -160,6 +160,7 @@ All rule names start with `@stylistic/` prefix.
 |[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
+|[space-infix-ops](https://eslint.style/rules/default/sace-infix-ops)||
 |[space-unary-ops](https://eslint.style/rules/default/sace-unary-ops)||
 |[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
 |[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
