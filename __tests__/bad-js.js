@@ -1,5 +1,9 @@
 var st = "122"
 
+var tryq = '2463'
+tryq.toLowerCase().replace('1','8')
+tryq.toLowerCase().replace('1','8').split('').map(el => `-${el}-`)
+
 const func = (e) => console.log('some function');
 
 

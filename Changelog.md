@@ -6,6 +6,7 @@
 
 - Add the following rules in `js` config
   - [array-element-newline](https://eslint.style/rules/default/array-element-newline)
+  - [newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)
   - [space-before-blocks](https://eslint.style/rules/default/space-before-blocks)
   - [space-infix-ops](https://eslint.style/rules/default/sace-infix-ops)
 - Modify [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.

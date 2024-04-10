@@ -148,6 +148,7 @@ All rule names start with `@stylistic/` prefix.
 |[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
 |[key-spacing](https://eslint.style/rules/default/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/default/linebreak-style)||
+|[newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)||
 |[no-extra-semi](https://eslint.style/rules/default/no-extra-semi)||
 |[no-floating-decimal](https://eslint.style/rules/default/no-floating-decimal)||
 |[no-mixed-spaces-and-tabs](https://eslint.style/rules/default/no-mixed-spaces-and-tabs)||
