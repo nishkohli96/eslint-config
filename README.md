@@ -160,9 +160,11 @@ All rule names start with `@stylistic/` prefix.
 |[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
-|[space-infix-ops](https://eslint.style/rules/default/sace-infix-ops)||
-|[space-unary-ops](https://eslint.style/rules/default/sace-unary-ops)||
 |[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
+|[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)|
+{ functions: 'always', classes: 'always', keywords: 'never' } |
+|[space-infix-ops](https://eslint.style/rules/default/space-infix-ops)||
+|[space-unary-ops](https://eslint.style/rules/default/space-unary-ops)||
 |[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
 |[switch-colon-spacing](https://eslint.style/rules/default/switch-colon-spacing)||
 |[template-curly-spacing](https://eslint.style/rules/default/template-curly-spacing)||

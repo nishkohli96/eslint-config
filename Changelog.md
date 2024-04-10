@@ -4,7 +4,10 @@
 
 **Released - 11 Apr, 2024**
 
-- Add [array-element-newline](https://eslint.style/rules/default/array-element-newline), [space-infix-ops](https://eslint.style/rules/default/sace-infix-ops) rules in `js` config.
+- Add the following rules in `js` config
+  - [array-element-newline](https://eslint.style/rules/default/array-element-newline)
+  - [space-before-blocks](https://eslint.style/rules/default/space-before-blocks)
+  - [space-infix-ops](https://eslint.style/rules/default/sace-infix-ops)
 - Modify [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.
 
 ## [2.0.0](https://github.com/nishkohli96/eslint-config/tree/v2.0.0)
