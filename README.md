@@ -133,6 +133,7 @@ All rule names start with `@stylistic/` prefix.
 |-|-|
 |[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline)| { multiline: true, minItems: 4 } |
 |[array-bracket-spacing](https://eslint.style/rules/default/array-bracket-spacing)||
+|[array-element-newline](https://eslint.style/rules/default/array-element-newline)| { multiline: true, minItems: 4 } |
 |[arrow-parens](https://eslint.style/rules/default/arrow-parens)| as-needed |
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||

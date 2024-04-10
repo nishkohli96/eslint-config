@@ -1,5 +1,11 @@
 # **What's changed?**
 
+## [2.0.1](https://github.com/nishkohli96/eslint-config/tree/v2.0.1)
+
+**Released - 11 Apr, 2024**
+
+- Add [array-element-newline](https://eslint.style/rules/default/array-element-newline) rule in `js` config.
+
 ## [2.0.0](https://github.com/nishkohli96/eslint-config/tree/v2.0.0)
 
 **Released - 10 Apr, 2024**
