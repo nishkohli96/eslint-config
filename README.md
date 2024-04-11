@@ -26,7 +26,7 @@ This config extends the following plugins and parsers -
 
 ## Installation
 
-You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, add a `-W` flag to each of the commands below.
+You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.
 
 ```
 npm i eslint --save-dev
