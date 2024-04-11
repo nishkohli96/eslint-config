@@ -5,6 +5,7 @@
 **Released - 11 Apr, 2024**
 
 - Add the following rules in `js` config
+  - [@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any/)
   - [array-element-newline](https://eslint.style/rules/default/array-element-newline)
   - [newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)
   - [space-before-blocks](https://eslint.style/rules/default/space-before-blocks)

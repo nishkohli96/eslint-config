@@ -138,8 +138,7 @@ All rule names start with `@stylistic/` prefix.
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)|
-{ arrays: 'always', objects: 'always', imports: 'never', exports: 'never' functions: 'never' } |
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| { arrays: 'always', objects: 'always', imports: 'never', exports: 'never' functions: 'never' } |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
@@ -162,8 +161,7 @@ All rule names start with `@stylistic/` prefix.
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
 |[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
-|[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)|
-{ functions: 'always', classes: 'always', keywords: 'never' } |
+|[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)| { functions: 'always', classes: 'always', keywords: 'never' } |
 |[space-infix-ops](https://eslint.style/rules/default/space-infix-ops)||
 |[space-unary-ops](https://eslint.style/rules/default/space-unary-ops)||
 |[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
@@ -218,6 +216,7 @@ The eslint rule(s) listed below will give an error and will have to be manually 
 
 | Rule Name | Status |
 |-|-|
+|[@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any/) | warn |
 |[no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.md) | warn |
 |[no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.mdx) | off |
 
@@ -268,7 +267,7 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 |-|-|
 |[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)| |
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
-|[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) |
+|[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) | A good developer will avoid writing ts-comments, except in extreme cases. Let's not cause them trouble to write one more line |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |
