@@ -19,7 +19,7 @@ class Foo{
   constructor(){}
 }
 
-for (;;) {
+for(;;){
   // ...
 }
 
