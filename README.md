@@ -26,7 +26,7 @@ This config extends the following plugins and parsers -
 
 ## Installation
 
-You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, add a `-W` flag to each of the commands below.
+You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.
 
 ```
 npm i eslint --save-dev
@@ -74,7 +74,7 @@ To add a new rule, turn off or modify the existing list of rules, append the `ru
 }
 ```
 
-To disable one or more rules throughout the file,
+To disable one or more rules throughout the file, add this at the top of your file.
 ```
 /* eslint-disable  @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any */
 ```
@@ -108,7 +108,7 @@ npm run lint
 yarn lint
 ```
 
-For formatting non-js like `.css, .html` files you can use prettier alongside eslint. Prettier configuration, prettierignore and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/tree/main).
+For formatting non-js like `.css, .html` files you can use prettier alongside eslint. Prettier configuration, prettierignore and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/blob/main/package.json).
 
 ---
 
@@ -133,11 +133,12 @@ All rule names start with `@stylistic/` prefix.
 |-|-|
 |[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline)| { multiline: true, minItems: 4 } |
 |[array-bracket-spacing](https://eslint.style/rules/default/array-bracket-spacing)||
+|[array-element-newline](https://eslint.style/rules/default/array-element-newline)| { multiline: true, minItems: 4 } |
 |[arrow-parens](https://eslint.style/rules/default/arrow-parens)| as-needed |
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)||  always-multiline |
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| { arrays: 'always', objects: 'always', imports: 'never', exports: 'never' functions: 'never' } |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
@@ -146,6 +147,7 @@ All rule names start with `@stylistic/` prefix.
 |[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
 |[key-spacing](https://eslint.style/rules/default/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/default/linebreak-style)||
+|[newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)||
 |[no-extra-semi](https://eslint.style/rules/default/no-extra-semi)||
 |[no-floating-decimal](https://eslint.style/rules/default/no-floating-decimal)||
 |[no-mixed-spaces-and-tabs](https://eslint.style/rules/default/no-mixed-spaces-and-tabs)||
@@ -158,8 +160,10 @@ All rule names start with `@stylistic/` prefix.
 |[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
-|[space-unary-ops](https://eslint.style/rules/default/sace-unary-ops)||
 |[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
+|[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)| { functions: 'always', classes: 'always', keywords: 'never' } |
+|[space-infix-ops](https://eslint.style/rules/default/space-infix-ops)||
+|[space-unary-ops](https://eslint.style/rules/default/space-unary-ops)||
 |[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
 |[switch-colon-spacing](https://eslint.style/rules/default/switch-colon-spacing)||
 |[template-curly-spacing](https://eslint.style/rules/default/template-curly-spacing)||
@@ -212,6 +216,7 @@ The eslint rule(s) listed below will give an error and will have to be manually 
 
 | Rule Name | Status |
 |-|-|
+|[@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any/) | warn |
 |[no-unused-vars](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.md) | warn |
 |[no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.mdx) | off |
 
@@ -262,7 +267,7 @@ You will need to manually add them in the `rules` of your .eslintrc, if needed.
 |-|-|
 |[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)| |
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
-|[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) |
+|[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) | A good developer will avoid writing ts-comments, except in extreme cases. Let's not cause them trouble to write one more line |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| warning when using `_` for unused vars |

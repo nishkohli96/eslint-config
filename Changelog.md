@@ -1,5 +1,17 @@
 # **What's changed?**
 
+## [2.0.1](https://github.com/nishkohli96/eslint-config/tree/v2.0.1)
+
+**Released - 11 Apr, 2024**
+
+- Add the following rules in `js` config
+  - [@typescript-eslint/no-explicit-any](https://typescript-eslint.io/rules/no-explicit-any/)
+  - [array-element-newline](https://eslint.style/rules/default/array-element-newline)
+  - [newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)
+  - [space-before-blocks](https://eslint.style/rules/default/space-before-blocks)
+  - [space-infix-ops](https://eslint.style/rules/default/sace-infix-ops)
+- Modify [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.
+
 ## [2.0.0](https://github.com/nishkohli96/eslint-config/tree/v2.0.0)
 
 **Released - 10 Apr, 2024**
