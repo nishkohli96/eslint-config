@@ -11,6 +11,10 @@ const func = (e) => console.log('some function');
 const obj = { name: 'john', age: 36}
 
 const res = a?b:c
+const vb={data:{url:'bla bla'}}
+
+const yu='color' 
+var op={'$User.name':{[yu]:'#007aba'}}
 
 function a(){}
 function someFN(var1,var2,var3){return var1-var2+var3}
