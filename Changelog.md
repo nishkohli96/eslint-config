@@ -2,7 +2,7 @@
 
 ## [2.0.2](https://github.com/nishkohli96/eslint-config/tree/v2.0.2)
 
-**Released - 11 Apr, 2024**
+**Released - 12 Apr, 2024**
 
 Modify [space-before-blocks](https://eslint.style/rules/default/space-before-blocks) and [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.
 
