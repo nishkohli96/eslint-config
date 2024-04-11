@@ -1,5 +1,20 @@
 # **What's changed?**
 
+## [2.0.2](https://github.com/nishkohli96/eslint-config/tree/v2.0.2)
+
+**Released - 12 Apr, 2024**
+
+Modify [space-before-blocks](https://eslint.style/rules/default/space-before-blocks) and [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.
+
+Set keyword spacing to `keywords: 'always'`. Previous config was resulting in no spacing something like,
+
+```
+if(){}
+catch{ 
+```
+Remove comma dangle from arrays and objects, as traling commas were creating unnecessary noise esp in sequelize queries.
+
+
 ## [2.0.1](https://github.com/nishkohli96/eslint-config/tree/v2.0.1)
 
 **Released - 11 Apr, 2024**
@@ -9,7 +24,7 @@
   - [array-element-newline](https://eslint.style/rules/default/array-element-newline)
   - [newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)
   - [space-before-blocks](https://eslint.style/rules/default/space-before-blocks)
-  - [space-infix-ops](https://eslint.style/rules/default/sace-infix-ops)
+  - [space-infix-ops](https://eslint.style/rules/default/space-infix-ops)
 - Modify [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.
 
 ## [2.0.0](https://github.com/nishkohli96/eslint-config/tree/v2.0.0)

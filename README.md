@@ -138,7 +138,7 @@ All rule names start with `@stylistic/` prefix.
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| { arrays: 'always', objects: 'always', imports: 'never', exports: 'never' functions: 'never' } |
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| { arrays: 'never', objects: 'never', imports: 'never', exports: 'never' functions: 'never' } |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
@@ -161,7 +161,7 @@ All rule names start with `@stylistic/` prefix.
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
 |[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
-|[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)| { functions: 'always', classes: 'always', keywords: 'never' } |
+|[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)| { functions: 'always', classes: 'always', keywords: 'always' } |
 |[space-infix-ops](https://eslint.style/rules/default/space-infix-ops)||
 |[space-unary-ops](https://eslint.style/rules/default/space-unary-ops)||
 |[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
