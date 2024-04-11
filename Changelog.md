@@ -24,7 +24,11 @@ Remove comma dangle from arrays and objects, as traling commas were creating unn
   - [array-element-newline](https://eslint.style/rules/default/array-element-newline)
   - [newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)
   - [space-before-blocks](https://eslint.style/rules/default/space-before-blocks)
+<<<<<<< HEAD
   - [space-infix-ops](https://eslint.style/rules/default/space-infix-ops)
+=======
+  - [space-infix-ops](https://eslint.style/rules/default/sace-infix-ops)
+>>>>>>> origin/main
 - Modify [comma-dangle](https://eslint.style/rules/default/comma-dangle) config.
 
 ## [2.0.0](https://github.com/nishkohli96/eslint-config/tree/v2.0.0)
