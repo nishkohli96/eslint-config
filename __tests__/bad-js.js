@@ -23,11 +23,7 @@ class Foo{
   constructor(){}
 }
 
-<<<<<<< HEAD
 for(;;){
-=======
-for (;;) {
->>>>>>> origin/main
   // ...
 }
 
