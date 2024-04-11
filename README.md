@@ -74,7 +74,7 @@ To add a new rule, turn off or modify the existing list of rules, append the `ru
 }
 ```
 
-To disable one or more rules throughout the file,
+To disable one or more rules throughout the file, add this at the top of your file.
 ```
 /* eslint-disable  @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any */
 ```
@@ -108,7 +108,7 @@ npm run lint
 yarn lint
 ```
 
-For formatting non-js like `.css, .html` files you can use prettier alongside eslint. Prettier configuration, prettierignore and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/tree/main).
+For formatting non-js like `.css, .html` files you can use prettier alongside eslint. Prettier configuration, prettierignore and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/blob/main/package.json).
 
 ---
 
