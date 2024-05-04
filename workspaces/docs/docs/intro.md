@@ -1,47 +1,14 @@
 ---
 sidebar_position: 1
+sidebar_label: Introduction
+description: A brief introduction of this eslint configuration and what sets of rules does it use.
 ---
 
-# Tutorial Intro
+# @nish1896/eslint-config
 
-Let's discover **Docusaurus in less than 5 minutes**.
+![NPM Version](https://img.shields.io/npm/v/%40nish1896%2Feslint-config)
+![NPM Downloads](https://img.shields.io/npm/dt/%40nish1896%2Feslint-config)
+![node-current](https://img.shields.io/node/v/%40nish1896%2Feslint-config?color=%23e86267)
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/nishkohli96/eslint-config)
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+**A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
