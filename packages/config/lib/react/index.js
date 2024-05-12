@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  root: true,
+  // root: true,
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',

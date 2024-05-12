@@ -8,7 +8,7 @@ description: What is eslint and why you should include it in your projects?
 
 As per the official [eslint](https://eslint.org/) docs, 
 
-> ESLint statically analyzes your code to quickly find problems.
+> ESLint statically analyzes your code to quickly find problems. Problems can be anything from potential runtime bugs, to not following best practices, to styling issues.
 
 Besides error catching, eslint rules are also capable of formatting your code which makes it feel consistent, especially when working with a large team. One such popular framework for formatting the code is [prettier](https://prettier.io/).
 

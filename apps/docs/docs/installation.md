@@ -10,6 +10,8 @@ In case you are migrating from `v1.0.x`, please check the [Migration Guide](./mi
 
 You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.
 
+Please do refer the official docs to [install eslint](https://eslint.org/docs/latest/use/getting-started).
+
 ```
 npm i eslint --save-dev
 ```
@@ -30,6 +32,16 @@ Add *"lint"* command to your `package.json` file.
 
 ```
 npm pkg set scripts.lint="eslint --fix ."
+```
+
+After that, you can run ESLint on any file or directory like this:
+
+```
+npx eslint yourfile.js
+```
+
+```
+yarn run eslint yourfile.js
 ```
 
 **You may also choose to install other eslint plugins or configurations depending upon your application needs.** 
