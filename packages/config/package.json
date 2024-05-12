@@ -6,8 +6,8 @@
   "exports": {
     "./v8/js": "./lib/v8/js/index.js",
     "./v8/react": "./lib/v8/react/index.js",
-    "./v9/js": "./lib/v9/js/index.js",
-    "./v9/react": "./lib/v9/react/index.js"
+    "./v9/js": "./lib/v9/js/index.mjs",
+    "./v9/react": "./lib/v9/react/index.mjs"
   },
   "scripts": {
     "test": "eslint __tests__",
