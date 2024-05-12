@@ -12,8 +12,8 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "devDependencies": {
-	"@nish1896/eslint-config": "*",
-    "eslint": "^8.19.0"
+    "@nish1896/eslint-config": "*",
+    "eslint": "^8.56.0"
   },
   "engines": {
     "node": ">=14"

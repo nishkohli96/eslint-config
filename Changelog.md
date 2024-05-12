@@ -3,7 +3,15 @@
 ## [2.1.0](https://github.com/nishkohli96/eslint-config/tree/v2.1.0)
 
 Offical Docs for the config.
-Rules changed -> require-await warn
+
+Rules changed -
+require-await warn
+
+Upgrade Dependencies -
+|-|-|
+[@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) |`7.0.0`  to `7.8.0`|
+[@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) |`7.6.0` to `7.8.0`|
+[eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) |`4.6.0` to  `4.6.2`|
 
 ## [2.0.2](https://github.com/nishkohli96/eslint-config/tree/v2.0.2)
 
