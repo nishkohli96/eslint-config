@@ -8,22 +8,26 @@ description: How to import and use this package in your eslint config file?
 
 <!-- In case you are migrating from v1.0.x, check the [Migration Guide](./Migration.md). -->
 
-For usage in a nodejs application, use only the `js` eslint configuration of this package. 
+For usage in a nodejs application, use only the `js` eslint configuration of this package.
 
 ```
 module.exports = {
-  extends: ['@nish1896/eslint-config/js']
+  extends: ["@nish1896/eslint-config/js"]
 }
 ```
 
 React applications would need both the `js` and `react` config of this package.
+
 ```
 module.exports = {
-  extends: ['@nish1896/eslint-config/js', '@nish1896/eslint-config/react']
+  extends: [
+	"@nish1896/eslint-config/js",
+	"@nish1896/eslint-config/react"
+  ]
 }
 ```
 
-To add a new rule, turn off or modify the existing list of rules, append the `rules` in your *eslint configuration file*.
+To add a new rule, turn off or modify the existing list of rules, append the `rules` in your _eslint configuration file_.
 
 ```json
 {
@@ -36,6 +40,7 @@ To add a new rule, turn off or modify the existing list of rules, append the `ru
 ```
 
 To disable one or more rules throughout the file, add this at the top of your file.
+
 ```
 /* eslint-disable  @typescript-eslint/no-unused-vars, @typescript-eslint/no-explicit-any */
 ```
@@ -45,18 +50,23 @@ To disable one or more rules in the next line,
 ```
 /* eslint-disable-next-line <rule1>, <rule2> */
 ```
+
 :::warning
 The syntax below won't work
+
 ```
 // eslint-disable-next-line <rule1>, <rule2>
 /** eslint-disable-next-line  @typescript-eslint/no-unused-vars */
 ```
+
 :::
 
 To run linting on your codebase,
+
 ```sh
 npm run lint
 ```
+
 ```
 yarn lint
 ```

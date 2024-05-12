@@ -6,6 +6,8 @@ description: How to install this package using npm or yarn?
 
 # Installation
 
+In case you are migrating from `v1.0.x`, please check the [Migration Guide](./migration).
+
 You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.
 
 ```

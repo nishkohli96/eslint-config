@@ -10,6 +10,6 @@ This config includes and modifies rules from `eslint`, `stylistic`, `typescript-
 View the complete list of rules
 - [eslint](https://eslint.org/docs/latest/rules/)
 - [stylistic](https://eslint.style/rules)
-- [typescript](https://typescript-eslint.io/rules/)
+- [typescript-eslint](https://typescript-eslint.io/rules/)
 - [react](https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules)
 - [jsx-a11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main/docs/rules)

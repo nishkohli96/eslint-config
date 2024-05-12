@@ -111,7 +111,7 @@ module.exports = {
     'prefer-promise-reject-errors': 'warn',
     'prefer-rest-params': 'error',
     semi: ['warn', 'always'],
-    'require-await': 'error',
+    'require-await': 'warn',
     'use-isnan': 'warn',
   },
   /**

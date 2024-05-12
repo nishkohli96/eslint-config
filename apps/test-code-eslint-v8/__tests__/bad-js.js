@@ -31,6 +31,15 @@ let arr = [2,42,42,33,23,67,234,2323]
 arr.forEach(ele => ele+=1)
 
 var arr2 = ['raj', 'rajesh', 'rajesh kumar']
+var arr4 = ['http://localhost:5000', 'http://localhost:5001', 'http://localhost:5002']
+var arr5 = [
+  'http://localhost:5000',
+  'http://localhost:5001',
+  'http://localhost:5002'
+];
+
+try{ console.log('hello world')}
+catch(err) {console.error(err)}
 
 // const element = () => {
 // 	return (

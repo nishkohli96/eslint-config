@@ -1,5 +1,10 @@
 # **What's changed?**
 
+## [2.1.0](https://github.com/nishkohli96/eslint-config/tree/v2.1.0)
+
+Offical Docs for the config.
+Rules changed -> require-await warn
+
 ## [2.0.2](https://github.com/nishkohli96/eslint-config/tree/v2.0.2)
 
 **Released - 12 Apr, 2024**
