@@ -28,3 +28,15 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* For the light theme */
+html[data-theme='light'] .footer {
+  background-color: #f5f6f7; /* Light theme background color */
+  color: #212529; /* Light theme text color */
+}
+
+/* For the dark theme */
+html[data-theme='dark'] .footer {
+  background-color: #303846; /* Dark theme background color */
+  color: #f8f9fa; /* Dark theme text color */
+}
