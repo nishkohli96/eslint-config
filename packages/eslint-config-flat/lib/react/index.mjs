@@ -4,6 +4,9 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
+  ...reactPlugin.configs.recommended,
+  ...jsxA11yPlugin.configs.recommended,
+  ...reactHooksPlugin.configs.recommended,
   {
     plugins: {
       '@stylistic': stylistic,
@@ -44,5 +47,20 @@ export default [
         },
       ],
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.next',
+      '.turbo',
+      '.eslintrc.js',
+      '.d.ts',
+    ],
   },
 ];
