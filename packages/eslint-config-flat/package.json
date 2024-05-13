@@ -1,0 +1,49 @@
+{
+  "name": "@nish1896/eslint-config-flat",
+  "version": "1.0.0",
+  "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
+  "author": "Nishant Kohli",
+  "exports": {
+    "./js": "./js/index.mjs",
+    "./react": "./react/index.mjs"
+  },
+  "scripts": {
+    "test": "eslint __tests__",
+    "fix": "eslint --fix __tests__",
+    "link:local": "npm link",
+    "unlink:local": "npm unlink @nish1896/eslint-config",
+    "publish:manual": "npm publish --access public"
+  },
+  "keywords": [
+    "@nish1896",
+    "@nish1896/eslint-config",
+	"@nish1896/eslint-config-flat",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+	"eslint-config-flat",
+	"eslint flat config",
+    "eslint-config-jsx",
+    "eslint-config-react",
+    "eslit-react",
+    "lint-config",
+    "lint-rules",
+    "react-eslint"
+  ],
+  "homepage": "https://github.com/nishkohli96/eslint-config#readme",
+  "repository": {
+    "url": "git+https://github.com/nishkohli96/eslint-config.git"
+  },
+  "dependencies": {
+    "@eslint/js": "^9.2.0",
+    "typescript-eslint": "^7.9.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "peerDependencies": {
+    "eslint": ">=7",
+    "typescript": ">=4"
+  },
+  "license": "ISC"
+}
