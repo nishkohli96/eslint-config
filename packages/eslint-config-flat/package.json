@@ -1,7 +1,7 @@
 {
   "name": "@nish1896/eslint-config-flat",
   "version": "1.0.0",
-  "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
+  "description": "eslint and stylistic rules for eslint v9 and above to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "exports": {
     "./js": "./lib/js/index.mjs",
@@ -11,7 +11,7 @@
     "test": "eslint __tests__",
     "fix": "eslint --fix __tests__",
     "link:local": "npm link",
-    "unlink:local": "npm unlink @nish1896/eslint-config",
+    "unlink:local": "npm unlink @nish1896/eslint-config-flat",
     "publish:manual": "npm publish --access public"
   },
   "keywords": [
@@ -23,6 +23,7 @@
     "eslint-config",
     "eslint-config-flat",
     "eslint flat config",
+    "flat eslint config",
     "eslint-config-jsx",
     "eslint-config-react",
     "eslit-react",
@@ -43,10 +44,10 @@
     "typescript-eslint": "^7.9.0"
   },
   "engines": {
-    "node": ">=14"
+    "node": ">=18.18.0, >=20.9.0, >=21"
   },
   "peerDependencies": {
-    "eslint": ">=7",
+    "eslint": ">=9",
     "typescript": ">=4"
   },
   "license": "ISC"

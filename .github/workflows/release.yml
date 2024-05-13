@@ -16,9 +16,16 @@ jobs:
         with:
           node-version: '20.10.0'
           registry-url: 'https://registry.npmjs.org'
+      
       - name: Install Dependencies
         run: npm ci
-      - name: release
+      
+      - name: release @nish1896/eslint-config
         run: yarn workspace @nish1896/eslint-config publish:manual
+        env: 
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      
+      - name: release @nish1896/eslint-config-flat
+        run: yarn workspace @nish1896/eslint-config-flat publish:manual
         env: 
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

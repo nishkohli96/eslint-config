@@ -1,13 +1,11 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "2.1.0",
+  "version": "2.0.3",
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "exports": {
-    "./v8/js": "./lib/v8/js/index.js",
-    "./v8/react": "./lib/v8/react/index.js",
-    "./v9/js": "./lib/v9/js/index.mjs",
-    "./v9/react": "./lib/v9/react/index.mjs"
+    "./js": "./lib/js/index.js",
+    "./react": "./lib/react/index.js"
   },
   "scripts": {
     "test": "eslint __tests__",

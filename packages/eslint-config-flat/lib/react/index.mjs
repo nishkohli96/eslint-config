@@ -4,14 +4,12 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
-  ...reactPlugin.configs.recommended,
-  ...jsxA11yPlugin.configs.recommended,
-  ...reactHooksPlugin.configs.recommended,
   {
     plugins: {
       '@stylistic': stylistic,
       'jsx-a11y': jsxA11yPlugin,
       react: reactPlugin,
+      'react-hooks': reactHooksPlugin
     },
     rules: {
       '@stylistic/jsx-closing-bracket-location': 'warn',
