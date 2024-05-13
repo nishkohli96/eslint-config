@@ -33,7 +33,6 @@ export default [
       '@stylistic/indent-binary-ops': ['warn', 2],
       '@stylistic/key-spacing': 'warn',
       '@stylistic/linebreak-style': 'warn',
-      '@stylistic/newline-per-chained-call': 'warn',
       '@stylistic/no-extra-semi': 'warn',
       '@stylistic/no-floating-decimal': 'warn',
       '@stylistic/no-mixed-operators': 'error',
