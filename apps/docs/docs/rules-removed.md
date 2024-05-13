@@ -10,6 +10,7 @@ These rules were once included, but later removed from this config, due to their
 
 | Rule Name | Reason |
 |-|-|
+|[@stylistic/array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline) & [@stylisticarray-element-newline](https://eslint.style/rules/default/array-element-newline)| Sometimes smaller array elements with more than 4 items can be wrapped in one line, whereas 3 items with longer character length, like list of urls need to be wrapped in new line | 
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
 |[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) | A good developer will avoid writing ts-comments, except in extreme cases. Let's not cause them trouble to write one more line |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |

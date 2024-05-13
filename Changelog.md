@@ -6,6 +6,7 @@ Offical Docs for the config.
 
 Rules changed -
 require-await warn
+|[@stylistic/array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline) & [@stylisticarray-element-newline](https://eslint.style/rules/default/array-element-newline)
 
 Upgrade Dependencies -
 |-|-|

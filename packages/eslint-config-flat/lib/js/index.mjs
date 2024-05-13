@@ -10,15 +10,7 @@ export default [
       '@stylistic': stylistic,
     },
     rules: {
-      '@stylistic/array-bracket-newline': [
-        'warn',
-        { multiline: true, minItems: 4 },
-      ],
       '@stylistic/array-bracket-spacing': 'warn',
-      '@stylistic/array-element-newline': [
-        'warn',
-        { multiline: true, minItems: 4 },
-      ],
       '@stylistic/arrow-parens': ['warn', 'as-needed'],
       '@stylistic/arrow-spacing': 'warn',
       '@stylistic/block-spacing': 'warn',
