@@ -4,8 +4,8 @@
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "exports": {
-    "./js": "./js/index.mjs",
-    "./react": "./react/index.mjs"
+    "./js": "./lib/js/index.mjs",
+    "./react": "./lib/react/index.mjs"
   },
   "scripts": {
     "test": "eslint __tests__",
@@ -17,12 +17,12 @@
   "keywords": [
     "@nish1896",
     "@nish1896/eslint-config",
-	"@nish1896/eslint-config-flat",
+    "@nish1896/eslint-config-flat",
     "eslint",
     "eslintconfig",
     "eslint-config",
-	"eslint-config-flat",
-	"eslint flat config",
+    "eslint-config-flat",
+    "eslint flat config",
     "eslint-config-jsx",
     "eslint-config-react",
     "eslit-react",
