@@ -1,10 +1,10 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: '@nish1896/eslint-config',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'You focus on the code logic, we\'ll take care of formatting and finding errors !',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -29,31 +29,38 @@ const config: Config = {
     locales: ['en'],
   },
 
+  // presets: [
+  //   [
+  //     'classic',
+  //     {
+  //       docs: {
+  //         sidebarPath: './sidebars.ts',
+  //         // Please change this to your repo.
+  //         // Remove this to remove the "edit this page" links.
+  //         editUrl:
+  //           'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+  //       },
+  //       blog: {
+  //         showReadingTime: true,
+  //         // Please change this to your repo.
+  //         // Remove this to remove the "edit this page" links.
+  //         editUrl:
+  //           'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+  //       },
+  //       theme: {
+  //         customCss: './src/css/custom.css',
+  //       },
+  //     } satisfies Preset.Options,
+  //   ],
+  // ],
   presets: [
     [
-      'classic',
+      '@docusaurus/preset-classic',
       {
-        docs: {
-          sidebarPath: './sidebars.ts',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: './src/css/custom.css',
-        },
-      } satisfies Preset.Options,
+        docs: {},
+      },
     ],
   ],
-
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -77,31 +84,31 @@ const config: Config = {
         },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-        {},
-        {
-          title: 'Connect with me',
-          items: [
-            {
-              label: 'Instagram',
-              href: 'https://instagram.com/nocturnal_nish',
-            },
-            {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/in/nishkohli96/',
-            },
-            {
-              label: 'Github',
-              href: 'https://github.com/nishkohli96',
-            },
-          ],
-        },
-        {}
-      ],
-      copyright: 'Made with ❤️ by Nish!!!!'
-    },
+    // footer: {
+    //   style: 'dark',
+    //   links: [
+    //     {},
+    //     {
+    //       title: 'Connect with me',
+    //       items: [
+    //         {
+    //           label: 'Instagram',
+    //           href: 'https://instagram.com/nocturnal_nish',
+    //         },
+    //         {
+    //           label: 'LinkedIn',
+    //           href: 'https://www.linkedin.com/in/nishkohli96/',
+    //         },
+    //         {
+    //           label: 'Github',
+    //           href: 'https://github.com/nishkohli96',
+    //         },
+    //       ],
+    //     },
+    //     {}
+    //   ],
+    //   copyright: 'Made with ❤️ by Nish!!!!'
+    // },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
