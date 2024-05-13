@@ -1,7 +1,7 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 
-export default tseslint.config(
+export default [
   eslint.configs.recommended,
   ...tseslint.configs.recommended,
   {
@@ -10,6 +10,24 @@ export default tseslint.config(
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/no-this-alias': 'off',
+      'array-callback-return': 'warn',
+      'arrow-body-style': ['warn', 'as-needed'],
+      curly: 'warn',
+      'default-case': 'warn',
+      'dot-notation': 'warn',
+      eqeqeq: 'error',
+      'func-names': ['warn', 'as-needed'],
+      'no-await-in-loop': 'warn',
+      'no-debugger': 'warn',
+      'no-eq-null': 'error',
+      'no-inline-comments': 'warn',
+      'no-mixed-spaces-and-tabs': 'off',
+      'no-plusplus': 'warn',
+      'no-unreachable': 'warn',
+      'no-use-before-define': 'error',
+      'no-var': 'warn',
+      'object-shorthand': 'warn',
+      'prefer-const': 'warn',
       'prefer-exponentiation-operator': 'warn',
       'prefer-promise-reject-errors': 'warn',
       'prefer-rest-params': 'error',
@@ -17,5 +35,14 @@ export default tseslint.config(
       'require-await': 'warn',
       'use-isnan': 'warn',
     },
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.turbo',
+      '.eslintrc.js',
+      '.d.ts',
+    ],
   },
-);
+];
