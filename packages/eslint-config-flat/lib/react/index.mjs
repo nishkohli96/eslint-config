@@ -1,9 +1,14 @@
 import stylistic from '@stylistic/eslint-plugin';
+import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
+import reactPlugin from 'eslint-plugin-react';
+import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
   {
     plugins: {
       '@stylistic': stylistic,
+      'jsx-a11y': jsxA11yPlugin,
+      react: reactPlugin,
     },
     rules: {
       '@stylistic/jsx-closing-bracket-location': 'warn',
@@ -26,6 +31,16 @@ export default [
           declaration: 'parens-new-line',
           logical: 'parens-new-line',
           return: 'parens-new-line',
+        },
+      ],
+      'jsx-a11y/anchor-ambiguous-text': 'error',
+      'jsx-a11y/control-has-associated-label': 'error',
+      'react/react-in-jsx-scope': 'off',
+      'react/jsx-uses-vars': 'error',
+      'react/jsx-filename-extension': [
+        'warn',
+        {
+          extensions: ['.tsx', '.jsx'],
         },
       ],
     },
