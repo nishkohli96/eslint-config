@@ -10,18 +10,16 @@ description: Tabular list of Stylistic js and jsx rules used in the config.
 
 ## **Javascript (js)**
 
-These rules are included in the `@nish1896/eslint-config/js` package.
+These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896/eslint-config/js` import.
 
 |Rule Name| Configuration 🔧|
 |-|-|
-|[array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline) | `{ multiline: true, minItems: 4 }` |
 |[array-bracket-spacing](https://eslint.style/rules/default/array-bracket-spacing)||
-|[array-element-newline](https://eslint.style/rules/default/array-element-newline)| `{ multiline: true, minItems: 4 }` |
 |[arrow-parens](https://eslint.style/rules/default/arrow-parens)| as-needed |
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| `{ arrays: 'never', objects: 'never', imports: 'never', exports: 'never' functions: 'never' }` |
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| `never` or  `{ arrays: 'never', objects: 'never', imports: 'never', exports: 'never', functions: 'never' }` |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
@@ -57,7 +55,7 @@ These rules are included in the `@nish1896/eslint-config/js` package.
 
 ## **Javascript in React (jsx)**
 
-These rules are included in the `@nish1896/eslint-config/react` package.
+These rules are included in the `@nish1896/eslint-flat-config/react` and `@nish1896/eslint-config/react` import.
 
 |Rule Name|🔧|
 |-|-|

@@ -6,13 +6,20 @@ description: How to import and use this package in your eslint config file?
 
 # Usage
 
-<!-- In case you are migrating from v1.0.x, check the [Migration Guide](./Migration.md). -->
+<!-- In case you are migrating from v1.0.x, check the [Migration Guide](./migration/). -->
+
+- If you are using eslint version ***8.56 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config). 
+- For eslint version ***9 and above***, use [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
 For usage in a nodejs application, use only the `js` eslint configuration of this package.
 
 ```
 module.exports = {
-  extends: ["@nish1896/eslint-config/js"]
+  extends: [
+    "@nish1896/eslint-flat-config/js" 
+                  OR
+    "@nish1896/eslint-config/js"
+  ] 
 }
 ```
 
@@ -21,8 +28,11 @@ React applications would need both the `js` and `react` config of this package.
 ```
 module.exports = {
   extends: [
-	"@nish1896/eslint-config/js",
-	"@nish1896/eslint-config/react"
+    "@nish1896/eslint-flat-config/js",
+    "@nish1896/eslint-flat-config/react"
+                  OR
+    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/react"
   ]
 }
 ```

@@ -4,7 +4,7 @@ sidebar_label: Introduction
 description: A brief introduction of @nish1896/eslint-config and what sets of rules does it use.
 ---
 
-# [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config)
+# @nish1896/eslint-config
 
 ![NPM Version](https://img.shields.io/npm/v/%40nish1896%2Feslint-config)
 ![NPM Downloads](https://img.shields.io/npm/dt/%40nish1896%2Feslint-config)
