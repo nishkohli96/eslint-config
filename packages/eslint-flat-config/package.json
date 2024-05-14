@@ -45,7 +45,7 @@
     "typescript-eslint": "^7.9.0"
   },
   "engines": {
-    "node": ">=18.18.0, >=20.9.0, >=21"
+    "node": ">=18.18.0 || >=20.9.0 || >=21"
   },
   "peerDependencies": {
     "eslint": ">=9",
