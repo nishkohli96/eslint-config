@@ -12,7 +12,7 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "devDependencies": {
-    "@nish1896/eslint-config-flat": "*",
+    "@nish1896/eslint-flat-config": "*",
     "eslint": "^9.2.0"
   },
   "engines": {
