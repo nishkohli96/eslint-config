@@ -6,9 +6,8 @@
   "private": true,
   "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
-    "test": "eslint __tests__",
-    "fix": "eslint --fix __tests__",
-    "link:local": "npm link",
+    "flat-link:local": "yarn workspace @nish1896/eslint-flat-config link:local",
+    "link:local": "yarn workspace @nish1896/eslint-config link:local",
     "unlink:local": "npm unlink @nish1896/eslint-config",
     "publish:manual": "npm publish --access public"
   },
