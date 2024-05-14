@@ -52,7 +52,6 @@ export default [
       'jsx-a11y/anchor-ambiguous-text': 'error',
       'jsx-a11y/control-has-associated-label': 'error',
       'react/react-in-jsx-scope': 'off',
-      'react/jsx-uses-vars': 'error',
       'react/jsx-filename-extension': [
         'warn',
         {

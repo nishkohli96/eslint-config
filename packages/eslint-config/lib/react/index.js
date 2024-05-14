@@ -54,7 +54,6 @@ module.exports = {
     'jsx-a11y/control-has-associated-label': 'error',
     'no-mixed-spaces-and-tabs': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react/jsx-uses-vars': 'error',
     'react/jsx-filename-extension': [
       'warn',
       {

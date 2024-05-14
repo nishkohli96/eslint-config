@@ -23,5 +23,6 @@ These rules were once included, but later removed from this config, due to their
 |[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | Gave unwanted warnings when using enums |
 |[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` does it better |
 |[react/react-in-jsx-scope](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/react-in-jsx-scope.md) | React v17+ doesn't require `import React from react` |
+|[react/jsx-uses-vars](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md)| Causing issues with flat-config while importing react-plugin |
 |[sort-keys](https://eslint.org/docs/latest/rules/sort-keys)| Sometimes more crucial object keys should come first |
 [sort-vars](https://eslint.org/docs/latest/rules/sort-vars)| Same as above |
