@@ -12,7 +12,7 @@ export default [
       globals: {
         ...globals.node,
         ...globals.jest,
-        // ...globals.browser,
+        ...globals.browser,
       }
     },
     plugins: {
