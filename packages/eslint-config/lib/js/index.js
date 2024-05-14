@@ -7,7 +7,6 @@ module.exports = {
   plugins: ['@typescript-eslint', '@stylistic'],
   env: {
     node: true,
-    browser: true,
     /** use "test or expect" without any lint err  */
     jest: true,
   },
