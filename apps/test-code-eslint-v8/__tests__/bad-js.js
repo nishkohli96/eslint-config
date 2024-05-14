@@ -41,10 +41,4 @@ var arr5 = [
 try{ console.log('hello world')}
 catch(err) {console.error(err)}
 
-// const element = () => {
-// 	return (
-// 		<div>
-// 			<img src='' />
-// 		</div>
-// 	)
-// }
+

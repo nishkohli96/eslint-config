@@ -4,6 +4,10 @@ import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
+/**
+ * As of now "jsxA11yPlugin" doesnt seem to have
+ * been updated to use flat-config
+ */
 export default [
   {
     languageOptions: {
