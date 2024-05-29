@@ -3,20 +3,20 @@ import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
+  url: 'https://nish1896-eslint-config.github.io',
+  baseUrl: '/',
+  projectName: 'eslint-config',
+  organizationName: 'nish1896',
   title: '@nish1896/eslint-config',
   tagline: 'You focus on the code logic, we\'ll take care of formatting and finding errors !',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: '@nish1896', // Usually your GitHub org/user name.
-  projectName: '@nish1896/eslint-config-docs', // Usually your repo name.
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
