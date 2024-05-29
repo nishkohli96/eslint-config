@@ -16,7 +16,7 @@ Please do refer the official docs to [install eslint](https://eslint.org/docs/la
 
 ### Eslint 9 and above
 
-```
+```js
 npm i eslint --save-dev
 ```
 ```

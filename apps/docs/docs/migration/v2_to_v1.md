@@ -10,7 +10,7 @@ description: Migration guide from v1 to v2 for this eslint-config.
 
 For usage in a nodejs application, use only the `js` eslint configuration of this package. 
 
-```diff
+```
 module.exports = {
 - extends: ['@nish1896']
 + extends: ['@nish1896/eslint-config/js']
