@@ -6,7 +6,7 @@ description: How to install this package using npm or yarn?
 
 # Installation
 
-In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/v2_to_v1).
+In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/v3_to_v2).
 
 In case you are migrating from `v1.0.x`, please check the [migration guide](./migration/v2_to_v1).
 
@@ -45,6 +45,16 @@ npx eslint yourfile.js
 ```
 yarn run eslint yourfile.js
 ```
+:::info
+This config extends the following plugins and parsers - 
+- [eslint/recommended](https://www.npmjs.com/package/eslint) - 9.2.0 & 8.56.0
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.34.1
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.0
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.8.0
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.1.0 & 1.7.0
+- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) - 7.9.0
+- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) - 7.9.0
+:::
 
 **You may also choose to install other eslint plugins or configurations depending upon your application needs.** 
 

@@ -5,7 +5,7 @@
   "author": "Nishant Kohli",
   "exports": {
     "./js": "./lib/js/index.mjs",
-    "./react": "./lib/react/index.mjs"
+    "./jsx": "./lib/jsx/index.mjs"
   },
   "scripts": {
     "test": "eslint __tests__",

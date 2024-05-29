@@ -9,7 +9,7 @@
     "flat-link:local": "yarn workspace @nish1896/eslint-flat-config link:local",
     "link:local": "yarn workspace @nish1896/eslint-config link:local",
     "unlink:local": "npm unlink @nish1896/eslint-config",
-    "publish:manual": "npm publish --access public"
+    "docs": "yarn workspace @nish1896/eslint-config-docs start"
   },
   "keywords": [
     "@nish1896",
