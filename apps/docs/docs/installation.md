@@ -70,7 +70,7 @@ yarn run eslint yourfile.js
 ```
 :::info
 This config extends the following plugins and parsers - 
-- [eslint/recommended](https://www.npmjs.com/package/eslint) - 9.2.0 & 8.56.0
+- [eslint/recommended](https://www.npmjs.com/package/eslint) - 9.3.0 & 8.56.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.34.1
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.8.0

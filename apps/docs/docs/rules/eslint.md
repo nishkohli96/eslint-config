@@ -35,7 +35,7 @@ description: Tabular list of Eslint js and jsx rules used in the config.
 |[react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)|✔️|| `{ extensions: ['.tsx', '.jsx'] }` |
 
 
-The eslint rule(s) listed below will give an error and will have to be manually fixed.
+The eslint rule(s) listed below will have to be manually fixed.
 
 | Rule Name |
 |-|

@@ -11,6 +11,10 @@ description: How to import and use this package in your eslint config file?
 - If you are using eslint version ***8.56 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config). 
 - For eslint version ***9 and above***, use [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
+:::info
+Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` have the same set of rules.
+:::
+
 For usage in a nodejs application, use only the `js` eslint configuration of this package.
 
 ```
