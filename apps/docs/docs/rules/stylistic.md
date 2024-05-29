@@ -19,7 +19,7 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| `never` or  `{ arrays: 'never', objects: 'never', imports: 'never', exports: 'never', functions: 'never' }` |
+|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| `never` or `{ arrays: 'never', objects: 'never', imports: 'never', exports: 'never', functions: 'never' }` |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |

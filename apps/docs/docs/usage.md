@@ -43,12 +43,12 @@ module.exports = {
 
 To add a new rule, turn off or modify the existing list of rules, append the `rules` in your _eslint configuration file_.
 
-```json
+```js
 {
-  "rules": {
+  rules: {
     "<new-rule>": "error",
     "no-unused-vars": "off",
-    "id-length": ["warn", { "min": 3, "max": 20 }]
+    "id-length": ["warn", { min: 3, max: 20 }]
   }
 }
 ```

@@ -29,7 +29,7 @@ yarn add -D @nish1896/eslint-flat-config
 
 Delete the `.eslintrc` or `.eslintrc.js` or `.eslintrc.json` file and create `eslint.config.mjs` file.
 
-```
+```js
 touch eslint.config.mjs
 ```
 :::note
@@ -38,7 +38,7 @@ The `react` folder import from `@nish1896/eslint-config/react` has been renamed 
 
 Add the following content to this file -
 
-```
+```js
 import jsEslintConfig from '@nish1896/eslint-flat-config/js';
 import jsxEslintConfig from '@nish1896/eslint-flat-config/jsx';
 

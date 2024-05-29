@@ -6,7 +6,7 @@ description: How to install this package using npm or yarn?
 
 # Installation
 
-In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/v3_to_v2).
+In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/eslint-8_to_9).
 
 If you are using eslint v8 and are migrating from `v1.0.x`, please check the [migration guide](./migration/v2_to_v1).
 
