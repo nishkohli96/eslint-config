@@ -16,9 +16,9 @@ For usage in a nodejs application, use only the `js` eslint configuration of thi
 ```
 module.exports = {
   extends: [
-    "@nish1896/eslint-flat-config/js" 
+    "@nish1896/eslint-flat-config/js"    # for eslint v9+
                   OR
-    "@nish1896/eslint-config/js"
+    "@nish1896/eslint-config/js"         # for eslint v8
   ] 
 }
 ```
@@ -28,10 +28,10 @@ React applications would need both the `js` and `react` config of this package.
 ```
 module.exports = {
   extends: [
-    "@nish1896/eslint-flat-config/js",
-    "@nish1896/eslint-flat-config/react"
+    "@nish1896/eslint-flat-config/js",    # for eslint v9+
+    "@nish1896/eslint-flat-config/jsx"
                   OR
-    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/js",         # for eslint v8
     "@nish1896/eslint-config/react"
   ]
 }

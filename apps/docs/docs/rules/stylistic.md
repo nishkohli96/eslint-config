@@ -55,7 +55,7 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 
 ## **Javascript in React (jsx)**
 
-These rules are included in the `@nish1896/eslint-flat-config/react` and `@nish1896/eslint-config/react` import.
+These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish1896/eslint-config/react` import.
 
 |Rule Name|🔧|
 |-|-|

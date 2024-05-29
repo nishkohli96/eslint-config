@@ -8,17 +8,39 @@ description: How to install this package using npm or yarn?
 
 In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/v3_to_v2).
 
-In case you are migrating from `v1.0.x`, please check the [migration guide](./migration/v2_to_v1).
+If you are using eslint v8 and are migrating from `v1.0.x`, please check the [migration guide](./migration/v2_to_v1).
 
 You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.
 
-Please do refer the official docs to [install eslint](https://eslint.org/docs/latest/use/getting-started).
+Please do refer the official docs to [install eslint](https://eslint.org/docs/latest/use/getting-started) if needed.
+
+### Eslint 9 and above
 
 ```
 npm i eslint --save-dev
 ```
 ```
 yarn add -D eslint
+```
+
+Next, install `@nish1896/eslint-flat-config`.
+
+```
+npm install @nish1896/eslint-flat-config  --save-dev
+```
+```
+yarn add -D @nish1896/eslint-flat-config
+```
+
+### Eslint 8
+
+We will be installing **v8.56.0** which was the last major version for eslint, before version 9 was released.
+
+```
+npm i eslint@8.56.0 --save-dev
+```
+```
+yarn add -D eslint@8.56.0
 ```
 
 Next, install `@nish1896/eslint-config`.
@@ -29,6 +51,7 @@ npm install @nish1896/eslint-config  --save-dev
 ```
 yarn add -D @nish1896/eslint-config
 ```
+
 
 Add *"lint"* command to your `package.json` file.
 
