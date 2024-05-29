@@ -9,7 +9,9 @@ const func = (e) => console.log('some function');
 
 
 const obj = { name: 'john', age: 36}
-
+const longObj = {
+  somelongObjectKeyName: 'https://www.google.com/abcdef'
+}
 const res = a?b:c
 const vb={data:{url:'bla bla'}}
 
