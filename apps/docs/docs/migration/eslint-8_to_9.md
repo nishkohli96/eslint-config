@@ -33,7 +33,7 @@ Delete the `.eslintrc` or `.eslintrc.js` or `.eslintrc.json` file and create `es
 touch eslint.config.mjs
 ```
 :::note
-The `react` folder import from `@nish1896/eslint-config/react` has been renamed and will be imported as `@nish1896/eslint-flat-config/jsx`.
+The `react` folder import from `@nish1896/eslint-config/react` has been renamed in this package and will be imported as `@nish1896/eslint-flat-config/jsx`.
 :::
 
 Add the following content to this file -

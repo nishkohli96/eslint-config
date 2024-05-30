@@ -6,9 +6,9 @@ description: How to install this package using npm or yarn?
 
 # Installation
 
-In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/eslint-8_to_9).
+In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/eslint-8_to_9.md).
 
-If you are using eslint v8 and are migrating from `v1.0.x`, please check the [migration guide](./migration/v2_to_v1).
+If you are using eslint v8 and are migrating from `v1.0.x`, please check the [migration guide](./migration/v1_to_v2.md).
 
 You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.
 
