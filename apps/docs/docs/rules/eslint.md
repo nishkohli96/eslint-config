@@ -2,9 +2,10 @@
 sidebar_position: 2
 sidebar_label: Eslint
 description: Tabular list of Eslint js and jsx rules used in the config.
+title: Eslint Rules
 ---
 
-# Eslint rules
+# Eslint
 
 ## **Javascript**
 

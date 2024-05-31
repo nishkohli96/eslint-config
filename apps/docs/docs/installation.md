@@ -2,6 +2,7 @@
 sidebar_position: 3
 sidebar_label: Installation
 description: How to install this package using npm or yarn?
+title: Installation
 ---
 
 # Installation

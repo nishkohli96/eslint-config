@@ -2,9 +2,10 @@
 sidebar_position: 3
 sidebar_label: Typescript Eslint
 description: Tabular list of typescript-eslint rules used in the config.
+title: Typescript-Eslint Rules
 ---
 
-# **typescript-eslint rules**
+# Typescript-Eslint
 
 Extending `"plugin:@typescript-eslint"` enables most of the
 [typescript-eslint rules](https://typescript-eslint.io/rules/). Only the rules that have been modified in the config are listed below.

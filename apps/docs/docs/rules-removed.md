@@ -2,11 +2,12 @@
 sidebar_position: 6
 sidebar_label: Rules Removed
 description: List of rules that were once included, but later removed from this config.
+title: Rules Removed
 ---
 
-### **Rules removed after initial or subsequent testing**
+# **Rules Removed**
 
-These rules were once included, but later removed due to their inconsistency in certain scenarios after trying out in various node and react projects. You will need to manually add them in the `rules` of your .eslintrc, if needed. 
+These rules were once included, but later removed in subsequent versions due to their inconsistency in certain scenarios after trying out in various node and react projects. You will need to manually add them in the `rules` of your .eslintrc, if needed. 
 
 | Rule Name | Reason |
 |-|-|

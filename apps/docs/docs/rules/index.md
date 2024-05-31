@@ -1,6 +1,7 @@
 ---
 sidebar_label: List of Rules
 description: What plugins does this config uses and links to the list of all rules for these plugins.
+title: Linting Rules
 ---
 
 # List of Rules

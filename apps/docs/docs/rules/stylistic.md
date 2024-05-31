@@ -2,9 +2,10 @@
 sidebar_position: 1
 sidebar_label: Stylistic
 description: Tabular list of Stylistic js and jsx rules used in the config.
+title: Stylistic Rules
 ---
 
-# Stylistic rules
+# Stylistic
 
 **All rule names start with `@stylistic/` prefix.** 
 

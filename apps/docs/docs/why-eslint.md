@@ -2,6 +2,7 @@
 sidebar_position: 2
 sidebar_label: Why Eslint?
 description: What is eslint and why you should include it in your projects?
+title: Why Eslint?
 ---
 
 # Why should I use eslint in my projects ?
