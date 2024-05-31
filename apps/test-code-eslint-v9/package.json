@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config-test-v9",
-  "version": "2.1.0",
+  "version": "1.0.0",
   "description": "Format code with eslint v9 using this configuration",
   "author": "Nishant Kohli",
   "scripts": {
