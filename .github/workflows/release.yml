@@ -1,24 +1,31 @@
-name: Node.js CI
+# name: Node.js CI
 
-on:
-  release:
-    types: [published]
+# on:
+#   release:
+#     types: [published]
 
-jobs:
-  check:
-    name: Prepare release...
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Setup Node.js
-        # Setup .npmrc file to publish to npm
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20.10.0'
-          registry-url: 'https://registry.npmjs.org'
-      - name: Install Dependencies
-        run: npm ci
-      - name: release
-        run: npm publish --access public
-        env: 
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+# jobs:
+#   check:
+#     name: Prepare release...
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - name: Setup Node.js
+#         # Setup .npmrc file to publish to npm
+#         uses: actions/setup-node@v3
+#         with:
+#           node-version: '20.10.0'
+#           registry-url: 'https://registry.npmjs.org'
+      
+#       - name: Install Dependencies
+#         run: npm ci
+      
+#       - name: release @nish1896/eslint-config
+#         run: yarn workspace @nish1896/eslint-config publish:manual
+#         env: 
+#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      
+#       - name: release @nish1896/eslint-flat-config
+#         run: yarn workspace @nish1896/eslint-flat-config publish:manual
+#         env: 
+#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

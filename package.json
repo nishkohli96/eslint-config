@@ -1,18 +1,16 @@
 {
-  "name": "@nish1896/eslint-config",
-  "version": "2.0.2",
+  "name": "@nish1896/eslint-config-root",
+  "version": "1.0.0",
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
-  "exports": {
-    "./js": "./lib/js/index.js",
-    "./react": "./lib/react/index.js"
-  },
+  "private": true,
+  "workspaces": ["./apps/*", "./packages/*"],
   "scripts": {
-    "test": "eslint __tests__",
-    "fix": "eslint --fix __tests__",
-    "link:local": "npm link",
+    "flat-link:local": "yarn workspace @nish1896/eslint-flat-config link:local",
+    "link:local": "yarn workspace @nish1896/eslint-config link:local",
     "unlink:local": "npm unlink @nish1896/eslint-config",
-    "publish:manual": "npm publish --access public"
+    "docs": "yarn workspace @nish1896/eslint-config-docs start",
+    "docs:build": "yarn workspace @nish1896/eslint-config-docs build"
   },
   "keywords": [
     "@nish1896",
@@ -30,27 +28,6 @@
   "homepage": "https://github.com/nishkohli96/eslint-config#readme",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
-  },
-  "dependencies": {
-    "@stylistic/eslint-plugin": "^1.7.0",
-    "@typescript-eslint/eslint-plugin": "^7.0.0",
-    "@typescript-eslint/parser": "^7.6.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.0"
-  },
-  "devDependencies": {
-    "eslint": "^8.19.0"
-  },
-  "engines": {
-    "node": ">=14"
-  },
-  "peerDependencies": {
-    "eslint": ">=7",
-    "typescript": ">=4"
-  },
-  "eslintConfig": {
-    "extends": "."
   },
   "license": "ISC"
 }
