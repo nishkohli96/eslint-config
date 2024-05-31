@@ -34,7 +34,7 @@ yarn add -D @nish1896/eslint-flat-config
 
 ### Eslint 8
 
-We will be installing **v8.56.0** which was the last major version for eslint, before version 9 was released.
+We will be installing **v8.56.0** which was the last major version prior to the release of version 9.
 
 ```
 npm i eslint@8.56.0 --save-dev

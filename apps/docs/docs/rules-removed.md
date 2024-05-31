@@ -6,7 +6,7 @@ description: List of rules that were once included, but later removed from this 
 
 ### **Rules removed after initial or subsequent testing**
 
-These rules were once included, but later removed from this config, due to their inconsistency in certain scenarios after trying out in various node and react projects. You will need to manually add them in the `rules` of your .eslintrc, if needed. 
+These rules were once included, but later removed due to their inconsistency in certain scenarios after trying out in various node and react projects. You will need to manually add them in the `rules` of your .eslintrc, if needed. 
 
 | Rule Name | Reason |
 |-|-|
