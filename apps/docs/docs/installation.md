@@ -35,13 +35,13 @@ yarn add -D @nish1896/eslint-flat-config
 
 ### Eslint 8
 
-We will be installing **v8.56.0** which was the last major version prior to the release of version 9.
+We will be installing **v8.57.0** which was the last major version prior to the release of version 9.
 
 ```
-npm i eslint@8.56.0 --save-dev
+npm i eslint@8.57.0 --save-dev
 ```
 ```
-yarn add -D eslint@8.56.0
+yarn add -D eslint@8.57.0
 ```
 
 Next, install `@nish1896/eslint-config`.
@@ -71,7 +71,7 @@ yarn run eslint yourfile.js
 ```
 :::info
 This config extends the following plugins and parsers - 
-- [eslint/recommended](https://www.npmjs.com/package/eslint) - 9.3.0 & 8.56.0
+- [eslint/recommended](https://www.npmjs.com/package/eslint) - 9.3.0 & 8.57.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.34.1
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.8.0

@@ -1,7 +1,7 @@
 {
   "name": "@nish1896/eslint-config",
   "version": "2.0.3",
-  "description": "eslint and stylistic rules for eslint 8.56.0 or below to help you focus more on the code logic, while they take care of the code formatting",
+  "description": "eslint and stylistic rules for eslint 8.57.0 or below to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "exports": {
     "./js": "./lib/js/index.js",
