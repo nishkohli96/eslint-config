@@ -24,11 +24,7 @@ jobs:
       - name: Build Docusaurus site
         run: yarn workspace @nish1896/eslint-config-docs build
 
-      - name: Deploy to GitHub Pages
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES }}@github.com/${{ github.repository }}.git
-          git add .
-          git commit -m 'Deploy to GitHub Pages'
-          git push origin gh-pages
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./apps/docs/build
