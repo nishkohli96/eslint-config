@@ -20,7 +20,9 @@ const config: Config = {
     [
       '@docusaurus/preset-classic',
       {
-        docs: {},
+        docs: {
+          routeBasePath: '/'
+        },
       },
     ],
   ],
