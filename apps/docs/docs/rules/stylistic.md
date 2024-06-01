@@ -37,7 +37,6 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[no-trailing-spaces](https://eslint.style/rules/default/no-trailing-spaces)||
 |[object-curly-newline](https://eslint.style/rules/default/object-curly-newline)| `{ consistent: true }` |
 |[object-curly-spacing](https://eslint.style/rules/default/object-curly-spacing)| always |
-|[object-property-newline](https://eslint.style/rules/default/object-property-newline)||
 |[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||

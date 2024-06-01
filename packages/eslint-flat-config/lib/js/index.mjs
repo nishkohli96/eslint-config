@@ -41,7 +41,6 @@ export default [
       '@stylistic/no-trailing-spaces': 'warn',
       '@stylistic/object-curly-newline': ['warn', { consistent: true }],
       '@stylistic/object-curly-spacing': ['warn', 'always'],
-      '@stylistic/object-property-newline': 'warn',
       '@stylistic/operator-linebreak': ['warn', 'before'],
       '@stylistic/quotes': ['warn', 'single'],
       '@stylistic/rest-spread-spacing': 'warn',
