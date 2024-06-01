@@ -20,16 +20,6 @@ module.exports = {
     '@stylistic/arrow-spacing': 'warn',
     '@stylistic/block-spacing': 'warn',
     '@stylistic/brace-style': 'warn',
-    '@stylistic/comma-dangle': [
-      'warn',
-      {
-        arrays: 'never',
-        objects: 'never',
-        imports: 'never',
-        exports: 'never',
-        functions: 'never',
-      },
-    ],
     '@stylistic/comma-spacing': 'warn',
     '@stylistic/eol-last': 'warn',
     '@stylistic/function-call-argument-newline': ['warn', 'consistent'],

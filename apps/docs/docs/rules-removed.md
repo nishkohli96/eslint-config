@@ -12,6 +12,7 @@ These rules were once included, but later removed in subsequent versions due to 
 | Rule Name | Reason |
 |-|-|
 |[@stylistic/array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline) & [@stylisticarray-element-newline](https://eslint.style/rules/default/array-element-newline)| Sometimes smaller array elements with more than 4 items can be wrapped in one line, whereas 3 items with longer character length, like list of urls need to be wrapped in new line | 
+|[@stylistic/comma-dangle](https://eslint.style/rules/default/comma-dangle) | Giving flexibility to dev to retain commas as per their preference |
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
 |[@stylistic/newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call) | This rule with default chain length 2 resulted in awkward readability when chaining operations |
 |[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) | A good developer will avoid writing ts-comments, except in extreme cases. Let's not cause them trouble to write one more line |
