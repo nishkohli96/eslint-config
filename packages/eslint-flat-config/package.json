@@ -23,11 +23,15 @@
     "@nish1896/eslint-config-flat",
     "@nish1896/eslint-flat-config",
     "eslint",
+    "eslint9",
+    "eslint shareable config",
     "eslintconfig",
+    "eslint config",
     "eslint-config",
     "eslint-config-flat",
     "eslint flat config",
     "flat eslint config",
+    "eslint-config-js",
     "eslint-config-jsx",
     "eslint-config-react",
     "eslit-react",
@@ -35,7 +39,7 @@
     "lint-rules",
     "react-eslint"
   ],
-  "homepage": "https://github.com/nishkohli96/eslint-config#readme",
+  "homepage": "https://nish1896-eslint-config.vercel.app/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },

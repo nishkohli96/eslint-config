@@ -27,7 +27,7 @@
     "lint-rules",
     "react-eslint"
   ],
-  "homepage": "https://github.com/nishkohli96/eslint-config#readme",
+  "homepage": "https://nish1896-eslint-config.vercel.app/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
