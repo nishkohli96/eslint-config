@@ -23,8 +23,8 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
-|[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)|| consistent |
-|[indent](https://eslint.style/rules/default/indent)|| 2 |
+|[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)| consistent |
+|[indent](https://eslint.style/rules/default/indent)| `2, { ignoredNodes: ['PropertyDefinition[decorators]', 'MethodDefinition[decorators]', 'ClassBody.body > Decorator']}` |
 |[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
 |[key-spacing](https://eslint.style/rules/default/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/default/linebreak-style)||
