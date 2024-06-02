@@ -1,7 +1,7 @@
 function createFn(
-	@Body() body,
-	@Res() res,
-	@Req() req
+	// @Body() body,
+	// @Res() res,
+	// @Req() req
 ) {
 	try {
 		console.log('hello')
@@ -10,14 +10,14 @@ function createFn(
 	}
 }
 
-export class LinkAsset {
-  @IsNotEmpty({ message: validationConstants.REQUIRED })
-  @IsMongoId({ message: validationConstants.IS_OBJECT_ID })
-  sourceAssetId;
-  @IsNotEmpty({ message: validationConstants.REQUIRED })
-  @IsMongoId({ message: validationConstants.IS_OBJECT_ID })
-  targetAssetId;
-}
+// export class LinkAsset {
+//   @IsNotEmpty({ message: validationConstants.REQUIRED })
+//   @IsMongoId({ message: validationConstants.IS_OBJECT_ID })
+//   sourceAssetId;
+//   @IsNotEmpty({ message: validationConstants.REQUIRED })
+//   @IsMongoId({ message: validationConstants.IS_OBJECT_ID })
+//   targetAssetId;
+// }
 
 
 const events = [
