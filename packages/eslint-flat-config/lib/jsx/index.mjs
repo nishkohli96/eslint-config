@@ -1,5 +1,6 @@
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
+import { fixupPluginRules } from "@eslint/compat";
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import pluginReactConfig from "eslint-plugin-react";
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -22,7 +23,7 @@ export default [
     },
     plugins: {
       '@stylistic': stylistic,
-      'jsx-a11y': jsxA11yPlugin,
+      'jsx-a11y': fixupPluginRules(jsxA11yPlugin),
       react: pluginReactConfig,
       'react-hooks': reactHooksPlugin
     },

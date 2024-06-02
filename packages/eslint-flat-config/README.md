@@ -14,6 +14,6 @@ This eslint-config is to be only used for eslint v9 or above. In case you are us
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
 > [!NOTE]
->This package is compatible with eslint `9.0.0` or above. For eslint `8.56.0` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
+>This package is compatible with eslint `9.0.0` or above. For eslint `8.57.0` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
-<p style={{ fontSize: '20px', fontWeight: 500 }}>For detailed info of this config, please read the [documentation]()</p> 
+<p style={{ fontSize: '20px', fontWeight: 500 }}>For detailed information about this config, please read the [docs](https://nish1896-eslint-config.vercel.app/)</p>

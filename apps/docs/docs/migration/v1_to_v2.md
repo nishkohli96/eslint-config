@@ -4,7 +4,7 @@ sidebar_label: v1 to v2
 description: Migration guide from v1 to v2 for this eslint-config.
 ---
 
-# Migration Guide
+# Migration from v1 to v2
 
 **Starting v2 onwards, the linting rules for javascript and react have been split to purge out any unnecessary rules when using this config in a standalone nodejs application.** 
 

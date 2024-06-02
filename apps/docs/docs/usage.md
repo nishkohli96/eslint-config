@@ -2,6 +2,7 @@
 sidebar_position: 4
 sidebar_label: Usage
 description: How to import and use this package in your eslint config file?
+title: Usage
 ---
 
 # Usage

@@ -2,9 +2,10 @@
 sidebar_position: 1
 sidebar_label: Stylistic
 description: Tabular list of Stylistic js and jsx rules used in the config.
+title: Stylistic Rules
 ---
 
-# Stylistic rules
+# Stylistic
 
 **All rule names start with `@stylistic/` prefix.** 
 
@@ -19,7 +20,6 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-dangle](https://eslint.style/rules/default/comma-dangle)| `never` or `{ arrays: 'never', objects: 'never', imports: 'never', exports: 'never', functions: 'never' }` |
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
@@ -37,7 +37,6 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[no-trailing-spaces](https://eslint.style/rules/default/no-trailing-spaces)||
 |[object-curly-newline](https://eslint.style/rules/default/object-curly-newline)| `{ consistent: true }` |
 |[object-curly-spacing](https://eslint.style/rules/default/object-curly-spacing)| always |
-|[object-property-newline](https://eslint.style/rulesobject-property-newline)||
 |[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
@@ -72,9 +71,3 @@ These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish189
 |[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||
 |[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
 
-
-The stylistic rule(s) listed below will give an error and will have to be manually fixed.
-
-| Rule Name |
-|-|
-|[no-mixed-operators](https://eslint.style/rules/default/no-mixed-operators)|

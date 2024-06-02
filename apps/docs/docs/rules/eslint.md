@@ -2,18 +2,17 @@
 sidebar_position: 2
 sidebar_label: Eslint
 description: Tabular list of Eslint js and jsx rules used in the config.
+title: Eslint Rules
 ---
 
-# Eslint rules
+# Eslint
 
 ## **Javascript**
 
 |Rule Name|🔧|
 |-|-|
 |[array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)||
-|[arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)|| as-needed |
 |[curly](https://eslint.org/docs/latest/rules/curly)||
-|[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||
 |[func-names](https://eslint.org/docs/latest/rules/)| as-needed |
 |[no-debugger](https://eslint.org/docs/latest/rules/no-debugger)||
 |[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)||
