@@ -13,32 +13,33 @@ title: Usage
 - For eslint version ***9 and above***, use [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
 :::info
-Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` have the same set of rules.
+Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` have the same set of rules. For node app, use only the `js` import of either package. For react/nextjs/vite apps, use both `js` and `jsx/react` imports
 :::
 
-For usage in a nodejs application, use only the `js` eslint configuration of this package.
+If you are using eslint v9 or above, create `eslint.config.mjs` file in your root directory and paste the below code - 
 
 ```js
-module.exports = {
-  extends: [
-    "@nish1896/eslint-flat-config/js"    /* for eslint v9+ */
-                  OR
-    "@nish1896/eslint-config/js"         /* for eslint v8 */
-  ] 
-}
+import jsEslintConfig from '@nish1896/eslint-flat-config/js';
+import jsxEslintConfig from '@nish1896/eslint-flat-config/jsx';
+
+export default [
+  ...jsEslintConfig,
+  ...jsxEslintConfig,    /* for react/nextjs/vite apps */
+  {
+    rules: {}
+  }
+];
 ```
 
-React applications would need both the `js` and `react` config of this package.
+For eslint `8.57.0` or below, create `.eslintrc.js` or `.eslintrc.json` file in your root directory and paste the below code - 
 
 ```js
 module.exports = {
   extends: [
-    "@nish1896/eslint-flat-config/js",    /* for eslint v9+ */
-    "@nish1896/eslint-flat-config/jsx"
-                  OR
-    "@nish1896/eslint-config/js",         /* for eslint v8 */
-    "@nish1896/eslint-config/react"
-  ]
+    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/react"   /* for react/nextjs/vite apps */
+  ],
+  rules: {}
 }
 ```
 
