@@ -36,7 +36,8 @@ export default [
             'PropertyDefinition[decorators]',
             'MethodDefinition[decorators]',
             'ClassBody.body > Decorator'
-          ]
+          ],
+          SwitchCase: 1
         }
       ],
       '@stylistic/indent-binary-ops': ['warn', 2],
