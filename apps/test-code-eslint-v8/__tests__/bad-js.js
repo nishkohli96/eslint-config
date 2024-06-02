@@ -9,6 +9,7 @@ const func = (e) => console.log('some function');
 
 
 const obj = { name: 'john', age: 36}
+const tr= obj['name']; 
 const longObj = {
   somelongObjectKeyName: 'https://www.google.com/abcdef'
 }
@@ -16,6 +17,7 @@ const res = a?b:c
 const vb={data:{url:'bla bla'}}
 
 const yu='color' 
+let query = { configKey: 'window', [yu]:50}
 var op={'$User.name':{[yu]:'#007aba'}}
 
 function a(){}
@@ -42,5 +44,3 @@ var arr5 = [
 
 try{ console.log('hello world')}
 catch(err) {console.error(err)}
-
-
