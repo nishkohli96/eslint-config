@@ -44,7 +44,6 @@ export default [
       '@stylistic/linebreak-style': 'warn',
       '@stylistic/no-extra-semi': 'warn',
       '@stylistic/no-floating-decimal': 'warn',
-      '@stylistic/no-mixed-operators': 'error',
       '@stylistic/no-mixed-spaces-and-tabs': 'warn',
       '@stylistic/no-multi-spaces': 'warn',
       '@stylistic/no-multiple-empty-lines': 'warn',

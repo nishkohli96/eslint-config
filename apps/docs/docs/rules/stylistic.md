@@ -71,9 +71,3 @@ These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish189
 |[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||
 |[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
 
-
-The stylistic rule(s) listed below will give an error and will have to be manually fixed.
-
-| Rule Name |
-|-|
-|[no-mixed-operators](https://eslint.style/rules/default/no-mixed-operators)|
