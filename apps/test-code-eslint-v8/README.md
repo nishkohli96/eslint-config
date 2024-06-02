@@ -2,6 +2,8 @@
 
 **The code in this folder is used for testing new rules or existing rules with some modifications.**
 
+This repo uses `eslint@8.57.0` & `@nish1896/eslint-config`.
+
 Write the worst possible 🗑️ code in this folder and then run 
 ```
 npm run lint
