@@ -28,18 +28,18 @@ export default [
       '@stylistic/eol-last': 'warn',
       '@stylistic/function-call-argument-newline': ['warn', 'consistent'],
       '@stylistic/function-paren-newline': ['warn', 'consistent'],
-      '@stylistic/indent': [
-        'warn',
-        2,
-        {
-          ignoredNodes: [
-            'PropertyDefinition[decorators]',
-            'MethodDefinition[decorators]',
-            'ClassBody.body > Decorator'
-          ],
-          SwitchCase: 1
-        }
-      ],
+      // '@stylistic/indent': [
+      //   'warn',
+      //   2,
+      //   {
+      //     ignoredNodes: [
+      //       'PropertyDefinition[decorators]',
+      //       'MethodDefinition[decorators]',
+      //       'ClassBody.body > Decorator'
+      //     ],
+      //     SwitchCase: 1
+      //   }
+      // ],
       '@stylistic/indent-binary-ops': ['warn', 2],
       '@stylistic/key-spacing': 'warn',
       '@stylistic/linebreak-style': 'warn',
