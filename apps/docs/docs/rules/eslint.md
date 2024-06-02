@@ -13,7 +13,6 @@ title: Eslint Rules
 |-|-|
 |[array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)||
 |[curly](https://eslint.org/docs/latest/rules/curly)||
-|[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||
 |[func-names](https://eslint.org/docs/latest/rules/)| as-needed |
 |[no-debugger](https://eslint.org/docs/latest/rules/no-debugger)||
 |[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)||

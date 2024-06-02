@@ -71,7 +71,6 @@ module.exports = {
     'array-callback-return': 'warn',
     curly: 'warn',
     'default-case': 'warn',
-    'dot-notation': 'warn',
     eqeqeq: 'error',
     'func-names': ['warn', 'as-needed'],
     'no-await-in-loop': 'warn',
