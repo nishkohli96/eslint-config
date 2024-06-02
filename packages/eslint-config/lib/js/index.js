@@ -69,7 +69,6 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': 'warn',
     '@typescript-eslint/no-this-alias': 'off',
     'array-callback-return': 'warn',
-    'arrow-body-style': ['warn', 'as-needed'],
     curly: 'warn',
     'default-case': 'warn',
     'dot-notation': 'warn',

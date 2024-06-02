@@ -18,6 +18,7 @@ These rules were once included, but later removed in subsequent versions due to 
 |[@stylistic/newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call) | This rule with default chain length 2 resulted in awkward readability when chaining operations |
 |[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) | A good developer will avoid writing ts-comments, except in extreme cases. Let's not cause them trouble to write one more line |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | Sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
+|[arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)| Extra effort for developer if he needs to add some more code before returning from a function. |
 |[id-denylist](https://eslint.org/docs/latest/rules/id-denylist) | Use if required. eg. "id-denylist": ["warn", "e", "cb", 'callback']|
 [id-length](https://eslint.org/docs/latest/rules/id-length)| Warning when using `_` for unused vars |
 |[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)||

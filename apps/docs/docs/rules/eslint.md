@@ -12,7 +12,6 @@ title: Eslint Rules
 |Rule Name|🔧|
 |-|-|
 |[array-callback-return](https://eslint.org/docs/latest/rules/array-callback-return)||
-|[arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)|| as-needed |
 |[curly](https://eslint.org/docs/latest/rules/curly)||
 |[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)||
 |[func-names](https://eslint.org/docs/latest/rules/)| as-needed |
