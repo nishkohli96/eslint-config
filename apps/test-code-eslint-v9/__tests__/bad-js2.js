@@ -13,10 +13,10 @@ function createFn(
 export class LinkAsset {
   @IsNotEmpty({ message: validationConstants.REQUIRED })
   @IsMongoId({ message: validationConstants.IS_OBJECT_ID })
-  sourceAssetId: string;
+  sourceAssetId;
   @IsNotEmpty({ message: validationConstants.REQUIRED })
   @IsMongoId({ message: validationConstants.IS_OBJECT_ID })
-  targetAssetId: string;
+  targetAssetId;
 }
 
 
