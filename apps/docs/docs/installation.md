@@ -84,6 +84,7 @@ This config extends the following plugins and parsers -
 
 - [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb)
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
+- [eslint-plugin-jest](https://www.npmjs.com/package/eslint-plugin-jest)
 - [eslint-plugin-json](https://www.npmjs.com/package/eslint-plugin-json)
 - [eslint-plugin-jsonc](https://www.npmjs.com/package/eslint-plugin-jsonc)
 - [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)
