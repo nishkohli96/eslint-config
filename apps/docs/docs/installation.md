@@ -73,13 +73,12 @@ yarn run eslint yourfile.js
 ```
 :::info
 This config extends the following plugins and parsers - 
-- [eslint/recommended](https://www.npmjs.com/package/eslint) - 9.3.0 & 8.57.0
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.34.1
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.0
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.8.0
-- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.1.0 & 1.7.0
-- [@typescript-eslint/eslint-plugin](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin) - 7.9.0
-- [@typescript-eslint/parser](https://www.npmjs.com/package/@typescript-eslint/parser) - 7.9.0
+- [eslint](https://www.npmjs.com/package/eslint) - 9.8.0 & 8.57.0
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.35.0
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.2
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.9.0
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.6.1
+- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) - 8.0.1
 :::
 
 **You may also choose to install other eslint plugins or configurations depending upon your application needs.** 
