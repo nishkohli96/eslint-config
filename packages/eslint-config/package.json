@@ -44,7 +44,7 @@
     "node": ">=14"
   },
   "peerDependencies": {
-    "eslint": ">=7",
+    "eslint": ">=7 <9",
     "typescript": ">=4"
   },
   "license": "ISC"
