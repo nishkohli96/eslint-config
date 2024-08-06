@@ -10,4 +10,5 @@
 > [!NOTE]
 >This package is compatible with eslint `9.0.0` or above. For eslint `8.57.0` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
-<p style={{ fontSize: '20px', fontWeight: 500 }}>For detailed information about this config, please read the [docs](https://nish1896-eslint-config.vercel.app/)</p>
+For detailed information about this config, please read the [docs](https://nish1896-eslint-config.vercel.app/).
+

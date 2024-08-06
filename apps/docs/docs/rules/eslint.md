@@ -7,7 +7,7 @@ title: Eslint Rules
 
 # Eslint
 
-## **Javascript**
+## **JS Rules**
 
 |Rule Name|🔧|
 |-|-|

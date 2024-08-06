@@ -9,7 +9,7 @@ title: Usage
 
 <!-- In case you are migrating from v1.0.x, check the [Migration Guide](./migration/). -->
 
-- If you are using eslint version ***8.56 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config). 
+- If you are using eslint version ***8.57 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config). 
 - For eslint version ***9 and above***, use [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
 :::info
