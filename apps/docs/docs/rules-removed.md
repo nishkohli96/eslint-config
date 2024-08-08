@@ -7,7 +7,7 @@ title: Rules Removed
 
 # **Rules Removed**
 
-These rules were once included, but later removed in subsequent versions due to their inconsistency in certain scenarios after trying out in various node and react projects. You will need to manually add them in the `rules` of your .eslintrc, if needed. 
+These rules were once included, but later removed in subsequent versions due to their inconsistency in certain scenarios after trying out in various node and react projects. You will need to manually add them in the `rules` of your eslint config file, if needed. 
 
 | Rule Name | Reason |
 |-|-|
