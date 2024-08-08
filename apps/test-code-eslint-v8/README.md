@@ -4,13 +4,12 @@
 
 This repo uses `eslint@8.57.0` & `@nish1896/eslint-config`.
 
-Write the worst possible 🗑️ code in this folder and then run 
+Write the worst possible 🗑️ code in this folder and then run  the below command to see your console full of warnings ⚠️ and errors ❌.
 ```
 npm run lint
 ```
-to see your console full of warnings ⚠️ and errors ❌. You can run
 
+You can run the below command to allow eslint to fix as many errors as possible.
 ```
 npm run fix
 ```
-command to allow eslint to fix as many errors as possible.  

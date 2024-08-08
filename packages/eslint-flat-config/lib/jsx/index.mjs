@@ -1,8 +1,7 @@
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
-import { fixupPluginRules } from "@eslint/compat";
-import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
-import pluginReactConfig from "eslint-plugin-react";
+import jsxA11y from 'eslint-plugin-jsx-a11y';
+import pluginReactConfig from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 /**
@@ -10,6 +9,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
  * been updated to use flat-config
  */
 export default [
+  jsxA11y.flatConfigs.recommended,
   {
     languageOptions: {
       ecmaVersion: 2022,
@@ -23,7 +23,6 @@ export default [
     },
     plugins: {
       '@stylistic': stylistic,
-      'jsx-a11y': fixupPluginRules(jsxA11yPlugin),
       react: pluginReactConfig,
       'react-hooks': reactHooksPlugin
     },

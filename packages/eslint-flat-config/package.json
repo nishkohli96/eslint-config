@@ -1,7 +1,7 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "1.0.0",
-  "description": "eslint and stylistic rules for eslint v9 and above to help you focus more on the code logic, while they take care of the code formatting",
+  "version": "1.0.2",
+  "description": "eslint and stylistic rules for eslint v9 and above to take care of the code formatting.",
   "author": "Nishant Kohli",
   "engines": {
     "node": ">=18.18.0 || >=20.9.0 || >=21"
@@ -44,13 +44,12 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
-    "@eslint/compat": "^1.0.3",
-    "@stylistic/eslint-plugin": "^2.1.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-react": "^7.34.2",
+    "@stylistic/eslint-plugin": "^2.6.1",
+    "eslint-plugin-jsx-a11y": "^6.9.0",
+    "eslint-plugin-react": "^7.35.0",
     "eslint-plugin-react-hooks": "^4.6.2",
-    "globals": "^15.2.0",
-    "typescript-eslint": "^7.11.0"
+    "globals": "^15.9.0",
+    "typescript-eslint": "^8.0.1"
   },
   "peerDependencies": {
     "@eslint/js": ">=9",

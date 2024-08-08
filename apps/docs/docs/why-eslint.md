@@ -15,7 +15,7 @@ Besides error catching, eslint rules are also capable of formatting your code wh
 
 However, in this config, we will be mainly using [eslint-stylistic](https://eslint.style/) over [prettier](https://prettier.io/) as it gives you additional options to format your code and hopefully avoid conflict of rules between `eslint` and `prettier` for which you additionally had to install [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier). I still use `prettier`, but to only format non `.js(x)` and `.ts(x)` files like `.html` and `.css`.  
 
-On running `eslint .` some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice. `eslint --fix .` should hopefully fix most of the warnings or errors in your code. It's okay to have a few warnings when developing, but they should be taken care of when pushing your code for production. 
+On running `eslint .` some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice. The `eslint --fix` command should hopefully fix most of the warnings or errors in your code. It's okay to have a few warnings when developing, but they should be taken care of when pushing your code for production. 
 
 :::warning
 Ignored eslint warnings or errors in code will likely cause your app build to fail, unless resolved or specified eslint to ignore using the `eslint-ignore` syntax.

@@ -9,7 +9,7 @@ title: Stylistic Rules
 
 **All rule names start with `@stylistic/` prefix.** 
 
-## **Javascript (js)**
+## **JS Rules**
 
 These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896/eslint-config/js` import.
 
@@ -52,7 +52,7 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)||
 |[wrap-regex](https://eslint.style/rules/default/wrap-regex)||
 
-## **Javascript in React (jsx)**
+## **JSX Rules**
 
 These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish1896/eslint-config/react` import.
 
