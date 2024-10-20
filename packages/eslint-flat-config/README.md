@@ -2,6 +2,7 @@
 
 ![NPM Version](https://img.shields.io/npm/v/%40nish1896%2Feslint-flat-config)
 ![NPM Downloads](https://img.shields.io/npm/dt/%40nish1896%2Feslint-flat-config)
+![NPM Downloads Per Month](https://img.shields.io/npm/dm/%40nish1896%2Feslint-flat-config?color=%23e0e063)
 ![node-current](https://img.shields.io/node/v/%40nish1896%2Feslint-flat-config?color=%23e86267)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/nishkohli96/eslint-config)
 
@@ -10,5 +11,5 @@
 > [!NOTE]
 >This package is compatible with eslint `9.0.0` or above. For eslint `8.57.0` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
-For detailed information, please read the [docs](https://nish1896-eslint-config.vercel.app/).
+For comprehensive details on installation, setup, rules, and usage, please refer to the [documentation](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 

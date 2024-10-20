@@ -1,10 +1,10 @@
 {
   "name": "@nish1896/eslint-config-root",
-  "version": "1.0.1",
+  "version": "2.1.0",
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "private": true,
-  "workspaces": ["./apps/*", "./packages/*"],
+  "workspaces": ["./apps/*", "./examples/*", "./packages/*"],
   "scripts": {
     "flat-link:local": "yarn workspace @nish1896/eslint-flat-config link:local",
     "link:local": "yarn workspace @nish1896/eslint-config link:local",
