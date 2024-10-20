@@ -64,8 +64,7 @@ Paste the following scripts in your `package.json` file
 "lint:fix": "eslint --fix"
 ```
 
-The first script will check for lint warnings in your code while the second script will format your code as per the rules specified in your eslintConfig.
-The remaining warnings or errors need to be manually fixed by the developer.
+The first script will check for lint warnings in your code while the second script will format code as per the rules specified in the eslint configuration of your application. The remaining warnings or errors need to be manually fixed by the developer.
 
 :::tip
 You can also add *"lint"* command to your `package.json` file through command line.
@@ -87,9 +86,9 @@ yarn run eslint yourfile.js
 
 :::info
 This config extends the following plugins and parsers - 
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.9.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.37.1
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 5.0.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.10.0
-- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.9.0
 - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) - 8.10.0
 :::

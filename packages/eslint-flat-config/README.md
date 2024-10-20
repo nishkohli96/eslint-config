@@ -11,5 +11,5 @@
 > [!NOTE]
 >This package is compatible with eslint `9.0.0` or above. For eslint `8.57.0` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
-For detailed information, please read the [docs](https://nish1896-eslint-config.vercel.app/).
+For comprehensive details on installation, setup, rules, and usage, please refer to the [documentation](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 

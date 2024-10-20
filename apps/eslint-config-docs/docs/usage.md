@@ -16,7 +16,7 @@ title: Usage
 
 Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` contain the same set of rules. For NodeJS applications, use only the `js` configuration from either package, ie. `@nish1896/eslint-config/js` and `@nish1896/eslint-flat-config/js`.
 
-This import is essential for all JavaScript-based projects, as it defines the complete set of JavaScript-specific linting rules and ensures consistent code quality.
+This import is essential for all JavaScript-based projects, as it defines the recommended set of JavaScript-specific linting rules and ensures consistent code quality.
 
 ### React & Vite Apps
 
@@ -69,7 +69,7 @@ module.exports = {
 
 ### Examples
 
-Example applications that utilize the `eslint` and `eslint-flat-config` can be viewed [here]().
+Example applications that utilize the `eslint` and `eslint-flat-config` can be viewed [here](https://github.com/nishkohli96/eslint-config/tree/main/examples).
 
 ### Modify Configuration
 
