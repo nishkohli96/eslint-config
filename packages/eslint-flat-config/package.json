@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "eslint and stylistic rules for eslint v9 and above to take care of the code formatting.",
   "author": "Nishant Kohli",
   "engines": {
