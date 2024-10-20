@@ -12,9 +12,13 @@ title: Usage
 - If you are using eslint version ***8.57 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config). 
 - For eslint version ***9 and above***, use [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
-:::info
-Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` have the same set of rules. For node app, use only the `js` import of either package. For react/nextjs/vite apps, use both `js` and `jsx/react` imports
-:::
+### NodeJS App
+
+Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` contain the same set of rules. For NodeJS applications, use only the `js` configuration from either package, ie. `@nish1896/eslint-config/js` and `@nish1896/eslint-flat-config/js`.
+
+This import is essential for all JavaScript-based projects, as it defines the complete set of JavaScript-specific linting rules and ensures consistent code quality.
+
+### React & Vite Apps
 
 If you are using eslint v9 or above, create `eslint.config.mjs` file in your root directory and paste the below code - 
 
@@ -24,7 +28,7 @@ import jsxEslintConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
   ...jsEslintConfig,
-  ...jsxEslintConfig,    /* for react/nextjs/vite apps */
+  ...jsxEslintConfig,
   {
     rules: {}
   }
@@ -37,11 +41,37 @@ For eslint `8.57.0` or below, create `.eslintrc.js` or `.eslintrc.json` file in 
 module.exports = {
   extends: [
     "@nish1896/eslint-config/js",
-    "@nish1896/eslint-config/react"   /* for react/nextjs/vite apps */
+    "@nish1896/eslint-config/react"
   ],
   rules: {}
 }
 ```
+
+### NextJS App
+
+As of October 2024, the [create-next-app](https://nextjs.org/docs/app/api-reference/cli/create-next-app) CLI generates a [NextJS](https://nextjs.org/) application using ESLint version 8. Therefore, for this application, you need to use the `@nish1896/eslint-config` package.
+
+The `@nish1896/eslint-flat-config` package will be updated in the future, once the Next.js scaffolding process adopts ESLint 9.
+
+The existing `react` import caused conflicts with the [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) plugin, which prevented linting to execute. From version **2.1.0** onwards, a separate `next` import has been introduced to address these conflicts, since NextJS also provides its own set of eslint configuration.
+
+If you are using this configuration in a NextJS Application, it is highly recommended to upgrade to version `2.1.0` or above.
+
+```js
+module.exports = {
+  extends: [
+    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/next"
+  ],
+  rules: {}
+}
+```
+
+### Examples
+
+Example applications that utilize the `eslint` and `eslint-flat-config` can be viewed [here]().
+
+### Modify Configuration
 
 To add a new rule, turn off or modify the existing list of rules, append the `rules` in your _eslint configuration file_.
 
