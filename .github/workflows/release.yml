@@ -18,13 +18,7 @@ jobs:
         with:
           node-version: '20.10.0'
           registry-url: 'https://registry.npmjs.org'
-      
-      - name: Install Dependencies
-        run: yarn install --frozen-lockfile
-      
-      - name: Build Docs
-        run: yarn docs:build
-      
+
       - name: release @nish1896/eslint-config
         run: yarn workspace @nish1896/eslint-config publish:ci
         env: 
