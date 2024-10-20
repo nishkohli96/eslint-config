@@ -5,6 +5,7 @@
   "author": "Nishant Kohli",
   "exports": {
     "./js": "./lib/js/index.js",
+    "./next": "./lib/next/index.js",
     "./react": "./lib/react/index.js"
   },
   "scripts": {
