@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# react-app-eslint9
+
+**Sample React-TS App to test `@nish1896/eslint-flat-config`.**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
