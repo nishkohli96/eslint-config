@@ -21,7 +21,13 @@ const config: Config = {
       '@docusaurus/preset-classic',
       {
         docs: {
-          routeBasePath: '/'
+          routeBasePath: '/',
+          lastVersion: 'current',
+          // versions: {
+          //   current: {
+          //     label: '2.1 (latest)',
+          //   },
+          // },
         },
       },
     ],
@@ -34,10 +40,14 @@ const config: Config = {
     },
     navbar: {
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Nish1896 Logo',
         src: 'img/logo.svg',
       },
       items: [
+        {
+          type: 'docsVersionDropdown',
+          position: 'right',
+        },
         {
           href: 'https://github.com/nishkohli96/eslint-config',
           label: 'GitHub',
