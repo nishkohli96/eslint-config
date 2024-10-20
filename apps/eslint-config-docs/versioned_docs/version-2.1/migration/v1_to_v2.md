@@ -17,10 +17,20 @@ module.exports = {
 }
 ```
 
-React applications would need both the `js` and `react` config import of this package.
+React or Vite applications would need both the `js` and `react` config import of this package.
+
 ```diff
 module.exports = {
 - extends: ['@nish1896']
 + extends: ['@nish1896/eslint-config/js', '@nish1896/eslint-config/react']
+}
+```
+
+NextJS applications would need both the `js` and `next` config import of this package. The `next` import is available from **v2.1.0** and above.
+
+```diff
+module.exports = {
+- extends: ['@nish1896']
++ extends: ['@nish1896/eslint-config/js', '@nish1896/eslint-config/next']
 }
 ```
