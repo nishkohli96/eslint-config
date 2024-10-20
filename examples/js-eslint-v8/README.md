@@ -1,4 +1,4 @@
-# usage-with-eslint-v8
+# js-eslint-v8
 
 **The code in this folder is used for testing new rules or existing rules with some modifications.**
 

@@ -1,4 +1,4 @@
-# react-app-eslint9
+# react-app-eslint-v9
 
 **Sample React-TS App to test `@nish1896/eslint-flat-config`.**
 

@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# vite-react-eslint-v9
 
 **Sample Vite-React-TS App to test `@nish1896/eslint-flat-config`.**
 

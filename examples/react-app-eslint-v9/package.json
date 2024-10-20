@@ -1,6 +1,6 @@
 {
-  "name": "react-app-eslint9",
-  "version": "0.1.0",
+  "name": "react-app-eslint-v9",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@nish1896/eslint-flat-config": "*",
