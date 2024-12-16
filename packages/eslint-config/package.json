@@ -1,9 +1,10 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "eslint and stylistic rules for eslint 8.57.0 or below to take care of the code formatting.",
   "author": "Nishant Kohli",
   "exports": {
+    "./package.json": "./package.json",
     "./js": "./lib/js/index.js",
     "./next": "./lib/next/index.js",
     "./react": "./lib/react/index.js"
@@ -20,11 +21,12 @@
     "@nish1896",
     "@nish1896/eslint-config",
     "eslint",
+    "eslint8",
     "eslintconfig",
     "eslint-config",
     "eslint-config-jsx",
     "eslint-config-react",
-    "eslit-react",
+    "eslint-react",
     "lint-config",
     "lint-rules",
     "react-eslint"
@@ -49,5 +51,5 @@
     "eslint": ">=7 <9",
     "typescript": ">=4"
   },
-  "license": "ISC"
+  "license": "MIT"
 }

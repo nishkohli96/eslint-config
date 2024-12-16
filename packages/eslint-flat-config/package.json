@@ -1,12 +1,13 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "eslint and stylistic rules for eslint v9 and above to take care of the code formatting.",
   "author": "Nishant Kohli",
   "engines": {
     "node": ">=18.18.0 || >=20.9.0 || >=21"
   },
   "exports": {
+    "./package.json": "./package.json",
     "./js": "./lib/js/index.mjs",
     "./jsx": "./lib/jsx/index.mjs"
   },
@@ -35,7 +36,7 @@
     "eslint-config-js",
     "eslint-config-jsx",
     "eslint-config-react",
-    "eslit-react",
+    "eslint-react",
     "lint-config",
     "lint-rules",
     "react-eslint"
@@ -56,5 +57,5 @@
     "@eslint/js": ">=9",
     "eslint": ">=9"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
