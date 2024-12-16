@@ -4,8 +4,8 @@
   "description": "Format code with eslint v9 using this configuration",
   "author": "Nishant Kohli",
   "scripts": {
-    "test": "eslint __tests__",
-    "fix": "eslint --fix __tests__"
+    "lint": "eslint __tests__",
+    "lint:fix": "eslint --fix __tests__"
   },
   "homepage": "https://github.com/nishkohli96/eslint-config#readme",
   "repository": {
