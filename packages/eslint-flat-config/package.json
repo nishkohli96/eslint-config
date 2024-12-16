@@ -9,7 +9,8 @@
   "exports": {
     "./package.json": "./package.json",
     "./js": "./lib/js/index.mjs",
-    "./jsx": "./lib/jsx/index.mjs"
+    "./jsx": "./lib/jsx/index.mjs",
+    "./next": "./lib/next/index.mjs"
   },
   "scripts": {
     "test": "eslint __tests__",
