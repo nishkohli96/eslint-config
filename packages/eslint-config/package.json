@@ -20,16 +20,25 @@
   "keywords": [
     "@nish1896",
     "@nish1896/eslint-config",
+    "@nish1896/eslint-flat-config",
     "eslint",
     "eslint8",
     "eslintconfig",
     "eslint-config",
+    "eslint shareable config",
     "eslint-config-jsx",
     "eslint-config-react",
+    "eslint-plugin",
     "eslint-react",
+    "eslint-rules",
+    "eslint-setup",
+    "linting",
     "lint-config",
     "lint-rules",
-    "react-eslint"
+    "react-eslint",
+    "shareable-config",
+    "typescript-eslint",
+    "code-style"
   ],
   "homepage": "https://nish1896-eslint-config.vercel.app/",
   "repository": {

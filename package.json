@@ -6,9 +6,10 @@
   "private": true,
   "workspaces": ["./apps/*", "./examples/*", "./packages/*"],
   "scripts": {
-    "flat-link:local": "yarn workspace @nish1896/eslint-flat-config link:local",
-    "link:local": "yarn workspace @nish1896/eslint-config link:local",
-    "unlink:local": "npm unlink @nish1896/eslint-config",
+    "config:link": "yarn workspace @nish1896/eslint-config link:local",
+    "flat-config:link": "yarn workspace @nish1896/eslint-flat-config link:local",
+    "config:unlink": "npm unlink @nish1896/eslint-config",
+    "flat-config:unlink": "npm unlink @nish1896/eslint-flat-config",
     "docs": "yarn workspace @nish1896/eslint-config-docs start",
     "docs:build": "yarn workspace @nish1896/eslint-config-docs build",
     "lint:8": "yarn workspace @nish1896/eslint-config-test-v8 fix",
