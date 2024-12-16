@@ -1,13 +1,9 @@
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import pluginReactConfig from 'eslint-plugin-react';
+import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
-/**
- * As of now "jsxA11yPlugin" doesnt seem to have
- * been updated to use flat-config
- */
 export default [
   jsxA11y.flatConfigs.recommended,
   {
@@ -23,7 +19,7 @@ export default [
     },
     plugins: {
       '@stylistic': stylistic,
-      react: pluginReactConfig,
+      react: reactPlugin,
       'react-hooks': reactHooksPlugin
     },
     rules: {
