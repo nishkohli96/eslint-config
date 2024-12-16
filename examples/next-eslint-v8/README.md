@@ -1,4 +1,4 @@
-# next-app-eslint-v8
+# next-eslint-v8
 
 **This app is mainly used for testing `@nish1896/eslint-config/next` import.**
 
