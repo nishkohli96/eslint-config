@@ -1,8 +1,8 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+   const ty=45;
   return (
     <div className="App">
       <header className="App-header">
