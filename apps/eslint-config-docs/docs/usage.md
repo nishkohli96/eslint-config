@@ -18,6 +18,16 @@ Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` contain the sa
 
 This import is essential for all JavaScript-based projects, as it defines the recommended set of JavaScript-specific linting rules and ensures consistent code quality.
 
+:::note
+For ESLint 9, the error _**"Cannot redefine plugin @typescript-eslint"**_ occurs because the `@typescript-eslint` plugin is initialized twice: once from the `js` config of this package and then from your current configuration. To fix this:
+
+- Remove `@typescript-eslint` from the plugins key in your ESLint config.
+- Let the `js` of **@nish1896/eslint-config** import manage the plugin initialization.
+- Adjust any rule overrides under the rules key in your config.
+
+This approach ensures no duplication while retaining flexibility for rule customization.
+:::
+
 ### React & Vite Apps
 
 If you are using eslint v9 or above, create `eslint.config.mjs` file in your root directory and paste the below code - 

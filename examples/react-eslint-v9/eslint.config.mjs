@@ -5,5 +5,8 @@ export default [
   { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   { ignores: ['build', 'dist'] },
   ...jsConfig,
-  ...reactConfig
+  ...reactConfig,
+  {
+    rules: {}
+  }
 ];
