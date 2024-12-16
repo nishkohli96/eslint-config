@@ -22,14 +22,12 @@ const config: Config = {
       {
         docs: {
           routeBasePath: '/',
-          lastVersion: '2.1',
-          includeCurrentVersion: false
-          // lastVersion: 'current',
-          // versions: {
-          //   current: {
-          //     label: '2.1 (latest)',
-          //   },
-          // },
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '2.1',
+            },
+          },
         },
       },
     ],
