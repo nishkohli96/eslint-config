@@ -7,7 +7,7 @@ import jsConfig from '@nish1896/eslint-flat-config/js';
 import reactConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  { ignores: ['build', 'dist'] },
   {
     extends: [
       js.configs.recommended,
