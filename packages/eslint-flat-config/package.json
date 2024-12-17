@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "1.0.5",
+  "version": "1.1.0",
   "description": "eslint and stylistic rules for eslint v9 and above to take care of the code formatting.",
   "author": "Nishant Kohli",
   "engines": {
@@ -13,11 +13,8 @@
     "./next": "./lib/next/index.mjs"
   },
   "scripts": {
-    "test": "eslint __tests__",
-    "fix": "eslint --fix __tests__",
     "link:local": "npm link",
     "unlink:local": "npm unlink @nish1896/eslint-flat-config",
-    "publish:ci": "npm publish --provenance --access public",
     "publish:manual": "npm publish --access public"
   },
   "keywords": [

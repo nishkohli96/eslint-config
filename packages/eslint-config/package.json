@@ -10,11 +10,8 @@
     "./react": "./lib/react/index.js"
   },
   "scripts": {
-    "test": "eslint __tests__",
-    "fix": "eslint --fix __tests__",
     "link:local": "npm link",
     "unlink:local": "npm unlink @nish1896/eslint-config",
-    "publish:ci": "npm publish --provenance --access public",
     "publish:manual": "npm publish --access public"
   },
   "keywords": [
