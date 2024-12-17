@@ -1,22 +1,44 @@
+/**
+ * This eslintConfig file for NextJS v15 and above combines rules
+ * from both "js" and "jsx" imports of this package.
+ * 
+ * Import of the following plugins will be handled from the inbuild
+ * eslintConfig provided by NextJS, so that there is no error wrt
+ * redefining plugins.
+ * - tselint
+ * - jsxA11y
+ * - reactPlugin
+ * - reactHooksPlugin
+ */
+
 import globals from 'globals';
 import js from '@eslint/js';
-import tseslint from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 
 export default [
   js.configs.recommended,
-  ...tseslint.configs.recommended,
   {
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: "module",
       globals: {
         ...globals.node,
+				...globals.browser,
         ...globals.jest
-      }
+      },
+			parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
     },
     plugins: {
       '@stylistic': stylistic,
+    },
+		settings: {
+      react: {
+        version: 'detect',
+      },
     },
     rules: {
       '@stylistic/array-bracket-spacing': 'warn',
@@ -102,6 +124,7 @@ export default [
       'prefer-promise-reject-errors': 'warn',
       'prefer-rest-params': 'error',
       semi: ['warn', 'always'],
+			'react/react-in-jsx-scope': 'off',
       'require-await': 'warn',
       'use-isnan': 'warn',
     },

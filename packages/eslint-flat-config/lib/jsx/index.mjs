@@ -1,15 +1,12 @@
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import pluginReactConfig from 'eslint-plugin-react';
+import pluginReact from "eslint-plugin-react";
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
-/**
- * As of now "jsxA11yPlugin" doesnt seem to have
- * been updated to use flat-config
- */
 export default [
   jsxA11y.flatConfigs.recommended,
+  pluginReact.configs.flat.recommended,
   {
     languageOptions: {
       ecmaVersion: 2022,
@@ -23,7 +20,6 @@ export default [
     },
     plugins: {
       '@stylistic': stylistic,
-      react: pluginReactConfig,
       'react-hooks': reactHooksPlugin
     },
     rules: {

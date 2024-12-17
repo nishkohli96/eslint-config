@@ -39,12 +39,12 @@ The `react` folder import from `@nish1896/eslint-config/react` has been renamed 
 Add the following content to this file -
 
 ```js
-import jsEslintConfig from '@nish1896/eslint-flat-config/js';
-import jsxEslintConfig from '@nish1896/eslint-flat-config/jsx';
+import jsConfig from '@nish1896/eslint-flat-config/js';
+import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
-  ...jsEslintConfig,
-  ...jsxEslintConfig, 
+  ...jsConfig,
+  ...jsxConfig, 
   {
     rules: {}
   }

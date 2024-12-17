@@ -11,5 +11,38 @@
 > [!NOTE]
 >This package is compatible with eslint `9.0.0` or above. For usage with eslint `8.57.0` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
-For comprehensive details on installation, setup, rules, and usage, please refer to the [documentation](https://nish1896-eslint-config.vercel.app/).
+## Quick Setup
 
+Copy the code snippet most relevant to your application and paste it in the `eslint.config.mjs` file in your project root.
+
+- NodeJS App
+```js
+import jsConfig from '@nish1896/eslint-flat-config/js';
+
+export default [
+  ...jsConfig,
+];
+```
+- React & Vite
+```js
+import jsConfig from '@nish1896/eslint-flat-config/js';
+import jsxConfig from '@nish1896/eslint-flat-config/jsx';
+
+export default [
+  ...jsConfig,
+  ...jsxConfig,
+];
+```
+- Next
+```js
+import nextConfig from '@nish1896/eslint-flat-config/next';
+
+const eslintConfig = [
+  ...nextConfig,
+  ...compat.extends('next/core-web-vitals', 'next/typescript')
+];
+
+export default eslintConfig;
+```
+
+For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://www.npmjs.com/package/@nish1896/eslint-flat-config) 📖.

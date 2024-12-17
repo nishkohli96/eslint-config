@@ -18,5 +18,5 @@ However, in this config, we will be mainly using [eslint-stylistic](https://esli
 On running `eslint .` some of the rules imported from this config will give you a warning ⚠️ indicating that the code issue may be ignored while the rules triggering an error ❌ will discourage you to avoid that coding practice. The `eslint --fix` command should hopefully fix most of the warnings or errors in your code. It's okay to have a few warnings when developing, but they should be taken care of when pushing your code for production. 
 
 :::warning
-Ignored eslint warnings or errors in code will likely cause your app build to fail, unless resolved or specified eslint to ignore using the `eslint-ignore` syntax.
+Ignored eslint warnings or errors in code will likely cause your app build to fail, especially during CI/CD, unless resolved or specified eslint to ignore using the `eslint-ignore` syntax.
 :::

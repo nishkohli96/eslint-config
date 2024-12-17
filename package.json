@@ -1,14 +1,15 @@
 {
   "name": "@nish1896/eslint-config-root",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "private": true,
   "workspaces": ["./apps/*", "./examples/*", "./packages/*"],
   "scripts": {
-    "flat-link:local": "yarn workspace @nish1896/eslint-flat-config link:local",
-    "link:local": "yarn workspace @nish1896/eslint-config link:local",
-    "unlink:local": "npm unlink @nish1896/eslint-config",
+    "config:link": "yarn workspace @nish1896/eslint-config link:local",
+    "flat-config:link": "yarn workspace @nish1896/eslint-flat-config link:local",
+    "config:unlink": "npm unlink @nish1896/eslint-config",
+    "flat-config:unlink": "npm unlink @nish1896/eslint-flat-config",
     "docs": "yarn workspace @nish1896/eslint-config-docs start",
     "docs:build": "yarn workspace @nish1896/eslint-config-docs build",
     "lint:8": "yarn workspace @nish1896/eslint-config-test-v8 fix",
@@ -22,12 +23,12 @@
     "eslint-config",
     "eslint-config-jsx",
     "eslint-config-react",
-    "eslit-react",
+    "eslint-react",
     "lint-config",
     "lint-rules",
     "react-eslint"
   ],
-  "homepage": "https://github.com/nishkohli96/eslint-config#readme",
+  "homepage": "https://nish1896-eslint-config.vercel.app/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },

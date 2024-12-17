@@ -1,9 +1,10 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "eslint and stylistic rules for eslint 8.57.0 or below to take care of the code formatting.",
   "author": "Nishant Kohli",
   "exports": {
+    "./package.json": "./package.json",
     "./js": "./lib/js/index.js",
     "./next": "./lib/next/index.js",
     "./react": "./lib/react/index.js"
@@ -16,28 +17,38 @@
   "keywords": [
     "@nish1896",
     "@nish1896/eslint-config",
+    "@nish1896/eslint-flat-config",
     "eslint",
+    "eslint8",
     "eslintconfig",
     "eslint-config",
+    "eslint shareable config",
     "eslint-config-jsx",
     "eslint-config-react",
-    "eslit-react",
+    "eslint-plugin",
+    "eslint-react",
+    "eslint-rules",
+    "eslint-setup",
+    "linting",
     "lint-config",
     "lint-rules",
-    "react-eslint"
+    "react-eslint",
+    "shareable-config",
+    "typescript-eslint",
+    "code-style"
   ],
   "homepage": "https://nish1896-eslint-config.vercel.app/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^2.9.0",
-    "@typescript-eslint/eslint-plugin": "^8.10.0",
-    "@typescript-eslint/parser": "^8.10.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "typescript-eslint": "^8.10.0"
+    "@stylistic/eslint-plugin": "^2.12.1",
+    "@typescript-eslint/eslint-plugin": "^8.18.0",
+    "@typescript-eslint/parser": "^8.18.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "typescript-eslint": "^8.18.0"
   },
   "engines": {
     "node": ">=14"

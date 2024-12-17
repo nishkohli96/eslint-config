@@ -1,14 +1,16 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "eslint and stylistic rules for eslint v9 and above to take care of the code formatting.",
   "author": "Nishant Kohli",
   "engines": {
     "node": ">=18.18.0 || >=20.9.0 || >=21"
   },
   "exports": {
+    "./package.json": "./package.json",
     "./js": "./lib/js/index.mjs",
-    "./jsx": "./lib/jsx/index.mjs"
+    "./jsx": "./lib/jsx/index.mjs",
+    "./next": "./lib/next/index.mjs"
   },
   "scripts": {
     "link:local": "npm link",
@@ -18,36 +20,38 @@
   "keywords": [
     "@nish1896",
     "@nish1896/eslint-config",
-    "@nish1896/eslint-config-flat",
     "@nish1896/eslint-flat-config",
     "eslint",
     "eslint9",
-    "eslint shareable config",
     "eslintconfig",
     "eslint config",
     "eslint-config",
     "eslint-config-flat",
+    "eslint shareable config",
     "eslint flat config",
     "flat eslint config",
     "eslint-config-js",
     "eslint-config-jsx",
     "eslint-config-react",
-    "eslit-react",
+    "eslint-react",
     "lint-config",
     "lint-rules",
-    "react-eslint"
+    "react-eslint",
+    "shareable-config",
+    "typescript-eslint",
+    "code-style"
   ],
   "homepage": "https://nish1896-eslint-config.vercel.app/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^2.9.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
-    "eslint-plugin-react": "^7.37.1",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "globals": "^15.11.0",
-    "typescript-eslint": "^8.10.0"
+    "@stylistic/eslint-plugin": "^2.12.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.13.0",
+    "typescript-eslint": "^8.18.0"
   },
   "peerDependencies": {
     "@eslint/js": ">=9",
