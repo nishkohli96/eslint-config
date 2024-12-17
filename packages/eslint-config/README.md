@@ -11,4 +11,35 @@
 > [!NOTE]
 >This package is compatible with eslint `8.57.0` or below. For eslint `9.0.0` or above check [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
-For comprehensive details on installation, setup, rules, and usage, please refer to the [documentation](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
+## Quick Setup
+
+Copy the code snippet most relevant to your application and paste it in the `.eslintrc`, `.eslintrc.js` or `.eslintrc.json` file in your project root.
+
+- NodeJS App
+```js
+module.exports = {
+  extends: [
+    "@nish1896/eslint-config/js"
+  ]
+}
+```
+- React & Vite
+```js
+module.exports = {
+  extends: [
+    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/react"
+  ]
+}
+```
+- Next
+```js
+module.exports = {
+  extends: [
+    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/next"
+  ]
+}
+```
+
+For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://www.npmjs.com/package/@nish1896/eslint-flat-config) 📖.
