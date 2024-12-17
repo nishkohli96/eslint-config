@@ -19,12 +19,12 @@ Both `@nish1896/eslint-flat-config` and `@nish1896/eslint-config` have the same 
 If you are using eslint v9 or above, create `eslint.config.mjs` file in your root directory and paste the below code - 
 
 ```js
-import jsEslintConfig from '@nish1896/eslint-flat-config/js';
-import jsxEslintConfig from '@nish1896/eslint-flat-config/jsx';
+import jsConfig from '@nish1896/eslint-flat-config/js';
+import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
-  ...jsEslintConfig,
-  ...jsxEslintConfig,    /* for react/nextjs/vite apps */
+  ...jsConfig,
+  ...jsxConfig,    /* for react/nextjs/vite apps */
   {
     rules: {}
   }

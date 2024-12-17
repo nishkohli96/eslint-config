@@ -20,10 +20,10 @@ touch eslint.config.mjs
 The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
 
 ```js
-import jsEslintConfig from '@nish1896/eslint-flat-config/js';
+import jsConfig from '@nish1896/eslint-flat-config/js';
 
 export default [
-  ...jsEslintConfig,
+  ...jsConfig,
   {
     rules: {}
   }
@@ -35,12 +35,12 @@ export default [
 Use both `js` and `jsx` rules from the package for React and Vite applications.
 
 ```js
-import jsEslintConfig from '@nish1896/eslint-flat-config/js';
-import jsxEslintConfig from '@nish1896/eslint-flat-config/jsx';
+import jsConfig from '@nish1896/eslint-flat-config/js';
+import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
-  ...jsEslintConfig,
-  ...jsxEslintConfig,
+  ...jsConfig,
+  ...jsxConfig,
   {
     rules: {}
   }

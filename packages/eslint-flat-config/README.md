@@ -17,20 +17,20 @@ Copy the code snippet most relevant to your application and paste it in the `esl
 
 - NodeJS App
 ```js
-import jsEslintConfig from '@nish1896/eslint-flat-config/js';
+import jsConfig from '@nish1896/eslint-flat-config/js';
 
 export default [
-  ...jsEslintConfig,
+  ...jsConfig,
 ];
 ```
 - React & Vite
 ```js
-import jsEslintConfig from '@nish1896/eslint-flat-config/js';
-import jsxEslintConfig from '@nish1896/eslint-flat-config/jsx';
+import jsConfig from '@nish1896/eslint-flat-config/js';
+import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
-  ...jsEslintConfig,
-  ...jsxEslintConfig,
+  ...jsConfig,
+  ...jsxConfig,
 ];
 ```
 - Next
