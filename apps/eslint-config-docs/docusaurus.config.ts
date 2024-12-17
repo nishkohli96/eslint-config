@@ -16,10 +16,26 @@ const config: Config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  plugins: [
+    [
+      'vercel-analytics',
+      {
+        debug: true,
+        mode: 'auto',
+      },
+    ],
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',
       {
+        sitemap: {
+          lastmod: 'date',
+          changefreq: 'monthly',
+          priority: 0.5,
+          ignorePatterns: ['/tags/**'],
+          filename: 'sitemap.xml'
+        },
         docs: {
           routeBasePath: '/',
           lastVersion: 'current',
