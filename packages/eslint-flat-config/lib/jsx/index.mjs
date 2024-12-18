@@ -1,12 +1,11 @@
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import pluginReact from "eslint-plugin-react";
+import pluginReact from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
-  jsxA11y.flatConfigs.recommended,
-  pluginReact.configs.flat.recommended,
+  /* Global Language Options */
   {
     languageOptions: {
       ecmaVersion: 2022,
@@ -18,6 +17,34 @@ export default [
         },
       },
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+  },
+
+  /* File and ignore patterns */
+  {
+    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.next',
+      '.turbo',
+      '.eslintcache',
+      'storybook-static',
+    ],
+  },
+
+  /* Recommended Configs */
+  jsxA11y.flatConfigs.recommended,
+  pluginReact.configs.flat.recommended,
+
+  /* Plugins & Rules */
+  {
     plugins: {
       '@stylistic': stylistic,
       'react-hooks': reactHooksPlugin
@@ -54,21 +81,6 @@ export default [
           extensions: ['.tsx', '.jsx'],
         },
       ],
-    },
-    settings: {
-      react: {
-        version: 'detect',
-      },
-    },
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.next',
-      '.turbo',
-      '.eslintrc.js',
-      '.d.ts',
-    ],
-  },
+    }
+  }
 ];
