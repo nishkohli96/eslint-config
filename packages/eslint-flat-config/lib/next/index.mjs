@@ -16,7 +16,7 @@ import js from '@eslint/js';
 import stylistic from '@stylistic/eslint-plugin';
 
 export default [
-  js.configs.recommended,
+  /* Global Language Options */
   {
     languageOptions: {
       ecmaVersion: 2022,
@@ -30,15 +30,38 @@ export default [
         ecmaFeatures: {
           jsx: true,
         },
+        project: './tsconfig.json'
       },
     },
-    plugins: {
-      '@stylistic': stylistic,
-    },
-		settings: {
+    settings: {
       react: {
         version: 'detect',
       },
+    },
+  },
+
+  /* File and ignore patterns */
+  {
+    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.next',
+      '.turbo',
+      '.eslintcache',
+      'storybook-static',
+    ],
+  },
+
+  /* Recommended Configs */
+  js.configs.recommended,
+
+  /* Plugins & Rules */
+  {
+    plugins: {
+      '@stylistic': stylistic,
     },
     rules: {
       '@stylistic/array-bracket-spacing': 'warn',
@@ -128,14 +151,5 @@ export default [
       'require-await': 'warn',
       'use-isnan': 'warn',
     },
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.turbo',
-      '.eslintrc.js',
-      '.d.ts',
-    ],
   },
 ];

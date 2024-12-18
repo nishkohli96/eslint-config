@@ -4,8 +4,7 @@ import tseslint from 'typescript-eslint';
 import stylistic from '@stylistic/eslint-plugin';
 
 export default [
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
+  /* Global Language Options */
   {
     languageOptions: {
       ecmaVersion: 2022,
@@ -15,6 +14,25 @@ export default [
         ...globals.jest
       }
     },
+  },
+
+  /* File and ignore patterns */
+  {
+    files: ['**/*.{js,mjs,cjs,ts}'],
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.turbo',
+    ]
+  },
+  /* Recommended Configs */
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+
+  /* Plugins & Rules */
+  {
     plugins: {
       '@stylistic': stylistic,
     },
@@ -104,15 +122,6 @@ export default [
       semi: ['warn', 'always'],
       'require-await': 'warn',
       'use-isnan': 'warn',
-    },
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.turbo',
-      '.eslintrc.js',
-      '.d.ts',
-    ],
-  },
+    }
+  }
 ];
