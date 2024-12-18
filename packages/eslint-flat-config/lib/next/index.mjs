@@ -39,19 +39,9 @@ export default [
     },
   },
 
-  /* File and ignore patterns */
+  /* Target Files */
   {
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.next',
-      '.turbo',
-      '.eslintcache',
-      'storybook-static',
-    ],
   },
 
   /* Recommended Configs */
@@ -151,4 +141,16 @@ export default [
       'use-isnan': 'warn',
     },
   },
+  {
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.next',
+      '.turbo',
+      '.eslintcache',
+      'storybook-static',
+    ],
+  }
 ];

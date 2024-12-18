@@ -16,16 +16,9 @@ export default [
     },
   },
 
-  /* File and ignore patterns */
+  /* Target Files */
   {
     files: ['**/*.{js,mjs,cjs,ts}'],
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.turbo',
-    ]
   },
   /* Recommended Configs */
   js.configs.recommended,
@@ -123,5 +116,19 @@ export default [
       'require-await': 'warn',
       'use-isnan': 'warn',
     }
+  },
+  /**
+   * Ignore linting the below folders...
+   * "ignores" needs to be written at last, else linting 
+   * would also run on build folders. 
+   */
+  {
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.turbo',
+    ]
   }
 ];
