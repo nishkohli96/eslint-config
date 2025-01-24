@@ -49,7 +49,7 @@ export default [
 
 ### NextJS
 
-A dedicated ESLint configuration for [Next.js](https://nextjs.org/) applications is now available since version **1.1.0** of the package. It integrates seamlessly with the `create-next-app` boilerplate, which sets up projects using Next.js version 15. This simplifies setup, ensuring compatibility and optimized linting rules tailored for Next.js applications.
+A dedicated ESLint configuration for [Next.js](https://nextjs.org/) applications is now available since version **1.1.0** of the package. It integrates seamlessly with the `create-next-app` boilerplate, which sets up projects using Next.js **version 15**. This simplifies setup, ensuring compatibility and optimized linting rules tailored for Next.js applications.
 
 The `next` module in this package consolidates rules from both `js` and `jsx` configurations, extending the [stylistic](https://www.npmjs.com/package/@stylistic/eslint-plugin) plugin. It leverages the `typescript-eslint` and other React plugins provided by [eslint-config-next](https://www.npmjs.com/package/eslint-config-next), ensuring no need to duplicate plugin configurations for Next.js projects and to prevent the [redefine plugin error](#duplicate-import-error).
 
@@ -74,14 +74,12 @@ const eslintConfig = [
 export default eslintConfig;
 ```
 
-Make sure to preserve the order of the imports to avoid getting the `Error: 'React' is not defined.  no-undef` linting error, else this needs to be manually fixed in the code.
-
 ### Duplicate Import Error
 
 For ESLint 9, the error _**"Cannot redefine plugin @typescript-eslint"**_ or anything similar occurs because the `@typescript-eslint` plugin is initialized twice: once from the `js` config of this package and then from your current configuration. To fix this:
 
 - Remove `@typescript-eslint` from the plugins key in your ESLint config.
-- Let the `js` of **@nish1896/eslint-config** import manage the plugin initialization.
-- Adjust any rule overrides under the rules key in your config.
+- Let the `js` module of **@nish1896/eslint-config** manage the plugin initialization.
+- Configure or turn off any rule in the `rules` key of eslint config.
 
 This approach ensures no duplication while retaining flexibility for rule customization.
