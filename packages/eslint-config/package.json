@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "2.1.2",
+  "version": "2.1.3",
   "description": "eslint and stylistic rules for eslint 8.57.0 or below to take care of the code formatting.",
   "author": "Nishant Kohli",
   "exports": {
