@@ -14,8 +14,7 @@
   },
   "scripts": {
     "link:local": "npm link",
-    "unlink:local": "npm unlink @nish1896/eslint-flat-config",
-    "publish:manual": "npm publish --access public"
+    "unlink:local": "npm unlink @nish1896/eslint-flat-config"
   },
   "keywords": [
     "@nish1896",
