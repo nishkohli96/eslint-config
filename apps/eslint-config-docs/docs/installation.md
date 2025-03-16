@@ -19,25 +19,25 @@ Please do refer the official docs to [install eslint](https://eslint.org/docs/la
 
 ### Eslint 9 and above
 
-```sh
+```babash
 npm i eslint --save-dev
 ```
-```sh
+```bash
 yarn add -D eslint
 ```
-```sh
+```bash
 pnpm add -D eslint
 ```
 
 Next, install `@nish1896/eslint-flat-config`.
 
-```sh
+```bash
 npm install @nish1896/eslint-flat-config  --save-dev
 ```
-```sh
+```bash
 yarn add -D @nish1896/eslint-flat-config
 ```
-```sh
+```bash
 pnpm add -D @nish1896/eslint-flat-config
 ```
 
@@ -45,25 +45,25 @@ pnpm add -D @nish1896/eslint-flat-config
 
 We will be installing **v8.57.1** which was the last major version prior to the release of version 9.
 
-```sh
+```bash
 npm i eslint@8.57.1` --save-dev
 ```
-```sh
+```bash
 yarn add -D eslint@8.57.1`
 ```
-```sh
+```bash
 pnpm add -D eslint@8.57.1`
 ```
 
 Next, install `@nish1896/eslint-config`.
 
-```sh
+```bash
 npm install @nish1896/eslint-config  --save-dev
 ```
-```sh
+```bash
 yarn add -D @nish1896/eslint-config
 ```
-```sh
+```bash
 pnpm add -D @nish1896/eslint-config
 ```
 
@@ -71,7 +71,7 @@ pnpm add -D @nish1896/eslint-config
 
 Paste the following scripts in your `package.json` file
 
-```sh
+```bash
 "lint": "eslint",
 "lint:fix": "eslint --fix"
 ```
@@ -81,7 +81,7 @@ The first script will check for lint warnings in your code while the second scri
 :::tip
 You can also add *"lint"* command to your `package.json` file through command line.
 
-```sh
+```bash
 npm pkg set scripts.lint="eslint --fix ."
 ```
 :::

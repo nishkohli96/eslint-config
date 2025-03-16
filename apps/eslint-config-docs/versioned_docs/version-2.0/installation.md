@@ -19,25 +19,25 @@ Please do refer the official docs to [install eslint](https://eslint.org/docs/la
 
 ### Eslint 9 and above
 
-```sh
+```bash
 npm i eslint --save-dev
 ```
-```sh
+```bash
 yarn add -D eslint
 ```
-```sh
+```bash
 pnpm add -D eslint
 ```
 
 Next, install `@nish1896/eslint-flat-config`.
 
-```sh
+```bash
 npm install @nish1896/eslint-flat-config  --save-dev
 ```
-```sh
+```bash
 yarn add -D @nish1896/eslint-flat-config
 ```
-```sh
+```bash
 pnpm add -D @nish1896/eslint-flat-config
 ```
 
@@ -45,51 +45,50 @@ pnpm add -D @nish1896/eslint-flat-config
 
 We will be installing **v8.57.1** which was the last major version prior to the release of version 9.
 
-```sh
+```bash
 npm i eslint@8.57.1 --save-dev
 ```
-```sh
+```bash
 yarn add -D eslint@8.57.1
 ```
-```sh
+```bash
 pnpm add -D eslint@8.57.1
 ```
 
 Next, install `@nish1896/eslint-config`.
 
-```sh
+```bash
 npm install @nish1896/eslint-config  --save-dev
 ```
-```sh
+```bash
 yarn add -D @nish1896/eslint-config
 ```
-```sh
+```bash
 pnpm add -D @nish1896/eslint-config
 ```
 
 Add *"lint"* command to your `package.json` file.
 
-```sh
+```bash
 npm pkg set scripts.lint="eslint --fix ."
 ```
 
 After that, you can run ESLint on any file or directory like this:
 
-```sh
+```bash
 npx eslint yourfile.js
 ```
-```sh
+```bash
 yarn run eslint yourfile.js
 ```
 
 :::info
 This config extends the following plugins and parsers - 
-- [eslint](https://www.npmjs.com/package/eslint) - 9.8.0 & 8.57.0
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.35.0
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 4.6.2
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.9.0
-- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.6.1
-- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) - 8.0.1
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.37.4
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 5.2.0
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.10.2
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.13.0
+- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) - 8.26.1
 :::
 
 **You may also choose to install other eslint plugins or configurations depending upon your application needs.** 

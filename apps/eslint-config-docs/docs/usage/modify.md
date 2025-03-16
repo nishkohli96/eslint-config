@@ -43,13 +43,13 @@ The syntax below won't work
 
 To run linting on your codebase,
 
-```sh
+```bash
 npm run lint
 ```
-```sh
+```bash
 yarn lint
 ```
-```sh
+```bash
 pnpm lint
 ```
 
