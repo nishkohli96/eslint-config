@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config-root",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "private": true,
