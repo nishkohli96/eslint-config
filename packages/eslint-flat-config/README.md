@@ -34,6 +34,9 @@ export default [
 ];
 ```
 - Next
+
+Add the `next` import to the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app.
+
 ```js
 import nextConfig from '@nish1896/eslint-flat-config/next';
 
@@ -47,4 +50,4 @@ export default eslintConfig;
 
 For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://nish1896-eslint-config.vercel.app/introduction) 📖.
 
-**If you are a React developer,I highly recommend checking out my package, [@nish1896/rhf-mui-components](https://www.npmjs.com/package/@nish1896/rhf-mui-components) package.**
+**If you are a React developer, I highly recommend checking out my package, [@nish1896/rhf-mui-components](https://www.npmjs.com/package/@nish1896/rhf-mui-components).**
