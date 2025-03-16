@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 sidebar_label: Installation
-description: How to install this package using npm or yarn?
+description: How to install this package using npm, yarn or pnpm?
 title: Installation
 ---
 
@@ -19,47 +19,59 @@ Please do refer the official docs to [install eslint](https://eslint.org/docs/la
 
 ### Eslint 9 and above
 
-```js
+```sh
 npm i eslint --save-dev
 ```
-```
+```sh
 yarn add -D eslint
+```
+```sh
+pnpm add -D eslint
 ```
 
 Next, install `@nish1896/eslint-flat-config`.
 
-```
+```sh
 npm install @nish1896/eslint-flat-config  --save-dev
 ```
-```
+```sh
 yarn add -D @nish1896/eslint-flat-config
+```
+```sh
+pnpm add -D @nish1896/eslint-flat-config
 ```
 
 ### Eslint 8
 
-We will be installing **v8.57.0** which was the last major version prior to the release of version 9.
+We will be installing **v8.57.1** which was the last major version prior to the release of version 9.
 
+```sh
+npm i eslint@8.57.1` --save-dev
 ```
-npm i eslint@8.57.0 --save-dev
+```sh
+yarn add -D eslint@8.57.1`
 ```
-```
-yarn add -D eslint@8.57.0
+```sh
+pnpm add -D eslint@8.57.1`
 ```
 
 Next, install `@nish1896/eslint-config`.
 
-```
+```sh
 npm install @nish1896/eslint-config  --save-dev
 ```
-```
+```sh
 yarn add -D @nish1896/eslint-config
+```
+```sh
+pnpm add -D @nish1896/eslint-config
 ```
 
 ### Setup
 
 Paste the following scripts in your `package.json` file
 
-```
+```sh
 "lint": "eslint",
 "lint:fix": "eslint --fix"
 ```
@@ -69,7 +81,7 @@ The first script will check for lint warnings in your code while the second scri
 :::tip
 You can also add *"lint"* command to your `package.json` file through command line.
 
-```
+```sh
 npm pkg set scripts.lint="eslint --fix ."
 ```
 :::

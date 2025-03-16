@@ -19,58 +19,69 @@ Please do refer the official docs to [install eslint](https://eslint.org/docs/la
 
 ### Eslint 9 and above
 
-```js
+```sh
 npm i eslint --save-dev
 ```
-```
+```sh
 yarn add -D eslint
+```
+```sh
+pnpm add -D eslint
 ```
 
 Next, install `@nish1896/eslint-flat-config`.
 
-```
+```sh
 npm install @nish1896/eslint-flat-config  --save-dev
 ```
-```
+```sh
 yarn add -D @nish1896/eslint-flat-config
+```
+```sh
+pnpm add -D @nish1896/eslint-flat-config
 ```
 
 ### Eslint 8
 
-We will be installing **v8.57.0** which was the last major version prior to the release of version 9.
+We will be installing **v8.57.1** which was the last major version prior to the release of version 9.
 
+```sh
+npm i eslint@8.57.1 --save-dev
 ```
-npm i eslint@8.57.0 --save-dev
+```sh
+yarn add -D eslint@8.57.1
 ```
-```
-yarn add -D eslint@8.57.0
+```sh
+pnpm add -D eslint@8.57.1
 ```
 
 Next, install `@nish1896/eslint-config`.
 
-```
+```sh
 npm install @nish1896/eslint-config  --save-dev
 ```
-```
+```sh
 yarn add -D @nish1896/eslint-config
 ```
-
+```sh
+pnpm add -D @nish1896/eslint-config
+```
 
 Add *"lint"* command to your `package.json` file.
 
-```
+```sh
 npm pkg set scripts.lint="eslint --fix ."
 ```
 
 After that, you can run ESLint on any file or directory like this:
 
-```
+```sh
 npx eslint yourfile.js
 ```
-
-```
+```sh
 yarn run eslint yourfile.js
 ```
+
 :::info
 This config extends the following plugins and parsers - 
 - [eslint](https://www.npmjs.com/package/eslint) - 9.8.0 & 8.57.0

@@ -46,9 +46,11 @@ To run linting on your codebase,
 ```sh
 npm run lint
 ```
-
-```
+```sh
 yarn lint
+```
+```sh
+pnpm lint
 ```
 
 For formatting non-js like `.css`, `.html` files you can use prettier alongside eslint. Prettier configuration, `.prettierignore` and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/blob/main/package.json).

@@ -14,24 +14,33 @@ To use eslint v9, make sure that the node version being used in your projection 
 
 Uninstall `@nish1896/eslint-config`.
 
-```
+```sh
 npm uninstall @nish1896/eslint-config
-		   OR
+```
+```sh
 yarn remove @nish1896/eslint-config
+```
+```sh
+pnpm remove @nish1896/eslint-config
 ```
 
 Install `@nish1896/eslint-flat-config`.
-```
+```sh
 npm i --save-dev @nish1896/eslint-flat-config
-		   OR
+```
+```sh
 yarn add -D @nish1896/eslint-flat-config
+```
+```sh
+pnpm add -D @nish1896/eslint-flat-config
 ```
 
 Delete the `.eslintrc` or `.eslintrc.js` or `.eslintrc.json` file and create `eslint.config.mjs` file.
 
-```js
+```sh
 touch eslint.config.mjs
 ```
+
 :::note
 The `react` folder import from `@nish1896/eslint-config/react` has been renamed in this package and will be imported as `@nish1896/eslint-flat-config/jsx`.
 :::

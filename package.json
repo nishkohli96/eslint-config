@@ -4,19 +4,18 @@
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "private": true,
-  "workspaces": ["./apps/*", "./examples/*", "./packages/*"],
   "scripts": {
-    "config:link": "yarn workspace @nish1896/eslint-config link:local",
-    "flat-config:link": "yarn workspace @nish1896/eslint-flat-config link:local",
+    "config:link": "pnpm workspace @nish1896/eslint-config link:local",
+    "flat-config:link": "pnpm workspace @nish1896/eslint-flat-config link:local",
     "config:unlink": "npm unlink @nish1896/eslint-config",
     "flat-config:unlink": "npm unlink @nish1896/eslint-flat-config",
-    "docs": "yarn workspace @nish1896/eslint-config-docs start",
-    "docs:build": "yarn workspace @nish1896/eslint-config-docs build",
-    "js-8:lint": "yarn workspace js-eslint-v8 lint",
-    "js-9:lint": "yarn workspace js-eslint-v9 lint",
-    "next-v8:lint": "yarn workspace next-eslint-v8 lint",
-    "react-v9:lint": "yarn workspace react-eslint-v9 lint",
-    "vite-v9:lint": "yarn workspace vite-eslint-v9 lint"
+    "docs": "pnpm workspace @nish1896/eslint-config-docs start",
+    "docs:build": "pnpm workspace @nish1896/eslint-config-docs build",
+    "js-8:lint": "pnpm workspace js-eslint-v8 lint",
+    "js-9:lint": "pnpm workspace js-eslint-v9 lint",
+    "next-v8:lint": "pnpm workspace next-eslint-v8 lint",
+    "react-v9:lint": "pnpm workspace react-eslint-v9 lint",
+    "vite-v9:lint": "pnpm workspace vite-eslint-v9 lint"
   },
   "keywords": [
     "@nish1896",
@@ -35,5 +34,6 @@
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
-  "license": "ISC"
+  "license": "MIT",
+  "packageManager": "pnpm@10.6.2"
 }
