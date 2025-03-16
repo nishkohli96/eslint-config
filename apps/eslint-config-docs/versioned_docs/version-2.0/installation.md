@@ -86,7 +86,7 @@ pnpm eslint yourfile.tsx
 ```
 
 :::info
-This config extends the following plugins and parsers - 
+This config extends the following plugins - 
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.37.4
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 5.2.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.10.2

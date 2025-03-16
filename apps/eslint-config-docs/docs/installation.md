@@ -98,11 +98,15 @@ yarn eslint yourfile.jsx
 pnpm eslint yourfile.tsx
 ```
 
-:::info
-This config extends the following plugins and parsers - 
+This config extends the following plugins - 
 - [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.9.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.37.1
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 5.0.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.10.0
 - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) - 8.10.0
+
+:::note
+As of March 15, 2025, the latest version of [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) is `4.2.0`. Upgrading to this version would introduce breaking changes for both configuration packages.
+
+This migration will be implemented in the next major version update for both packages.
 :::
