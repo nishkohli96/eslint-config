@@ -12,8 +12,11 @@
     "flat-config:unlink": "npm unlink @nish1896/eslint-flat-config",
     "docs": "yarn workspace @nish1896/eslint-config-docs start",
     "docs:build": "yarn workspace @nish1896/eslint-config-docs build",
-    "lint:8": "yarn workspace @nish1896/eslint-config-test-v8 fix",
-    "lint:9": "yarn workspace @nish1896/eslint-config-test-v9 fix"
+    "js-8:lint": "yarn workspace js-eslint-v8 lint",
+    "js-9:lint": "yarn workspace js-eslint-v9 lint",
+    "next-v8:lint": "yarn workspace next-eslint-v8 lint",
+    "react-v9:lint": "yarn workspace react-eslint-v9 lint",
+    "vite-v9:lint": "yarn workspace vite-eslint-v9 lint"
   },
   "keywords": [
     "@nish1896",
