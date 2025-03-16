@@ -88,12 +88,14 @@ npm pkg set scripts.lint="eslint --fix ."
 
 After that, you can run ESLint on any file or directory like this:
 
-```
+```bash
 npx eslint yourfile.js
 ```
-
+```bash
+yarn eslint yourfile.jsx
 ```
-yarn run eslint yourfile.js
+```bash
+pnpm eslint yourfile.tsx
 ```
 
 :::info

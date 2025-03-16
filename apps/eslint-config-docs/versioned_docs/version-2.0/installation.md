@@ -79,7 +79,10 @@ After that, you can run ESLint on any file or directory like this:
 npx eslint yourfile.js
 ```
 ```bash
-yarn run eslint yourfile.js
+yarn eslint yourfile.jsx
+```
+```bash
+pnpm eslint yourfile.tsx
 ```
 
 :::info
