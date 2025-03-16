@@ -7,8 +7,6 @@ title: Introduction
 
 # nish1896-eslint-config
 
-This is the latest verison of docs
-
 **[@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config)**
 
 ![NPM Version](https://img.shields.io/npm/v/%40nish1896%2Feslint-config)

@@ -11,7 +11,7 @@ Use [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslin
 
 If you have specified `"type": "module"` in the `package.json` of your application, create a `eslint.config.js` file, else use `eslint.config.mjs` file. 
 
-```sh
+```bash
 touch eslint.config.mjs
 ```
 

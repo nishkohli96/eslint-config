@@ -22,7 +22,7 @@ function HomepageHeader() {
               "button button--lg",
               styles.introButton
             )}
-            to="/intro"
+            to="/introduction"
           >
             Read the Docs
           </Link>

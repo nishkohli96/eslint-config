@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 sidebar_label: Installation
-description: How to install this package using npm or yarn?
+description: How to install this package using npm, yarn or pnpm?
 title: Installation
 ---
 
@@ -19,47 +19,59 @@ Please do refer the official docs to [install eslint](https://eslint.org/docs/la
 
 ### Eslint 9 and above
 
-```js
+```babash
 npm i eslint --save-dev
 ```
-```
+```bash
 yarn add -D eslint
+```
+```bash
+pnpm add -D eslint
 ```
 
 Next, install `@nish1896/eslint-flat-config`.
 
-```
+```bash
 npm install @nish1896/eslint-flat-config  --save-dev
 ```
-```
+```bash
 yarn add -D @nish1896/eslint-flat-config
+```
+```bash
+pnpm add -D @nish1896/eslint-flat-config
 ```
 
 ### Eslint 8
 
-We will be installing **v8.57.0** which was the last major version prior to the release of version 9.
+We will be installing **v8.57.1** which was the last major version prior to the release of version 9.
 
+```bash
+npm i eslint@8.57.1` --save-dev
 ```
-npm i eslint@8.57.0 --save-dev
+```bash
+yarn add -D eslint@8.57.1`
 ```
-```
-yarn add -D eslint@8.57.0
+```bash
+pnpm add -D eslint@8.57.1`
 ```
 
 Next, install `@nish1896/eslint-config`.
 
-```
+```bash
 npm install @nish1896/eslint-config  --save-dev
 ```
-```
+```bash
 yarn add -D @nish1896/eslint-config
+```
+```bash
+pnpm add -D @nish1896/eslint-config
 ```
 
 ### Setup
 
 Paste the following scripts in your `package.json` file
 
-```
+```bash
 "lint": "eslint",
 "lint:fix": "eslint --fix"
 ```
@@ -69,26 +81,32 @@ The first script will check for lint warnings in your code while the second scri
 :::tip
 You can also add *"lint"* command to your `package.json` file through command line.
 
-```
+```bash
 npm pkg set scripts.lint="eslint --fix ."
 ```
 :::
 
 After that, you can run ESLint on any file or directory like this:
 
-```
+```bash
 npx eslint yourfile.js
 ```
-
+```bash
+yarn eslint yourfile.jsx
 ```
-yarn run eslint yourfile.js
+```bash
+pnpm eslint yourfile.tsx
 ```
 
-:::info
-This config extends the following plugins and parsers - 
+This config extends the following plugins - 
 - [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.9.0
 - [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.37.1
 - [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 5.0.0
 - [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.10.0
 - [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) - 8.10.0
+
+:::note
+As of March 15, 2025, the latest version of [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) is `4.2.0`. Upgrading to this version would introduce breaking changes for both configuration packages.
+
+This migration will be implemented in the next major version update for both packages.
 :::

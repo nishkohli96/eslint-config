@@ -43,12 +43,14 @@ The syntax below won't work
 
 To run linting on your codebase,
 
-```sh
+```bash
 npm run lint
 ```
-
-```
+```bash
 yarn lint
+```
+```bash
+pnpm lint
 ```
 
 For formatting non-js like `.css`, `.html` files you can use prettier alongside eslint. Prettier configuration, `.prettierignore` and usage of eslint with prettier in `pre-commit` hook can be referenced from my [react-node-ts-monorepo](https://github.com/nishkohli96/react-node-ts-monorepo/blob/main/package.json).

@@ -11,7 +11,7 @@ If you are using eslint version ***8.57 or below***, use [@nish1896/eslint-confi
 
 To set up ESLint, create a `.eslintrc`, `.eslintrc.js` or `.eslintrc.json` file in your project root. Use this file to specify the configuration for your application by referring to the relevant section of this guide.
 
-```sh
+```bash
 touch .eslintrc.js
 ```
 
