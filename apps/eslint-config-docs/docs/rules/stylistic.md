@@ -21,6 +21,7 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[block-spacing](https://eslint.style/rules/default/block-spacing)||
 |[brace-style](https://eslint.style/rules/default/brace-style)||
 |[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
+|[dot-location](https://eslint.style/rules/js/dot-location)| `property` |
 |[eol-last](https://eslint.style/rules/default/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
 |[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)| consistent |
@@ -35,11 +36,13 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[no-multi-spaces](https://eslint.style/rules/default/no-multi-spaces)||
 |[no-multiple-empty-lines](https://eslint.style/rules/default/no-multiple-empty-lines)||
 |[no-trailing-spaces](https://eslint.style/rules/default/no-trailing-spaces)||
+|[@stylistic/js/nonblock-statement-body-position](https://eslint.style/rules/js/nonblock-statement-body-position)||
 |[object-curly-newline](https://eslint.style/rules/default/object-curly-newline)| `{ consistent: true }` |
 |[object-curly-spacing](https://eslint.style/rules/default/object-curly-spacing)| always |
 |[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/default/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
+|[semi](https://eslint.style/rules/js/semi)||
 |[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
 |[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)| `{ functions: 'always', classes: 'always', keywords: 'always' }` |
 |[space-infix-ops](https://eslint.style/rules/default/space-infix-ops)||

@@ -49,7 +49,6 @@ export default [
       '@stylistic/jsx-indent-props': ['warn', 2],
       '@stylistic/jsx-one-expression-per-line': ['warn', { allow: 'literal' }],
       '@stylistic/jsx-props-no-multi-spaces': 'warn',
-      '@stylistic/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/jsx-self-closing-comp': 'warn',
       '@stylistic/jsx-wrap-multilines': [
         'warn',
