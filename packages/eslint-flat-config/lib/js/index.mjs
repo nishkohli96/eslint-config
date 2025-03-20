@@ -85,6 +85,12 @@ export default [
    * would also run on build folders.
    */
   {
-    ignores: ['node_modules', 'dist', 'build', 'coverage', '.turbo']
+    ignores: [
+      'node_modules',
+      'dist',
+      'build',
+      'coverage',
+      '.turbo'
+    ]
   }
 ];

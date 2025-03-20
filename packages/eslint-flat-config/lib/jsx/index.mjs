@@ -1,14 +1,13 @@
 import globals from 'globals';
-import stylistic from '@stylistic/eslint-plugin';
+import stylisticJsx from '@stylistic/eslint-plugin-jsx'
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import pluginReact from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
   /* Global Language Options */
   {
     languageOptions: {
-      ecmaVersion: 2022,
+      ecmaVersion: 2024,
       sourceType: "module",
       globals: globals.browser,
       parserOptions: {
@@ -22,10 +21,10 @@ export default [
         version: 'detect',
       },
     },
-  },
-
-  /* Target Files */
-  {
+    plugins: {
+      '@stylistic/jsx': stylisticJsx,
+      'react-hooks': reactHooksPlugin
+    },
     files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
   },
 
@@ -35,22 +34,19 @@ export default [
 
   /* Plugins & Rules */
   {
-    plugins: {
-      '@stylistic': stylistic,
-      'react-hooks': reactHooksPlugin
-    },
     rules: {
-      '@stylistic/jsx-closing-bracket-location': 'warn',
-      '@stylistic/jsx-closing-tag-location': 'warn',
-      '@stylistic/jsx-curly-newline': ['warn', 'consistent'],
-      '@stylistic/jsx-curly-spacing': 'warn',
-      '@stylistic/jsx-equals-spacing': 'warn',
-      '@stylistic/jsx-indent': ['warn', 2],
-      '@stylistic/jsx-indent-props': ['warn', 2],
-      '@stylistic/jsx-one-expression-per-line': ['warn', { allow: 'literal' }],
-      '@stylistic/jsx-props-no-multi-spaces': 'warn',
-      '@stylistic/jsx-self-closing-comp': 'warn',
-      '@stylistic/jsx-wrap-multilines': [
+      '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
+      '@stylistic/jsx/jsx-closing-tag-location': 'warn',
+      '@stylistic/jsx/jsx-curly-newline': ['warn', 'consistent'],
+      '@stylistic/jsx/jsx-curly-spacing': 'warn',
+      '@stylistic/jsx/jsx-equals-spacing': 'warn',
+      '@stylistic/jsx/jsx-indent': ['warn', 2],
+      '@stylistic/jsx/jsx-indent-props': ['warn', 2],
+      '@stylistic/jsx/jsx-one-expression-per-line': ['warn', { allow: 'literal' }],
+      '@stylistic/jsx/jsx-pascal-case': 'warn',
+      '@stylistic/jsx/jsx-props-no-multi-spaces': 'warn',
+      '@stylistic/jsx/jsx-self-closing-comp': 'warn',
+      '@stylistic/jsx/jsx-wrap-multilines': [
         'warn',
         {
           arrow: 'parens-new-line',
