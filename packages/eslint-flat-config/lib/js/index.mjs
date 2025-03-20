@@ -1,4 +1,5 @@
 import globals from 'globals';
+import pluginJs from "@eslint/js";
 import stylisticJs from '@stylistic/eslint-plugin-js';
 
 export default [
@@ -16,6 +17,9 @@ export default [
     plugins: {
       '@stylistic/js': stylisticJs
     },
+  },
+  pluginJs.configs.recommended,
+  {
     rules: {
       '@stylistic/js/array-bracket-spacing': 'warn',
       '@stylistic/js/arrow-parens': ['warn', 'as-needed'],
@@ -76,7 +80,47 @@ export default [
       '@stylistic/js/spaced-comment': 'warn',
       '@stylistic/js/switch-colon-spacing': 'warn',
       '@stylistic/js/template-curly-spacing': 'warn',
-      '@stylistic/js/wrap-regex': 'warn'
+      '@stylistic/js/wrap-regex': 'warn',
+      'array-callback-return': 'warn',
+      'block-scoped-var': 'warn',
+      curly: 'warn',
+      complexity: 'warn',
+      'default-case': 'warn',
+      'default-case-last': 'warn',
+      eqeqeq: 'error',
+      'func-names': ['warn', 'as-needed'],
+      'logical-assignment-operators': ['warn', 'always'],
+      'max-params': ['warn', 5],
+      'new-cap': 'warn',
+      'no-await-in-loop': 'warn',
+      'no-continue': 'warn',
+      'no-debugger': 'warn',
+      'no-duplicate-imports': 'warn',
+      'no-empty-function': 'warn',
+      'no-empty-static-block': 'warn',
+      'no-eq-null': 'error',
+      'no-implicit-coercion': 'warn',
+      'no-inline-comments': 'warn',
+      'no-lonely-if': 'warn',
+      'no-nested-ternary': 'warn',
+      'no-plusplus': 'warn',
+      'no-throw-literal': 'warn',
+      'no-unneeded-ternary': 'warn',
+      'no-unreachable': 'warn',
+      'no-unused-expressions': 'warn',
+      'no-useless-assignment': 'warn',
+      'no-useless-concat': 'warn',
+      'no-use-before-define': 'error',
+      'no-var': 'warn',
+      'object-shorthand': 'warn',
+      'operator-assignment': 'warn',
+      'prefer-const': 'warn',
+      'prefer-exponentiation-operator': 'warn',
+      'prefer-promise-reject-errors': 'warn',
+      'prefer-rest-params': 'error',
+      'prefer-template': 'warn',
+      'require-await': 'warn',
+      'use-isnan': 'warn',
     }
   },
   /**
