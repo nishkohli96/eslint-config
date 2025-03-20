@@ -1,24 +1,18 @@
 import globals from 'globals';
-import stylisticJs from '@stylistic/eslint-plugin-js'
+import stylisticJs from '@stylistic/eslint-plugin-js';
 
 export default [
   /* Global Language Options */
   {
     languageOptions: {
       ecmaVersion: 2024,
-      sourceType: "module",
+      sourceType: 'module',
       globals: {
         ...globals.node,
         ...globals.jest
       }
     },
-  },
-  /* Target Files */
-  {
     files: ['**/*.{js,mjs,cjs}'],
-  },
-  /* Plugins & Rules */
-  {
     plugins: {
       '@stylistic/js': stylisticJs
     },
@@ -45,7 +39,7 @@ export default [
           SwitchCase: 1
         }
       ],
-//      '@stylistic/js/indent-binary-ops': ['warn', 2],
+      //      '@stylistic/js/indent-binary-ops': ['warn', 2],
       '@stylistic/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/js/key-spacing': 'warn',
       '@stylistic/js/linebreak-style': 'warn',
@@ -68,35 +62,29 @@ export default [
         {
           functions: 'always',
           classes: 'always',
-          keywords: 'always',
-        },
+          keywords: 'always'
+        }
       ],
       '@stylistic/js/space-infix-ops': 'warn',
       '@stylistic/js/space-unary-ops': [
         'warn',
         {
           words: true,
-          nonwords: false,
-        },
+          nonwords: false
+        }
       ],
       '@stylistic/js/spaced-comment': 'warn',
       '@stylistic/js/switch-colon-spacing': 'warn',
       '@stylistic/js/template-curly-spacing': 'warn',
-      '@stylistic/js/wrap-regex': 'warn',
+      '@stylistic/js/wrap-regex': 'warn'
     }
   },
   /**
    * Ignore linting the below folders...
-   * "ignores" needs to be written at last, else linting 
-   * would also run on build folders. 
+   * "ignores" needs to be written at last, else linting
+   * would also run on build folders.
    */
   {
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.turbo',
-    ]
+    ignores: ['node_modules', 'dist', 'build', 'coverage', '.turbo']
   }
 ];
