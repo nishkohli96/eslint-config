@@ -1,11 +1,14 @@
 import globals from 'globals';
+import js from '@eslint/js';
+import tseslint from 'typescript-eslint';
+import stylistic from '@stylistic/eslint-plugin';
 import stylisticJs from '@stylistic/eslint-plugin-js'
 
 export default [
   /* Global Language Options */
   {
     languageOptions: {
-      ecmaVersion: 2024,
+      ecmaVersion: 2022,
       sourceType: "module",
       globals: {
         ...globals.node,
@@ -13,14 +16,19 @@ export default [
       }
     },
   },
+
   /* Target Files */
   {
-    files: ['**/*.{js,mjs,cjs}'],
+    files: ['**/*.{js,mjs,cjs,ts}'],
   },
+  /* Recommended Configs */
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+
   /* Plugins & Rules */
   {
     plugins: {
-      '@stylistic/js': stylisticJs
+      '@stylistic': stylistic,
     },
     rules: {
       '@stylistic/array-bracket-spacing': 'warn',
