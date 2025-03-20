@@ -1,0 +1,6 @@
+position: 4
+label: Usage
+collapsible: true
+collapsed: false
+customProps:
+  description: How to import and use this package in your eslint config file.
