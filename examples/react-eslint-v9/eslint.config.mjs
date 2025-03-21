@@ -1,10 +1,11 @@
 import jsConfig from '@nish1896/eslint-flat-config/js';
-import reactConfig from '@nish1896/eslint-flat-config/jsx';
+import tsConfig from '@nish1896/eslint-flat-config/ts';
+import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
-  { files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'] },
   ...jsConfig,
-  ...reactConfig,
+  ...tsConfig,
+  ...jsxConfig,
   {
     rules: {}
   }

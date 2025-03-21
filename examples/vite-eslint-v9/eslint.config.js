@@ -7,12 +7,14 @@
 import reactRefresh from 'eslint-plugin-react-refresh'
 import tseslint from 'typescript-eslint'
 import jsConfig from '@nish1896/eslint-flat-config/js';
+import tsConfig from '@nish1896/eslint-flat-config/ts';
 import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default tseslint.config(
   {
     extends: [
       ...jsConfig,
+      ...tsConfig,
       ...jsxConfig
     ],
     files: ['**/*.{ts,tsx}'],

@@ -5,8 +5,10 @@ echo '🏁 Initiating Packing...'
 
 cd ./packages/eslint-config
 npm pack
+npm link
 echo "Packed 📦: @nish1896/eslint-config successfully! 🥳🥳🥳"
 
 cd ../eslint-flat-config
 npm pack
+npm link
 echo "Packed 📦: @nish1896/eslint-flat-config successfully! 🥳🥳🥳"
