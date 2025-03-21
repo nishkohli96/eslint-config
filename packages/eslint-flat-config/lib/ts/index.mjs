@@ -16,7 +16,6 @@ export default [
         tsconfigRootDir: import.meta.dirname,
       },
     },
-    files: ['**/*.{ts,tsx}']
   },
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylistic,
@@ -51,7 +50,8 @@ export default [
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
-    }
+    },
+    files: ['**/*.{ts,tsx}']
   },
   {
     ignores: [

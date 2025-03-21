@@ -14,7 +14,6 @@ export default [
         ...globals.jest
       }
     },
-    files: ['**/*.{js,mjs,cjs}'],
     plugins: {
       '@stylistic/js': stylisticJs,
       '@stylistic/plus': stylisticPlus
@@ -124,7 +123,8 @@ export default [
       'prefer-template': 'warn',
       'require-await': 'warn',
       'use-isnan': 'warn',
-    }
+    },
+    files: ['**/*.{js,mjs,cjs}'],
   },
   /**
    * Ignore linting the below folders...
