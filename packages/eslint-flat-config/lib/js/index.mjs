@@ -1,6 +1,7 @@
 import globals from 'globals';
-import pluginJs from "@eslint/js";
+import pluginJs from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylisticPlus from '@stylistic/eslint-plugin-plus';
 
 export default [
   /* Global Language Options */
@@ -15,7 +16,8 @@ export default [
     },
     files: ['**/*.{js,mjs,cjs}'],
     plugins: {
-      '@stylistic/js': stylisticJs
+      '@stylistic/js': stylisticJs,
+      '@stylistic/plus': stylisticPlus
     },
   },
   pluginJs.configs.recommended,
@@ -43,7 +45,6 @@ export default [
           SwitchCase: 1
         }
       ],
-      //      '@stylistic/js/indent-binary-ops': ['warn', 2],
       '@stylistic/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/js/key-spacing': 'warn',
       '@stylistic/js/linebreak-style': 'warn',
@@ -81,10 +82,12 @@ export default [
       '@stylistic/js/switch-colon-spacing': 'warn',
       '@stylistic/js/template-curly-spacing': 'warn',
       '@stylistic/js/wrap-regex': 'warn',
+      '@stylistic/plus/indent-binary-ops': ['warn', 2],
+      '@stylistic/plus/curly-newline': ['warn', 'always'],
       'array-callback-return': 'warn',
       'block-scoped-var': 'warn',
       curly: 'warn',
-      complexity: 'warn',
+      complexity: ['warn', 16],
       'default-case': 'warn',
       'default-case-last': 'warn',
       eqeqeq: 'error',

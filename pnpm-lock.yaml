@@ -251,6 +251,12 @@ importers:
       '@stylistic/eslint-plugin-js':
         specifier: ^4.2.0
         version: 4.2.0(eslint@9.22.0(jiti@1.21.7))
+      '@stylistic/eslint-plugin-jsx':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.22.0(jiti@1.21.7))
+      '@stylistic/eslint-plugin-plus':
+        specifier: ^4.2.0
+        version: 4.2.0(eslint@9.22.0(jiti@1.21.7))
       '@stylistic/eslint-plugin-ts':
         specifier: ^4.2.0
         version: 4.2.0(eslint@9.22.0(jiti@1.21.7))(typescript@5.8.2)
@@ -2351,6 +2357,17 @@ packages:
   '@stylistic/eslint-plugin-js@4.2.0':
     resolution: {integrity: sha512-MiJr6wvyzMYl/wElmj8Jns8zH7Q1w8XoVtm+WM6yDaTrfxryMyb8n0CMxt82fo42RoLIfxAEtM6tmQVxqhk0/A==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=9.0.0'
+
+  '@stylistic/eslint-plugin-jsx@4.2.0':
+    resolution: {integrity: sha512-V+AtcVs0a3ck2IWWH/fd/+TmOYSgBJlsJXIR65+3kqgNi3p3pPfo9C8nhRsU/KlcSwhnzyx+Z/kEcuWCMZtTcA==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+    peerDependencies:
+      eslint: '>=9.0.0'
+
+  '@stylistic/eslint-plugin-plus@4.2.0':
+    resolution: {integrity: sha512-w7HArI09lCB7u9hj0ZXojY49iQmcmL8mJKkZ3EXCRCy6nlM8AeHZCFxNDXJo4EW/sP08RiaspXEbL9ZtDs4cPQ==}
     peerDependencies:
       eslint: '>=9.0.0'
 
@@ -11788,6 +11805,20 @@ snapshots:
       micromark-util-symbol: 1.1.0
 
   '@stylistic/eslint-plugin-js@4.2.0(eslint@9.22.0(jiti@1.21.7))':
+    dependencies:
+      eslint: 9.22.0(jiti@1.21.7)
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+
+  '@stylistic/eslint-plugin-jsx@4.2.0(eslint@9.22.0(jiti@1.21.7))':
+    dependencies:
+      eslint: 9.22.0(jiti@1.21.7)
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+      estraverse: 5.3.0
+      picomatch: 4.0.2
+
+  '@stylistic/eslint-plugin-plus@4.2.0(eslint@9.22.0(jiti@1.21.7))':
     dependencies:
       eslint: 9.22.0(jiti@1.21.7)
       eslint-visitor-keys: 4.2.0

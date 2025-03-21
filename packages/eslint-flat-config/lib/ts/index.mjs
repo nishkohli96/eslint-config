@@ -1,11 +1,13 @@
 import tseslint from 'typescript-eslint';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
+import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
 
 export default [
   {
     plugins: {
-      '@stylistic/ts': stylisticTs
+      '@stylistic/ts': stylisticTs,
+      '@stylistic/plus': stylisticPlus
     },
     languageOptions: {
       parser: parserTs
@@ -13,6 +15,7 @@ export default [
     files: ['**/*.{ts,tsx}']
   },
   ...tseslint.configs.recommended,
+  ...tseslint.configs.stylistic,
   {
     rules: {
 			'@stylistic/ts/block-spacing': 'warn',
@@ -34,7 +37,17 @@ export default [
         }
       ],
       '@stylistic/ts/space-infix-ops': 'warn',
-      '@stylistic/ts/type-annotation-spacing': 'warn'
+      '@stylistic/ts/type-annotation-spacing': 'warn',
+      '@stylistic/plus/type-generic-spacing': 'warn',
+      '@stylistic/plus/type-named-tuple-spacing': 'warn',
+      '@typescript-eslint/array-type': 'warn',
+      '@typescript-eslint/ban-ts-comment': 'off',
+      '@typescript-eslint/consistent-generic-constructors': 'warn',
+      '@typescript-eslint/consistent-type-definitions': 'off',
+      '@typescript-eslint/consistent-type-exports': 'warn',
+      '@typescript-eslint/no-explicit-any': 'warn',
+      '@typescript-eslint/no-this-alias': 'off',
+      '@typescript-eslint/no-unused-vars': 'warn',
     }
   },
   {
