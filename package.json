@@ -17,6 +17,9 @@
     "react-v9:lint": "pnpm --filter react-eslint-v9 run lint",
     "vite-v9:lint": "pnpm --filter vite-eslint-v9 run lint"
   },
+  "devDependencies": {
+    "rimraf":"^6.0.1"
+  },
   "keywords": [
     "@nish1896",
     "@nish1896/eslint-config",
