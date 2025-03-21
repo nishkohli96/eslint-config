@@ -15,7 +15,7 @@ export default tseslint.config(
     extends: [
       ...jsConfig,
       ...tsConfig,
-      // ...jsxConfig
+      ...jsxConfig
     ],
     files: ['**/*.{ts,tsx}'],
     plugins: {

@@ -1,6 +1,7 @@
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx'
 import jsxA11y from 'eslint-plugin-jsx-a11y';
+import pluginReact from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
@@ -8,8 +9,12 @@ export default [
   {
     languageOptions: {
       ecmaVersion: 2024,
-      sourceType: "module",
-      globals: globals.browser,
+      sourceType: 'module',
+      ...pluginReact.configs.flat.recommended.languageOptions,
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser,
+      },
       parserOptions: {
         ecmaFeatures: {
           jsx: true,
@@ -25,12 +30,12 @@ export default [
       '@stylistic/jsx': stylisticJsx,
       'react-hooks': reactHooksPlugin
     },
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
   },
 
   /* Recommended Configs */
   jsxA11y.flatConfigs.recommended,
-  /* Plugins & Rules */
+  pluginReact.configs.flat.recommended,
+
   {
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
@@ -65,7 +70,8 @@ export default [
           extensions: ['.tsx', '.jsx'],
         },
       ],
-    }
+    },
+    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
   },
   {
     ignores: [
