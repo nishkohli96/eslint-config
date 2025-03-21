@@ -3,15 +3,16 @@
 
 echo '🏁 Initiating Packing...'
 
-cd ./packages/eslint-config
-npx rimraf *.tgz
-npm pack
-echo "Packed 📦: @nish1896/eslint-config successfully! 🥳🥳🥳"
+# cd ./packages/eslint-config
+# npx rimraf *.tgz
+# npm pack
+# echo "Packed 📦: @nish1896/eslint-config successfully! 🥳🥳🥳"
 
-cd ../eslint-flat-config
+# cd ../eslint-flat-config
+cd ./packages/eslint-flat-config
 npx rimraf *.tgz
 npm pack
 echo "Packed 📦: @nish1896/eslint-flat-config successfully! 🥳🥳🥳"
 
-cd ../../examples/vite-eslint-v9
+cd ../../examples/next-v9-js
 pnpm add -D ../../packages/eslint-flat-config/*.tgz
