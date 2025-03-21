@@ -4,14 +4,14 @@
 echo '🏁 Initiating Packing...'
 
 cd ./packages/eslint-config
-rimraf *.tgz
+npx rimraf *.tgz
 npm pack
 echo "Packed 📦: @nish1896/eslint-config successfully! 🥳🥳🥳"
 
 cd ../eslint-flat-config
-rimraf *.tgz
+npx rimraf *.tgz
 npm pack
 echo "Packed 📦: @nish1896/eslint-flat-config successfully! 🥳🥳🥳"
 
-cd ../../examples/vite-eslint-v9
-pnpm link @nish1896/eslint-flat-config
+# cd ../../examples/vite-eslint-v9
+# pnpm link @nish1896/eslint-flat-config
