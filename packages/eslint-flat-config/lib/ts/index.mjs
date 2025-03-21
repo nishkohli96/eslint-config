@@ -10,11 +10,15 @@ export default [
       '@stylistic/plus': stylisticPlus
     },
     languageOptions: {
-      parser: parserTs
+      parser: parserTs,
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     files: ['**/*.{ts,tsx}']
   },
-  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylistic,
   {
     rules: {
@@ -25,7 +29,6 @@ export default [
       '@stylistic/ts/member-delimiter-style': 'warn',
       '@stylistic/ts/no-extra-semi': 'warn',
       '@stylistic/ts/object-curly-spacing': ['warn', 'always'],
-      '@stylistic/ts/operator-linebreak': ['warn', 'before'],
       '@stylistic/ts/quotes': ['warn', 'single'],
       '@stylistic/ts/semi': 'warn',
       '@stylistic/ts/space-before-blocks': [

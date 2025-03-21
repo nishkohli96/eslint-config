@@ -30,8 +30,6 @@ export default [
 
   /* Recommended Configs */
   jsxA11y.flatConfigs.recommended,
-  pluginReact.configs.flat.recommended,
-
   /* Plugins & Rules */
   {
     rules: {

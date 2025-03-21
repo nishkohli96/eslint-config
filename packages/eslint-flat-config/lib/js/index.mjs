@@ -45,7 +45,7 @@ export default [
           SwitchCase: 1
         }
       ],
-      '@stylistic/jsx-quotes': ['warn', 'prefer-double'],
+      '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/js/key-spacing': 'warn',
       '@stylistic/js/linebreak-style': 'warn',
       '@stylistic/js/no-extra-semi': 'warn',

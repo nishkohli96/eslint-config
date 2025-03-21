@@ -2076,7 +2076,7 @@ packages:
       eslint: '>=9'
 
   '@nish1896/eslint-flat-config@file:packages/eslint-flat-config/nish1896-eslint-flat-config-2.0.0.tgz':
-    resolution: {integrity: sha512-0v3WRXp3oP2kP1bNRdChUgUtjuLIbNsONCDHsdhcn67Pl2MoFlcFHj0/eMhgsKjUNTWE5yyLkRZaUQT6Tu0dlg==, tarball: file:packages/eslint-flat-config/nish1896-eslint-flat-config-2.0.0.tgz}
+    resolution: {integrity: sha512-Kqaqoxq8YU6cL99H1Zs9k2Zp7pHNY6FV+MGda1rRymoYS2hiCj+ex+DZahljROQst6WoTQ/cU51XsHotmJHX3w==, tarball: file:packages/eslint-flat-config/nish1896-eslint-flat-config-2.0.0.tgz}
     version: 2.0.0
     engines: {node: '>=18.18.0 || >=20.9.0 || >=21'}
     peerDependencies:
