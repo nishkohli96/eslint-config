@@ -13,5 +13,5 @@ npx rimraf *.tgz
 npm pack
 echo "Packed 📦: @nish1896/eslint-flat-config successfully! 🥳🥳🥳"
 
-# cd ../../examples/vite-eslint-v9
-# pnpm link @nish1896/eslint-flat-config
+cd ../../examples/vite-eslint-v9
+pnpm add -D ../../packages/eslint-flat-config/*.tgz
