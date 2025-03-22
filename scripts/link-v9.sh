@@ -3,6 +3,8 @@
 
 echo "🏁 Initiating Linking of eslint-flat-config!"
 
+yarn unlink @nish1896/eslint-config
+
 # Link the package
 echo "Linking Package... 🔗"
 cd packages/eslint-flat-config
