@@ -1,6 +1,6 @@
 {
-  "name": "next-v9-js",
-  "version": "0.1.0",
+  "name": "next-v15-ts",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -16,9 +16,14 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@nish1896/eslint-flat-config": "file:../../packages/eslint-flat-config/nish1896-eslint-flat-config-2.0.0.tgz",
+    "@nish1896/eslint-flat-config": "../../packages/eslint-flat-config/nish1896-eslint-flat-config-2.0.0.tgz",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
-    "eslint-plugin-jsx-a11y": "^6.10.2"
+    "tailwindcss": "^4",
+    "typescript": "^5"
   }
 }
