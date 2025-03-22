@@ -21,14 +21,14 @@ export default [
         },
       },
     },
+    plugins: {
+      '@stylistic/jsx': stylisticJsx,
+      'react-hooks': reactHooksPlugin
+    },
     settings: {
       react: {
         version: 'detect',
       },
-    },
-    plugins: {
-      '@stylistic/jsx': stylisticJsx,
-      'react-hooks': reactHooksPlugin
     },
   },
 

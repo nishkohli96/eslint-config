@@ -93,7 +93,6 @@ export default [
       'func-names': ['warn', 'as-needed'],
       'logical-assignment-operators': ['warn', 'always'],
       'max-params': ['warn', 5],
-      'new-cap': 'warn',
       'no-await-in-loop': 'warn',
       'no-continue': 'warn',
       'no-debugger': 'warn',
