@@ -71,7 +71,7 @@ export default [
         },
       ],
     },
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    files: ['**/*.{js,mjs,cjs,jsx}'],
   },
   {
     ignores: [

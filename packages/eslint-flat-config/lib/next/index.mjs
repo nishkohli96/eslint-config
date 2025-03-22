@@ -1,7 +1,6 @@
 /**
- * This eslintConfig file for NextJS v15 and above combines rules
- * from both "js" and "jsx" imports of this package.
- * 
+ * Included only NextJS specific rules and configurations.
+ *
  * Import of the following plugins will be handled from the inbuild
  * eslintConfig provided by NextJS, so that there is no error wrt
  * redefining plugins.
@@ -78,7 +77,7 @@ export default [
         },
       ],
     },
-    files: ['**/*.{js,mjs,cjs,ts,jsx,tsx}'],
+    files: ['**/*.{js,mjs,cjs,jsx}'],
   },
   {
     ignores: [

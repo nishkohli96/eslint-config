@@ -4,6 +4,7 @@ import { FlatCompat } from '@eslint/eslintrc';
 import jsConfig from '@nish1896/eslint-flat-config/js';
 import tsConfig from '@nish1896/eslint-flat-config/ts';
 import nextConfig from '@nish1896/eslint-flat-config/next';
+import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -17,6 +18,7 @@ const eslintConfig = [
   ...jsConfig,
   ...tsConfig,
   ...nextConfig,
+  ...nextTsConfig,
   {
     rules: {
     }

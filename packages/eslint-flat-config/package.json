@@ -9,9 +9,10 @@
   "exports": {
     "./package.json": "./package.json",
     "./js": "./lib/js/index.mjs",
-    "./ts": "./lib/ts/index.mjs",
     "./jsx": "./lib/jsx/index.mjs",
-    "./next": "./lib/next/index.mjs"
+    "./ts": "./lib/ts/index.mjs",
+    "./next": "./lib/next/index.mjs",
+    "./next-ts": "./lib/next-ts/index.mjs"
   },
   "scripts": {
     "link:local": "npm link",
