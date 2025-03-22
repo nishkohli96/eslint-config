@@ -19,8 +19,6 @@ const eslintConfig = [
   ...nextConfig,
   {
     rules: {
-      'jsx-a11y/anchor-ambiguous-text': 'error',
-      'jsx-a11y/control-has-associated-label': 'error',
     }
   }
 ];
