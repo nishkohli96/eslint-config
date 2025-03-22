@@ -14,5 +14,5 @@ npx rimraf *.tgz
 npm pack
 echo "Packed 📦: @nish1896/eslint-flat-config successfully! 🥳🥳🥳"
 
-cd ../../examples/next-v9-js
-pnpm add -D ../../packages/eslint-flat-config/*.tgz
+cd ../../examples/next-v9-ts
+yarn add -D ../../packages/eslint-flat-config/*.tgz

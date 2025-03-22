@@ -3,26 +3,26 @@
 # Install Dependencies & Build Package
 echo "🏁 Initiating Setup..."
 
-echo "Checking pnpm installation..."
-# Check if pnpm is installed
-if ! command -v pnpm >/dev/null 2>&1; then
-  echo "🚀 pnpm not found! Installing globally..."
-  # Install pnpm globally using npm
-  npm install -g pnpm
+echo "Checking yarn installation..."
+# Check if yarn is installed
+if ! command -v yarn >/dev/null 2>&1; then
+  echo "🚀 yarn not found! Installing globally..."
+  # Install yarn globally using npm
+  npm install -g yarn
   # Verify installation
-  if command -v pnpm >/dev/null 2>&1; then
-    echo "✅ pnpm installed successfully!"
+  if command -v yarn >/dev/null 2>&1; then
+    echo "✅ yarn installed successfully!"
   else
-    echo "❌ Failed to install pnpm. Check npm settings."
+    echo "❌ Failed to install yarn. Check npm settings."
     exit 1
   fi
 else
-  echo "✅ pnpm is already installed!"
+  echo "✅ yarn is already installed!"
 fi
 
 echo "Installing Dependencies & Building Packages 🛠️"
 
-pnpm install
+yarn install
 
 echo "Creating a tarball of the packages..."
 sh pack.sh
