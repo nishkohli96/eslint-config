@@ -6,17 +6,21 @@
   "private": true,
   "workspaces": [
     "packages/*",
-    "examples/*",
+    "examples/**/*",
     "apps/*"
   ],
   "scripts": {
+    "setup": "sh ./scripts/setup.sh",
+    "packs": "sh ./scripts/pack.sh",
+    "link-v8": "sh ./scripts/link-v8.sh",
+    "link-v9": "sh ./scripts/link-v9.sh",
     "config:link": "yarn workspace @nish1896/eslint-config link:local",
     "flat-config:link": "yarn workspace @nish1896/eslint-flat-config link:local",
     "config:unlink": "npm unlink @nish1896/eslint-config",
     "flat-config:unlink": "npm unlink @nish1896/eslint-flat-config",
     "docs": "yarn workspace @nish1896/eslint-config-docs start",
     "docs:build": "yarn workspace @nish1896/eslint-config-docs build",
-    "js-8:lint": "yarn workspace js-v8 lint",
+    "js-v8:lint": "yarn workspace js-v8 lint",
     "next-v14:lint": "yarn workspace next-v14 lint",
     "react-v18:lint": "yarn workspace react-v18 lint",
     "js-9:lint": "yarn workspace js-v9 lint",

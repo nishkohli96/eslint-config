@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@nish1896/eslint-flat-config": "../../packages/eslint-flat-config/nish1896-eslint-flat-config-2.0.0.tgz",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

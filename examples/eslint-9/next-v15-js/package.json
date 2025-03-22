@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@nish1896/eslint-flat-config": "file:../../packages/eslint-flat-config/nish1896-eslint-flat-config-2.0.0.tgz",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
     "eslint-plugin-jsx-a11y": "^6.10.2"

@@ -1,5 +1,5 @@
 {
-  "name": "react-eslint-v9",
+  "name": "react-v19",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -26,7 +26,6 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
-    "@nish1896/eslint-flat-config": "*",
     "eslint": "^9.22.0",
     "eslint-plugin-react": "^7.37.2",
     "globals": "^16.0.0",
