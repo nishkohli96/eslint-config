@@ -40,10 +40,10 @@ export default [
       },
     },
   },
+  reactPlugin.configs.flat.recommended,
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
   },
-  reactPlugin.configs.flat.recommended,
   {
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',

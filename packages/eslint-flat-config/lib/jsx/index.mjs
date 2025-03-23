@@ -31,11 +31,12 @@ export default [
       },
     },
   },
-
+  {
+    files: ['**/*.{js,mjs,cjs,jsx}'],
+  },
   /* Recommended Configs */
   jsxA11y.flatConfigs.recommended,
   reactPlugin.configs.flat.recommended,
-
   {
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
@@ -71,7 +72,6 @@ export default [
         },
       ],
     },
-    files: ['**/*.{js,mjs,cjs,jsx}'],
   },
   {
     ignores: [

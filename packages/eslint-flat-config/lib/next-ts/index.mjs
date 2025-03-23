@@ -32,6 +32,9 @@ export default [
       },
     },
   },
+  {
+    files: ['**/*.{ts,tsx}'],
+  },
   ...tseslint.configs.stylistic,
   {
     rules: {
@@ -65,7 +68,6 @@ export default [
       '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
     },
-    files: ['**/*.{ts,tsx}'],
   },
   {
     ignores: [

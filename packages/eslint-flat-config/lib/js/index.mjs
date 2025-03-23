@@ -21,6 +21,9 @@ export default [
   },
   pluginJs.configs.recommended,
   {
+    files: ['**/*.{js,mjs,cjs}'],
+  },
+  {
     rules: {
       '@stylistic/js/array-bracket-spacing': 'warn',
       '@stylistic/js/arrow-parens': ['warn', 'as-needed'],
@@ -123,7 +126,6 @@ export default [
       'require-await': 'warn',
       'use-isnan': 'warn',
     },
-    files: ['**/*.{js,mjs,cjs}'],
   },
   /**
    * Ignore linting the below folders...
