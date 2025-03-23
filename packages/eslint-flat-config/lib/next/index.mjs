@@ -89,6 +89,8 @@ export default [
       '.next',
       '.turbo',
       '.eslintcache',
+      'eslint.config.js',
+      'eslint.config.mjs',
       'storybook-static',
     ],
   }

@@ -7,6 +7,12 @@ export default [
   ...tsConfig,
   ...jsxConfig,
   {
-    rules: {}
+    rules: {},
+  },
+  {
+    ignores: [
+      'src/reportWebVitals.ts',
+      'src/App.test.tsx'
+    ]
   }
 ];

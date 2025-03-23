@@ -138,6 +138,8 @@ export default [
       'dist',
       'build',
       'coverage',
+      'eslint.config.js',
+      'eslint.config.mjs',
       '.turbo'
     ]
   }
