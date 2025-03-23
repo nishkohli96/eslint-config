@@ -4,7 +4,6 @@
  * Import of the following plugins will be handled from the inbuild
  * eslintConfig provided by NextJS, so that there is no error wrt
  * redefining plugins.
- * - tselint
  * - jsxA11y
  * - reactPlugin
  * - reactHooksPlugin
@@ -35,17 +34,17 @@ export default [
       '@stylistic/jsx': stylisticJsx,
       'react-hooks': reactHooksPlugin,
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
   },
   {
     files: ['**/*.{js,mjs,cjs,jsx}'],
   },
   reactPlugin.configs.flat.recommended,
   {
-    settings: {
-      react: {
-        version: 'detect',
-      },
-    },
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
       '@stylistic/jsx/jsx-closing-tag-location': 'warn',
