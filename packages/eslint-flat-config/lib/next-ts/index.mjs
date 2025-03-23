@@ -14,15 +14,13 @@ export default [
 			ecmaVersion: 2024,
       parser: parserTs,
 			sourceType: 'module',
-      parserOptions: {
-        projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
 			globals: {
 				...globals.serviceworker,
 				...globals.browser,
 			},
 			parserOptions: {
+				projectService: true,
+        tsconfigRootDir: import.meta.dirname,
 				ecmaFeatures: {
 					jsx: true,
 				},
@@ -34,7 +32,6 @@ export default [
       },
     },
   },
-  ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylistic,
   {
     rules: {

@@ -12,7 +12,7 @@
 
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx'
-import pluginReact from 'eslint-plugin-react';
+import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
@@ -33,16 +33,19 @@ export default [
     },
     plugins: {
       '@stylistic/jsx': stylisticJsx,
-      'react-hooks': reactHooksPlugin
+      'react-hooks': reactHooksPlugin,
     },
+  },
+  {
+    files: ['**/*.{js,mjs,cjs,jsx}'],
+  },
+  reactPlugin.configs.flat.recommended,
+  {
     settings: {
       react: {
         version: 'detect',
       },
     },
-  },
-  pluginReact.configs.flat.recommended,
-  {
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
       '@stylistic/jsx/jsx-closing-tag-location': 'warn',
@@ -77,7 +80,6 @@ export default [
         },
       ],
     },
-    files: ['**/*.{js,mjs,cjs,jsx}'],
   },
   {
     ignores: [

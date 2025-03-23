@@ -1,7 +1,7 @@
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx'
 import jsxA11y from 'eslint-plugin-jsx-a11y';
-import pluginReact from 'eslint-plugin-react';
+import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
@@ -10,7 +10,7 @@ export default [
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
-      ...pluginReact.configs.flat.recommended.languageOptions,
+      ...reactPlugin.configs.flat.recommended.languageOptions,
       globals: {
         ...globals.serviceworker,
         ...globals.browser,
@@ -34,7 +34,7 @@ export default [
 
   /* Recommended Configs */
   jsxA11y.flatConfigs.recommended,
-  pluginReact.configs.flat.recommended,
+  reactPlugin.configs.flat.recommended,
 
   {
     rules: {

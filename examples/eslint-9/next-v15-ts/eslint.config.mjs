@@ -2,7 +2,6 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
 import jsConfig from '@nish1896/eslint-flat-config/js';
-import tsConfig from '@nish1896/eslint-flat-config/ts';
 import nextConfig from '@nish1896/eslint-flat-config/next';
 import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 
@@ -16,7 +15,6 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   ...jsConfig,
-  ...tsConfig,
   ...nextConfig,
   ...nextTsConfig,
   {
