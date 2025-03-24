@@ -14,16 +14,14 @@ export default [
         ...globals.jest
       }
     },
+    files: ['**/*.{js,mjs,cjs}'],
+  },
+  pluginJs.configs.recommended,
+  {
     plugins: {
       '@stylistic/js': stylisticJs,
       '@stylistic/plus': stylisticPlus
     },
-  },
-  pluginJs.configs.recommended,
-  {
-    files: ['**/*.{js,mjs,cjs}'],
-  },
-  {
     rules: {
       '@stylistic/js/array-bracket-spacing': 'warn',
       '@stylistic/js/arrow-parens': ['warn', 'as-needed'],
