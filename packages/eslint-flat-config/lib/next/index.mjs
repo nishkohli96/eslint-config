@@ -14,8 +14,8 @@ import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 
 export default [
-  /* Global Language Options */
   {
+    name: '@nish1896/eslint-flat-config/js',
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
@@ -25,13 +25,11 @@ export default [
       },
       parserOptions: {
         ecmaFeatures: {
-          jsx: true
-        }
-      }
+          jsx: true,
+        },
+      },
     },
-    files: ['**/*.{js,mjs,cjs,jsx}']
-  },
-  {
+    files: ['**/*.{js,mjs,cjs,jsx}'],
     plugins: {
       '@stylistic/jsx': stylisticJsx,
     },
@@ -76,9 +74,7 @@ export default [
           extensions: ['.tsx', '.jsx']
         }
       ]
-    }
-  },
-  {
+    },
     ignores: [
       'node_modules',
       'dist',
@@ -91,5 +87,5 @@ export default [
       'eslint.config.mjs',
       'storybook-static'
     ]
-  }
+  },
 ];
