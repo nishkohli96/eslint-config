@@ -3,6 +3,7 @@ import tseslint from 'typescript-eslint';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
+import { commonConfig } from '../common';
 
 export default [
   {
@@ -67,14 +68,6 @@ export default [
       '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/no-unused-vars': 'warn'
     },
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      'eslint.config.js',
-      'eslint.config.mjs',
-      '.turbo'
-    ]
+    ignores: commonConfig.ignoreDirsFiles,
   },
 ];

@@ -3,6 +3,7 @@ import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import { commonConfig } from '../common';
 
 export default [
   /* Global Language Options */
@@ -79,17 +80,6 @@ export default [
         }
       ]
     },
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.next',
-      '.turbo',
-      '.eslintcache',
-      'eslint.config.js',
-      'eslint.config.mjs',
-      'storybook-static'
-    ]
+    ignores: commonConfig.ignoreDirsFiles,
   },
 ];

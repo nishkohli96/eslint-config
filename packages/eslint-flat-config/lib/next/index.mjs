@@ -12,6 +12,7 @@
 
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
+import { commonConfig } from '../common';
 
 export default [
   {
@@ -75,17 +76,6 @@ export default [
         }
       ]
     },
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.next',
-      '.turbo',
-      '.eslintcache',
-      'eslint.config.js',
-      'eslint.config.mjs',
-      'storybook-static'
-    ]
+    ignores: commonConfig.ignoreDirsFiles,
   },
 ];
