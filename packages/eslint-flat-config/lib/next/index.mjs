@@ -1,18 +1,17 @@
 /**
- * Included only NextJS specific rules and configurations.
+ * Adding stylistic jsx rules alongside the eslint rules from
+ * "eslint-plugin-next" which includes recommended rule-sets
+ * from the following ESLint plugins:
+ * - eslint-plugin-react
+ * - eslint-plugin-react-hooks
+ * - eslint-plugin-next
  *
- * Import of the following plugins will be handled from the inbuild
- * eslintConfig provided by NextJS, so that there is no error wrt
- * redefining plugins.
- * - jsxA11y
- * - reactPlugin
- * - reactHooksPlugin
+ * Reference -
+ * https://nextjs.org/docs/app/api-reference/config/eslint
  */
 
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-import reactPlugin from 'eslint-plugin-react';
-import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
 export default [
   /* Global Language Options */
@@ -30,21 +29,17 @@ export default [
         }
       }
     },
+    files: ['**/*.{js,mjs,cjs,jsx}']
+  },
+  {
     plugins: {
       '@stylistic/jsx': stylisticJsx,
-      'react-hooks': reactHooksPlugin
     },
     settings: {
       react: {
         version: 'detect'
       }
-    }
-  },
-  reactPlugin.configs.flat.recommended,
-  {
-    files: ['**/*.{js,mjs,cjs,jsx}']
-  },
-  {
+    },
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
       '@stylistic/jsx/jsx-closing-tag-location': 'warn',
