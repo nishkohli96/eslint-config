@@ -6,6 +6,7 @@ import parserTs from '@typescript-eslint/parser';
 
 export default [
   {
+    name: '@nish1896/eslint-flat-config/next-ts',
     languageOptions: {
       ecmaVersion: 2024,
       parser: parserTs,
@@ -65,9 +66,7 @@ export default [
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/no-unused-vars': 'warn'
-    }
-  },
-  {
+    },
     ignores: [
       'node_modules',
       'dist',
@@ -77,5 +76,5 @@ export default [
       'eslint.config.mjs',
       '.turbo'
     ]
-  }
+  },
 ];

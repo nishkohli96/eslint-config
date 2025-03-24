@@ -5,6 +5,7 @@ import parserTs from '@typescript-eslint/parser';
 
 export default [
   {
+    name: '@nish1896/eslint-flat-config/ts',
     languageOptions: {
       parser: parserTs,
       parserOptions: {

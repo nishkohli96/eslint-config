@@ -7,6 +7,7 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 export default [
   /* Global Language Options */
   {
+    name: '@nish1896/eslint-flat-config/jsx',
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
@@ -77,11 +78,7 @@ export default [
           extensions: ['.tsx', '.jsx']
         }
       ]
-    }
-  },
-
-  /* Ignore Directories */
-  {
+    },
     ignores: [
       'node_modules',
       'dist',
@@ -94,5 +91,5 @@ export default [
       'eslint.config.mjs',
       'storybook-static'
     ]
-  }
+  },
 ];

@@ -6,6 +6,7 @@ import stylisticPlus from '@stylistic/eslint-plugin-plus';
 export default [
   /* Global Language Options */
   {
+    name: '@nish1896/eslint-flat-config/js',
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
@@ -109,6 +110,7 @@ export default [
       'no-throw-literal': 'warn',
       'no-unneeded-ternary': 'warn',
       'no-unreachable': 'warn',
+      'no-unused-vars': 'warn',
       'no-unused-expressions': 'warn',
       'no-useless-assignment': 'warn',
       'no-useless-concat': 'warn',
@@ -124,13 +126,11 @@ export default [
       'require-await': 'warn',
       'use-isnan': 'warn',
     },
-  },
-  /**
-   * Ignore linting the below folders...
-   * "ignores" needs to be written at last, else linting
-   * would also run on build folders.
-   */
-  {
+    /**
+     * Ignore linting the below folders...
+     * "ignores" needs to be written at last, else linting
+     * would also run on build folders.
+     */
     ignores: [
       'node_modules',
       'dist',
@@ -140,5 +140,16 @@ export default [
       'eslint.config.mjs',
       '.turbo'
     ]
-  }
+  },
+  // {
+  //   ignores: [
+  //     'node_modules',
+  //     'dist',
+  //     'build',
+  //     'coverage',
+  //     'eslint.config.js',
+  //     'eslint.config.mjs',
+  //     '.turbo'
+  //   ]
+  // }
 ];

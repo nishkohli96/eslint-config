@@ -15,7 +15,7 @@ import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 
 export default [
   {
-    name: '@nish1896/eslint-flat-config/js',
+    name: '@nish1896/eslint-flat-config/next',
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
