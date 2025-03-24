@@ -1,5 +1,5 @@
 import globals from 'globals';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx'
+import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
@@ -23,23 +23,24 @@ export default [
         },
       },
     },
+    files: ['**/*.{js,mjs,cjs,jsx}'],
+  },
+
+  /* Recommended Configs */
+  jsxA11y.flatConfigs.recommended,
+  reactPlugin.configs.flat.recommended,
+
+  /* Rules for JavaScript and JSX Files */
+  {
     plugins: {
       '@stylistic/jsx': stylisticJsx,
-      'react-hooks': reactHooksPlugin
+      'react-hooks': reactHooksPlugin,
     },
     settings: {
       react: {
         version: 'detect',
       },
     },
-  },
-  {
-    files: ['**/*.{js,mjs,cjs,jsx}'],
-  },
-  /* Recommended Configs */
-  jsxA11y.flatConfigs.recommended,
-  reactPlugin.configs.flat.recommended,
-  {
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
       '@stylistic/jsx/jsx-closing-tag-location': 'warn',
@@ -75,6 +76,8 @@ export default [
       ],
     },
   },
+
+  /* Ignore Directories */
   {
     ignores: [
       'node_modules',
@@ -88,5 +91,5 @@ export default [
       'eslint.config.mjs',
       'storybook-static',
     ],
-  }
+  },
 ];
