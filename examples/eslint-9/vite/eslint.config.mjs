@@ -17,7 +17,6 @@ export default tseslint.config(
       ...tsConfig,
       ...jsxConfig
     ],
-    files: ['**/*.{ts,tsx}'],
     plugins: {
       'react-refresh': reactRefresh,
     },

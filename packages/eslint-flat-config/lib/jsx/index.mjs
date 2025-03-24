@@ -25,11 +25,6 @@ export default [
         }
       },
     },
-    settings: {
-      react: {
-        version: 'detect'
-      }
-    },
     files: ['**/*.{js,mjs,cjs,jsx}']
   },
 
@@ -42,6 +37,11 @@ export default [
     plugins: {
       '@stylistic/jsx': stylisticJsx,
       'react-hooks': reactHooksPlugin
+    },
+    settings: {
+      react: {
+        version: 'detect'
+      }
     },
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
