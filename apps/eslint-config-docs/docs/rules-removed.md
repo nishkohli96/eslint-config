@@ -18,6 +18,8 @@ These rules were once included, but later removed in subsequent versions due to 
 |[@stylistic/object-property-newline](https://eslint.style/rules/default/object-property-newline)| Inconsistent in formating object, making it hard to read | 
 |[@stylistic/newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call) | This rule with default chain length 2 resulted in awkward readability when chaining operations |
 |[@typescript-eslint/ban-ts-comment](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/ban-ts-comment.mdx) | A good developer will avoid writing ts-comments, except in extreme cases. Let's not cause them trouble to write one more line |
+|[@typescript-eslint/no-inferrable-types](https://typescript-eslint.io/rules/no-inferrable-types/) | It's okay to define the type explicitly for a better clarity even if ts infers it easily |
+|[@typescript-eslint/no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises/)| No need to call the `.catch` method when calling an async function, since the developer would already have defined `try-catch` blocks in that function |
 |[@typescript-eslint/no-this-alias](https://github.com/typescript-eslint/typescript-eslint/blob/main/packages/eslint-plugin/docs/rules/no-this-alias.md) | Sometimes `this` is reqd in fn context. eg. MongooseSchema.pre() |
 |[arrow-body-style](https://eslint.org/docs/latest/rules/arrow-body-style)| Extra effort for developer if he needs to add some more code before returning from a function. |
 |[dot-notation](https://eslint.org/docs/latest/rules/dot-notation)| prop name doesnt exist, but I have still assigned value for it. Using `obj?.['name']` would work but `obj.name` would throw ts err |  

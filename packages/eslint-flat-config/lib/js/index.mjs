@@ -89,7 +89,6 @@ export default [
       'array-callback-return': 'warn',
       'block-scoped-var': 'warn',
       curly: 'warn',
-      complexity: ['warn', 16],
       'default-case': 'warn',
       'default-case-last': 'warn',
       eqeqeq: 'error',
