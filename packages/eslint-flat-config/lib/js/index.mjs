@@ -2,7 +2,7 @@ import globals from 'globals';
 import pluginJs from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
-import { commonConfig } from '../common/index.mjs';
+import ignoreDirsFiles from '../common/index.mjs';
 
 export default [
   /* Global Language Options */
@@ -132,6 +132,6 @@ export default [
      * "ignores" needs to be written at last, else linting
      * would also run on build folders.
      */
-    ignores: commonConfig.ignoreDirsFiles,
+    ignores: ignoreDirsFiles,
   },
 ];

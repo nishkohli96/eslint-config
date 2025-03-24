@@ -3,7 +3,7 @@ import tseslint from 'typescript-eslint';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
-import { commonConfig } from '../common/index.mjs';
+import ignoreDirsFiles from '../common/index.mjs';
 
 export default [
   {
@@ -68,6 +68,6 @@ export default [
       '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/no-unused-vars': 'warn'
     },
-    ignores: commonConfig.ignoreDirsFiles,
+    ignores: ignoreDirsFiles,
   },
 ];

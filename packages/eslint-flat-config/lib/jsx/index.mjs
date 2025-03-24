@@ -3,7 +3,7 @@ import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import { commonConfig } from '../common/index.mjs';
+import ignoreDirsFiles from '../common/index.mjs';
 
 export default [
   /* Global Language Options */
@@ -23,6 +23,11 @@ export default [
         ecmaFeatures: {
           jsx: true
         }
+      },
+    },
+    settings: {
+      react: {
+        version: 'detect'
       }
     },
     files: ['**/*.{js,mjs,cjs,jsx}']
@@ -37,11 +42,6 @@ export default [
     plugins: {
       '@stylistic/jsx': stylisticJsx,
       'react-hooks': reactHooksPlugin
-    },
-    settings: {
-      react: {
-        version: 'detect'
-      }
     },
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
@@ -80,6 +80,6 @@ export default [
         }
       ]
     },
-    ignores: commonConfig.ignoreDirsFiles,
+    ignores: ignoreDirsFiles,
   },
 ];

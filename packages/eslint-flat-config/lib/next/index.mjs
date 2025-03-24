@@ -12,7 +12,7 @@
 
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-import { commonConfig } from '../common/index.mjs';
+import ignoreDirsFiles from '../common/index.mjs';
 
 export default [
   {
@@ -30,14 +30,14 @@ export default [
         },
       },
     },
-    files: ['**/*.{js,mjs,cjs,jsx}'],
-    plugins: {
-      '@stylistic/jsx': stylisticJsx,
-    },
     settings: {
       react: {
         version: 'detect'
       }
+    },
+    files: ['**/*.{js,mjs,cjs,jsx}'],
+    plugins: {
+      '@stylistic/jsx': stylisticJsx,
     },
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
@@ -76,6 +76,6 @@ export default [
         }
       ]
     },
-    ignores: commonConfig.ignoreDirsFiles,
+    ignores: ignoreDirsFiles,
   },
 ];
