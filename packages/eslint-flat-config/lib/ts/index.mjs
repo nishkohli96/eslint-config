@@ -5,24 +5,25 @@ import parserTs from '@typescript-eslint/parser';
 
 export default [
   {
-    plugins: {
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/plus': stylisticPlus
-    },
     languageOptions: {
       parser: parserTs,
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-      },
+        tsconfigRootDir: import.meta.dirname
+      }
     },
+    files: ['**/*.{ts,tsx}']
   },
   ...tseslint.configs.recommendedTypeChecked,
   ...tseslint.configs.stylistic,
   {
+    plugins: {
+      '@stylistic/ts': stylisticTs,
+      '@stylistic/plus': stylisticPlus
+    },
     rules: {
-			'@stylistic/ts/block-spacing': 'warn',
-			'@stylistic/ts/brace-style': 'warn',
+      '@stylistic/ts/block-spacing': 'warn',
+      '@stylistic/ts/brace-style': 'warn',
       '@stylistic/ts/comma-spacing': 'warn',
       '@stylistic/ts/key-spacing': 'warn',
       '@stylistic/ts/member-delimiter-style': 'warn',
@@ -49,9 +50,8 @@ export default [
       '@typescript-eslint/consistent-type-exports': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-this-alias': 'off',
-      '@typescript-eslint/no-unused-vars': 'warn',
-    },
-    files: ['**/*.{ts,tsx}']
+      '@typescript-eslint/no-unused-vars': 'warn'
+    }
   },
   {
     ignores: [

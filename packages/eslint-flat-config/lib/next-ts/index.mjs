@@ -6,40 +6,38 @@ import parserTs from '@typescript-eslint/parser';
 
 export default [
   {
+    languageOptions: {
+      ecmaVersion: 2024,
+      parser: parserTs,
+      sourceType: 'module',
+      globals: {
+        ...globals.serviceworker,
+        ...globals.browser
+      },
+      parserOptions: {
+        projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+        ecmaFeatures: {
+          jsx: true
+        }
+      }
+    },
+    files: ['**/*.{ts,tsx}']
+  },
+  ...tseslint.configs.stylistic,
+  {
     plugins: {
       '@stylistic/ts': stylisticTs,
       '@stylistic/plus': stylisticPlus
     },
-    languageOptions: {
-			ecmaVersion: 2024,
-      parser: parserTs,
-			sourceType: 'module',
-			globals: {
-				...globals.serviceworker,
-				...globals.browser,
-			},
-			parserOptions: {
-				projectService: true,
-        tsconfigRootDir: import.meta.dirname,
-				ecmaFeatures: {
-					jsx: true,
-				},
-			},
-    },
-		settings: {
+    settings: {
       react: {
-        version: 'detect',
-      },
+        version: 'detect'
+      }
     },
-  },
-  {
-    files: ['**/*.{ts,tsx}'],
-  },
-  ...tseslint.configs.stylistic,
-  {
     rules: {
-			'@stylistic/ts/block-spacing': 'warn',
-			'@stylistic/ts/brace-style': 'warn',
+      '@stylistic/ts/block-spacing': 'warn',
+      '@stylistic/ts/brace-style': 'warn',
       '@stylistic/ts/comma-spacing': 'warn',
       '@stylistic/ts/key-spacing': 'warn',
       '@stylistic/ts/member-delimiter-style': 'warn',
@@ -66,8 +64,8 @@ export default [
       '@typescript-eslint/consistent-type-exports': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-this-alias': 'off',
-      '@typescript-eslint/no-unused-vars': 'warn',
-    },
+      '@typescript-eslint/no-unused-vars': 'warn'
+    }
   },
   {
     ignores: [

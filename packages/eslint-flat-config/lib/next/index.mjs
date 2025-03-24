@@ -10,7 +10,7 @@
  */
 
 import globals from 'globals';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx'
+import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 
@@ -22,27 +22,27 @@ export default [
       sourceType: 'module',
       globals: {
         ...globals.serviceworker,
-        ...globals.browser,
+        ...globals.browser
       },
-			parserOptions: {
+      parserOptions: {
         ecmaFeatures: {
-          jsx: true,
-        },
-      },
+          jsx: true
+        }
+      }
     },
     plugins: {
       '@stylistic/jsx': stylisticJsx,
-      'react-hooks': reactHooksPlugin,
+      'react-hooks': reactHooksPlugin
     },
     settings: {
       react: {
-        version: 'detect',
-      },
-    },
+        version: 'detect'
+      }
+    }
   },
   reactPlugin.configs.flat.recommended,
   {
-    files: ['**/*.{js,mjs,cjs,jsx}'],
+    files: ['**/*.{js,mjs,cjs,jsx}']
   },
   {
     rules: {
@@ -53,7 +53,10 @@ export default [
       '@stylistic/jsx/jsx-equals-spacing': 'warn',
       '@stylistic/jsx/jsx-indent': ['warn', 2],
       '@stylistic/jsx/jsx-indent-props': ['warn', 2],
-      '@stylistic/jsx/jsx-one-expression-per-line': ['warn', { allow: 'literal' }],
+      '@stylistic/jsx/jsx-one-expression-per-line': [
+        'warn',
+        { allow: 'literal' }
+      ],
       '@stylistic/jsx/jsx-pascal-case': 'warn',
       '@stylistic/jsx/jsx-props-no-multi-spaces': 'warn',
       '@stylistic/jsx/jsx-self-closing-comp': 'warn',
@@ -65,8 +68,8 @@ export default [
           condition: 'parens-new-line',
           declaration: 'parens-new-line',
           logical: 'parens-new-line',
-          return: 'parens-new-line',
-        },
+          return: 'parens-new-line'
+        }
       ],
       'jsx-a11y/anchor-ambiguous-text': 'error',
       'jsx-a11y/control-has-associated-label': 'error',
@@ -75,10 +78,10 @@ export default [
       'react/jsx-filename-extension': [
         'warn',
         {
-          extensions: ['.tsx', '.jsx'],
-        },
-      ],
-    },
+          extensions: ['.tsx', '.jsx']
+        }
+      ]
+    }
   },
   {
     ignores: [
@@ -91,7 +94,7 @@ export default [
       '.eslintcache',
       'eslint.config.js',
       'eslint.config.mjs',
-      'storybook-static',
-    ],
+      'storybook-static'
+    ]
   }
 ];

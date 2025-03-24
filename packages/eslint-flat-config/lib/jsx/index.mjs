@@ -19,11 +19,11 @@ export default [
         projectService: true,
         tsconfigRootDir: import.meta.dirname,
         ecmaFeatures: {
-          jsx: true,
-        },
-      },
+          jsx: true
+        }
+      }
     },
-    files: ['**/*.{js,mjs,cjs,jsx}'],
+    files: ['**/*.{js,mjs,cjs,jsx}']
   },
 
   /* Recommended Configs */
@@ -34,12 +34,12 @@ export default [
   {
     plugins: {
       '@stylistic/jsx': stylisticJsx,
-      'react-hooks': reactHooksPlugin,
+      'react-hooks': reactHooksPlugin
     },
     settings: {
       react: {
-        version: 'detect',
-      },
+        version: 'detect'
+      }
     },
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
@@ -49,7 +49,10 @@ export default [
       '@stylistic/jsx/jsx-equals-spacing': 'warn',
       '@stylistic/jsx/jsx-indent': ['warn', 2],
       '@stylistic/jsx/jsx-indent-props': ['warn', 2],
-      '@stylistic/jsx/jsx-one-expression-per-line': ['warn', { allow: 'literal' }],
+      '@stylistic/jsx/jsx-one-expression-per-line': [
+        'warn',
+        { allow: 'literal' }
+      ],
       '@stylistic/jsx/jsx-pascal-case': 'warn',
       '@stylistic/jsx/jsx-props-no-multi-spaces': 'warn',
       '@stylistic/jsx/jsx-self-closing-comp': 'warn',
@@ -61,8 +64,8 @@ export default [
           condition: 'parens-new-line',
           declaration: 'parens-new-line',
           logical: 'parens-new-line',
-          return: 'parens-new-line',
-        },
+          return: 'parens-new-line'
+        }
       ],
       'jsx-a11y/anchor-ambiguous-text': 'error',
       'jsx-a11y/control-has-associated-label': 'error',
@@ -71,10 +74,10 @@ export default [
       'react/jsx-filename-extension': [
         'warn',
         {
-          extensions: ['.tsx', '.jsx'],
-        },
-      ],
-    },
+          extensions: ['.tsx', '.jsx']
+        }
+      ]
+    }
   },
 
   /* Ignore Directories */
@@ -89,7 +92,7 @@ export default [
       '.eslintcache',
       'eslint.config.js',
       'eslint.config.mjs',
-      'storybook-static',
-    ],
-  },
+      'storybook-static'
+    ]
+  }
 ];
