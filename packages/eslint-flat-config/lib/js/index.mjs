@@ -2,7 +2,7 @@ import globals from 'globals';
 import pluginJs from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
-import { commonConfig } from '../common';
+import { commonConfig } from '../common/index.mjs';
 
 export default [
   /* Global Language Options */

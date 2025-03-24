@@ -2,7 +2,7 @@ import tseslint from 'typescript-eslint';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
-import { commonConfig } from '../common';
+import { commonConfig } from '../common/index.mjs';
 
 export default [
   {

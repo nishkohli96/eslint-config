@@ -12,7 +12,7 @@
 
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-import { commonConfig } from '../common';
+import { commonConfig } from '../common/index.mjs';
 
 export default [
   {

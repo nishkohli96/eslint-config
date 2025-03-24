@@ -3,7 +3,7 @@ import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import { commonConfig } from '../common';
+import { commonConfig } from '../common/index.mjs';
 
 export default [
   /* Global Language Options */
