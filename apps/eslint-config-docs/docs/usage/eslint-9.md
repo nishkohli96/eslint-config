@@ -16,7 +16,7 @@ Starting from **version 2**, this package has been modularized into the followin
 - `js`: [Eslint](https://eslint.org/docs/latest/rules/) and [stylistic](https://eslint.style/packages/js) rules for javascript
 - `ts`: TypeScript-specific rules, including [stylistic](https://eslint.style/packages/ts) and [typescript-eslint](https://typescript-eslint.io/rules/)
 - `jsx`: Rules for [React](https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules), [React Hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks), [JSX A11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main?tab=readme-ov-file#supported-rules), and [stylistic JSX](https://eslint.style/packages/jsx)
-- `next`:  JSX rules designed for use alongside the `eslint-plugin-next` package 
+- `next`:  Includes additional JSX rules along with the ones from `eslint-plugin-next` package 
 - `next-ts`: [Typescript-eslint](https://typescript-eslint.io/rules/) and [Stylistic-ts](https://eslint.style/packages/ts) rules tailored for [Next.js](https://nextjs.org/) apps.
 
 **If you are upgrading from version 1 of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).**
@@ -25,7 +25,7 @@ Starting from **version 2**, this package has been modularized into the followin
 
 The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
 
-```js
+```js title="eslint.config.mjs"
 import jsConfig from '@nish1896/eslint-flat-config/js';
 
 export default [
@@ -38,7 +38,7 @@ export default [
 
 <h4>With Typescript</h4>
 
-```js
+```js title="eslint.config.mjs"
 import jsConfig from '@nish1896/eslint-flat-config/js';
 import tsConfig from '@nish1896/eslint-flat-config/ts';
 
@@ -55,7 +55,7 @@ export default [
 
 Use both `js` and `jsx` rules from the package for React and Vite applications.
 
-```js
+```js title="eslint.config.mjs"
 import jsConfig from '@nish1896/eslint-flat-config/js';
 import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
@@ -70,7 +70,7 @@ export default [
 
 <h4>With Typescript</h4>
 
-```js
+```js title="eslint.config.mjs"
 import jsConfig from '@nish1896/eslint-flat-config/js';
 import tsConfig from '@nish1896/eslint-flat-config/ts';
 import jsxConfig from '@nish1896/eslint-flat-config/jsx';
@@ -91,7 +91,7 @@ A dedicated ESLint configuration for [Next.js](https://nextjs.org/) applications
 
 The `next` and `next-ts` modules in this package consolidates rules from both `jsx` and `typescript` configurations, extending the respective [stylistic](https://eslint.style/packages/default) plugin. It leverages the `typescript-eslint` and other React plugins provided by [eslint-config-next](https://www.npmjs.com/package/eslint-config-next), ensuring no need to duplicate plugin configurations for Next.js projects and to prevent the [redefine plugin error](#duplicate-import-error).
 
-```js
+```js title="eslint.config.mjs"
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
@@ -120,7 +120,7 @@ export default eslintConfig;
 
 <h4>With Typescript</h4>
 
-```js
+```js title="eslint.config.mjs"
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
