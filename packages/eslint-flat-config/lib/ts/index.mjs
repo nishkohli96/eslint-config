@@ -2,8 +2,9 @@ import tseslint from 'typescript-eslint';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
-import ignoreDirsFiles from '../common/index.mjs';
+import ignoreDirsFiles from '../common/ignores.mjs';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   {
     name: '@nish1896/eslint-flat-config/ts',
@@ -57,9 +58,13 @@ export default [
       '@typescript-eslint/no-misused-promises': 'off',
       '@typescript-eslint/no-this-alias': 'off',
       '@typescript-eslint/no-unsafe-assignment': 'off',
+      '@typescript-eslint/no-unsafe-call': 'off',
+      '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/restrict-template-expressions': 'warn',
+      /* Prevent warning when defining ENUMS */
+      'no-unused-vars': 'off'
     },
   },
   {

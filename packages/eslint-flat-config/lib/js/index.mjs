@@ -2,8 +2,9 @@ import globals from 'globals';
 import pluginJs from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
-import ignoreDirsFiles from '../common/index.mjs';
+import ignoreDirsFiles from '../common/ignores.mjs';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   /* Global Language Options */
   {

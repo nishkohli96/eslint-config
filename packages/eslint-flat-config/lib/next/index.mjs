@@ -12,8 +12,9 @@
 
 import globals from 'globals';
 import stylisticJsx from '@stylistic/eslint-plugin-jsx';
-import ignoreDirsFiles from '../common/index.mjs';
+import ignoreDirsFiles from '../common/ignores.mjs';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   {
     name: '@nish1896/eslint-flat-config/next',

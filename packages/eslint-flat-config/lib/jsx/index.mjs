@@ -3,8 +3,9 @@ import stylisticJsx from '@stylistic/eslint-plugin-jsx';
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
-import ignoreDirsFiles from '../common/index.mjs';
+import ignoreDirsFiles from '../common/ignores.mjs';
 
+/** @type {import('eslint').Linter.Config[]} */
 export default [
   /* Global Language Options */
   {
