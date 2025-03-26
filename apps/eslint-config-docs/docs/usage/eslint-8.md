@@ -6,7 +6,9 @@ title: Usage with eslint 8
 ---
 
 :::note
-If you are using eslint version ***8.57 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config) package.
+If you are using eslint version ***8.57.1 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config) package.
+
+However, ESLint v8 and below are now deprecated, and upgrading to v9 is recommended. This package will continue to receive minor updates for the time being.
 :::
 
 To set up ESLint, create a `.eslintrc`, `.eslintrc.js` or `.eslintrc.json` file in your project root. Use this file to specify the configuration for your application by referring to the relevant section of this guide.

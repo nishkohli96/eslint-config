@@ -7,7 +7,15 @@ title: Installation
 
 # Installation
 
+Depending on the ESLint version used in your project, you can choose:
+
+- [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config) for ESLint v8
+- [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for ESLint v9
+
+However, since ESLint v8 and below are now deprecated, upgrading to v9 is recommended for ongoing support and improvements.
+
 :::note
+
 In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/eslint-8_to_9.md).
 
 If you are using eslint v8 and are migrating from `v1.0.x`, please check [this guide](./migration/v1_to_v2.md).
@@ -46,13 +54,13 @@ pnpm add -D @nish1896/eslint-flat-config
 We will be installing **v8.57.1** which was the last major version prior to the release of version 9.
 
 ```bash
-npm i eslint@8.57.1` --save-dev
+npm i eslint@8.57.1 --save-dev
 ```
 ```bash
-yarn add -D eslint@8.57.1`
+yarn add -D eslint@8.57.1
 ```
 ```bash
-pnpm add -D eslint@8.57.1`
+pnpm add -D eslint@8.57.1
 ```
 
 Next, install `@nish1896/eslint-config`.
@@ -99,14 +107,12 @@ pnpm eslint yourfile.tsx
 ```
 
 This config extends the following plugins - 
-- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) - 2.9.0
-- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) - 7.37.1
-- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) - 5.0.0
-- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) - 6.10.0
-- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) - 8.10.0
-
-:::note
-As of March 15, 2025, the latest version of [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) is `4.2.0`. Upgrading to this version would introduce breaking changes for both configuration packages.
-
-This migration will be implemented in the next major version update for both packages.
-:::
+- [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin)
+  - [@stylistic/eslint-plugin-js](https://www.npmjs.com/package/@stylistic/eslint-plugin-js)
+  - [@stylistic/eslint-plugin-ts](https://www.npmjs.com/package/@stylistic/eslint-plugin-ts)
+  - [@stylistic/eslint-plugin-jsx](https://www.npmjs.com/package/@stylistic/eslint-plugin-jsx)
+  - [@stylistic/eslint-plugin-plus](https://www.npmjs.com/package/@stylistic/eslint-plugin-plus)
+- [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react)
+- [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks)
+- [eslint-plugin-jsx-a11y](https://www.npmjs.com/package/eslint-plugin-jsx-a11y) 
+- [typescript-eslint](https://www.npmjs.com/package/typescript-eslint)

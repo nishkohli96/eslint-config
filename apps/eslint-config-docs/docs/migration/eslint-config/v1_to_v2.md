@@ -1,7 +1,7 @@
 ---
 sidebar_position: 2
 sidebar_label: v1 to v2
-description: Migration guide from v1 to v2 for this eslint-config.
+description: Migration guide from v1 to v2 for @nish1896/eslint-config.
 ---
 
 # Migration from v1 to v2

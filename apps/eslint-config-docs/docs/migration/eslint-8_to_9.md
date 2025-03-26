@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-sidebar_label: eslint 8 to 9
+sidebar_position: 3
+sidebar_label: eslint v8 to v9
 description: Migration guide from v3 to v2 for this eslint-config.
 ---
 
