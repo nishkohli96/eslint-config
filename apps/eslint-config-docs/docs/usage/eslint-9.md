@@ -19,6 +19,8 @@ Starting from **version 2**, this package has been modularized into the followin
 - `next`:  JSX rules designed for use alongside the `eslint-plugin-next` package 
 - `next-ts`: [Typescript-eslint](https://typescript-eslint.io/rules/) and [Stylistic-ts](https://eslint.style/packages/ts) rules tailored for [Next.js](https://nextjs.org/) apps.
 
+**If you are upgrading from version 1 of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).**
+
 ## NodeJS
 
 The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
@@ -83,7 +85,7 @@ export default [
 ];
 ```
 
-## NextJS
+## Next.js
 
 A dedicated ESLint configuration for [Next.js](https://nextjs.org/) applications is now available from version **1.1.0** of the package. It integrates seamlessly with the `create-next-app` boilerplate, which sets up projects using Next.js **version 15**. This simplifies setup, ensuring compatibility and optimized linting rules tailored for Next.js applications.
 

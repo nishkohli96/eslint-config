@@ -4,7 +4,7 @@
  * from the following ESLint plugins:
  * - eslint-plugin-react
  * - eslint-plugin-react-hooks
- * - eslint-plugin-next
+ * - eslint-plugin-jsx-a11y
  *
  * Reference -
  * https://nextjs.org/docs/app/api-reference/config/eslint
