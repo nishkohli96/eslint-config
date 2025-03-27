@@ -8,6 +8,7 @@
     "./js": "./lib/js/index.js",
     "./jsx": "./lib/jsx/index.js",
     "./next": "./lib/next/index.js",
+    "./next-ts": "./lib/next-ts/index.js",
     "./ts": "./lib/ts/index.js"
   },
   "scripts": {
