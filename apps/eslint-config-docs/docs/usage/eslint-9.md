@@ -21,7 +21,7 @@ Starting from **version 2**, this package has been modularized into the followin
 
 **If you are upgrading from version 1 of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).**
 
-## NodeJS
+## Node.js
 
 The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
 

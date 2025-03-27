@@ -45,17 +45,4 @@ touch eslint.config.mjs
 The `react` folder import from `@nish1896/eslint-config/react` has been renamed in this package and will be imported as `@nish1896/eslint-flat-config/jsx`.
 :::
 
-Add the following content to this file -
-
-```js
-import jsConfig from '@nish1896/eslint-flat-config/js';
-import jsxConfig from '@nish1896/eslint-flat-config/jsx';
-
-export default [
-  ...jsConfig,
-  ...jsxConfig, 
-  {
-    rules: {}
-  }
-];
-```
+Refer the [usage guide](../usage/eslint-9.md) to configure the appropriate modules based on your application framework. 🚀

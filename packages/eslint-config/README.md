@@ -15,7 +15,7 @@
 
 Copy the code snippet most relevant to your application and paste it in the `.eslintrc`, `.eslintrc.js` or `.eslintrc.json` file in your project root.
 
-- NodeJS App
+- Node.js App
 ```js
 module.exports = {
   extends: [

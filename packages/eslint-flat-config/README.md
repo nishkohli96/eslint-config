@@ -15,7 +15,7 @@
 
 Copy the code snippet most relevant to your application and paste it in the `eslint.config.mjs` file in your project root.
 
-- NodeJS App
+- Node.js App
 ```js
 import jsConfig from '@nish1896/eslint-flat-config/js';
 

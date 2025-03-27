@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "setup": "sh ./scripts/setup.sh",
-    "packs": "sh ./scripts/pack.sh",
+    "pkg": "sh ./scripts/pack.sh",
     "link-v8": "sh ./scripts/link-v8.sh",
     "link-v9": "sh ./scripts/link-v9.sh",
     "config:link": "yarn workspace @nish1896/eslint-config link:local",

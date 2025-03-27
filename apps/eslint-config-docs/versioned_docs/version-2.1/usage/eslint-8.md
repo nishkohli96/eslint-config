@@ -15,9 +15,9 @@ To set up ESLint, create a `.eslintrc`, `.eslintrc.js` or `.eslintrc.json` file 
 touch .eslintrc.js
 ```
 
-### NodeJS
+### Node.js
 
-For NodeJS applications, use only the `js` configuration this package. This import is essential for all JavaScript-based projects, as it defines the recommended set of JavaScript-specific linting rules and ensures consistent code quality.
+For Node.js applications, use only the `js` configuration this package. This import is essential for all JavaScript-based projects, as it defines the recommended set of JavaScript-specific linting rules and ensures consistent code quality.
 
 ```js
 module.exports = {

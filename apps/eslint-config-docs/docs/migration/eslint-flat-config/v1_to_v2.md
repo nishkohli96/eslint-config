@@ -15,7 +15,7 @@ Starting from **version 2**, this package has been modularized into the followin
 - `next-ts`: [Typescript-eslint](https://typescript-eslint.io/rules/) and [Stylistic-ts](https://eslint.style/packages/ts) rules tailored for [Next.js](https://nextjs.org/) apps.
 
 
-## NodeJS
+## Node.js
 
 If you are using **typescript** in your project, add the `ts` module from this package.
 

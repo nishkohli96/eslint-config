@@ -15,7 +15,7 @@ If you have specified `"type": "module"` in the `package.json` of your applicati
 touch eslint.config.mjs
 ```
 
-### NodeJS
+### Node.js
 
 The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
 
