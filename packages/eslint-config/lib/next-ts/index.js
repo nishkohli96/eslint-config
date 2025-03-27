@@ -3,14 +3,14 @@
 module.exports = {
   root: true,
   extends: [
-    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-type-checked',
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
     '@stylistic/js',
     '@stylistic/ts',
-    '@stylistic/jsx'
+    '@stylistic/plus'
   ],
   env: {
     node: true,
@@ -23,6 +23,8 @@ module.exports = {
     ecmaFeatures: {
       jsx: true,
     },
+    projectService: true,
+    tsconfigRootDir: __dirname,
   },
   settings: {
     react: {

@@ -2,7 +2,9 @@
 
 module.exports = {
   root: true,
-  extends: ['plugin:@typescript-eslint/recommended'],
+  extends: [
+    'plugin:@typescript-eslint/recommended-type-checked',
+  ],
   parser: '@typescript-eslint/parser',
   plugins: [
     '@typescript-eslint',
@@ -16,7 +18,9 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
+    projectService: true,
+    tsconfigRootDir: __dirname,
   },
   rules: {
     '@stylistic/ts/block-spacing': 'warn',
