@@ -1,4 +1,5 @@
 import tseslint from 'typescript-eslint';
+import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
@@ -21,6 +22,7 @@ const tsConfig = [
   ...tseslint.configs.stylistic,
   {
     plugins: {
+      '@stylistic/js': stylisticJs,
       '@stylistic/ts': stylisticTs,
       '@stylistic/plus': stylisticPlus
     },
@@ -66,7 +68,21 @@ const tsConfig = [
       '@typescript-eslint/no-unused-vars': 'warn',
       '@typescript-eslint/restrict-template-expressions': 'warn',
       /* Prevent warning when defining ENUMS */
-      'no-unused-vars': 'off'
+      'no-unused-vars': 'off',
+      /**
+       * Disabling some rules from the js module, so that there are no
+       * duplicate warning from both js and ts modules for the same issue.
+       */
+      '@stylistic/js/block-spacing': 'off',
+      '@stylistic/js/brace-style': 'off',
+      '@stylistic/js/comma-spacing': 'off',
+      '@stylistic/js/key-spacing': 'off',
+      '@stylistic/js/no-extra-semi': 'off',
+      '@stylistic/js/object-curly-spacing': 'off',
+      '@stylistic/js/quotes': 'off',
+      '@stylistic/js/semi': 'off',
+      '@stylistic/js/space-before-blocks': 'off',
+      '@stylistic/js/space-infix-ops': 'off'
     },
   },
   {

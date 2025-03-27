@@ -27,6 +27,11 @@ const jsxConfig = [
         }
       },
     },
+    settings: {
+      react: {
+        version: 'detect'
+      }
+    },
     files: ['**/*.{js,mjs,cjs,jsx}']
   },
 
@@ -39,11 +44,6 @@ const jsxConfig = [
     plugins: {
       '@stylistic/jsx': stylisticJsx,
       'react-hooks': reactHooksPlugin
-    },
-    settings: {
-      react: {
-        version: 'detect'
-      }
     },
     rules: {
       '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
