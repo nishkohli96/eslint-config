@@ -5,7 +5,7 @@ import parserTs from '@typescript-eslint/parser';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
+const tsConfig = [
   {
     name: '@nish1896/eslint-flat-config/ts',
     languageOptions: {
@@ -73,3 +73,5 @@ export default [
     ignores: ignoreDirsFiles,
   }
 ];
+
+export default tsConfig;

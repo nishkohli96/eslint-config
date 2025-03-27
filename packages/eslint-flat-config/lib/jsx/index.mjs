@@ -6,7 +6,8 @@ import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
+
+const jsxConfig = [
   /* Global Language Options */
   {
     name: '@nish1896/eslint-flat-config/jsx',
@@ -84,3 +85,5 @@ export default [
     ignores: ignoreDirsFiles,
   },
 ];
+
+export default jsxConfig;

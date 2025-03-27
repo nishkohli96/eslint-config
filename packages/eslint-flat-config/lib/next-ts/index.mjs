@@ -6,7 +6,7 @@ import parserTs from '@typescript-eslint/parser';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
+const nextTsConfig = [
   {
     name: '@nish1896/eslint-flat-config/next-ts',
     languageOptions: {
@@ -85,3 +85,5 @@ export default [
     ignores: ignoreDirsFiles,
   },
 ];
+
+export default nextTsConfig;

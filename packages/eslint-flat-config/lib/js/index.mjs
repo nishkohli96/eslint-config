@@ -5,7 +5,7 @@ import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
-export default [
+const jsConfig = [
   /* Global Language Options */
   {
     name: '@nish1896/eslint-flat-config/js',
@@ -135,3 +135,5 @@ export default [
     ignores: ignoreDirsFiles,
   },
 ];
+
+export default jsConfig;
