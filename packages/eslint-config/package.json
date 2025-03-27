@@ -7,7 +7,8 @@
     "./package.json": "./package.json",
     "./js": "./lib/js/index.js",
     "./next": "./lib/next/index.js",
-    "./react": "./lib/react/index.js"
+    "./react": "./lib/react/index.js",
+    "./ts": "./lib/ts/index.js"
   },
   "scripts": {
     "link:local": "npm link",
@@ -18,7 +19,7 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^2.13.0",
+    "@stylistic/eslint-plugin": "^3.1.0",
     "@typescript-eslint/eslint-plugin": "^8.26.1",
     "@typescript-eslint/parser": "^8.26.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
