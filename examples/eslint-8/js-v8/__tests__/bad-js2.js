@@ -10,6 +10,8 @@ function createFn(
 	}
 }
 
+expect(Promise.resolve('lemon')).resolves.toBe('lemon');
+
 // export class LinkAsset {
 //   @IsNotEmpty({ message: validationConstants.REQUIRED })
 //   @IsMongoId({ message: validationConstants.IS_OBJECT_ID })

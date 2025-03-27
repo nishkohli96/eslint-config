@@ -9,7 +9,7 @@ module.exports = {
   ],
   env: {
     node: true,
-    jest: true
+    jest: true,
   },
   parserOptions: {
     ecmaVersion: 'latest',
@@ -103,7 +103,6 @@ module.exports = {
     'no-unreachable': 'warn',
     'no-unused-vars': 'warn',
     'no-unused-expressions': 'warn',
-    'no-useless-assignment': 'warn',
     'no-useless-concat': 'warn',
     'no-use-before-define': 'error',
     'no-var': 'warn',

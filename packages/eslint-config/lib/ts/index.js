@@ -12,7 +12,7 @@ module.exports = {
   ],
   env: {
     node: true,
-    jest: true
+    jest: true,
   },
   parserOptions: {
     ecmaVersion: 'latest',

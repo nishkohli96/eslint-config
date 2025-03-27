@@ -19,6 +19,7 @@ function createFn(
 //   targetAssetId;
 // }
 
+expect(Promise.resolve('lemon')).resolves.toBe('lemon');
 
 const events = [
 	{ title:'a', msg: 'e'},
