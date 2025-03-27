@@ -11,16 +11,16 @@ description: Migration guide from v1 to v2 for @nish1896/eslint-config.
 For usage in a nodejs application, use only the `js` eslint configuration of this package. 
 
 ```diff
-module.exports = {
-- extends: ['@nish1896']
-+ extends: ['@nish1896/eslint-config/js']
-}
+  module.exports = {
+-   extends: ['@nish1896']
++   extends: ['@nish1896/eslint-config/js']
+  }
 ```
 
 React applications would need both the `js` and `react` config import of this package.
 ```diff
-module.exports = {
-- extends: ['@nish1896']
-+ extends: ['@nish1896/eslint-config/js', '@nish1896/eslint-config/react']
-}
+  module.exports = {
+-   extends: ['@nish1896']
++   extends: ['@nish1896/eslint-config/js', '@nish1896/eslint-config/react']
+  }
 ```
