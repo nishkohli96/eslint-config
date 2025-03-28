@@ -19,6 +19,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <form>
+          <input id="firstName" type="text" />
+          <label>First Name</label>
+          </form>
     </div>
   );
 }
