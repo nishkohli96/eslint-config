@@ -16,7 +16,7 @@ All rule names start with `@typescript-eslint` prefix.
 |-|-|
 |[array-type](https://typescript-eslint.io/rules/array-type/)||
 |[ban-ts-comment](https://typescript-eslint.io/rules/ban-ts-comment/)|✅|
-|[consistent-generic-constructors](https://typescript-eslint.io/rules/consistent-generic-constructors/)||
+|[consistent-generic-constructors](https://typescript-eslint.io/rules/consistent-generic-constructors/)| `constructor` |
 |[consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions/)|✅|
 |[consistent-type-exports](https://typescript-eslint.io/rules/consistent-type-exports/)||
 |[consistent-type-imports](https://typescript-eslint.io/rules/consistent-type-imports)||
