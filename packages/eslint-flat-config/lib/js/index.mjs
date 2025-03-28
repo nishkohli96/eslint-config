@@ -113,7 +113,7 @@ const jsConfig = [
       'no-unused-vars': 'warn',
       'no-unused-expressions': 'warn',
       /* This rule available from v9 onwards */
-      'no-useless-assignment': 'warn',
+      'no-useless-assignment': 'off',
       'no-useless-concat': 'warn',
       'no-use-before-define': 'error',
       'no-var': 'warn',

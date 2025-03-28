@@ -36,7 +36,6 @@ Includes the recommended and suggested rules from [eslint ruleset](https://eslin
 |[no-unreachable](https://eslint.org/docs/latest/rules/no-unreachable)|||
 |[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars)|||
 |[no-unused-expressions](https://eslint.org/docs/latest/rules/no-unused-expressions)|||
-|[no-useless-assignment](https://eslint.org/docs/latest/rules/no-useless-assignment)|||
 |[no-useless-concat](https://eslint.org/docs/latest/rules/no-useless-concat)|||
 |[no-use-before-define](https://eslint.org/docs/latest/rules/no-use-before-define)||✅|
 |[no-var](https://eslint.org/docs/latest/rules/no-var)|||
