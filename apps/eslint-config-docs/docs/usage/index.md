@@ -1,7 +1,7 @@
 ---
-sidebar_label: Introduction
+sidebar_label: Usage
 description: What plugins does this config uses and links to the list of all rules for these plugins.
-title: Introduction
+title: Usage
 ---
 
 # Usage

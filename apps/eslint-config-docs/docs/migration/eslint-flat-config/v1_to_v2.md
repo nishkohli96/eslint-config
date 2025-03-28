@@ -43,7 +43,7 @@ import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
   ...jsConfig,
-	...tsConfig,
+  ...tsConfig,
   ...jsxConfig,
 ];
 ```

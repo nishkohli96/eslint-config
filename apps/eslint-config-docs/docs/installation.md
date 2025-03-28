@@ -18,7 +18,7 @@ However, since ESLint v8 and below are now deprecated, upgrading to v9 is recomm
 
 In case you are upgrading to eslint **v9 or above** , please check the [migration guide](./migration/eslint-8_to_9.md).
 
-If you are using eslint v8 and are migrating from `v1.0.x`, please check [this guide](./migration/eslint-config/v1_to_v2.md).
+If you are using eslint v8 and are migrating from `v2`, please check [this guide](./migration/eslint-config/v2_to_v3.md).
 :::
 
 You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.

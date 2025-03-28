@@ -6,7 +6,7 @@ title: Usage with eslint 8
 ---
 
 :::note
-ESLint version 8 now deprecated, and upgrading to version 9 is recommended.
+ESLint version 8 is now deprecated, and upgrading to version 9 is recommended.
 
 This package will continue to receive minor updates for the time being.
 :::
@@ -21,10 +21,15 @@ touch .eslintrc.js
 
 For Node.js applications, use only the `js` configuration this package. This import is essential for all JavaScript-based projects, as it defines the recommended set of JavaScript-specific linting rules and ensures consistent code quality.
 
-```js
+:::note
+If you are using **Typescript** in your project, do include the `ts` module in your config file.
+:::
+
+```js title=".eslintrc.js"
 module.exports = {
   extends: [
-    "@nish1896/eslint-config/js"
+    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/ts"
   ],
   rules: {}
 }
@@ -34,11 +39,12 @@ module.exports = {
 
 The `react` import of this package contains the relevant rules for linting jsx code.
 
-```js
+```js title=".eslintrc.js"
 module.exports = {
   extends: [
     "@nish1896/eslint-config/js",
-    "@nish1896/eslint-config/react"
+    "@nish1896/eslint-config/ts",
+    "@nish1896/eslint-config/jsx"
   ],
   rules: {}
 }
@@ -54,6 +60,7 @@ If you are using this configuration in a NextJS Application, it is highly recomm
 module.exports = {
   extends: [
     "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/next-ts",
     "@nish1896/eslint-config/next"
   ],
   rules: {}
