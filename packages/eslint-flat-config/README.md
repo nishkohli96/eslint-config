@@ -27,7 +27,7 @@ export default [
   ...tsConfig
 ];
 ```
-### React.js & Vite
+### React.js & Vite {#reactjs-and-vite}
 
 Use the `ts` module only if your code is written in **Typescript**.
 
