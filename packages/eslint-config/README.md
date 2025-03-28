@@ -14,7 +14,7 @@
 
 Copy the code snippet most relevant to your application and paste it in the `.eslintrc`, `.eslintrc.js` or `.eslintrc.json` file in your project root.
 
-- Node.js App
+### Node.js
 
 Use the `ts` module only if your code is written in **Typescript**.
 
@@ -26,7 +26,7 @@ module.exports = {
   ]
 }
 ```
-- React & Vite
+### React.js & Vite
 
 Use the `ts` module only if your code is written in **Typescript**.
 
@@ -39,7 +39,7 @@ module.exports = {
   ]
 }
 ```
-- Next
+### Next.js
 
 Update the existing `.eslintrc.json` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next` 
 modules only if your code is written in **Typescript**.

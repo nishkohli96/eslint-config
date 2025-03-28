@@ -14,7 +14,7 @@
 
 Copy the code snippet most relevant to your application and paste it in the `eslint.config.mjs` file in your project root.
 
-- Node.js App
+### Node.js
 
 Use the `ts` module only if your code is written in **Typescript**.
 
@@ -27,7 +27,7 @@ export default [
   ...tsConfig
 ];
 ```
-- React & Vite
+### React.js & Vite
 
 Use the `ts` module only if your code is written in **Typescript**.
 
@@ -42,7 +42,7 @@ export default [
   ...jsxConfig,
 ];
 ```
-- Next
+### Next.js
 
 Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next` 
 modules only if your code is written in **Typescript**.
