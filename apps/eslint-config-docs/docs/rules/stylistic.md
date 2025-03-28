@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: Stylistic
-description: Tabular list of Stylistic js,ts, jsx and plus rules used in the @nish1896/eslint-config and @nish1896/eslint-flat-config.
+description: Tabular list of Stylistic js,ts, jsx and plus rules used in @nish1896/eslint-config and @nish1896/eslint-flat-config packages.
 title: Stylistic Rules
 ---
 
