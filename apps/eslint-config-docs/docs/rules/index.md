@@ -8,6 +8,8 @@ title: Linting Rules
 
 This config includes and modifies rules from `eslint`, `stylistic`, `typescript-eslint`, `react` and `jsx-a11y` plugins.
 
+Most of the rules throw a warning by default, and would automatically fix your code on running `eslint --fix`. Some of them have to be manually addressed by the developer.
+
 View the complete list of rules
 - [eslint](https://eslint.org/docs/latest/rules/)
 - [stylistic](https://eslint.style/rules)

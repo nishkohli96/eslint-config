@@ -7,53 +7,65 @@ title: Stylistic Rules
 
 # Stylistic
 
-**All rule names start with `@stylistic/` prefix.** 
-
 ## **JS Rules**
 
-These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896/eslint-config/js` import.
+These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896/eslint-config/js` module.
 
-|Rule Name| Configuration 🔧|
+**All rule names start with `@stylistic/js` prefix.** 
+
+| Rule Name | Configuration 🔧|
 |-|-|
-|[array-bracket-spacing](https://eslint.style/rules/default/array-bracket-spacing)||
-|[arrow-parens](https://eslint.style/rules/default/arrow-parens)| as-needed |
-|[arrow-spacing](https://eslint.style/rules/default/arrow-spacing)||
-|[block-spacing](https://eslint.style/rules/default/block-spacing)||
-|[brace-style](https://eslint.style/rules/default/brace-style)||
-|[comma-spacing](https://eslint.style/rules/default/comma-spacing)||
+|[array-bracket-spacing](https://eslint.style/rules/js/array-bracket-spacing)||
+|[arrow-parens](https://eslint.style/rules/js/arrow-parens)| as-needed |
+|[arrow-spacing](https://eslint.style/rules/js/arrow-spacing)||
+|[block-spacing](https://eslint.style/rules/js/block-spacing)||
+|[brace-style](https://eslint.style/rules/js/brace-style)||
+|[comma-spacing](https://eslint.style/rules/js/comma-spacing)||
 |[dot-location](https://eslint.style/rules/js/dot-location)| `property` |
-|[eol-last](https://eslint.style/rules/default/eol-last)||
-|[function-call-argument-newline](https://eslint.style/rules/default/function-call-argument-newline)| consistent |
-|[function-paren-newline](https://eslint.style/rules/default/function-paren-newline)| consistent |
-|[indent](https://eslint.style/rules/default/indent)| `2, { ignoredNodes: ['PropertyDefinition[decorators]', 'MethodDefinition[decorators]', 'ClassBody.body > Decorator']}` |
-|[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
-|[key-spacing](https://eslint.style/rules/default/key-spacing)||
-|[linebreak-style](https://eslint.style/rules/default/linebreak-style)||
-|[newline-per-chained-call](https://eslint.style/rules/default/newline-per-chained-call)||
-|[no-extra-semi](https://eslint.style/rules/default/no-extra-semi)||
-|[no-floating-decimal](https://eslint.style/rules/default/no-floating-decimal)||
-|[no-mixed-spaces-and-tabs](https://eslint.style/rules/default/no-mixed-spaces-and-tabs)||
-|[no-multi-spaces](https://eslint.style/rules/default/no-multi-spaces)||
-|[no-multiple-empty-lines](https://eslint.style/rules/default/no-multiple-empty-lines)||
-|[no-trailing-spaces](https://eslint.style/rules/default/no-trailing-spaces)||
-|[@stylistic/js/nonblock-statement-body-position](https://eslint.style/rules/js/nonblock-statement-body-position)||
-|[object-curly-newline](https://eslint.style/rules/default/object-curly-newline)| `{ consistent: true }` |
-|[object-curly-spacing](https://eslint.style/rules/default/object-curly-spacing)| always |
-|[operator-linebreak](https://eslint.style/rules/default/operator-linebreak)| before |
-|[quotes](https://eslint.style/rules/default/quotes)| single |
-|[rest-spread-spacing](https://eslint.style/rules/default/rest-spread-spacing)||
+|[eol-last](https://eslint.style/rules/js/eol-last)||
+|[function-call-argument-newline](https://eslint.style/rules/js/function-call-argument-newline)| `consistent` |
+|[function-paren-newline](https://eslint.style/rules/js/function-paren-newline)| `consistent` |
+|[indent](https://eslint.style/rules/js/indent)| `2, { ignoredNodes: ['PropertyDefinition[decorators]', 'MethodDefinition[decorators]', 'ClassBody.body > Decorator']}` |
+|[jsx-quotes](https://eslint.style/rules/js/jsx-quotes)| prefer-double |
+|[key-spacing](https://eslint.style/rules/js/key-spacing)||
+|[linebreak-style](https://eslint.style/rules/js/linebreak-style)||
+|[no-extra-semi](https://eslint.style/rules/js/no-extra-semi)||
+|[no-floating-decimal](https://eslint.style/rules/js/no-floating-decimal)||
+|[no-mixed-spaces-and-tabs](https://eslint.style/rules/js/no-mixed-spaces-and-tabs)||
+|[no-multi-spaces](https://eslint.style/rules/js/no-multi-spaces)||
+|[no-multiple-empty-lines](https://eslint.style/rules/js/no-multiple-empty-lines)||
+|[no-trailing-spaces](https://eslint.style/rules/js/no-trailing-spaces)||
+|[nonblock-statement-body-position](https://eslint.style/rules/js/nonblock-statement-body-position)||
+|[object-curly-newline](https://eslint.style/rules/js/object-curly-newline)| `{ consistent: true }` |
+|[object-curly-spacing](https://eslint.style/rules/js/object-curly-spacing)| always |
+|[operator-linebreak](https://eslint.style/rules/js/operator-linebreak)| before |
+|[quotes](https://eslint.style/rules/js/quotes)| single |
+|[rest-spread-spacing](https://eslint.style/rules/js/rest-spread-spacing)||
 |[semi](https://eslint.style/rules/js/semi)||
-|[semi-spacing](https://eslint.style/rules/default/semi-spacing)||
-|[space-before-blocks](https://eslint.style/rules/default/space-before-blocks)| `{ functions: 'always', classes: 'always', keywords: 'always' }` |
-|[space-infix-ops](https://eslint.style/rules/default/space-infix-ops)||
-|[space-unary-ops](https://eslint.style/rules/default/space-unary-ops)||
-|[spaced-comment](https://eslint.style/rules/default/spaced-comment)||
-|[switch-colon-spacing](https://eslint.style/rules/default/switch-colon-spacing)||
-|[template-curly-spacing](https://eslint.style/rules/default/template-curly-spacing)||
+|[semi-spacing](https://eslint.style/rules/js/semi-spacing)||
+|[space-before-blocks](https://eslint.style/rules/js/space-before-blocks)| `{ functions: 'always', classes: 'always', keywords: 'always' }` |
+|[space-infix-ops](https://eslint.style/rules/js/space-infix-ops)||
+|[space-unary-ops](https://eslint.style/rules/js/space-unary-ops)||
+|[spaced-comment](https://eslint.style/rules/js/spaced-comment)||
+|[switch-colon-spacing](https://eslint.style/rules/js/switch-colon-spacing)||
+|[template-curly-spacing](https://eslint.style/rules/js/template-curly-spacing)||
+|[wrap-regex](https://eslint.style/rules/default/wrap-regex)||
+
+
 |[type-annotation-spacing](https://eslint.style/rules/default/type-annotation-spacing)||
 |[type-generic-spacing](https://eslint.style/rules/default/type-generic-spacing)||
 |[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)||
-|[wrap-regex](https://eslint.style/rules/default/wrap-regex)||
+
+## **TS Rules**
+
+These rules are included in the following modules:
+- `@nish1896/eslint-flat-config/ts`
+- `@nish1896/eslint-flat-config/next-ts`
+- `@nish1896/eslint-config/ts`
+- `@nish1896/eslint-config/next-ts`
+
+**All rule names start with `@stylistic/ts` prefix.** 
+
 
 ## **JSX Rules**
 
@@ -70,7 +82,12 @@ These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish189
 |[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)| 2 |
 |[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)| `{ allow: 'literal' }` |
 |[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||
-|[jsx-quotes](https://eslint.style/rules/default/jsx-quotes)| prefer-double |
+
 |[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||
 |[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
 
+
+
+## Plus
+
+|[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
