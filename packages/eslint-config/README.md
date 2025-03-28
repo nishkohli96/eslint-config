@@ -26,7 +26,7 @@ module.exports = {
   ]
 }
 ```
-### React.js & Vite {#reactjs-and-vite}
+### React.js & Vite
 
 Use the `ts` module only if your code is written in **Typescript**.
 
