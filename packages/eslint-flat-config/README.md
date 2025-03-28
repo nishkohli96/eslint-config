@@ -44,8 +44,7 @@ export default [
 ```
 ### Next.js
 
-Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next` 
-modules only if your code is written in **Typescript**.
+Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next-ts` modules only if your code is written in **Typescript**.
 
 ```js
 import jsConfig from '@nish1896/eslint-flat-config/js';
