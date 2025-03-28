@@ -1,0 +1,22 @@
+{
+  "name": "js-v9",
+  "version": "1.0.0",
+  "description": "Format code with eslint v9 using this configuration",
+  "author": "Nishant Kohli",
+  "scripts": {
+    "lint": "eslint __tests__",
+    "lint:fix": "eslint --fix __tests__"
+  },
+  "homepage": "https://github.com/nishkohli96/eslint-config#readme",
+  "repository": {
+    "url": "git+https://github.com/nishkohli96/eslint-config.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.23.0",
+    "eslint": "^9.23.0"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "license": "ISC"
+}

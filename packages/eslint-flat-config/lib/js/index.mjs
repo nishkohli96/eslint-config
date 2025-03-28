@@ -1,45 +1,42 @@
 import globals from 'globals';
-import js from '@eslint/js';
-import tseslint from 'typescript-eslint';
-import stylistic from '@stylistic/eslint-plugin';
+import pluginJs from '@eslint/js';
+import stylisticJs from '@stylistic/eslint-plugin-js';
+import stylisticPlus from '@stylistic/eslint-plugin-plus';
+import ignoreDirsFiles from '../common/ignores.mjs';
 
-export default [
+/** @type {import('eslint').Linter.Config[]} */
+const jsConfig = [
   /* Global Language Options */
   {
+    name: '@nish1896/eslint-flat-config/js',
     languageOptions: {
-      ecmaVersion: 2022,
-      sourceType: "module",
+      ecmaVersion: 2024,
+      sourceType: 'module',
       globals: {
         ...globals.node,
         ...globals.jest
       }
     },
+    files: ['**/*.{js,mjs,cjs}'],
   },
-
-  /* Target Files */
-  {
-    files: ['**/*.{js,mjs,cjs,ts}'],
-  },
-  /* Recommended Configs */
-  js.configs.recommended,
-  ...tseslint.configs.recommended,
-
-  /* Plugins & Rules */
+  pluginJs.configs.recommended,
   {
     plugins: {
-      '@stylistic': stylistic,
+      '@stylistic/js': stylisticJs,
+      '@stylistic/plus': stylisticPlus
     },
     rules: {
-      '@stylistic/array-bracket-spacing': 'warn',
-      '@stylistic/arrow-parens': ['warn', 'as-needed'],
-      '@stylistic/arrow-spacing': 'warn',
-      '@stylistic/block-spacing': 'warn',
-      '@stylistic/brace-style': 'warn',
-      '@stylistic/comma-spacing': 'warn',
-      '@stylistic/eol-last': 'warn',
-      '@stylistic/function-call-argument-newline': ['warn', 'consistent'],
-      '@stylistic/function-paren-newline': ['warn', 'consistent'],
-      '@stylistic/indent': [
+      '@stylistic/js/array-bracket-spacing': 'warn',
+      '@stylistic/js/arrow-parens': ['warn', 'as-needed'],
+      '@stylistic/js/arrow-spacing': 'warn',
+      '@stylistic/js/block-spacing': 'warn',
+      '@stylistic/js/brace-style': 'warn',
+      '@stylistic/js/comma-spacing': 'warn',
+      '@stylistic/js/dot-location': ['warn', 'property'],
+      '@stylistic/js/eol-last': 'warn',
+      '@stylistic/js/function-call-argument-newline': ['warn', 'consistent'],
+      '@stylistic/js/function-paren-newline': ['warn', 'consistent'],
+      '@stylistic/js/indent': [
         'warn',
         2,
         {
@@ -51,84 +48,92 @@ export default [
           SwitchCase: 1
         }
       ],
-      '@stylistic/indent-binary-ops': ['warn', 2],
-      '@stylistic/key-spacing': 'warn',
-      '@stylistic/linebreak-style': 'warn',
-      '@stylistic/no-extra-semi': 'warn',
-      '@stylistic/no-floating-decimal': 'warn',
-      '@stylistic/no-mixed-spaces-and-tabs': 'warn',
-      '@stylistic/no-multi-spaces': 'warn',
-      '@stylistic/no-multiple-empty-lines': 'warn',
-      '@stylistic/no-trailing-spaces': 'warn',
-      '@stylistic/object-curly-newline': ['warn', { consistent: true }],
-      '@stylistic/object-curly-spacing': ['warn', 'always'],
-      '@stylistic/operator-linebreak': ['warn', 'before'],
-      '@stylistic/quotes': ['warn', 'single'],
-      '@stylistic/rest-spread-spacing': 'warn',
-      '@stylistic/semi-spacing': 'warn',
-      '@stylistic/space-before-blocks': [
+      '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
+      '@stylistic/js/key-spacing': 'warn',
+      '@stylistic/js/linebreak-style': 'warn',
+      '@stylistic/js/no-extra-semi': 'warn',
+      '@stylistic/js/no-floating-decimal': 'warn',
+      '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
+      '@stylistic/js/no-multi-spaces': 'warn',
+      '@stylistic/js/no-multiple-empty-lines': 'warn',
+      '@stylistic/js/no-trailing-spaces': 'warn',
+      '@stylistic/js/nonblock-statement-body-position': 'warn',
+      '@stylistic/js/object-curly-newline': ['warn', { consistent: true }],
+      '@stylistic/js/object-curly-spacing': ['warn', 'always'],
+      '@stylistic/js/operator-linebreak': ['warn', 'before'],
+      '@stylistic/js/quotes': ['warn', 'single'],
+      '@stylistic/js/rest-spread-spacing': 'warn',
+      '@stylistic/js/semi': 'warn',
+      '@stylistic/js/semi-spacing': 'warn',
+      '@stylistic/js/space-before-blocks': [
         'warn',
         {
           functions: 'always',
           classes: 'always',
-          keywords: 'always',
-        },
+          keywords: 'always'
+        }
       ],
-      '@stylistic/space-infix-ops': 'warn',
-      '@stylistic/space-unary-ops': [
+      '@stylistic/js/space-infix-ops': 'warn',
+      '@stylistic/js/space-unary-ops': [
         'warn',
         {
           words: true,
-          nonwords: false,
-        },
+          nonwords: false
+        }
       ],
-      '@stylistic/spaced-comment': 'warn',
-      '@stylistic/switch-colon-spacing': 'warn',
-      '@stylistic/template-curly-spacing': 'warn',
-      '@stylistic/type-annotation-spacing': 'warn',
-      '@stylistic/type-generic-spacing': 'warn',
-      '@stylistic/type-named-tuple-spacing': 'warn',
-      '@stylistic/wrap-regex': 'warn',
-      '@typescript-eslint/ban-ts-comment': 'off',
-      '@typescript-eslint/no-explicit-any': 'warn',
-      '@typescript-eslint/no-unused-vars': 'warn',
-      '@typescript-eslint/no-this-alias': 'off',
+      '@stylistic/js/spaced-comment': 'warn',
+      '@stylistic/js/switch-colon-spacing': 'warn',
+      '@stylistic/js/template-curly-spacing': 'warn',
+      '@stylistic/js/wrap-regex': 'warn',
+      '@stylistic/plus/curly-newline': ['warn', 'always'],
+      '@stylistic/plus/indent-binary-ops': ['warn', 2],
       'array-callback-return': 'warn',
+      'block-scoped-var': 'error',
       curly: 'warn',
       'default-case': 'warn',
+      'default-case-last': 'warn',
       eqeqeq: 'error',
       'func-names': ['warn', 'as-needed'],
-      'no-await-in-loop': 'warn',
+      'logical-assignment-operators': ['warn', 'always'],
+      'max-params': ['warn', 5],
+      'no-continue': 'warn',
       'no-debugger': 'warn',
+      'no-duplicate-imports': 'warn',
+      'no-empty-function': 'warn',
+      'no-empty-static-block': 'warn',
       'no-eq-null': 'error',
+      'no-implicit-coercion': 'warn',
       'no-inline-comments': 'warn',
-      'no-mixed-spaces-and-tabs': 'off',
+      'no-lonely-if': 'warn',
+      'no-nested-ternary': 'warn',
       'no-plusplus': 'warn',
+      'no-throw-literal': 'warn',
+      'no-unneeded-ternary': 'warn',
       'no-unreachable': 'warn',
+      'no-unused-vars': 'warn',
+      'no-unused-expressions': 'warn',
+      /* This rule available from v9 onwards */
+      'no-useless-assignment': 'off',
+      'no-useless-concat': 'warn',
       'no-use-before-define': 'error',
       'no-var': 'warn',
       'object-shorthand': 'warn',
+      'operator-assignment': 'warn',
       'prefer-const': 'warn',
       'prefer-exponentiation-operator': 'warn',
       'prefer-promise-reject-errors': 'warn',
       'prefer-rest-params': 'error',
-      semi: ['warn', 'always'],
+      'prefer-template': 'warn',
       'require-await': 'warn',
       'use-isnan': 'warn',
-    }
+    },
+    /**
+     * Ignore linting the below folders...
+     * "ignores" needs to be written at last, else linting
+     * would also run on build folders.
+     */
+    ignores: ignoreDirsFiles,
   },
-  /**
-   * Ignore linting the below folders...
-   * "ignores" needs to be written at last, else linting 
-   * would also run on build folders. 
-   */
-  {
-    ignores: [
-      'node_modules',
-      'dist',
-      'build',
-      'coverage',
-      '.turbo',
-    ]
-  }
 ];
+
+export default jsConfig;

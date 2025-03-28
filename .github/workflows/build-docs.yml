@@ -16,11 +16,11 @@ jobs:
           node-version: '20.10.0'
           registry-url: 'https://registry.npmjs.org'
       
-      - name: Install pnpm globally
-        run: npm i -g pnpm
+      - name: Install yarn globally
+        run: npm i -g yarn
 
       - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
       
       - name: Build Docs
-        run: pnpm docs:build
+        run: yarn docs:build

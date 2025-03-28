@@ -41,7 +41,7 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '2.1',
+              label: '3.0',
             },
           },
         },
@@ -53,6 +53,10 @@ const config: Config = {
       defaultMode: 'dark',
       disableSwitch: false,
       respectPrefersColorScheme: true,
+    },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
     },
     navbar: {
       logo: {

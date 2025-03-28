@@ -1,13 +1,15 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "2.1.4",
-  "description": "eslint and stylistic rules for eslint 8.57.0 or below to take care of the code formatting.",
+  "version": "3.0.0",
+  "description": "eslint and stylistic rules for eslint 8.57.0 or below to catch potential errors and take care of the code formatting.",
   "author": "Nishant Kohli",
   "exports": {
     "./package.json": "./package.json",
     "./js": "./lib/js/index.js",
+    "./jsx": "./lib/jsx/index.js",
     "./next": "./lib/next/index.js",
-    "./react": "./lib/react/index.js"
+    "./next-ts": "./lib/next-ts/index.js",
+    "./ts": "./lib/ts/index.js"
   },
   "scripts": {
     "link:local": "npm link",
@@ -18,13 +20,16 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^2.13.0",
-    "@typescript-eslint/eslint-plugin": "^8.26.1",
-    "@typescript-eslint/parser": "^8.26.1",
+    "@stylistic/eslint-plugin-js": "^3.1.0",
+    "@stylistic/eslint-plugin-jsx": "^3.1.0",
+    "@stylistic/eslint-plugin-plus": "^3.1.0",
+    "@stylistic/eslint-plugin-ts": "^3.1.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "typescript-eslint": "^8.26.1"
+    "typescript-eslint": "^8.28.0"
   },
   "engines": {
     "node": ">=14"

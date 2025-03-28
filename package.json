@@ -1,21 +1,36 @@
 {
   "name": "@nish1896/eslint-config-root",
-  "version": "2.1.4",
+  "version": "3.0.0",
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "private": true,
+  "workspaces": [
+    "packages/*",
+    "examples/**/*",
+    "apps/*"
+  ],
   "scripts": {
-    "config:link": "pnpm --filter @nish1896/eslint-config run link:local",
-    "flat-config:link": "pnpm --filter @nish1896/eslint-flat-config run link:local",
+    "setup": "sh ./scripts/setup.sh",
+    "pkgs": "sh ./scripts/pack.sh",
+    "link-v8": "sh ./scripts/link-v8.sh",
+    "link-v9": "sh ./scripts/link-v9.sh",
+    "config:link": "yarn workspace @nish1896/eslint-config link:local",
+    "flat-config:link": "yarn workspace @nish1896/eslint-flat-config link:local",
     "config:unlink": "npm unlink @nish1896/eslint-config",
     "flat-config:unlink": "npm unlink @nish1896/eslint-flat-config",
-    "docs": "pnpm --filter @nish1896/eslint-config-docs run start",
-    "docs:build": "pnpm --filter @nish1896/eslint-config-docs run build",
-    "js-8:lint": "pnpm --filter js-eslint-v8 run lint",
-    "js-9:lint": "pnpm --filter js-eslint-v9 run lint",
-    "next-v8:lint": "pnpm --filter next-eslint-v8 run lint",
-    "react-v9:lint": "pnpm --filter react-eslint-v9 run lint",
-    "vite-v9:lint": "pnpm --filter vite-eslint-v9 run lint"
+    "docs": "yarn workspace @nish1896/eslint-config-docs start",
+    "docs:build": "yarn workspace @nish1896/eslint-config-docs build",
+    "js-v8:lint": "yarn workspace js-v8 lint",
+    "next-v14:lint": "yarn workspace next-v14 lint",
+    "react-v18:lint": "yarn workspace react-v18 lint",
+    "js-9:lint": "yarn workspace js-v9 lint",
+    "next-v15-js:lint": "yarn workspace next-v15-js lint",
+    "next-v15-ts:lint": "yarn workspace next-v15-ts lint",
+    "react-v19:lint": "yarn workspace react-v19 lint",
+    "vite:lint": "yarn workspace vite lint"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
   },
   "keywords": [
     "@nish1896",
@@ -34,6 +49,5 @@
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
-  "license": "MIT",
-  "packageManager": "pnpm@10.6.2"
+  "license": "MIT"
 }

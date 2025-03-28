@@ -1,7 +1,7 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "1.1.4",
-  "description": "Linting rules configured for ESLint v9 and above to ensure consistent code formatting.",
+  "version": "2.0.0",
+  "description": "Linting rules configured for ESLint v9 and above to catch potential errors and ensure consistent code formatting.",
   "author": "Nishant Kohli",
   "engines": {
     "node": ">=18.18.0 || >=20.9.0 || >=21"
@@ -10,7 +10,9 @@
     "./package.json": "./package.json",
     "./js": "./lib/js/index.mjs",
     "./jsx": "./lib/jsx/index.mjs",
-    "./next": "./lib/next/index.mjs"
+    "./ts": "./lib/ts/index.mjs",
+    "./next": "./lib/next/index.mjs",
+    "./next-ts": "./lib/next-ts/index.mjs"
   },
   "scripts": {
     "link:local": "npm link",
@@ -21,12 +23,15 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
-    "@stylistic/eslint-plugin": "^2.13.0",
+    "@stylistic/eslint-plugin-js": "^4.2.0",
+    "@stylistic/eslint-plugin-ts": "^4.2.0",
+    "@stylistic/eslint-plugin-jsx": "^4.2.0",
+    "@stylistic/eslint-plugin-plus": "^4.2.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.4",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.0.0",
-    "typescript-eslint": "^8.26.1"
+    "typescript-eslint": "^8.28.0"
   },
   "peerDependencies": {
     "@eslint/js": ">=9",

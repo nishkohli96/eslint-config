@@ -1,6 +1,6 @@
 ---
-sidebar_position: 1
-sidebar_label: eslint 8 to 9
+sidebar_position: 3
+sidebar_label: eslint v8 to v9
 description: Migration guide from v3 to v2 for this eslint-config.
 ---
 
@@ -41,21 +41,4 @@ Delete the `.eslintrc` or `.eslintrc.js` or `.eslintrc.json` file and create `es
 touch eslint.config.mjs
 ```
 
-:::note
-The `react` folder import from `@nish1896/eslint-config/react` has been renamed in this package and will be imported as `@nish1896/eslint-flat-config/jsx`.
-:::
-
-Add the following content to this file -
-
-```js
-import jsConfig from '@nish1896/eslint-flat-config/js';
-import jsxConfig from '@nish1896/eslint-flat-config/jsx';
-
-export default [
-  ...jsConfig,
-  ...jsxConfig, 
-  {
-    rules: {}
-  }
-];
-```
+Refer the [usage guide for eslint-flat-config](../usage/eslint-9.md) to configure the appropriate modules based on your application framework. 🚀

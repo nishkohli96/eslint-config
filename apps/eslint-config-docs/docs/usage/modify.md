@@ -1,11 +1,11 @@
 ---
 sidebar_position: 3
-sidebar_label: Modification
+sidebar_label: Modify Rules
 description: Disable or ammend existing rules of the configuration file.
 title: Modification or disabling of rules defined in the configuration file.
 ---
 
-# Modify Rules
+# Add, Remove or Modify Rules
 
 To add a new rule, turn off or modify the existing list of rules, append the `rules` in your _eslint configuration file_.
 
