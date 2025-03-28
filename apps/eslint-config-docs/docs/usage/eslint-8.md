@@ -52,11 +52,11 @@ module.exports = {
 
 ### NextJS
 
-The existing `react` import caused conflicts with the [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) plugin, which prevented linting to execute. From version **2.1.0** onwards, a separate `next` import has been introduced to address these conflicts, since NextJS also provides its own set of eslint configuration.
+The existing `react` import caused conflicts with the [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) plugin, which prevented linting to execute.
 
-If you are using this configuration in a NextJS Application, it is highly recommended to upgrade to version `2.1.0` or above.
+From version **2.1.0** onwards, a separate `next` import has been introduced to address these conflicts, since NextJS also provides its own set of eslint configuration.
 
-```js
+```js title=".eslintrc.js"
 module.exports = {
   extends: [
     "@nish1896/eslint-config/js",

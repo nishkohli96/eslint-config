@@ -13,7 +13,7 @@ JSX Rules for [React](https://react.dev/), [Vite](https://vite.dev/) and [Next.j
 
 The below rules are not enabled below by default in the [jsx-a11y/recommended](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y?tab=readme-ov-file#supported-rules) plugin and will throw an error if not enforced.
 
-**All rule names start with `jsx-a11y/` prefix.**
+All rule names start with `jsx-a11y/` prefix.
 
 | Rule Name |
 |-|

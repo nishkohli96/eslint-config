@@ -5,21 +5,15 @@ description: Usage of @nish1896/eslint-flat-config with eslint version 9 for nod
 title: Usage with Eslint 9
 ---
 
+:::note
+If you are upgrading from **version 1** of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).
+:::
+
 If you have specified `"type": "module"` in the `package.json` of your application, create a `eslint.config.js` file, else use `eslint.config.mjs` file. 
 
 ```bash
 touch eslint.config.mjs
 ```
-
-Starting from **version 2**, this package has been modularized into the following independent components, enabling developers to apply rules specific to their framework and whether their project uses **TypeScript**:
-
-- `js`: [Eslint](https://eslint.org/docs/latest/rules/) and [stylistic](https://eslint.style/packages/js) rules for javascript
-- `ts`: TypeScript-specific rules, including [stylistic](https://eslint.style/packages/ts) and [typescript-eslint](https://typescript-eslint.io/rules/)
-- `jsx`: Rules for [React](https://github.com/jsx-eslint/eslint-plugin-react/tree/master/docs/rules), [React Hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks), [JSX A11y](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/tree/main?tab=readme-ov-file#supported-rules), and [stylistic JSX](https://eslint.style/packages/jsx)
-- `next`:  Includes additional JSX rules along with the ones from `eslint-plugin-next` package 
-- `next-ts`: [Typescript-eslint](https://typescript-eslint.io/rules/) and [Stylistic-ts](https://eslint.style/packages/ts) rules tailored for [Next.js](https://nextjs.org/) apps.
-
-**If you are upgrading from version 1 of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).**
 
 ## Node.js
 

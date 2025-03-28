@@ -41,8 +41,4 @@ Delete the `.eslintrc` or `.eslintrc.js` or `.eslintrc.json` file and create `es
 touch eslint.config.mjs
 ```
 
-:::note
-The `react` folder import from `@nish1896/eslint-config/react` has been renamed in this package and will be imported as `@nish1896/eslint-flat-config/jsx`.
-:::
-
-Refer the [usage guide](../usage/eslint-9.md) to configure the appropriate modules based on your application framework. 🚀
+Refer the [usage guide for eslint-flat-config](../usage/eslint-9.md) to configure the appropriate modules based on your application framework. 🚀

@@ -9,7 +9,7 @@ title: Stylistic Rules
 
 ## **JS Rules**
 
-**All rule names start with `@stylistic/js` prefix.** 
+All rule names start with `@stylistic/js` prefix.
 
 | Rule Name | Configuration 🔧|
 |-|-|
@@ -52,7 +52,7 @@ title: Stylistic Rules
 
 ## **TS Rules**
 
-**All rule names start with `@stylistic/ts` prefix.** 
+All rule names start with `@stylistic/ts` prefix.
 
 |Rule Name| Configuration 🔧 |
 |-|-|
@@ -72,7 +72,7 @@ title: Stylistic Rules
 
 ## **JSX Rules**
 
-**All rule names start with `@stylistic/jsx` prefix.** 
+All rule names start with `@stylistic/jsx` prefix.
 
 |Rule Name|🔧|
 |-|-|
@@ -90,9 +90,9 @@ title: Stylistic Rules
 |[jsx-wrap-multilines](https://eslint.style/rules/jsx/jsx-wrap-multilines)| `parens-new-line` |
 
 
-## Plus Rules
+## Additional Rules
 
-**All rule names start with `@stylistic/plus` prefix.** 
+All rule names start with `@stylistic/plus` prefix. 
 
 |[curly-newline](https://eslint.style/rules/plus/curly-newline) | `always` |
 |[indent-binary-ops](https://eslint.style/rules/plus/indent-binary-ops)| 2 |

@@ -17,15 +17,15 @@ Starting from **version 2**, this package has been modularized into the followin
 
 ## Node.js
 
-If you are using **typescript** in your project, add the `ts` module from this package.
+If you are using **typescript** in your project, add the `ts` module from this package, the rest of the config file remains the same.
 
-```js
+```diff
 import jsConfig from '@nish1896/eslint-flat-config/js';
-import tsConfig from '@nish1896/eslint-flat-config/ts';
++ import tsConfig from '@nish1896/eslint-flat-config/ts';
 
 export default [
   ...jsConfig,
-  ...tsConfig,
++ ...tsConfig,
   {
     rules: {}
   }
@@ -36,14 +36,14 @@ export default [
 
 Add the `ts` module from this package, if your application uses **typescript**.
 
-```js
+```diff
 import jsConfig from '@nish1896/eslint-flat-config/js';
-import tsConfig from '@nish1896/eslint-flat-config/ts';
++ import tsConfig from '@nish1896/eslint-flat-config/ts';
 import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
   ...jsConfig,
-  ...tsConfig,
++ ...tsConfig,
   ...jsxConfig,
 ];
 ```
@@ -54,11 +54,11 @@ In version 2, the next module now exclusively includes JSX-specific rules to be 
 
 <h4>Javascript</h4>
 
-```js
+```diff
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
-import jsConfig from '@nish1896/eslint-flat-config/js';
++ import jsConfig from '@nish1896/eslint-flat-config/js';
 import nextConfig from '@nish1896/eslint-flat-config/next';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -70,7 +70,7 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals'),
-  ...jsConfig,
++ ...jsConfig,
   ...nextConfig,
   {
     rules: {
@@ -83,13 +83,15 @@ export default eslintConfig;
 
 <h4>With Typescript</h4>
 
-```js
+The `next-ts` module contains the typescript specific rules for [Next.js](https://nextjs.org/) application.
+
+```diff
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { FlatCompat } from '@eslint/eslintrc';
-import jsConfig from '@nish1896/eslint-flat-config/js';
++ import jsConfig from '@nish1896/eslint-flat-config/js';
 import nextConfig from '@nish1896/eslint-flat-config/next';
-import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
++ import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -100,9 +102,9 @@ const compat = new FlatCompat({
 
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
-  ...jsConfig,
++ ...jsConfig,
   ...nextConfig,
-  ...nextTsConfig,
++ ...nextTsConfig,
   {
     rules: {
     }

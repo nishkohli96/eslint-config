@@ -10,7 +10,7 @@ title: Typescript-Eslint Rules
 Extending `"plugin:@typescript-eslint"` enables most of the
 [typescript-eslint rules](https://typescript-eslint.io/rules/). The rules that have been warned or turned off in the config are listed below.
 
-**All rule names start with `@typescript-eslint` prefix.** 
+All rule names start with `@typescript-eslint` prefix.
 
 | Rule Name | Off |
 |-|-|

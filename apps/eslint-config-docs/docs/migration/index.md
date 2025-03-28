@@ -17,4 +17,4 @@ Similarly, the core package, [@stylistic/eslint-plugin](https://www.npmjs.com/pa
 
 The legacy ESLint configuration (v8 and below) is only supported till version 3 of this package.
 
-This guide will help you migrate to ESLint v9 and transition to the latest recommended version of[@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
+This guide will help you migrate to ESLint v9 and transition to the latest recommended version of [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
