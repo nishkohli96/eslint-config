@@ -31,6 +31,6 @@ All rule names start with `@typescript-eslint` prefix.
 |[no-unsafe-call](https://typescript-eslint.io/rules/no-unsafe-call/)||
 |[no-unsafe-enum-comparison](https://typescript-eslint.io/rules/no-unsafe-enum-comparison/)|✅|
 |[no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access/)||
-|[no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return/)||
+|[no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return/)|✅|
 |[no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/)||
 |[restrict-template-expressions](https://typescript-eslint.io/rules/restrict-template-expressions/)||
