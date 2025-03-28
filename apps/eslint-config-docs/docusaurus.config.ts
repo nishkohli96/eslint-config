@@ -54,6 +54,10 @@ const config: Config = {
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
+    tableOfContents: {
+      minHeadingLevel: 2,
+      maxHeadingLevel: 4,
+    },
     navbar: {
       logo: {
         alt: 'Nish1896 Logo',
