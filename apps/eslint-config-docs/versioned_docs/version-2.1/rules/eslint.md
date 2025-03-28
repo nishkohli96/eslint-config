@@ -30,8 +30,8 @@ title: Eslint Rules
 
 | Rule Name |⚠️|❌|🔧|
 |-|-|-|-|
-|[react/jsx-uses-vars](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md)||✔️||
-|[react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)|✔️|| `{ extensions: ['.tsx', '.jsx'] }` |
+|[react/jsx-uses-vars](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-uses-vars.md)||✅||
+|[react/jsx-filename-extension](https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-filename-extension.md)|✅|| `{ extensions: ['.tsx', '.jsx'] }` |
 
 
 The eslint rule(s) listed below will have to be manually fixed.

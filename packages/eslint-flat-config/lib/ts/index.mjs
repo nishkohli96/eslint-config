@@ -53,6 +53,7 @@ const tsConfig = [
       '@typescript-eslint/consistent-generic-constructors': 'warn',
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/consistent-type-exports': 'warn',
+      '@typescript-eslint/consistent-type-imports': 'warn',
       '@typescript-eslint/no-base-to-string': 'warn',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-floating-promises': 'off',
