@@ -9,8 +9,6 @@ title: Stylistic Rules
 
 ## **JS Rules**
 
-These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896/eslint-config/js` module.
-
 **All rule names start with `@stylistic/js` prefix.** 
 
 | Rule Name | Configuration 🔧|
@@ -56,20 +54,30 @@ These rules are included in the `@nish1896/eslint-flat-config/js` and `@nish1896
 |[type-generic-spacing](https://eslint.style/rules/default/type-generic-spacing)||
 |[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)||
 
+
 ## **TS Rules**
 
-These rules are included in the following modules:
-- `@nish1896/eslint-flat-config/ts`
-- `@nish1896/eslint-flat-config/next-ts`
-- `@nish1896/eslint-config/ts`
-- `@nish1896/eslint-config/next-ts`
-
 **All rule names start with `@stylistic/ts` prefix.** 
+
+|Rule Name| Configuration 🔧 |
+|-|-|
+|[block-spacing](https://eslint.style/rules/ts/block-spacing)||
+|[brace-style](https://eslint.style/rules/ts/brace-style)||
+|[comma-spacing](https://eslint.style/rules/ts/comma-spacing)||
+|[key-spacing](https://eslint.style/rules/ts/key-spacing)||
+|[member-delimiter-style](https://eslint.style/rules/ts/member-delimiter-style)||
+|[no-extra-semi](https://eslint.style/rules/ts/no-extra-semi)||
+|[object-curly-spacing](https://eslint.style/rules/ts/object-curly-spacing)| `always` |
+|[quotes](https://eslint.style/rules/ts/quotes)| `single` |
+|[semi](https://eslint.style/rules/ts/semi)||
+|[space-before-blocks](https://eslint.style/rules/ts/space-before-blocks)| `{ functions: 'always', classes: 'always', keywords: 'always' }` |
+|[space-infix-ops](https://eslint.style/rules/ts/space-infix-ops)||
+|[type-annotation-spacing](https://eslint.style/rules/ts/type-annotation-spacing)||
 
 
 ## **JSX Rules**
 
-These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish1896/eslint-config/react` import.
+**All rule names start with `@stylistic/jsx` prefix.** 
 
 |Rule Name|🔧|
 |-|-|
@@ -88,6 +96,11 @@ These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish189
 
 
 
-## Plus
+## Plus Rules
 
+**All rule names start with `@stylistic/plus` prefix.** 
+
+|[curly-newline](https://eslint.style/rules/plus/curly-newline) | `always` |
 |[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
+|[type-generic-spacing](https://eslint.style/rules/plus/type-generic-spacing)||
+|[type-named-tuple-spacing](https://eslint.style/rules/plus/type-named-tuple-spacing)||
