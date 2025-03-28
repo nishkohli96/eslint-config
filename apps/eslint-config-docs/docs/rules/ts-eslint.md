@@ -26,10 +26,10 @@ All rule names start with `@typescript-eslint` prefix.
 |[no-inferrable-types](https://typescript-eslint.io/rules/no-inferrable-types/)|✅|
 |[no-misused-promises](https://typescript-eslint.io/rules/no-misused-promises/)|✅|
 |[no-this-alias](https://typescript-eslint.io/rules/no-this-alias/) |✅|
-|[no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument/)||
-|[no-unsafe-assignment](https://typescript-eslint.io/rules/no-unsafe-assignment/)||
+|[no-unsafe-argument](https://typescript-eslint.io/rules/no-unsafe-argument/)|✅|
+|[no-unsafe-assignment](https://typescript-eslint.io/rules/no-unsafe-assignment/)|✅|
 |[no-unsafe-call](https://typescript-eslint.io/rules/no-unsafe-call/)||
-|[no-unsafe-enum-comparison](https://typescript-eslint.io/rules/no-unsafe-enum-comparison/)||
+|[no-unsafe-enum-comparison](https://typescript-eslint.io/rules/no-unsafe-enum-comparison/)|✅|
 |[no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access/)||
 |[no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return/)||
 |[no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/)||
