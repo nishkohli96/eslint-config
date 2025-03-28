@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 sidebar_label: Stylistic
-description: Tabular list of Stylistic js and jsx rules used in the config.
+description: Tabular list of Stylistic js,ts, jsx and plus rules used in the @nish1896/eslint-config and @nish1896/eslint-flat-config.
 title: Stylistic Rules
 ---
 
@@ -47,12 +47,7 @@ title: Stylistic Rules
 |[spaced-comment](https://eslint.style/rules/js/spaced-comment)||
 |[switch-colon-spacing](https://eslint.style/rules/js/switch-colon-spacing)||
 |[template-curly-spacing](https://eslint.style/rules/js/template-curly-spacing)||
-|[wrap-regex](https://eslint.style/rules/default/wrap-regex)||
-
-
-|[type-annotation-spacing](https://eslint.style/rules/default/type-annotation-spacing)||
-|[type-generic-spacing](https://eslint.style/rules/default/type-generic-spacing)||
-|[type-named-tuple-spacing](https://eslint.style/rules/default/type-named-tuple-spacing)||
+|[wrap-regex](https://eslint.style/rules/jsx/wrap-regex)||
 
 
 ## **TS Rules**
@@ -81,19 +76,18 @@ title: Stylistic Rules
 
 |Rule Name|🔧|
 |-|-|
-|[jsx-closing-bracket-location](https://eslint.style/rules/default/jsx-closing-bracket-location)||
-|[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||
-|[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|consistent |
-|[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
-|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
-|[jsx-indent](https://eslint.style/rules/default/jsx-indent)| 2 |
-|[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)| 2 |
-|[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)| `{ allow: 'literal' }` |
-|[jsx-props-no-multi-spaces](https://eslint.style/rules/default/jsx-props-no-multi-spaces)||
-
-|[jsx-self-closing-comp](https://eslint.style/rules/default/jsx-self-closing-comp)||
-|[jsx-wrap-multilines](https://eslint.style/rules/default/jsx-wrap-multilines)| parens-new-line |
-
+|[jsx-closing-bracket-location](https://eslint.style/rules/jsx/jsx-closing-bracket-location)||
+|[jsx-closing-tag-location](https://eslint.style/rules/jsx/jsx-closing-tag-location)||
+|[jsx-curly-newline](https://eslint.style/rules/jsx/jsx-curly-newline)| `consistent` |
+|[jsx-curly-spacing](https://eslint.style/rules/jsx/jsx-curly-spacing)||
+|[jsx-equals-spacing](https://eslint.style/rules/jsx/jsx-curly-spacing)||
+|[jsx-indent](https://eslint.style/rules/jsx/jsx-indent)| 2 |
+|[jsx-indent-props](https://eslint.style/rules/jsx/jsx-indent-props)| 2 |
+|[jsx-one-expression-per-line](https://eslint.style/rules/jsx/jsx-one-expression-per-line)| `{ allow: 'literal' }` |
+|[jsx-pascal-case](https://eslint.style/rules/jsx/jsx-pascal-case)||
+|[jsx-props-no-multi-spaces](https://eslint.style/rules/jsx/jsx-props-no-multi-spaces)||
+|[jsx-self-closing-comp](https://eslint.style/rules/jsx/jsx-self-closing-comp)||
+|[jsx-wrap-multilines](https://eslint.style/rules/jsx/jsx-wrap-multilines)| `parens-new-line` |
 
 
 ## Plus Rules
@@ -101,6 +95,6 @@ title: Stylistic Rules
 **All rule names start with `@stylistic/plus` prefix.** 
 
 |[curly-newline](https://eslint.style/rules/plus/curly-newline) | `always` |
-|[indent-binary-ops](https://eslint.style/rules/default/indent-binary-ops)| 2 |
+|[indent-binary-ops](https://eslint.style/rules/plus/indent-binary-ops)| 2 |
 |[type-generic-spacing](https://eslint.style/rules/plus/type-generic-spacing)||
 |[type-named-tuple-spacing](https://eslint.style/rules/plus/type-named-tuple-spacing)||
