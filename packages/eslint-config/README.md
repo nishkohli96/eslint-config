@@ -8,7 +8,6 @@
 
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
-> [!NOTE]
 >This package is compatible with eslint `8.57.1` or below. For usage with eslint `9.0.0` or above check [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
 ## Quick Setup
@@ -16,27 +15,42 @@
 Copy the code snippet most relevant to your application and paste it in the `.eslintrc`, `.eslintrc.js` or `.eslintrc.json` file in your project root.
 
 - Node.js App
+
+Use the `ts` module only if your code is written in **Typescript**.
+
 ```js
 module.exports = {
   extends: [
-    "@nish1896/eslint-config/js"
+    "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/ts"
   ]
 }
 ```
 - React & Vite
+
+Use the `ts` module only if your code is written in **Typescript**.
+
 ```js
 module.exports = {
   extends: [
     "@nish1896/eslint-config/js",
-    "@nish1896/eslint-config/react"
+    "@nish1896/eslint-config/ts",
+    "@nish1896/eslint-config/jsx"
   ]
 }
 ```
 - Next
+
+Update the existing `.eslintrc.json` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next` 
+modules only if your code is written in **Typescript**.
+
 ```js
 module.exports = {
   extends: [
+    "next/core-web-vitals",
+    "next/typescript",
     "@nish1896/eslint-config/js",
+    "@nish1896/eslint-config/next-ts",
     "@nish1896/eslint-config/next"
   ]
 }

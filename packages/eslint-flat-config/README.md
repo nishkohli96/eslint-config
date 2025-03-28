@@ -8,7 +8,6 @@
 
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
-> [!NOTE]
 >This package is compatible with eslint `9.0.0` or above. For usage with eslint `8.57.1` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
 ## Quick Setup
@@ -16,33 +15,48 @@
 Copy the code snippet most relevant to your application and paste it in the `eslint.config.mjs` file in your project root.
 
 - Node.js App
+
+Use the `ts` module only if your code is written in **Typescript**.
+
 ```js
 import jsConfig from '@nish1896/eslint-flat-config/js';
+import tsConfig from '@nish1896/eslint-flat-config/ts';
 
 export default [
   ...jsConfig,
+  ...tsConfig
 ];
 ```
 - React & Vite
+
+Use the `ts` module only if your code is written in **Typescript**.
+
 ```js
 import jsConfig from '@nish1896/eslint-flat-config/js';
+import tsConfig from '@nish1896/eslint-flat-config/ts';
 import jsxConfig from '@nish1896/eslint-flat-config/jsx';
 
 export default [
   ...jsConfig,
+  ...tsConfig,
   ...jsxConfig,
 ];
 ```
 - Next
 
-Add the `next` import to the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app.
+Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next` 
+modules only if your code is written in **Typescript**.
 
 ```js
+import jsConfig from '@nish1896/eslint-flat-config/js';
+import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 import nextConfig from '@nish1896/eslint-flat-config/next';
 
 const eslintConfig = [
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...jsConfig,
+  ...nextTsConfig,
   ...nextConfig,
-  ...compat.extends('next/core-web-vitals', 'next/typescript')
 ];
 
 export default eslintConfig;
