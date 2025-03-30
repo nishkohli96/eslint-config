@@ -69,9 +69,9 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals'),
 + ...jsConfig,
   ...nextConfig,
+  ...compat.extends('next/core-web-vitals'),
   {
     rules: {
     }
@@ -101,10 +101,10 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
 + ...jsConfig,
   ...nextConfig,
 + ...nextTsConfig,
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
     rules: {
     }

@@ -21,13 +21,12 @@ const jsxConfig = [
       },
       parserOptions: {
         projectService: true,
-        tsconfigRootDir: import.meta.dirname,
         ecmaFeatures: {
           jsx: true
         }
       },
     },
-    files: ['**/*.{js,mjs,cjs,jsx}']
+    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}']
   },
 
   /* Recommended Configs */
@@ -42,7 +41,8 @@ const jsxConfig = [
     },
     settings: {
       react: {
-        version: 'detect'
+        version: 'detect',
+        'jsx-runtime': true
       }
     },
     rules: {

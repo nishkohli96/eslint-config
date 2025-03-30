@@ -52,10 +52,10 @@ import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 import nextConfig from '@nish1896/eslint-flat-config/next';
 
 const eslintConfig = [
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   ...jsConfig,
   ...nextTsConfig,
   ...nextConfig,
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
 ];
 
 export default eslintConfig;

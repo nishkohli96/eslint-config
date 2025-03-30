@@ -27,7 +27,6 @@ Includes the recommended and suggested rules from [eslint ruleset](https://eslin
 |[no-empty-static-block](https://eslint.org/docs/latest/rules/no-empty-static-block)|||
 |[no-eq-null](https://eslint.org/docs/latest/rules/no-eq-null)||✅|
 |[no-implicit-coercion](https://eslint.org/docs/latest/rules/no-implicit-coercion)|||
-|[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)|||
 |[no-lonely-if](https://eslint.org/docs/latest/rules/no-lonely-if)|||
 |[no-nested-ternary](https://eslint.org/docs/latest/rules/no-nested-ternary)|||
 |[no-plusplus](https://eslint.org/docs/latest/rules/no-plusplus)|||

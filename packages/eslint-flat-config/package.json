@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Linting rules configured for ESLint v9 and above to catch potential errors and ensure consistent code formatting.",
   "author": "Nishant Kohli",
   "engines": {
@@ -62,6 +62,9 @@
     "react-eslint",
     "shareable-config",
     "typescript-eslint",
-    "code-style"
+    "code-style",
+    "eslint-stylistic",
+    "eslint-style",
+    "stylistic-eslint"
   ]
 }

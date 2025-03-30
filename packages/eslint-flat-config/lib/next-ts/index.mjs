@@ -1,9 +1,7 @@
 import globals from 'globals';
-import tseslint from 'typescript-eslint';
 import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
-import parserTs from '@typescript-eslint/parser';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 /** @type {import('eslint').Linter.Config[]} */
@@ -12,7 +10,6 @@ const nextTsConfig = [
     name: '@nish1896/eslint-flat-config/next-ts',
     languageOptions: {
       ecmaVersion: 2024,
-      parser: parserTs,
       sourceType: 'module',
       globals: {
         ...globals.serviceworker,
@@ -28,7 +25,6 @@ const nextTsConfig = [
     },
     files: ['**/*.{ts,tsx}']
   },
-  ...tseslint.configs.stylistic,
   {
     plugins: {
       '@stylistic/js': stylisticJs,
@@ -37,7 +33,8 @@ const nextTsConfig = [
     },
     settings: {
       react: {
-        version: 'detect'
+        version: 'detect',
+        'jsx-runtime': true
       }
     },
     rules: {

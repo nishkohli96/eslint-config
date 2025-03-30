@@ -23,6 +23,7 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'jsx-runtime': true
   },
   rules: {
     '@stylistic/jsx/jsx-closing-bracket-location': 'warn',

@@ -30,6 +30,7 @@ module.exports = {
     react: {
       version: 'detect',
     },
+    'jsx-runtime': true
   },
   rules: {
     '@stylistic/ts/block-spacing': 'warn',

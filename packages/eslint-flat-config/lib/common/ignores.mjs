@@ -1,6 +1,6 @@
 export default [
   /* Config files */
-	'*.config.{js,mjs,ts}',
+	'*.config.{js,mjs,ts,json}',
 
   /* node_modules and build folders */
   'node_modules',
