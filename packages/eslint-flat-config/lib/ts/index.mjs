@@ -50,10 +50,16 @@ const tsConfig = [
       '@stylistic/plus/type-named-tuple-spacing': 'warn',
       '@typescript-eslint/array-type': 'warn',
       '@typescript-eslint/ban-ts-comment': 'off',
-      '@typescript-eslint/consistent-generic-constructors': ['warn', 'constructor'],
+      '@typescript-eslint/consistent-generic-constructors': [
+        'warn',
+        'constructor'
+      ],
       '@typescript-eslint/consistent-type-definitions': 'off',
       '@typescript-eslint/consistent-type-exports': 'warn',
-      '@typescript-eslint/consistent-type-imports': 'warn',
+      '@typescript-eslint/consistent-type-imports': [
+        'warn',
+        { fixStyle: 'inline-type-imports' }
+      ],
       '@typescript-eslint/no-base-to-string': 'off',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-floating-promises': 'off',
