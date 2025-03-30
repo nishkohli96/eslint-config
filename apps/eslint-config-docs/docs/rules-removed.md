@@ -27,6 +27,7 @@ These rules were once included, but later removed in subsequent versions due to 
 [id-length](https://eslint.org/docs/latest/rules/id-length)| Warning when using `_` for unused vars |
 |[jsx-first-prop-new-line](https://eslint.style/rules/default/jsx-first-prop-new-line)||
 |[multiline-comment-style](https://eslint.org/docs/latest/rules/multiline-comment-style)| The default setting `starred-block` read commented code as a comment itself, which made it difficult to uncomment the code
+|[no-inline-comments](https://eslint.org/docs/latest/rules/no-inline-comments)| Developer preference and unnecessary warning in `{ /* noop */}` function |
 |[no-mixed-spaces-and-tabs](https://eslint.org/docs/latest/rules/no-mixed-spaces-and-tabs) | Same rule in [eslint.style](https://eslint.style/rules/default/no-mixed-spaces-and-tabs) |
 |[no-shadow](https://eslint.org/docs/latest/rules/no-shadow) | Gave unwanted warnings when using enums |
 |[no-unused-vars](https://eslint.org/docs/latest/rules/no-unused-vars) | `@typescript-eslint/no-unused-vars` does it better |

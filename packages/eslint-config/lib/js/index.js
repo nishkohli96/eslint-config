@@ -95,7 +95,7 @@ module.exports = {
     'no-empty-static-block': 'warn',
     'no-eq-null': 'error',
     'no-implicit-coercion': 'warn',
-    'no-inline-comments': 'warn',
+    'no-inline-comments': 'off',
     'no-lonely-if': 'warn',
     'no-nested-ternary': 'warn',
     'no-plusplus': 'warn',
