@@ -85,7 +85,7 @@ const jsConfig = [
       '@stylistic/js/switch-colon-spacing': 'warn',
       '@stylistic/js/template-curly-spacing': 'warn',
       '@stylistic/js/wrap-regex': 'warn',
-      '@stylistic/plus/curly-newline': ['warn', 'always'],
+      '@stylistic/plus/curly-newline': ['warn', { consistent: true }],
       '@stylistic/plus/indent-binary-ops': ['warn', 2],
       'array-callback-return': 'warn',
       'block-scoped-var': 'error',

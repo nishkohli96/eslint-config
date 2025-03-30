@@ -94,7 +94,7 @@ All rule names start with `@stylistic/jsx` prefix.
 
 All rule names start with `@stylistic/plus` prefix. 
 
-|[curly-newline](https://eslint.style/rules/plus/curly-newline) | `always` |
+|[curly-newline](https://eslint.style/rules/plus/curly-newline) | `{ consistent: true }` |
 |[indent-binary-ops](https://eslint.style/rules/plus/indent-binary-ops)| 2 |
 |[type-generic-spacing](https://eslint.style/rules/plus/type-generic-spacing)||
 |[type-named-tuple-spacing](https://eslint.style/rules/plus/type-named-tuple-spacing)||
