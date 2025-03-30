@@ -33,10 +33,11 @@ const nextConfig = [
     },
     settings: {
       react: {
-        version: 'detect'
+        version: 'detect',
+        'jsx-runtime': true
       }
     },
-    files: ['**/*.{js,mjs,cjs,jsx}'],
+    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
     plugins: {
       '@stylistic/jsx': stylisticJsx,
     },
