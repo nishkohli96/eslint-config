@@ -64,6 +64,7 @@ module.exports = {
     '@stylistic/js/nonblock-statement-body-position': 'warn',
     '@stylistic/js/object-curly-newline': ['warn', { consistent: true }],
     '@stylistic/js/object-curly-spacing': ['warn', 'always'],
+    '@stylistic/js/object-property-newline': ['warn', { allowAllPropertiesOnSameLine : true }],
     '@stylistic/js/operator-linebreak': ['warn', 'before'],
     '@stylistic/js/quotes': ['warn', 'single'],
     '@stylistic/js/rest-spread-spacing': 'warn',
