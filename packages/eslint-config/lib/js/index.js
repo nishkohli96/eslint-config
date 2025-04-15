@@ -42,6 +42,19 @@ module.exports = {
     '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
     '@stylistic/js/key-spacing': 'warn',
     '@stylistic/js/linebreak-style': 'warn',
+    '@stylistic/js/max-len': [
+      'warn',
+      {
+        code: 80,
+        tabWidth: 2,
+        ignorePattern: '^\\s*(import|export|require\\s*\\()', 
+        ignoreComments: true,
+        ignoreUrls: true,
+        ignoreStrings: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true
+      }
+    ],
     '@stylistic/js/no-extra-semi': 'warn',
     '@stylistic/js/no-floating-decimal': 'warn',
     '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
