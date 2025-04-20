@@ -33,11 +33,12 @@ const po =Date.now()+ we * 60 *1000
 
 res.send({ contentFilters: [], sort: [], somelongStrs: ['12',23,45]})
 
-let str = 'HELLo'
-switch(str) {
-	case 'world' : return true;
-	case 'hel': { return 'bla bla'}
-}
+function a(){
+	let str = 'HELLo'
+	switch(str) {
+		case 'world' : return true;
+		case 'hel': { return 'bla bla'}
+	}}
 
 /* max-len rule tests */
 /**
