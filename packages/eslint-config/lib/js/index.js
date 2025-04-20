@@ -17,9 +17,7 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    '@stylistic/js/array-bracket-newline': ['warn', { minItems: 3 }],
     '@stylistic/js/array-bracket-spacing': 'warn',
-    '@stylistic/js/array-element-newline': ['warn', { minItems: 3 }],
     '@stylistic/js/arrow-parens': ['warn', 'as-needed'],
     '@stylistic/js/arrow-spacing': 'warn',
     '@stylistic/js/block-spacing': 'warn',
@@ -45,19 +43,6 @@ module.exports = {
     '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
     '@stylistic/js/key-spacing': 'warn',
     '@stylistic/js/linebreak-style': 'warn',
-    '@stylistic/js/max-len': [
-      'warn',
-      {
-        code: 80,
-        tabWidth: 2,
-        ignorePattern: '^\\s*(import|export|require\\s*\\()', 
-        ignoreComments: true,
-        ignoreUrls: true,
-        ignoreStrings: true,
-        ignoreTemplateLiterals: true,
-        ignoreRegExpLiterals: true
-      }
-    ],
     '@stylistic/js/max-statements-per-line': 'warn',
     '@stylistic/js/multiline-ternary': ['warn', 'always-multiline'],
     '@stylistic/js/no-extra-semi': 'warn',
@@ -67,9 +52,8 @@ module.exports = {
     '@stylistic/js/no-multiple-empty-lines': 'warn',
     '@stylistic/js/no-trailing-spaces': 'warn',
     '@stylistic/js/nonblock-statement-body-position': 'warn',
-    '@stylistic/js/object-curly-newline': ['warn', { minProperties: 2 }],
+    '@stylistic/js/object-curly-newline': ['warn', { consistent: true }],
     '@stylistic/js/object-curly-spacing': ['warn', 'always'],
-    '@stylistic/js/object-property-newline': 'warn',
     '@stylistic/js/operator-linebreak': ['warn', 'before'],
     '@stylistic/js/quotes': ['warn', 'single'],
     '@stylistic/js/rest-spread-spacing': 'warn',

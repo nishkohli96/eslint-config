@@ -13,9 +13,7 @@ All rule names start with `@stylistic/js` prefix.
 
 | Rule Name | Configuration 🔧|
 |-|-|
-|[array-bracket-newline](https://eslint.style/rules/js/array-bracket-newline)||
 |[array-bracket-spacing](https://eslint.style/rules/js/array-bracket-spacing)||
-|[array-element-newline](https://eslint.style/rules/js/array-element-newline)||
 |[arrow-parens](https://eslint.style/rules/js/arrow-parens)| as-needed |
 |[arrow-spacing](https://eslint.style/rules/js/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/js/block-spacing)||
@@ -30,7 +28,6 @@ All rule names start with `@stylistic/js` prefix.
 |[jsx-quotes](https://eslint.style/rules/js/jsx-quotes)| prefer-double |
 |[key-spacing](https://eslint.style/rules/js/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/js/linebreak-style)||
-|[max-len](https://eslint.style/rules/js/max-len)| Refer rule config in [source code](https://github.com/nishkohli96/eslint-config/blob/main/packages/eslint-flat-config/lib/js/index.mjs) |
 |[max-statements-per-line](https://eslint.style/rules/js/max-statements-per-line)||
 |[multiline-ternary](https://eslint.style/rules/js/multiline-ternary)| `always-multiline`|
 |[no-extra-semi](https://eslint.style/rules/js/no-extra-semi)||
@@ -40,9 +37,8 @@ All rule names start with `@stylistic/js` prefix.
 |[no-multiple-empty-lines](https://eslint.style/rules/js/no-multiple-empty-lines)||
 |[no-trailing-spaces](https://eslint.style/rules/js/no-trailing-spaces)||
 |[nonblock-statement-body-position](https://eslint.style/rules/js/nonblock-statement-body-position)||
-|[object-curly-newline](https://eslint.style/rules/js/object-curly-newline)| `{ minProperties: 2 }` |
+|[object-curly-newline](https://eslint.style/rules/js/object-curly-newline)| `{ consistent: true }` |
 |[object-curly-spacing](https://eslint.style/rules/js/object-curly-spacing)| always |
-|[object-property-newline](https://eslint.style/rules/js/object-property-newline)||
 |[operator-linebreak](https://eslint.style/rules/js/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/js/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/js/rest-spread-spacing)||
