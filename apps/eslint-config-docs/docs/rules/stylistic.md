@@ -22,11 +22,14 @@ All rule names start with `@stylistic/js` prefix.
 |[dot-location](https://eslint.style/rules/js/dot-location)| `property` |
 |[eol-last](https://eslint.style/rules/js/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/js/function-call-argument-newline)| `consistent` |
+|[function-call-spacing](https://eslint.style/rules/js/function-call-spacing)||
 |[function-paren-newline](https://eslint.style/rules/js/function-paren-newline)| `consistent` |
 |[indent](https://eslint.style/rules/js/indent)| `2, { ignoredNodes: ['PropertyDefinition[decorators]', 'MethodDefinition[decorators]', 'ClassBody.body > Decorator']}` |
 |[jsx-quotes](https://eslint.style/rules/js/jsx-quotes)| prefer-double |
 |[key-spacing](https://eslint.style/rules/js/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/js/linebreak-style)||
+|[max-statements-per-line](https://eslint.style/rules/js/max-statements-per-line)||
+|[multiline-ternary](https://eslint.style/rules/js/multiline-ternary)| `always-multiline`|
 |[no-extra-semi](https://eslint.style/rules/js/no-extra-semi)||
 |[no-floating-decimal](https://eslint.style/rules/js/no-floating-decimal)||
 |[no-mixed-spaces-and-tabs](https://eslint.style/rules/js/no-mixed-spaces-and-tabs)||

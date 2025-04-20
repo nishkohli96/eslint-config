@@ -4,7 +4,6 @@ import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
-/** @type {import('eslint').Linter.Config[]} */
 const jsConfig = [
   /* Global Language Options */
   {
@@ -17,7 +16,7 @@ const jsConfig = [
         ...globals.jest
       }
     },
-    files: ['**/*.{js,mjs,cjs}'],
+    files: ['**/*.{js,mjs,cjs}']
   },
   pluginJs.configs.recommended,
   {
@@ -35,6 +34,7 @@ const jsConfig = [
       '@stylistic/js/dot-location': ['warn', 'property'],
       '@stylistic/js/eol-last': 'warn',
       '@stylistic/js/function-call-argument-newline': ['warn', 'consistent'],
+      '@stylistic/js/function-call-spacing': 'warn',
       '@stylistic/js/function-paren-newline': ['warn', 'consistent'],
       '@stylistic/js/indent': [
         'warn',
@@ -51,6 +51,8 @@ const jsConfig = [
       '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/js/key-spacing': 'warn',
       '@stylistic/js/linebreak-style': 'warn',
+      '@stylistic/js/max-statements-per-line': 'warn',
+      '@stylistic/js/multiline-ternary': ['warn', 'always-multiline'],
       '@stylistic/js/no-extra-semi': 'warn',
       '@stylistic/js/no-floating-decimal': 'warn',
       '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
@@ -125,15 +127,15 @@ const jsConfig = [
       'prefer-rest-params': 'error',
       'prefer-template': 'warn',
       'require-await': 'warn',
-      'use-isnan': 'warn',
+      'use-isnan': 'warn'
     },
     /**
      * Ignore linting the below folders...
      * "ignores" needs to be written at last, else linting
      * would also run on build folders.
      */
-    ignores: ignoreDirsFiles,
-  },
+    ignores: ignoreDirsFiles
+  }
 ];
 
 export default jsConfig;

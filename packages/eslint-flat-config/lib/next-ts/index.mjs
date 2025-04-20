@@ -4,7 +4,6 @@ import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
-/** @type {import('eslint').Linter.Config[]} */
 const nextTsConfig = [
   {
     name: '@nish1896/eslint-flat-config/next-ts',
@@ -84,6 +83,7 @@ const nextTsConfig = [
       '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/require-await': 'warn',
       '@typescript-eslint/restrict-template-expressions': 'warn',
       /* Prevent warning when defining ENUMS */
       'no-unused-vars': 'off',

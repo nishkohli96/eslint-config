@@ -5,7 +5,6 @@ import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
-/** @type {import('eslint').Linter.Config[]} */
 const tsConfig = [
   {
     name: '@nish1896/eslint-flat-config/ts',
@@ -73,6 +72,7 @@ const tsConfig = [
       '@typescript-eslint/no-unsafe-member-access': 'off',
       '@typescript-eslint/no-unsafe-return': 'off',
       '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/require-await': 'warn',
       '@typescript-eslint/restrict-template-expressions': 'warn',
       /* Prevent warning when defining ENUMS */
       'no-unused-vars': 'off',

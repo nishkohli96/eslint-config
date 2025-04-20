@@ -33,4 +33,5 @@ All rule names start with `@typescript-eslint` prefix.
 |[no-unsafe-member-access](https://typescript-eslint.io/rules/no-unsafe-member-access/)|✅|
 |[no-unsafe-return](https://typescript-eslint.io/rules/no-unsafe-return/)|✅|
 |[no-unused-vars](https://typescript-eslint.io/rules/no-unused-vars/)||
+|[require-await](https://typescript-eslint.io/rules/require-await)||
 |[restrict-template-expressions](https://typescript-eslint.io/rules/restrict-template-expressions/)||

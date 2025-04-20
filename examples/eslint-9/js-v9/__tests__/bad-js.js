@@ -31,8 +31,15 @@ for(;;){
   // ...
 }
 
+/**
+ * Test the following rules:
+ * - @stylistic/js/array-bracket-newline
+ * - @stylistic/js/array-bracket-spacing
+ * - @stylistic/js/array-element-newline
+ */
 let arr = [2,42,42,33,23,67,234,2323]
 arr.forEach(ele => ele+=1)
+arr = [2,3]
 
 var arr2 = ['raj', 'rajesh', 'rajesh kumar']
 var arr4 = ['http://localhost:5000', 'http://localhost:5001', 'http://localhost:5002']
@@ -44,3 +51,13 @@ var arr5 = [
 
 try{ console.log('hello world')}
 catch(err) {console.error(err)}
+
+/* Test @stylistic/js/object-curly-newline */
+const obj2 = { a: 23, v: '323', c: {we: 34}, d:'deded' };
+const obj3 = {
+  a: 23,
+  v: '323', c: {we: 34}, d:'deded'
+};
+
+/* Test @stylistic/js/function-call-spacing */
+console.log ('hello world')

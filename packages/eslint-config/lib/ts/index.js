@@ -1,5 +1,6 @@
 'use strict';
 
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: [
@@ -69,6 +70,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/no-unsafe-return': 'off',
     '@typescript-eslint/no-unused-vars': 'warn',
+    '@typescript-eslint/require-await': 'warn',
     '@typescript-eslint/restrict-template-expressions': 'warn',
     /* Prevent warning when defining ENUMS */
     'no-unused-vars': 'off',

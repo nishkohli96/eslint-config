@@ -1,18 +1,37 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Linting rules configured for ESLint v9 and above to catch potential errors and ensure consistent code formatting.",
   "author": "Nishant Kohli",
   "engines": {
     "node": ">=18.18.0 || >=20.9.0 || >=21"
   },
+  "type": "module",
   "exports": {
-    "./package.json": "./package.json",
-    "./js": "./lib/js/index.mjs",
-    "./jsx": "./lib/jsx/index.mjs",
-    "./ts": "./lib/ts/index.mjs",
-    "./next": "./lib/next/index.mjs",
-    "./next-ts": "./lib/next-ts/index.mjs"
+    "./package.json": {
+      "import": "./package.json",
+      "require": "./package.json"
+    },
+    "./js": {
+      "import": "./lib/js/index.mjs",
+      "types": "./lib/js/index.d.ts"
+    },
+    "./jsx": {
+      "import": "./lib/jsx/index.mjs",
+      "types": "./lib/jsx/index.d.ts"
+    },
+    "./ts": {
+      "import": "./lib/ts/index.mjs",
+      "types": "./lib/ts/index.d.ts"
+    },
+    "./next": {
+      "import": "./lib/next/index.mjs",
+      "types": "./lib/next/index.d.ts"
+    },
+    "./next-ts": {
+      "import": "./lib/next-ts/index.mjs",
+      "types": "./lib/next-ts/index.d.ts"
+    }
   },
   "scripts": {
     "link:local": "npm link",
@@ -28,10 +47,10 @@
     "@stylistic/eslint-plugin-jsx": "^4.2.0",
     "@stylistic/eslint-plugin-plus": "^4.2.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "globals": "^16.0.0",
-    "typescript-eslint": "^8.28.0"
+    "typescript-eslint": "^8.30.1"
   },
   "peerDependencies": {
     "@eslint/js": ">=9",
