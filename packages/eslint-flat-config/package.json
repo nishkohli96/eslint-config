@@ -6,13 +6,32 @@
   "engines": {
     "node": ">=18.18.0 || >=20.9.0 || >=21"
   },
+  "type": "module",
   "exports": {
-    "./package.json": "./package.json",
-    "./js": "./lib/js/index.mjs",
-    "./jsx": "./lib/jsx/index.mjs",
-    "./ts": "./lib/ts/index.mjs",
-    "./next": "./lib/next/index.mjs",
-    "./next-ts": "./lib/next-ts/index.mjs"
+    "./package.json": {
+      "import": "./package.json",
+      "require": "./package.json"
+    },
+    "./js": {
+      "import": "./lib/js/index.mjs",
+      "types": "./lib/js/index.d.ts"
+    },
+    "./jsx": {
+      "import": "./lib/jsx/index.mjs",
+      "types": "./lib/jsx/index.d.ts"
+    },
+    "./ts": {
+      "import": "./lib/ts/index.mjs",
+      "types": "./lib/ts/index.d.ts"
+    },
+    "./next": {
+      "import": "./lib/next/index.mjs",
+      "types": "./lib/next/index.d.ts"
+    },
+    "./next-ts": {
+      "import": "./lib/next-ts/index.mjs",
+      "types": "./lib/next-ts/index.d.ts"
+    }
   },
   "scripts": {
     "link:local": "npm link",
