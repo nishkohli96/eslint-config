@@ -28,7 +28,7 @@ All rule names start with `@stylistic/js` prefix.
 |[jsx-quotes](https://eslint.style/rules/js/jsx-quotes)| prefer-double |
 |[key-spacing](https://eslint.style/rules/js/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/js/linebreak-style)||
-|[max-len](https://eslint.style/rules/js/max-len)||
+|[max-len](https://eslint.style/rules/js/max-len)| Refer rule config in [source code](https://github.com/nishkohli96/eslint-config/blob/main/packages/eslint-flat-config/lib/js/index.mjs) |
 |[max-statements-per-line](https://eslint.style/rules/js/max-statements-per-line)||
 |[no-extra-semi](https://eslint.style/rules/js/no-extra-semi)||
 |[no-floating-decimal](https://eslint.style/rules/js/no-floating-decimal)||
