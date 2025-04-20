@@ -57,6 +57,7 @@ module.exports = {
       }
     ],
     '@stylistic/js/max-statements-per-line': 'warn',
+    '@stylistic/js/multiline-ternary': ['warn', 'always-multiline'],
     '@stylistic/js/no-extra-semi': 'warn',
     '@stylistic/js/no-floating-decimal': 'warn',
     '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
