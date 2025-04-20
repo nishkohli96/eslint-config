@@ -17,7 +17,9 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    '@stylistic/js/array-bracket-newline': ['warn', { minItems: 3 }],
     '@stylistic/js/array-bracket-spacing': 'warn',
+    '@stylistic/js/array-element-newline': ['warn', { minItems: 3 }],
     '@stylistic/js/arrow-parens': ['warn', 'as-needed'],
     '@stylistic/js/arrow-spacing': 'warn',
     '@stylistic/js/block-spacing': 'warn',

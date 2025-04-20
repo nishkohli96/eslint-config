@@ -13,7 +13,9 @@ All rule names start with `@stylistic/js` prefix.
 
 | Rule Name | Configuration 🔧|
 |-|-|
+|[array-bracket-newline](https://eslint.style/rules/js/array-bracket-newline)||
 |[array-bracket-spacing](https://eslint.style/rules/js/array-bracket-spacing)||
+|[array-element-newline](https://eslint.style/rules/js/array-element-newline)||
 |[arrow-parens](https://eslint.style/rules/js/arrow-parens)| as-needed |
 |[arrow-spacing](https://eslint.style/rules/js/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/js/block-spacing)||
