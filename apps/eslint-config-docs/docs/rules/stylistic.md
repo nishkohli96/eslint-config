@@ -28,6 +28,8 @@ All rule names start with `@stylistic/js` prefix.
 |[jsx-quotes](https://eslint.style/rules/js/jsx-quotes)| prefer-double |
 |[key-spacing](https://eslint.style/rules/js/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/js/linebreak-style)||
+|[max-len](https://eslint.style/rules/js/max-len)||
+|[max-statements-per-line](https://eslint.style/rules/js/max-statements-per-line)||
 |[no-extra-semi](https://eslint.style/rules/js/no-extra-semi)||
 |[no-floating-decimal](https://eslint.style/rules/js/no-floating-decimal)||
 |[no-mixed-spaces-and-tabs](https://eslint.style/rules/js/no-mixed-spaces-and-tabs)||

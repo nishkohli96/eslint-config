@@ -52,3 +52,6 @@ var longRegExpLiteral = /this is a really really really really really long regul
 var dep = require('really/really/really/really/really/really/really/really/long/module');
 import RHFDateTimePicker, { RHFDateTimePickerProps } from '@nish1896/rhf-mui-components/mui-pickers/date-time';
 export { somevar, anotherVariable } from 'really/really/really/really/really/really/really/really/long/module';
+
+/* Test @stylistic/js/max-statements-per-line */
+function test(a,b) { console.log(a); a = a+1; const c = a*2; b = b+c; c = c+3; return b*c; }
