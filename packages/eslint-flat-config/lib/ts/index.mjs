@@ -5,7 +5,6 @@ import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import parserTs from '@typescript-eslint/parser';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
-/** @type {import('eslint').Linter.Config[]} */
 const tsConfig = [
   {
     name: '@nish1896/eslint-flat-config/ts',

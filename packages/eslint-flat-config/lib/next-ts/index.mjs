@@ -4,7 +4,6 @@ import stylisticTs from '@stylistic/eslint-plugin-ts';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
-/** @type {import('eslint').Linter.Config[]} */
 const nextTsConfig = [
   {
     name: '@nish1896/eslint-flat-config/next-ts',

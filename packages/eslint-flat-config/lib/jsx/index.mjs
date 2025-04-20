@@ -5,8 +5,6 @@ import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
-/** @type {import('eslint').Linter.Config[]} */
-
 const jsxConfig = [
   /* Global Language Options */
   {

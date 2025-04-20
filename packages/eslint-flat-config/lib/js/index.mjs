@@ -4,7 +4,6 @@ import stylisticJs from '@stylistic/eslint-plugin-js';
 import stylisticPlus from '@stylistic/eslint-plugin-plus';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
-/** @type {import('eslint').Linter.Config[]} */
 const jsConfig = [
   /* Global Language Options */
   {
