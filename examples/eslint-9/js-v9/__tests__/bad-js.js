@@ -45,9 +45,12 @@ var arr5 = [
 try{ console.log('hello world')}
 catch(err) {console.error(err)}
 
-/* Test for @stylistic/js/object-curly-newline */
+/* Test @stylistic/js/object-curly-newline */
 const obj2 = { a: 23, v: '323', c: {we: 34}, d:'deded' };
 const obj3 = {
   a: 23,
   v: '323', c: {we: 34}, d:'deded'
 };
+
+/* Test @stylistic/js/function-call-spacing */
+console.log ('hello world')

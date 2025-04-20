@@ -22,6 +22,7 @@ All rule names start with `@stylistic/js` prefix.
 |[dot-location](https://eslint.style/rules/js/dot-location)| `property` |
 |[eol-last](https://eslint.style/rules/js/eol-last)||
 |[function-call-argument-newline](https://eslint.style/rules/js/function-call-argument-newline)| `consistent` |
+|[function-call-spacing](https://eslint.style/rules/js/function-call-spacing)||
 |[function-paren-newline](https://eslint.style/rules/js/function-paren-newline)| `consistent` |
 |[indent](https://eslint.style/rules/js/indent)| `2, { ignoredNodes: ['PropertyDefinition[decorators]', 'MethodDefinition[decorators]', 'ClassBody.body > Decorator']}` |
 |[jsx-quotes](https://eslint.style/rules/js/jsx-quotes)| prefer-double |

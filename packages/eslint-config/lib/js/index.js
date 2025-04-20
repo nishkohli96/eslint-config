@@ -26,6 +26,7 @@ module.exports = {
     '@stylistic/js/dot-location': ['warn', 'property'],
     '@stylistic/js/eol-last': 'warn',
     '@stylistic/js/function-call-argument-newline': ['warn', 'consistent'],
+    '@stylistic/js/function-call-spacing': 'warn',
     '@stylistic/js/function-paren-newline': ['warn', 'consistent'],
     '@stylistic/js/indent': [
       'warn',
