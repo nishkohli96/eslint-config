@@ -12,7 +12,7 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^8.57.1"
   },
   "engines": {
     "node": ">=14"

@@ -17,7 +17,7 @@ const jsConfig = [
         ...globals.jest
       }
     },
-    files: ['**/*.{js,mjs,cjs}'],
+    files: ['**/*.{js,mjs,cjs}']
   },
   pluginJs.configs.recommended,
   {
@@ -51,6 +51,19 @@ const jsConfig = [
       '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/js/key-spacing': 'warn',
       '@stylistic/js/linebreak-style': 'warn',
+      '@stylistic/js/max-len': [
+        'warn',
+        {
+          code: 80,
+          tabWidth: 2,
+          ignorePattern: '^\\s*(import|export|require\\s*\\()',
+          ignoreComments: true,
+          ignoreUrls: true,
+          ignoreStrings: true,
+          ignoreTemplateLiterals: true,
+          ignoreRegExpLiterals: true
+        }
+      ],
       '@stylistic/js/no-extra-semi': 'warn',
       '@stylistic/js/no-floating-decimal': 'warn',
       '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
@@ -60,6 +73,10 @@ const jsConfig = [
       '@stylistic/js/nonblock-statement-body-position': 'warn',
       '@stylistic/js/object-curly-newline': ['warn', { consistent: true }],
       '@stylistic/js/object-curly-spacing': ['warn', 'always'],
+      '@stylistic/js/object-property-newline': [
+        'warn',
+        { allowAllPropertiesOnSameLine: true }
+      ],
       '@stylistic/js/operator-linebreak': ['warn', 'before'],
       '@stylistic/js/quotes': ['warn', 'single'],
       '@stylistic/js/rest-spread-spacing': 'warn',
@@ -125,15 +142,15 @@ const jsConfig = [
       'prefer-rest-params': 'error',
       'prefer-template': 'warn',
       'require-await': 'warn',
-      'use-isnan': 'warn',
+      'use-isnan': 'warn'
     },
     /**
      * Ignore linting the below folders...
      * "ignores" needs to be written at last, else linting
      * would also run on build folders.
      */
-    ignores: ignoreDirsFiles,
-  },
+    ignores: ignoreDirsFiles
+  }
 ];
 
 export default jsConfig;
