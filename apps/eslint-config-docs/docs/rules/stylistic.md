@@ -37,8 +37,9 @@ All rule names start with `@stylistic/js` prefix.
 |[no-multiple-empty-lines](https://eslint.style/rules/js/no-multiple-empty-lines)||
 |[no-trailing-spaces](https://eslint.style/rules/js/no-trailing-spaces)||
 |[nonblock-statement-body-position](https://eslint.style/rules/js/nonblock-statement-body-position)||
-|[object-curly-newline](https://eslint.style/rules/js/object-curly-newline)| `{ consistent: true }` |
+|[object-curly-newline](https://eslint.style/rules/js/object-curly-newline)| `{ minProperties: 2 }` |
 |[object-curly-spacing](https://eslint.style/rules/js/object-curly-spacing)| always |
+|[object-property-newline](https://eslint.style/rules/js/object-property-newline)||
 |[operator-linebreak](https://eslint.style/rules/js/operator-linebreak)| before |
 |[quotes](https://eslint.style/rules/js/quotes)| single |
 |[rest-spread-spacing](https://eslint.style/rules/js/rest-spread-spacing)||
