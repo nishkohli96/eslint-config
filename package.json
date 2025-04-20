@@ -30,7 +30,6 @@
     "vite:lint": "yarn workspace vite lint"
   },
   "devDependencies": {
-    "@nish1896/eslint-flat-config": "^2.0.3",
     "rimraf": "^6.0.1"
   },
   "keywords": [
