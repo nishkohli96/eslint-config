@@ -9,6 +9,9 @@
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
 >This package is compatible with eslint `8.57.1` or below. For usage with eslint `9.0.0` or above check [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
+>
+> WARNING: Version 8 for eslint is deprecated and it is recommended to migrate to version 9. Refer the [migration guide](https://nish1896-eslint-config.vercel.app/migration/eslint-8_to_9) to update eslint in your project with minimal changes.
+
 
 ## Quick Setup
 
