@@ -1,5 +1,7 @@
 'use strict';
 
+const ignorePatterns = require('../common/ignores');
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
@@ -125,15 +127,5 @@ module.exports = {
    * .eslintignore config, unlike .gitignore,
    *  "/" is used instead of "\"
    */
-  ignorePatterns: [
-    '.eslintrc.js',
-    '*.config.{js,mjs,ts}',
-    '.turbo',
-    '.next',
-    'node_modules',
-    'dist',
-    'build',
-    'coverage',
-    'storybook-static',
-  ]
+  ignorePatterns,
 };

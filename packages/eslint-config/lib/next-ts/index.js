@@ -1,5 +1,7 @@
 'use strict';
 
+const ignorePatterns = require('../common/ignores');
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
@@ -99,14 +101,5 @@ module.exports = {
     '@stylistic/js/space-before-blocks': 'off',
     '@stylistic/js/space-infix-ops': 'off'
   },
-  ignorePatterns: [
-    'node_modules',
-    'dist',
-    'build',
-    'coverage',
-    '.next',
-    '.turbo',
-    '.eslintrc.js',
-    '.d.ts',
-  ],
+  ignorePatterns,
 };
