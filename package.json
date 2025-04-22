@@ -23,7 +23,7 @@
     "js-v8:lint": "yarn workspace js-v8 lint",
     "next-v14:lint": "yarn workspace next-v14 lint",
     "react-v18:lint": "yarn workspace react-v18 lint",
-    "js-9:lint": "yarn workspace js-v9 lint",
+    "js-v9:lint": "yarn workspace js-v9 lint",
     "next-v15-js:lint": "yarn workspace next-v15-js lint",
     "next-v15-ts:lint": "yarn workspace next-v15-ts lint",
     "react-v19:lint": "yarn workspace react-v19 lint",
