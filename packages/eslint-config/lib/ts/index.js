@@ -6,7 +6,8 @@ const ignorePatterns = require('../common/ignores');
 module.exports = {
   root: true,
   extends: [
-    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
