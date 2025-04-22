@@ -6,7 +6,7 @@ title: Usage with eslint 8
 ---
 
 :::note
-ESLint version 8 is now deprecated, and upgrading to version 9 is recommended. Refer the [migration guide](../migration/eslint-8_to_9.md) to update eslint in your project with minimal changes.
+ESLint version 8 is now deprecated, and upgrading to version 9 is recommended for continued support and improvements. Refer the [migration guide](../migration/eslint-8_to_9.md) to update eslint in your project with minimal changes.
 
 This package will continue to receive minor updates for the time being.
 :::
