@@ -1,10 +1,13 @@
 'use strict';
 
+const ignorePatterns = require('../common/ignores');
+
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   extends: [
-    'plugin:@typescript-eslint/recommended-type-checked',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/recommended-requiring-type-checking',
   ],
   parser: '@typescript-eslint/parser',
   plugins: [
@@ -89,13 +92,5 @@ module.exports = {
     '@stylistic/js/space-before-blocks': 'off',
     '@stylistic/js/space-infix-ops': 'off'
   },
-  ignorePatterns: [
-    'node_modules',
-    'dist',
-    'build',
-    'coverage',
-    '.turbo',
-    '.eslintrc.js',
-    '.d.ts'
-  ]
+  ignorePatterns,
 };
