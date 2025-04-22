@@ -1,7 +1,7 @@
 {
   "name": "@nish1896/eslint-config",
   "version": "3.0.4",
-  "description": "eslint and stylistic rules for eslint 8.57.0 or below to catch potential errors and take care of the code formatting.",
+  "description": "eslint and stylistic rules for eslint 8.57.1 or below to catch potential errors and take care of the code formatting.",
   "author": "Nishant Kohli",
   "exports": {
     "./package.json": "./package.json",
