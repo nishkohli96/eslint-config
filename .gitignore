@@ -3,3 +3,4 @@ node_modules
 .eslintcache
 publish.sh
 *.tgz
+.env
