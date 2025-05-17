@@ -26,13 +26,13 @@ pnpm remove @nish1896/eslint-config
 
 Install `@nish1896/eslint-flat-config`.
 ```bash
-npm i --save-dev @nish1896/eslint-flat-config
+npm i --save-dev eslint @nish1896/eslint-flat-config
 ```
 ```bash
-yarn add -D @nish1896/eslint-flat-config
+yarn add -D eslint @nish1896/eslint-flat-config
 ```
 ```bash
-pnpm add -D @nish1896/eslint-flat-config
+pnpm add -D eslint @nish1896/eslint-flat-config
 ```
 
 Delete the `.eslintrc` or `.eslintrc.js` or `.eslintrc.json` file and create `eslint.config.mjs` file.

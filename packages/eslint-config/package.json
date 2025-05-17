@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "eslint and stylistic rules for eslint 8.57.1 or below to catch potential errors and take care of the code formatting.",
   "author": "Nishant Kohli",
   "exports": {
@@ -27,7 +27,7 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^5.2.0",
-    "typescript-eslint": "^8.31.0"
+    "typescript-eslint": "^8.32.1"
   },
   "engines": {
     "node": ">=14"
