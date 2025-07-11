@@ -1,5 +1,5 @@
 # This script links @nish1896/eslint-config to
-# all the workspaces in the examples/eslint-8 folder.
+# all the workspaces in the examples/eslint-v8 folder.
 
 echo "🏁 Initiating Linking of eslint-config!"
 
@@ -13,7 +13,7 @@ yarn link
 echo "🏁 Initiating Linking of eslint-config!"
 
 echo "js-v8 🔗"
-cd ../../examples/eslint-8/js-v8
+cd ../../examples/eslint-v8/js-v8
 yarn link @nish1896/eslint-config
 
 echo "next-v14 🔗"

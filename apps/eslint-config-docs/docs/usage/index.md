@@ -18,4 +18,4 @@ Starting from **version 2** of [@nish1896/eslint-flat-config](https://www.npmjs.
 
 **Both packages contain the same set of rules.** 
 
-Example applications that utilize the `eslint` and `eslint-flat-config` can be viewed [here](https://github.com/nishkohli96/eslint-config/tree/main/examples).
+Example applications that utilize the `eslint-flat-config` can be viewed [here](https://github.com/nishkohli96/eslint-config/tree/main/examples/eslint-v9).
