@@ -11,7 +11,7 @@
  */
 
 import globals from 'globals';
-import stylisticJsx from '@stylistic/eslint-plugin-jsx';
+import stylistic from '@stylistic/eslint-plugin';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 const nextConfig = [
@@ -38,24 +38,24 @@ const nextConfig = [
     },
     files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
     plugins: {
-      '@stylistic/jsx': stylisticJsx,
+      '@stylistic': stylistic,
     },
     rules: {
-      '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
-      '@stylistic/jsx/jsx-closing-tag-location': 'warn',
-      '@stylistic/jsx/jsx-curly-newline': ['warn', 'consistent'],
-      '@stylistic/jsx/jsx-curly-spacing': 'warn',
-      '@stylistic/jsx/jsx-equals-spacing': 'warn',
-      '@stylistic/jsx/jsx-indent': ['warn', 2],
-      '@stylistic/jsx/jsx-indent-props': ['warn', 2],
-      '@stylistic/jsx/jsx-one-expression-per-line': [
+      '@stylistic/jsx-closing-bracket-location': 'warn',
+      '@stylistic/jsx-closing-tag-location': 'warn',
+      '@stylistic/jsx-curly-newline': ['warn', 'consistent'],
+      '@stylistic/jsx-curly-spacing': 'warn',
+      '@stylistic/jsx-equals-spacing': 'warn',
+      '@stylistic/jsx-indent': ['warn', 2],
+      '@stylistic/jsx-indent-props': ['warn', 2],
+      '@stylistic/jsx-one-expression-per-line': [
         'warn',
         { allow: 'literal' }
       ],
-      '@stylistic/jsx/jsx-pascal-case': 'warn',
-      '@stylistic/jsx/jsx-props-no-multi-spaces': 'warn',
-      '@stylistic/jsx/jsx-self-closing-comp': 'warn',
-      '@stylistic/jsx/jsx-wrap-multilines': [
+      '@stylistic/jsx-pascal-case': 'warn',
+      '@stylistic/jsx-props-no-multi-spaces': 'warn',
+      '@stylistic/jsx-self-closing-comp': 'warn',
+      '@stylistic/jsx-wrap-multilines': [
         'warn',
         {
           arrow: 'parens-new-line',

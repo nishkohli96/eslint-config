@@ -1,12 +1,10 @@
 import globals from 'globals';
-import stylisticJs from '@stylistic/eslint-plugin-js';
-import stylisticTs from '@stylistic/eslint-plugin-ts';
-import stylisticPlus from '@stylistic/eslint-plugin-plus';
+import stylistic from '@stylistic/eslint-plugin';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 const nextTsConfig = [
   {
-    name: '@nish1896/eslint-flat-config/next-ts',
+    name: '@nish1896/eslint-flat-config/next',
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
@@ -26,9 +24,7 @@ const nextTsConfig = [
   },
   {
     plugins: {
-      '@stylistic/js': stylisticJs,
-      '@stylistic/ts': stylisticTs,
-      '@stylistic/plus': stylisticPlus
+      '@stylistic': stylistic
     },
     settings: {
       react: {
@@ -37,27 +33,10 @@ const nextTsConfig = [
       }
     },
     rules: {
-      '@stylistic/ts/block-spacing': 'warn',
-      '@stylistic/ts/brace-style': 'warn',
-      '@stylistic/ts/comma-spacing': 'warn',
-      '@stylistic/ts/key-spacing': 'warn',
-      '@stylistic/ts/member-delimiter-style': 'warn',
-      '@stylistic/ts/no-extra-semi': 'warn',
-      '@stylistic/ts/object-curly-spacing': ['warn', 'always'],
-      '@stylistic/ts/quotes': ['warn', 'single'],
-      '@stylistic/ts/semi': 'warn',
-      '@stylistic/ts/space-before-blocks': [
-        'warn',
-        {
-          functions: 'always',
-          classes: 'always',
-          keywords: 'always'
-        }
-      ],
-      '@stylistic/ts/space-infix-ops': 'warn',
-      '@stylistic/ts/type-annotation-spacing': 'warn',
-      '@stylistic/plus/type-generic-spacing': 'warn',
-      '@stylistic/plus/type-named-tuple-spacing': 'warn',
+      '@stylistic/member-delimiter-style': 'warn',
+      '@stylistic/type-annotation-spacing': 'warn',
+      '@stylistic/type-generic-spacing': 'warn',
+      '@stylistic/type-named-tuple-spacing': 'warn',
       '@typescript-eslint/array-type': 'warn',
       '@typescript-eslint/ban-ts-comment': 'off',
       '@typescript-eslint/consistent-generic-constructors': [
@@ -87,20 +66,6 @@ const nextTsConfig = [
       '@typescript-eslint/restrict-template-expressions': 'warn',
       /* Prevent warning when defining ENUMS */
       'no-unused-vars': 'off',
-      /**
-       * Disabling some rules from the js module, so that there are no
-       * duplicate warning from both js and ts modules for the same issue.
-       */
-      '@stylistic/js/block-spacing': 'off',
-      '@stylistic/js/brace-style': 'off',
-      '@stylistic/js/comma-spacing': 'off',
-      '@stylistic/js/key-spacing': 'off',
-      '@stylistic/js/no-extra-semi': 'off',
-      '@stylistic/js/object-curly-spacing': 'off',
-      '@stylistic/js/quotes': 'off',
-      '@stylistic/js/semi': 'off',
-      '@stylistic/js/space-before-blocks': 'off',
-      '@stylistic/js/space-infix-ops': 'off'
     },
     ignores: ignoreDirsFiles,
   },

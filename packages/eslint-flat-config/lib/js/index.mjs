@@ -1,7 +1,6 @@
 import globals from 'globals';
 import pluginJs from '@eslint/js';
-import stylisticJs from '@stylistic/eslint-plugin-js';
-import stylisticPlus from '@stylistic/eslint-plugin-plus';
+import stylistic from '@stylistic/eslint-plugin'
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 const jsConfig = [
@@ -21,22 +20,22 @@ const jsConfig = [
   pluginJs.configs.recommended,
   {
     plugins: {
-      '@stylistic/js': stylisticJs,
-      '@stylistic/plus': stylisticPlus
+      '@stylistic': stylistic
     },
     rules: {
-      '@stylistic/js/array-bracket-spacing': 'warn',
-      '@stylistic/js/arrow-parens': ['warn', 'as-needed'],
-      '@stylistic/js/arrow-spacing': 'warn',
-      '@stylistic/js/block-spacing': 'warn',
-      '@stylistic/js/brace-style': 'warn',
-      '@stylistic/js/comma-spacing': 'warn',
-      '@stylistic/js/dot-location': ['warn', 'property'],
-      '@stylistic/js/eol-last': 'warn',
-      '@stylistic/js/function-call-argument-newline': ['warn', 'consistent'],
-      '@stylistic/js/function-call-spacing': 'warn',
-      '@stylistic/js/function-paren-newline': ['warn', 'consistent'],
-      '@stylistic/js/indent': [
+      '@stylistic/array-bracket-spacing': 'warn',
+      '@stylistic/arrow-parens': ['warn', 'as-needed'],
+      '@stylistic/arrow-spacing': 'warn',
+      '@stylistic/block-spacing': 'warn',
+      '@stylistic/brace-style': 'warn',
+      '@stylistic/comma-spacing': 'warn',
+      '@stylistic/curly-newline': ['warn', { consistent: true }],
+      '@stylistic/dot-location': ['warn', 'property'],
+      '@stylistic/eol-last': 'warn',
+      '@stylistic/function-call-argument-newline': ['warn', 'consistent'],
+      '@stylistic/function-call-spacing': 'warn',
+      '@stylistic/function-paren-newline': ['warn', 'consistent'],
+      '@stylistic/indent': [
         'warn',
         2,
         {
@@ -48,26 +47,27 @@ const jsConfig = [
           SwitchCase: 1
         }
       ],
-      '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
-      '@stylistic/js/key-spacing': 'warn',
-      '@stylistic/js/linebreak-style': 'warn',
-      '@stylistic/js/max-statements-per-line': 'warn',
-      '@stylistic/js/multiline-ternary': ['warn', 'always-multiline'],
-      '@stylistic/js/no-extra-semi': 'warn',
-      '@stylistic/js/no-floating-decimal': 'warn',
-      '@stylistic/js/no-mixed-spaces-and-tabs': 'warn',
-      '@stylistic/js/no-multi-spaces': 'warn',
-      '@stylistic/js/no-multiple-empty-lines': 'warn',
-      '@stylistic/js/no-trailing-spaces': 'warn',
-      '@stylistic/js/nonblock-statement-body-position': 'warn',
-      '@stylistic/js/object-curly-newline': ['warn', { consistent: true }],
-      '@stylistic/js/object-curly-spacing': ['warn', 'always'],
-      '@stylistic/js/operator-linebreak': ['warn', 'before'],
-      '@stylistic/js/quotes': ['warn', 'single'],
-      '@stylistic/js/rest-spread-spacing': 'warn',
-      '@stylistic/js/semi': 'warn',
-      '@stylistic/js/semi-spacing': 'warn',
-      '@stylistic/js/space-before-blocks': [
+      '@stylistic/indent-binary-ops': ['warn', 2],
+      '@stylistic/jsx-quotes': ['warn', 'prefer-double'],
+      '@stylistic/key-spacing': 'warn',
+      '@stylistic/linebreak-style': 'warn',
+      '@stylistic/max-statements-per-line': 'warn',
+      '@stylistic/multiline-ternary': ['warn', 'always-multiline'],
+      '@stylistic/no-extra-semi': 'warn',
+      '@stylistic/no-floating-decimal': 'warn',
+      '@stylistic/no-mixed-spaces-and-tabs': 'warn',
+      '@stylistic/no-multi-spaces': 'warn',
+      '@stylistic/no-multiple-empty-lines': 'warn',
+      '@stylistic/no-trailing-spaces': 'warn',
+      '@stylistic/nonblock-statement-body-position': 'warn',
+      '@stylistic/object-curly-newline': ['warn', { consistent: true }],
+      '@stylistic/object-curly-spacing': ['warn', 'always'],
+      '@stylistic/operator-linebreak': ['warn', 'before'],
+      '@stylistic/quotes': ['warn', 'single'],
+      '@stylistic/rest-spread-spacing': 'warn',
+      '@stylistic/semi': 'warn',
+      '@stylistic/semi-spacing': 'warn',
+      '@stylistic/space-before-blocks': [
         'warn',
         {
           functions: 'always',
@@ -75,20 +75,18 @@ const jsConfig = [
           keywords: 'always'
         }
       ],
-      '@stylistic/js/space-infix-ops': 'warn',
-      '@stylistic/js/space-unary-ops': [
+      '@stylistic/space-infix-ops': 'warn',
+      '@stylistic/space-unary-ops': [
         'warn',
         {
           words: true,
           nonwords: false
         }
       ],
-      '@stylistic/js/spaced-comment': 'warn',
-      '@stylistic/js/switch-colon-spacing': 'warn',
-      '@stylistic/js/template-curly-spacing': 'warn',
-      '@stylistic/js/wrap-regex': 'warn',
-      '@stylistic/plus/curly-newline': ['warn', { consistent: true }],
-      '@stylistic/plus/indent-binary-ops': ['warn', 2],
+      '@stylistic/spaced-comment': 'warn',
+      '@stylistic/switch-colon-spacing': 'warn',
+      '@stylistic/template-curly-spacing': 'warn',
+      '@stylistic/wrap-regex': 'warn',
       'array-callback-return': 'warn',
       'block-scoped-var': 'error',
       curly: 'warn',
