@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 sidebar_label: Eslint 9
 description: Usage of @nish1896/eslint-flat-config with eslint version 9 for node, react and next.js applications.
 title: Usage with Eslint 9
