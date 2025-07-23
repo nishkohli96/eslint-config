@@ -48,7 +48,6 @@ const jsConfig = [
         }
       ],
       '@stylistic/indent-binary-ops': ['warn', 2],
-      '@stylistic/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/key-spacing': 'warn',
       '@stylistic/linebreak-style': 'warn',
       '@stylistic/max-statements-per-line': 'warn',

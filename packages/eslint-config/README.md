@@ -10,9 +10,9 @@
 
 This package is compatible with eslint `8.57.1` or below. For usage with eslint `9.0.0` or above check [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
-> ⚠️ Deprecated ESLint Version Detected
+> ⚠️ **Deprecated ESLint Version**
 >
-> You're currently using ESLint v8, which is deprecated. It is recommended to upgrade to ESLint v9 and [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for continued support and improvements.
+> You might be using ESLint v8 with this package, which is deprecated. It is recommended to upgrade to ESLint v9 and [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for continued support and improvements.
 >
 > 👉 Follow the [migration guide](https://nish1896-eslint-config.vercel.app/migration/eslint-8_to_9) for a smooth and minimal-change upgrade process.
 
