@@ -14,7 +14,7 @@ All rule names start with `@stylistic/` prefix.
 | Rule Name | Configuration 🔧|
 |-|-|
 |[array-bracket-spacing](https://eslint.style/rules/array-bracket-spacing)||
-|[arrow-parens](https://eslint.style/rules/arrow-parens)| as-needed |
+|[arrow-parens](https://eslint.style/rules/arrow-parens)| `as-needed` |
 |[arrow-spacing](https://eslint.style/rules/arrow-spacing)||
 |[block-spacing](https://eslint.style/rules/block-spacing)||
 |[brace-style](https://eslint.style/rules/brace-style)||
@@ -27,7 +27,6 @@ All rule names start with `@stylistic/` prefix.
 |[function-paren-newline](https://eslint.style/rules/function-paren-newline)| `consistent` |
 |[indent](https://eslint.style/rules/indent)| `2, { ignoredNodes: ['PropertyDefinition[decorators]', 'MethodDefinition[decorators]', 'ClassBody.body > Decorator']}` |
 |[indent-binary-ops](https://eslint.style/rules/indent-binary-ops)| 2 |
-|[jsx-quotes](https://eslint.style/rules/jsx-quotes)| prefer-double |
 |[key-spacing](https://eslint.style/rules/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/linebreak-style)||
 |[max-statements-per-line](https://eslint.style/rules/max-statements-per-line)||
@@ -40,9 +39,9 @@ All rule names start with `@stylistic/` prefix.
 |[no-trailing-spaces](https://eslint.style/rules/no-trailing-spaces)||
 |[nonblock-statement-body-position](https://eslint.style/rules/nonblock-statement-body-position)||
 |[object-curly-newline](https://eslint.style/rules/object-curly-newline)| `{ consistent: true }` |
-|[object-curly-spacing](https://eslint.style/rules/object-curly-spacing)| always |
-|[operator-linebreak](https://eslint.style/rules/operator-linebreak)| before |
-|[quotes](https://eslint.style/rules/quotes)| single |
+|[object-curly-spacing](https://eslint.style/rules/object-curly-spacing)| `always` |
+|[operator-linebreak](https://eslint.style/rules/operator-linebreak)| `before` |
+|[quotes](https://eslint.style/rules/quotes)| `single` |
 |[rest-spread-spacing](https://eslint.style/rules/rest-spread-spacing)||
 |[semi](https://eslint.style/rules/semi)||
 |[semi-spacing](https://eslint.style/rules/semi-spacing)||
@@ -74,11 +73,11 @@ All rule names start with `@stylistic/` prefix.
 |[jsx-curly-newline](https://eslint.style/rules/jsx-curly-newline)| `consistent` |
 |[jsx-curly-spacing](https://eslint.style/rules/jsx-curly-spacing)||
 |[jsx-equals-spacing](https://eslint.style/rules/jsx-curly-spacing)||
-|[jsx-indent](https://eslint.style/rules/jsx-indent)| 2 |
 |[jsx-indent-props](https://eslint.style/rules/jsx-indent-props)| 2 |
 |[jsx-one-expression-per-line](https://eslint.style/rules/jsx-one-expression-per-line)| `{ allow: 'literal' }` |
 |[jsx-pascal-case](https://eslint.style/rules/jsx-pascal-case)||
 |[jsx-props-no-multi-spaces](https://eslint.style/rules/jsx-props-no-multi-spaces)||
+|[jsx-quotes](https://eslint.style/rules/jsx-quotes)| `prefer-double` |
 |[jsx-self-closing-comp](https://eslint.style/rules/jsx-self-closing-comp)||
 |[jsx-wrap-multilines](https://eslint.style/rules/jsx-wrap-multilines)| `parens-new-line` |
 
