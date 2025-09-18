@@ -13,7 +13,7 @@ title: Introduction
 ![NPM Downloads](https://img.shields.io/npm/dt/%40nish1896%2Feslint-flat-config)
 ![NPM Downloads Per Month](https://img.shields.io/npm/dm/%40nish1896%2Feslint-flat-config?color=%23e0e063)
 ![node-current](https://img.shields.io/node/v/%40nish1896%2Feslint-flat-config?color=%23e86267)
-
+![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/nishkohli96/eslint-config)
 
 **[@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config)**
 
