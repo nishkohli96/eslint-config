@@ -55,7 +55,6 @@ const jsxConfig = [
         { allow: 'literal' }
       ],
       '@stylistic/jsx-pascal-case': 'warn',
-      '@stylistic/jsx-props-no-multi-spaces': 'warn',
       '@stylistic/jsx-quotes': ['warn', 'prefer-double'],
       '@stylistic/jsx-self-closing-comp': 'warn',
       '@stylistic/jsx-wrap-multilines': [
