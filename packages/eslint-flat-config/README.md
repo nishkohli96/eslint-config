@@ -46,6 +46,34 @@ export default [
 
 Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next-ts` modules only if your code is written in **Typescript**.
 
+#### Version 16
+
+```js title="eslint.config.mjs"
+import { defineConfig, globalIgnores } from 'eslint/config';
+import nextVitals from 'eslint-config-next/core-web-vitals';
+import nextTs from 'eslint-config-next/typescript';
+import jsConfig from '@nish1896/eslint-flat-config/js';
+import nextConfig from '@nish1896/eslint-flat-config/next';
+import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
+
+const eslintConfig = defineConfig([
+  ...jsConfig,
+  ...nextConfig,
+  ...nextTsConfig,
+  ...nextVitals,
+  ...nextTs,
+  globalIgnores([
+    '.next/**',
+    'out/**',
+    'build/**',
+    'next-env.d.ts'
+  ])
+]);
+
+export default eslintConfig;
+```
+
+#### Version 15
 ```js
 import jsConfig from '@nish1896/eslint-flat-config/js';
 import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
