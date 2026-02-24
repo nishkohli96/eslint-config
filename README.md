@@ -9,7 +9,7 @@ This monorepo contains the source code for [@nish1896/eslint-config](https://www
 ## Setup
 
 ```bash
-yarn setup
+sh scripts/setup.sh
 ```
 
 Runs the `setup.sh` in the **scripts** folder which:

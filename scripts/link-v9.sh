@@ -24,6 +24,10 @@ echo "next-v15-ts 🔗"
 cd ../next-v15-ts
 yarn link @nish1896/eslint-flat-config
 
+echo "next-v16-ts 🔗"
+cd ../next-v16-ts
+yarn link @nish1896/eslint-flat-config
+
 echo "react-v19 🔗"
 cd ../react-v19
 yarn link @nish1896/eslint-flat-config
