@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config-root",
-  "version": "4.0.3",
+  "version": "4.1.0",
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "private": true,
@@ -26,6 +26,7 @@
     "js-v9:lint": "yarn workspace js-v9 lint",
     "next-v15-js:lint": "yarn workspace next-v15-js lint",
     "next-v15-ts:lint": "yarn workspace next-v15-ts lint",
+    "next-v16-js:lint": "yarn workspace next-v16-ts lint",
     "react-v19:lint": "yarn workspace react-v19 lint",
     "vite:lint": "yarn workspace vite lint"
   },

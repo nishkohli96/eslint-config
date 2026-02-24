@@ -101,7 +101,7 @@ const jsConfig = [
       'no-empty-function': 'warn',
       'no-empty-static-block': 'warn',
       'no-eq-null': 'error',
-      'no-implicit-coercion': 'warn',
+      'no-implicit-coercion': 'off',
       'no-inline-comments': 'off',
       'no-lonely-if': 'warn',
       'no-nested-ternary': 'warn',
