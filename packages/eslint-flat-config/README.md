@@ -48,7 +48,7 @@ Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextj
 
 #### Version 16
 
-```js title="eslint.config.mjs"
+```js
 import { defineConfig, globalIgnores } from 'eslint/config';
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
