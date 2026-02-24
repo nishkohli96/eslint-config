@@ -30,12 +30,12 @@ const jsxConfig = [
   /* Recommended Configs */
   jsxA11y.flatConfigs.recommended,
   reactPlugin.configs.flat.recommended,
+  reactHooks.configs.flat.recommended,
 
   /* Rules for JavaScript and JSX Files */
   {
     plugins: {
       '@stylistic': stylistic,
-      'react-hooks': reactHooksPlugin
     },
     settings: {
       react: {
