@@ -2,7 +2,7 @@ import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin'
 import jsxA11y from 'eslint-plugin-jsx-a11y';
 import reactPlugin from 'eslint-plugin-react';
-import reactHooksPlugin from 'eslint-plugin-react-hooks';
+import reactHooks from 'eslint-plugin-react-hooks';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 const jsxConfig = [
