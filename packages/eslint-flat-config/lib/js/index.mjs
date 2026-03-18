@@ -19,6 +19,7 @@ const jsConfig = [
   },
   pluginJs.configs.recommended,
   {
+    files: ['**/*.{js,mjs,cjs,ts,tsx}'],
     plugins: {
       '@stylistic': stylistic
     },
@@ -51,7 +52,7 @@ const jsConfig = [
       '@stylistic/key-spacing': 'warn',
       '@stylistic/linebreak-style': 'warn',
       '@stylistic/max-len': [
-        'error',
+        'warn',
         {
           code: 80,
           tabWidth: 2,

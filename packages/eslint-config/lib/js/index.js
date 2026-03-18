@@ -47,7 +47,7 @@ module.exports = {
     '@stylistic/js/key-spacing': 'warn',
     '@stylistic/js/linebreak-style': 'warn',
     '@stylistic/js/max-len': [
-      'error',
+      'warn',
       {
         code: 80,
         tabWidth: 2,

@@ -6,18 +6,25 @@ import ignoreDirsFiles from '../common/ignores.mjs';
 const tsConfig = [
   {
     name: '@nish1896/eslint-flat-config/ts',
+    files: ['**/*.{ts,tsx}'],
     languageOptions: {
       parser: parserTs,
       parserOptions: {
         projectService: true,
         tsconfigRootDir: import.meta.dirname
       }
-    },
+    }
+  },
+  {
+    ...tseslint.configs.recommendedTypeChecked,
     files: ['**/*.{ts,tsx}']
   },
-  ...tseslint.configs.recommendedTypeChecked,
-  ...tseslint.configs.stylistic,
   {
+    ...tseslint.configs.stylistic,
+    files: ['**/*.{ts,tsx}']
+  },
+  {
+    files: ['**/*.{ts,tsx}'],
     plugins: {
       '@stylistic': stylistic
     },
