@@ -6,7 +6,20 @@
 ![node-current](https://img.shields.io/node/v/%40nish1896%2Feslint-flat-config?color=%23e86267)
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/nishkohli96/eslint-config)
 
-**A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
+**A modern, modular ESLint flat config for JavaScript, TypeScript, React, and Next.js.**
+Built for ESLint v9+ with a focus on:
+- Developer experience
+- Readability
+- Real-world usability
+
+✨ Features
+- ✅ ESLint v9 flat config support
+- ✅ Modular (use only what you need)
+- ✅ TypeScript-aware linting
+- ✅ React & accessibility support
+- ✅ Works seamlessly with Next.js
+- ✅ Clean, consistent stylistic rules via @stylistic
+
 
 >This package is compatible with eslint **v9** and above. For usage with eslint `8.57.1` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
@@ -45,8 +58,6 @@ export default [
 ### Next.js
 
 Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next-ts` modules only if your code is written in **Typescript**.
-
-**⚠️ Do not use `jsxConfig` with `nextConfig`. Next.js already includes React and accessibility rules.**
 
 #### Version 16
 
@@ -90,6 +101,11 @@ const eslintConfig = [
 
 export default eslintConfig;
 ```
+
+⚠️ Important Notes
+- Do NOT use `jsxConfig` with `nextConfig`
+- This config complements Next.js ESLint — it does not replace it
+- TypeScript configs require a valid tsconfig.json
 
 For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://nish1896-eslint-config.vercel.app/introduction) 📖.
 
