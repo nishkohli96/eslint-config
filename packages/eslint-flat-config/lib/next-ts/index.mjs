@@ -1,10 +1,12 @@
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
+import parserTs from '@typescript-eslint/parser';
 import ignoreDirsFiles from '../common/ignores.mjs';
 
 const nextTsConfig = [
   {
     name: '@nish1896/eslint-flat-config/next',
+    files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
@@ -12,17 +14,17 @@ const nextTsConfig = [
         ...globals.serviceworker,
         ...globals.browser
       },
+      parser: parserTs,
       parserOptions: {
-        projectService: true,
         tsconfigRootDir: import.meta.dirname,
         ecmaFeatures: {
           jsx: true
         }
       }
     },
-    files: ['**/*.{ts,tsx}']
   },
   {
+    files: ['**/*.{ts,tsx}'],
     plugins: {
       '@stylistic': stylistic
     },
@@ -67,8 +69,10 @@ const nextTsConfig = [
       /* Prevent warning when defining ENUMS */
       'no-unused-vars': 'off',
     },
-    ignores: ignoreDirsFiles,
   },
+  {
+    ignores: ignoreDirsFiles,
+  }
 ];
 
 export default nextTsConfig;

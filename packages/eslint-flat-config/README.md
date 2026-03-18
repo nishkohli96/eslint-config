@@ -46,6 +46,8 @@ export default [
 
 Update the existing `eslint.config.mjs` file provided by [Next.js](https://nextjs.org/) app. Include the `next/typescript` and `next-ts` modules only if your code is written in **Typescript**.
 
+**⚠️ Do not use `jsxConfig` with `nextConfig`. Next.js already includes React and accessibility rules.**
+
 #### Version 16
 
 ```js
