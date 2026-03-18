@@ -42,7 +42,6 @@ const nextConfig = [
     },
     rules: {
       '@stylistic/jsx-closing-bracket-location': 'warn',
-      '@stylistic/jsx-closing-tag-location': 'warn',
       '@stylistic/jsx-curly-newline': ['warn', 'consistent'],
       '@stylistic/jsx-curly-spacing': 'warn',
       '@stylistic/jsx-equals-spacing': 'warn',

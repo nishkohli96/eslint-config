@@ -69,7 +69,6 @@ All rule names start with `@stylistic/` prefix.
 |Rule Name|🔧|
 |-|-|
 |[jsx-closing-bracket-location](https://eslint.style/rules/jsx-closing-bracket-location)||
-|[jsx-closing-tag-location](https://eslint.style/rules/jsx-closing-tag-location)||
 |[jsx-curly-newline](https://eslint.style/rules/jsx-curly-newline)| `consistent` |
 |[jsx-curly-spacing](https://eslint.style/rules/jsx-curly-spacing)||
 |[jsx-equals-spacing](https://eslint.style/rules/jsx-curly-spacing)||

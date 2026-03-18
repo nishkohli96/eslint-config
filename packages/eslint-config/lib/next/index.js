@@ -30,7 +30,6 @@ module.exports = {
   },
   rules: {
     '@stylistic/jsx/jsx-closing-bracket-location': 'warn',
-    '@stylistic/jsx/jsx-closing-tag-location': 'warn',
     '@stylistic/jsx/jsx-curly-newline': ['warn', 'consistent'],
     '@stylistic/jsx/jsx-curly-spacing': 'warn',
     '@stylistic/jsx/jsx-equals-spacing': 'warn',
