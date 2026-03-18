@@ -17,12 +17,13 @@ import ignoreDirsFiles from '../common/ignores.mjs';
 const nextConfig = [
   {
     name: '@nish1896/eslint-flat-config/next',
+    files: ['**/*.{jsx,tsx}'],
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
       globals: {
+        ...globals.browser,
         ...globals.serviceworker,
-        ...globals.browser
       },
       parserOptions: {
         ecmaFeatures: {
@@ -36,13 +37,11 @@ const nextConfig = [
         'jsx-runtime': true
       }
     },
-    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}'],
     plugins: {
       '@stylistic': stylistic,
     },
     rules: {
       '@stylistic/jsx-closing-bracket-location': 'warn',
-      '@stylistic/jsx-closing-tag-location': 'warn',
       '@stylistic/jsx-curly-newline': ['warn', 'consistent'],
       '@stylistic/jsx-curly-spacing': 'warn',
       '@stylistic/jsx-equals-spacing': 'warn',
@@ -76,8 +75,10 @@ const nextConfig = [
         }
       ]
     },
-    ignores: ignoreDirsFiles,
   },
+  {
+    ignores: ignoreDirsFiles
+  }
 ];
 
 export default nextConfig;

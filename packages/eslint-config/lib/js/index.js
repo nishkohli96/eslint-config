@@ -17,7 +17,7 @@ module.exports = {
   },
   parserOptions: {
     ecmaVersion: 'latest',
-    sourceType: 'module',
+    sourceType: 'module'
   },
   rules: {
     '@stylistic/js/array-bracket-spacing': 'warn',
@@ -46,6 +46,20 @@ module.exports = {
     '@stylistic/js/jsx-quotes': ['warn', 'prefer-double'],
     '@stylistic/js/key-spacing': 'warn',
     '@stylistic/js/linebreak-style': 'warn',
+    '@stylistic/js/max-len': [
+      'warn',
+      {
+        code: 80,
+        tabWidth: 2,
+        ignoreComments: true,
+        ignoreStrings: true,
+        ignoreUrls: true,
+        ignoreTemplateLiterals: true,
+        ignoreRegExpLiterals: true,
+        ignoreTrailingComments: true,
+        ignorePattern: '^\\s*(import|export|type|interface)\\s.+'
+      }
+    ],
     '@stylistic/js/max-statements-per-line': 'warn',
     '@stylistic/js/multiline-ternary': ['warn', 'always-multiline'],
     '@stylistic/js/no-extra-semi': 'warn',

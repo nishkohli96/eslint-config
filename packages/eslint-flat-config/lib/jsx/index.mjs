@@ -9,31 +9,40 @@ const jsxConfig = [
   /* Global Language Options */
   {
     name: '@nish1896/eslint-flat-config/jsx',
+    files: ['**/*.{jsx,tsx}'],
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
       ...reactPlugin.configs.flat.recommended.languageOptions,
       globals: {
-        ...globals.serviceworker,
         ...globals.browser,
+        ...globals.serviceworker,
       },
       parserOptions: {
-        projectService: true,
         ecmaFeatures: {
           jsx: true
         }
       },
     },
-    files: ['**/*.{js,mjs,cjs,jsx,ts,tsx}']
   },
 
   /* Recommended Configs */
-  jsxA11y.flatConfigs.recommended,
-  reactPlugin.configs.flat.recommended,
-  reactHooks.configs.flat.recommended,
+  {
+    ...jsxA11y.flatConfigs.recommended,
+    files: ['**/*.{jsx,tsx}']
+  },
+  {
+    ...reactPlugin.configs.flat.recommended,
+    files: ['**/*.{jsx,tsx}']
+  },
+  {
+    ...reactHooks.configs.flat.recommended,
+    files: ['**/*.{jsx,tsx}']
+  },
 
   /* Rules for JavaScript and JSX Files */
   {
+    files: ['**/*.{jsx,tsx}'],
     plugins: {
       '@stylistic': stylistic,
     },
@@ -45,7 +54,6 @@ const jsxConfig = [
     },
     rules: {
       '@stylistic/jsx-closing-bracket-location': 'warn',
-      '@stylistic/jsx-closing-tag-location': 'warn',
       '@stylistic/jsx-curly-newline': ['warn', 'consistent'],
       '@stylistic/jsx-curly-spacing': 'warn',
       '@stylistic/jsx-equals-spacing': 'warn',
@@ -79,8 +87,10 @@ const jsxConfig = [
         }
       ]
     },
-    ignores: ignoreDirsFiles,
   },
+  {
+    ignores: ignoreDirsFiles
+  }
 ];
 
 export default jsxConfig;

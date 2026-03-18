@@ -19,6 +19,7 @@ const jsConfig = [
   },
   pluginJs.configs.recommended,
   {
+    files: ['**/*.{js,mjs,cjs,ts,tsx}'],
     plugins: {
       '@stylistic': stylistic
     },
@@ -50,6 +51,20 @@ const jsConfig = [
       '@stylistic/indent-binary-ops': ['warn', 2],
       '@stylistic/key-spacing': 'warn',
       '@stylistic/linebreak-style': 'warn',
+      '@stylistic/max-len': [
+        'warn',
+        {
+          code: 80,
+          tabWidth: 2,
+          ignoreComments: true,
+          ignoreStrings: true,
+          ignoreUrls: true,
+          ignoreTemplateLiterals: true,
+          ignoreRegExpLiterals: true,
+          ignoreTrailingComments: true,
+          ignorePattern: '^\\s*(import|export|type|interface)\\s.+'
+        }
+      ],
       '@stylistic/max-statements-per-line': 'warn',
       '@stylistic/multiline-ternary': ['warn', 'always-multiline'],
       '@stylistic/no-extra-semi': 'warn',

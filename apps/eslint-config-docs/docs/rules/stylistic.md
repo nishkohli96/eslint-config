@@ -29,6 +29,7 @@ All rule names start with `@stylistic/` prefix.
 |[indent-binary-ops](https://eslint.style/rules/indent-binary-ops)| 2 |
 |[key-spacing](https://eslint.style/rules/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/linebreak-style)||
+|[max-len](https://eslint.style/rules/max-len)| *refer source code* |
 |[max-statements-per-line](https://eslint.style/rules/max-statements-per-line)||
 |[multiline-ternary](https://eslint.style/rules/multiline-ternary)| `always-multiline`|
 |[no-extra-semi](https://eslint.style/rules/no-extra-semi)||
@@ -53,6 +54,7 @@ All rule names start with `@stylistic/` prefix.
 |[template-curly-spacing](https://eslint.style/rules/template-curly-spacing)||
 |[wrap-regex](https://eslint.style/rules/wrap-regex)||
 
+View the full list of JavaScript rules [here](https://github.com/nishkohli96/eslint-config/blob/main/packages/eslint-flat-config/lib/js/index.mjs)
 
 ## **TS Rules**
 
@@ -63,13 +65,13 @@ All rule names start with `@stylistic/` prefix.
 |[type-generic-spacing](https://eslint.style/rules/type-generic-spacing)||
 |[type-named-tuple-spacing](https://eslint.style/rules/type-named-tuple-spacing)||
 
+View the full list of Typescript rules [here](https://github.com/nishkohli96/eslint-config/blob/main/packages/eslint-flat-config/lib/ts/index.mjs)
 
 ## **JSX Rules**
 
 |Rule Name|🔧|
 |-|-|
 |[jsx-closing-bracket-location](https://eslint.style/rules/jsx-closing-bracket-location)||
-|[jsx-closing-tag-location](https://eslint.style/rules/jsx-closing-tag-location)||
 |[jsx-curly-newline](https://eslint.style/rules/jsx-curly-newline)| `consistent` |
 |[jsx-curly-spacing](https://eslint.style/rules/jsx-curly-spacing)||
 |[jsx-equals-spacing](https://eslint.style/rules/jsx-curly-spacing)||
@@ -81,4 +83,4 @@ All rule names start with `@stylistic/` prefix.
 |[jsx-self-closing-comp](https://eslint.style/rules/jsx-self-closing-comp)||
 |[jsx-wrap-multilines](https://eslint.style/rules/jsx-wrap-multilines)| `parens-new-line` |
 
-
+View the full list of JSX rules [here](https://github.com/nishkohli96/eslint-config/blob/main/packages/eslint-flat-config/lib/jsx/index.mjs)
