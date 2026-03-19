@@ -7,6 +7,7 @@ const jsConfig = [
   /* Global Language Options */
   {
     name: '@nish1896/eslint-flat-config/js',
+    files: ['**/*.{js,mjs,cjs}'],
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
@@ -15,7 +16,6 @@ const jsConfig = [
         ...globals.jest
       }
     },
-    files: ['**/*.{js,mjs,cjs}']
   },
   pluginJs.configs.recommended,
   {

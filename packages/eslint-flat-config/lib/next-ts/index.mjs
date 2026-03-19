@@ -69,10 +69,8 @@ const nextTsConfig = [
       /* Prevent warning when defining ENUMS */
       'no-unused-vars': 'off',
     },
-  },
-  {
     ignores: ignoreDirsFiles,
-  }
+  },
 ];
 
 export default nextTsConfig;

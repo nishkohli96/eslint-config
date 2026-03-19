@@ -15,14 +15,8 @@ const tsConfig = [
       }
     }
   },
-  {
-    ...tseslint.configs.recommendedTypeChecked,
-    files: ['**/*.{ts,tsx}']
-  },
-  {
-    ...tseslint.configs.stylistic,
-    files: ['**/*.{ts,tsx}']
-  },
+  ...tseslint.configs.recommendedTypeChecked,
+  ...tseslint.configs.stylistic,
   {
     files: ['**/*.{ts,tsx}'],
     plugins: {
