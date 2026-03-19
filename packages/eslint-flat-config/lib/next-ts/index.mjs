@@ -5,7 +5,7 @@ import ignoreDirsFiles from '../common/ignores.mjs';
 
 const nextTsConfig = [
   {
-    name: '@nish1896/eslint-flat-config/next',
+    name: '@nish1896/eslint-flat-config/next-ts',
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2024,
@@ -16,15 +16,13 @@ const nextTsConfig = [
       },
       parser: parserTs,
       parserOptions: {
+        projectService: true,
         tsconfigRootDir: import.meta.dirname,
         ecmaFeatures: {
           jsx: true
         }
       }
     },
-  },
-  {
-    files: ['**/*.{ts,tsx}'],
     plugins: {
       '@stylistic': stylistic
     },
