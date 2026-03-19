@@ -89,14 +89,14 @@ export default eslintConfig;
 #### Version 15
 ```js
 import jsConfig from '@nish1896/eslint-flat-config/js';
-import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 import nextConfig from '@nish1896/eslint-flat-config/next';
+import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 
 const eslintConfig = [
   ...compat.extends('next/core-web-vitals', 'next/typescript'),
   ...jsConfig,
-  ...nextTsConfig,
   ...nextConfig,
+  ...nextTsConfig,
 ];
 
 export default eslintConfig;
@@ -104,7 +104,7 @@ export default eslintConfig;
 
 ⚠️ Important Notes
 - Do NOT use `jsxConfig` with `nextConfig`
-- This config complements Next.js ESLint — it does not replace it
+- This config complements [Next.js ESLint](https://nextjs.org/docs/app/api-reference/config/eslint) — it does not replace it
 - TypeScript configs require a valid tsconfig.json
 
 For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://nish1896-eslint-config.vercel.app/introduction) 📖.
