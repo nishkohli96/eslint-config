@@ -125,11 +125,11 @@ import nextConfig from '@nish1896/eslint-flat-config/next';
 import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 
 const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
   ...jsConfig,
   ...nextConfig,
   ...nextTsConfig,
-  ...nextVitals,
-  ...nextTs,
   globalIgnores([
     '.next/**',
     'out/**',
@@ -154,10 +154,10 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   ...jsConfig,
   ...nextConfig,
   ...nextTsConfig,
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   {
     rules: {
     }

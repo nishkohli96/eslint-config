@@ -24,6 +24,7 @@ const nextConfig = [
       globals: {
         ...globals.browser,
         ...globals.serviceworker,
+        React: 'readonly'
       },
       parserOptions: {
         ecmaFeatures: {

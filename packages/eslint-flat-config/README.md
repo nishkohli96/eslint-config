@@ -70,11 +70,11 @@ import nextConfig from '@nish1896/eslint-flat-config/next';
 import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 
 const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
   ...jsConfig,
   ...nextConfig,
   ...nextTsConfig,
-  ...nextVitals,
-  ...nextTs,
   globalIgnores([
     '.next/**',
     'out/**',
@@ -93,10 +93,10 @@ import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 import nextConfig from '@nish1896/eslint-flat-config/next';
 
 const eslintConfig = [
+  ...compat.extends('next/core-web-vitals', 'next/typescript'),
   ...jsConfig,
   ...nextTsConfig,
   ...nextConfig,
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
 ];
 
 export default eslintConfig;
