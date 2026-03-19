@@ -87,6 +87,8 @@ const jsxConfig = [
         }
       ]
     },
+  },
+  {
     ignores: ignoreDirsFiles
   }
 ];

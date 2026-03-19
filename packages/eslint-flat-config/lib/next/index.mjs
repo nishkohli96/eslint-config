@@ -75,8 +75,10 @@ const nextConfig = [
         }
       ]
     },
-    ignores: ignoreDirsFiles
   },
+  {
+    ignores: ignoreDirsFiles
+  }
 ];
 
 export default nextConfig;

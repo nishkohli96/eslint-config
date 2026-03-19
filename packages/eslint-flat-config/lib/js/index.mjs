@@ -141,12 +141,14 @@ const jsConfig = [
       'require-await': 'warn',
       'use-isnan': 'warn'
     },
-    /**
-     * Ignore linting the below folders...
-     * "ignores" needs to be written at last, else linting
-     * would also run on build folders.
-     */
-    ignores: ignoreDirsFiles
+  },
+  /**
+   * Ignore linting the below folders...
+   * "ignores" needs to be written at last, else linting
+   * would also run on build folders.
+   */
+  {
+    ignores: ignoreDirsFiles    
   }
 ];
 
