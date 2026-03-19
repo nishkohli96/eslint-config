@@ -6,11 +6,11 @@ import nextConfig from '@nish1896/eslint-flat-config/next';
 import nextTsConfig from '@nish1896/eslint-flat-config/next-ts';
 
 const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
   ...jsConfig,
   ...nextConfig,
   ...nextTsConfig,
-  ...nextVitals,
-  ...nextTs,
   // Override default ignores of eslint-config-next.
   globalIgnores([
     // Default ignores of eslint-config-next:

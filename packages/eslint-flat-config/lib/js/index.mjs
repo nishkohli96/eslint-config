@@ -7,6 +7,7 @@ const jsConfig = [
   /* Global Language Options */
   {
     name: '@nish1896/eslint-flat-config/js',
+    files: ['**/*.{js,mjs,cjs}'],
     languageOptions: {
       ecmaVersion: 2024,
       sourceType: 'module',
@@ -15,7 +16,6 @@ const jsConfig = [
         ...globals.jest
       }
     },
-    files: ['**/*.{js,mjs,cjs}']
   },
   pluginJs.configs.recommended,
   {
@@ -141,12 +141,14 @@ const jsConfig = [
       'require-await': 'warn',
       'use-isnan': 'warn'
     },
-    /**
-     * Ignore linting the below folders...
-     * "ignores" needs to be written at last, else linting
-     * would also run on build folders.
-     */
-    ignores: ignoreDirsFiles
+  },
+  /**
+   * Ignore linting the below folders...
+   * "ignores" needs to be written at last, else linting
+   * would also run on build folders.
+   */
+  {
+    ignores: ignoreDirsFiles    
   }
 ];
 

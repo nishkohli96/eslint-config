@@ -15,14 +15,14 @@ const tsConfig = [
       }
     }
   },
-  {
-    ...tseslint.configs.recommendedTypeChecked,
-    files: ['**/*.{ts,tsx}']
-  },
-  {
-    ...tseslint.configs.stylistic,
-    files: ['**/*.{ts,tsx}']
-  },
+  ...tseslint.configs.recommendedTypeChecked.map(config => ({
+    ...config,
+    files: ['**/*.{ts,tsx}'],
+  })),
+  ...tseslint.configs.stylistic.map(config => ({
+    ...config,
+    files: ['**/*.{ts,tsx}'],
+  })),
   {
     files: ['**/*.{ts,tsx}'],
     plugins: {
