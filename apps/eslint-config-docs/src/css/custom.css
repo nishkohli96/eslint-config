@@ -5,36 +5,48 @@
  */
 
 /* You can override the default Infima variables here. */
+/* Light theme: scale from --ifm-color-primary #3a8f6a */
 :root {
   --ifm-color-primary: #3a8f6a;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary-dark: #2f7358;
+  --ifm-color-primary-darker: #265d47;
+  --ifm-color-primary-darkest: #1a4334;
+  --ifm-color-primary-light: #52a17f;
+  --ifm-color-primary-lighter: #6bb394;
+  --ifm-color-primary-lightest: #8cc5ab;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(58, 143, 106, 0.12);
   /* Taller bar so a larger logo is not clipped (Infima defaults to 3.75rem) */
   --ifm-navbar-height: 4.5rem;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Easier on the eyes than pure white (surfaces, navbar, etc. use gray-0 / content-inverse) */
+html[data-theme='light'] {
+  --ifm-color-gray-0: #f1f3f6;
+  --ifm-color-gray-100: #e6e9ef;
+  --ifm-color-gray-200: #dce0e8;
+  --ifm-background-color: #e4e7ee;
+  --ifm-background-surface-color: var(--ifm-color-gray-0);
+  --ifm-code-background: #e2e5eb;
+  --ifm-hover-overlay: rgba(0, 0, 0, 0.045);
+}
+
+/* Dark theme: scale from --ifm-color-primary #357ae5 */
 [data-theme='dark'] {
   --ifm-color-primary: #357ae5;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-color-primary-dark: #2868d4;
+  --ifm-color-primary-darker: #1f56b8;
+  --ifm-color-primary-darkest: #163d82;
+  --ifm-color-primary-light: #5a91ea;
+  --ifm-color-primary-lighter: #7aa8ef;
+  --ifm-color-primary-lightest: #9dbef4;
+  --docusaurus-highlighted-code-line-bg: rgba(53, 122, 229, 0.15);
 }
 
 /* For the light theme */
 html[data-theme='light'] .footer {
-  background-color: #f5f6f7; /* Light theme background color */
-  color: #212529; /* Light theme text color */
+  background-color: #f2f3f6;
+  color: var(--ifm-color-emphasis-900);
 }
 
 /* For the dark theme */
