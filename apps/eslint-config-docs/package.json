@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config-docs",
-  "version": "4.1.3",
+  "version": "5.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

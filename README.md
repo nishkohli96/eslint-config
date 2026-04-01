@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://github.com/nishkohli96/eslint-config/blob/8e89ede2f096989b6060801a74564aa95184a6bd/apps/eslint-config-docs/static/img/logo-transparent.png"
+    src="https://github.com/nishkohli96/eslint-config/blob/9a62a22ad6d2158051b3dcde8d02263448fa80e5/apps/eslint-config-docs/static/img/logo-transparent.png"
     alt="brand-logo"
     width="200"
   />
