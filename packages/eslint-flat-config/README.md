@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="https://github.com/nishkohli96/eslint-config/blob/8e89ede2f096989b6060801a74564aa95184a6bd/apps/eslint-config-docs/static/img/logo-transparent.png"
+    alt="brand-logo"
+    width="200"
+  />
+</p>
+
 # @nish1896/eslint-flat-config
 
 ![NPM Version](https://img.shields.io/npm/v/%40nish1896%2Feslint-flat-config)

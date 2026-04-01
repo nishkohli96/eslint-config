@@ -1,3 +1,11 @@
+<p align="center">
+  <img
+    src="https://github.com/nishkohli96/eslint-config/blob/8e89ede2f096989b6060801a74564aa95184a6bd/apps/eslint-config-docs/static/img/logo-transparent.png"
+    alt="brand-logo"
+    width="200"
+  />
+</p>
+
 # nish1896-eslint-config
 
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
