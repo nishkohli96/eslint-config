@@ -7,7 +7,13 @@
     "node": ">=18.18.0 || >=20.9.0 || >=21"
   },
   "type": "module",
+  "main": "./lib/js/index.mjs",
+  "types": "./lib/js/index.d.ts",
   "exports": {
+    ".": {
+      "import": "./lib/js/index.mjs",
+      "types": "./lib/js/index.d.ts"
+    },
     "./package.json": {
       "import": "./package.json",
       "require": "./package.json"
