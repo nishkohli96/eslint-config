@@ -29,7 +29,7 @@ All rule names start with `@stylistic/` prefix.
 |[indent-binary-ops](https://eslint.style/rules/indent-binary-ops)| 2 |
 |[key-spacing](https://eslint.style/rules/key-spacing)||
 |[linebreak-style](https://eslint.style/rules/linebreak-style)||
-|[max-len](https://eslint.style/rules/max-len)| *refer source code* |
+|[max-len](https://eslint.style/rules/max-len)| 120 |
 |[max-statements-per-line](https://eslint.style/rules/max-statements-per-line)||
 |[multiline-ternary](https://eslint.style/rules/multiline-ternary)| `always-multiline`|
 |[no-extra-semi](https://eslint.style/rules/no-extra-semi)||

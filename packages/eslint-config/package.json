@@ -1,9 +1,11 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "description": "eslint and stylistic rules for eslint 8.57.1 or below to catch potential errors and take care of the code formatting.",
   "author": "Nishant Kohli",
+  "main": "./lib/js/index.js",
   "exports": {
+    ".": "./lib/js/index.js",
     "./package.json": "./package.json",
     "./js": "./lib/js/index.js",
     "./jsx": "./lib/jsx/index.js",
