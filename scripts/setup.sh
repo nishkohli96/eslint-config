@@ -27,3 +27,6 @@ yarn install
 sh ./scripts/pack.sh
 sh ./scripts/link-v8.sh
 sh ./scripts/link-v9.sh
+sh ./scripts/link-v10.sh
+
+echo "Setup complete! 🎉"
