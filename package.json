@@ -28,7 +28,8 @@
     "next-v15-ts:lint": "yarn workspace next-v15-ts lint",
     "next-v16-ts:lint": "yarn workspace next-v16-ts lint",
     "react-v19:lint": "yarn workspace react-v19 lint",
-    "vite:lint": "yarn workspace vite lint"
+    "vite:lint": "yarn workspace vite lint",
+    "next-v16:lint": "yarn workspace next-v16 lint"
   },
   "devDependencies": {
     "rimraf": "^6.1.3"
