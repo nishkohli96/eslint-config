@@ -28,6 +28,9 @@ Built for ESLint v9+ with a focus on:
 - ✅ Works seamlessly with Next.js
 - ✅ Clean, consistent stylistic rules via @stylistic
 
+> **ℹ️ Note**
+>
+> ESLint v10 support is planned, but a release will only be published once `eslint-config-next` officially supports ESLint v10. This ensures compatibility with Next.js projects and avoids introducing breaking issues caused by upstream dependencies.
 
 >This package is compatible with eslint **v9** and above. For usage with eslint `8.57.1` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
