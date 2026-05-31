@@ -51,9 +51,9 @@
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "globals": "^17.4.0",
-    "typescript-eslint": "^8.58.0"
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "globals": "^17.6.0",
+    "typescript-eslint": "^8.60.0"
   },
   "peerDependencies": {
     "@eslint/js": ">=9",
