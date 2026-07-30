@@ -33,19 +33,6 @@
   "devDependencies": {
     "rimraf": "^6.1.3"
   },
-  "keywords": [
-    "@nish1896",
-    "@nish1896/eslint-config",
-    "eslint",
-    "eslintconfig",
-    "eslint-config",
-    "eslint-config-jsx",
-    "eslint-config-react",
-    "eslint-react",
-    "lint-config",
-    "lint-rules",
-    "react-eslint"
-  ],
   "homepage": "https://nish1896-eslint-config.vercel.app/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
