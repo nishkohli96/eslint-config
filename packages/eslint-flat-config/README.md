@@ -120,4 +120,4 @@ export default eslintConfig;
 
 For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://nish1896-eslint-config.vercel.app/introduction) 📖.
 
-**If you are a React developer, I highly recommend checking out my package, [@nish1896/rhf-mui-components](https://www.npmjs.com/package/@nish1896/rhf-mui-components).**
+**If you're a React developer looking to build forms and Material UI interfaces faster, check out my open-source packages: [@nish1896/mui-components](https://www.npmjs.com/package/@nish1896/mui-components) and [@nish1896/rhf-mui-components](https://www.npmjs.com/package/@nish1896/rhf-mui-components).**
