@@ -15,7 +15,7 @@ Depending on the ESLint version used in your project, you can choose:
 However, since **ESLint v8 and below are now deprecated**, upgrading to v9 is recommended for ongoing support and improvements.
 
 :::note
-In case you are upgrading to eslint **v9 or above** , please check the [eslint 8 to 9 migration guide](./migration/eslint-8_to_9.md).
+In case you are upgrading to eslint **v9** , please check the [eslint 8 to 9 migration guide](./migration/eslint-8_to_9.md).
 
 📘 This version of the documentation focuses on the installation and usage of `@nish1896/eslint-flat-config`. For information on `@nish1896/eslint-config`, please refer to [version 3](/3.0/installation) of the docs.
 :::
@@ -34,7 +34,7 @@ yarn add -D eslint
 pnpm add -D eslint
 ```
 
-Next, install `@nish1896/eslint-flat-config`.
+Next, install `@nish1896/eslint-flat-config` **version-3**.
 
 ```bash
 npm install @nish1896/eslint-flat-config@latest-v3 --save-dev

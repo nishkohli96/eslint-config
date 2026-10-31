@@ -3,6 +3,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type { ThemeConfig } from '@docusaurus/preset-classic';
 
+const { ALGOLIA_APP_ID, ALGOLIA_SEARCH_API_KEY, ALGOLIA_INDEX_NAME } = process.env;
+
 const config: Config = {
   url: 'https://nish1896-eslint-config.vercel.app/',
   baseUrl: '/',
@@ -114,13 +116,15 @@ const config: Config = {
       ],
       copyright: 'Made with ❤️ by Nish!!!!'
     },
-    // Only the latest version is crawled by Algolia, so contextual
-    // (per-version) filtering is off to keep search working on older versions.
-    ...(process.env.ALGOLIA_APP_ID && {
+    /**
+     * Only the latest version is crawled by Algolia, so contextual
+     * (per-version) filtering is off to keep search working on older versions.
+     */
+    ...(ALGOLIA_APP_ID && ALGOLIA_SEARCH_API_KEY && ALGOLIA_INDEX_NAME && {
       algolia: {
-        appId: process.env.ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_SEARCH_API_KEY!,
-        indexName: process.env.ALGOLIA_INDEX_NAME!,
+        appId: ALGOLIA_APP_ID,
+        apiKey: ALGOLIA_SEARCH_API_KEY,
+        indexName: ALGOLIA_INDEX_NAME,
         contextualSearch: false,
         searchParameters: {
           hitsPerPage: 10,

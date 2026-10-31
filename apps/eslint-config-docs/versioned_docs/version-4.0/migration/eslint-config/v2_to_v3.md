@@ -8,11 +8,11 @@ description: Migration guide from v2 to v3 for @nish1896/eslint-config.
 
 [Stylistic ESLint](https://eslint.style/guide/migration) which forms the core of this package,  no longer supports legacy configurations starting from **v4+**. Additionally, ESLint **v8.57.1 and below are now deprecated**, making it unlikely for this package to receive further major updates.
 
-<h3>🚨 **Recommended Action: Upgrade to ESLint v9**</h3>
+<h3>🚨 **Recommended Action: Upgrade to ESLint v10**</h3>
 
-To ensure compatibility, continued updates, and improved linting performance, it is strongly advised to upgrade your project to ESLint v9.
+To ensure compatibility, continued updates, and improved linting performance, it is strongly advised to upgrade your project to ESLint `v10` by uninstalling this package and installing [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
-For migration steps, refer to: [ESLint v9 Migration Guide](../eslint-8_to_9.md).
+Refer the installation guide for [eslint-flat-config](https://nish1896-eslint-config.vercel.app/installation).
 
 
 ## What's Changed ?

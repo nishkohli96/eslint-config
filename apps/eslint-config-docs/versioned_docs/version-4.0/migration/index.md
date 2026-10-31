@@ -6,7 +6,7 @@ Due to eslint v9, the which introduced a flat-config file, another package had t
 
 - If you are using eslint version ***8.57.1 or below***, use [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config). 
 
-- For eslint version ***9 and above***, use [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
+- For eslint version ***9***, use [@nish1896/eslint-flat-config@latest-v3](https://www.npmjs.com/package/@nish1896/eslint-flat-config). The latest major version of this package requires ESLint **v10**, see the [v3 to v4 migration guide](/migration/eslint-flat-config/v3_to_v4).
 
 Similarly, the core package, [@stylistic/eslint-plugin](https://www.npmjs.com/package/@stylistic/eslint-plugin) which both the configuration packages relied on, has been further split into the following specialized packages:
 

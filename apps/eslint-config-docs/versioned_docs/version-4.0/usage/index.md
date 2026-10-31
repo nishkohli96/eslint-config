@@ -6,7 +6,7 @@ title: Usage
 
 # Usage
 
-This guide explains how to use the package with ESLint version 9 and above. It provides module imports tailored for [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Vite](https://vite.dev/) or [Next.js](https://nextjs.org/) applications, ensuring compatibility and streamlined integration for diverse project environments.
+This guide explains how to use the package with ESLint version 9. It provides module imports tailored for [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Vite](https://vite.dev/) or [Next.js](https://nextjs.org/) applications, ensuring compatibility and streamlined integration for diverse project environments.
 
 Starting from **version 2**, this package has been modularized into the following independent components, enabling developers to apply rules specific to their framework and whether their project uses **TypeScript**:
 

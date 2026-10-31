@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Stop on the first failure so a failed install never reports success
+set -e
+
 # Install Dependencies & Build Package
 echo '🏁 Initiating Setup...'
 
