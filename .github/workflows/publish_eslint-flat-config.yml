@@ -3,7 +3,7 @@ name: Publish eslint-flat-config
 on:
   push:
     tags:
-      - 'v3.*'
+      - 'v4.*'
 
 permissions:
   id-token: write
