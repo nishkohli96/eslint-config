@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 sidebar_label: Modify Rules
-description: Disable or ammend existing rules of the configuration file.
+description: Disable or amend existing rules of the configuration file.
 title: Modification or disabling of rules defined in the configuration file.
 ---
 
@@ -28,14 +28,19 @@ To disable one or more rules throughout the file, add this at the top of your fi
 To disable one or more rules in the next line,
 
 ```
+// eslint-disable-next-line <rule1>, <rule2>
+```
+
+or
+
+```
 /* eslint-disable-next-line <rule1>, <rule2> */
 ```
 
 :::warning
-The syntax below won't work
+The syntax below won't work, ESLint ignores `/** */` (JSDoc) comments
 
 ```
-// eslint-disable-next-line <rule1>, <rule2>
 /** eslint-disable-next-line  @typescript-eslint/no-unused-vars */
 ```
 

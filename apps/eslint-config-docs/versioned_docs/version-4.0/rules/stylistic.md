@@ -74,7 +74,7 @@ View the full list of Typescript rules [here](https://github.com/nishkohli96/esl
 |[jsx-closing-bracket-location](https://eslint.style/rules/jsx-closing-bracket-location)||
 |[jsx-curly-newline](https://eslint.style/rules/jsx-curly-newline)| `consistent` |
 |[jsx-curly-spacing](https://eslint.style/rules/jsx-curly-spacing)||
-|[jsx-equals-spacing](https://eslint.style/rules/jsx-curly-spacing)||
+|[jsx-equals-spacing](https://eslint.style/rules/jsx-equals-spacing)||
 |[jsx-indent-props](https://eslint.style/rules/jsx-indent-props)| 2 |
 |[jsx-one-expression-per-line](https://eslint.style/rules/jsx-one-expression-per-line)| `{ allow: 'literal' }` |
 |[jsx-pascal-case](https://eslint.style/rules/jsx-pascal-case)||

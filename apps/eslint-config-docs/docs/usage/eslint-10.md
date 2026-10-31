@@ -19,7 +19,7 @@ touch eslint.config.mjs
 
 ## Node.js
 
-The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
+The `js` import extends the recommended rules of [ESLint](https://eslint.org/docs/latest/rules/) and adds [stylistic](https://eslint.style/packages/js) rules. Use the `ts` import for TypeScript.
 
 ```js title="eslint.config.mjs"
 import jsConfig from '@nish1896/eslint-flat-config/js';

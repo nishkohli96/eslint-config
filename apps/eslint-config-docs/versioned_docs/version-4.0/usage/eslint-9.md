@@ -19,7 +19,7 @@ touch eslint.config.mjs
 
 ## Node.js
 
-The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
+The `js` import extends the recommended rules of [ESLint](https://eslint.org/docs/latest/rules/) and adds [stylistic](https://eslint.style/packages/js) rules. Use the `ts` import for TypeScript.
 
 ```js title="eslint.config.mjs"
 import jsConfig from '@nish1896/eslint-flat-config/js';
@@ -174,7 +174,7 @@ export default eslintConfig;
 For ESLint 9, the error _**"Cannot redefine plugin @typescript-eslint"**_ or anything similar occurs because the `@typescript-eslint` plugin is initialized twice: once from the `ts` config of this package and then from your current configuration. To fix this:
 
 - Remove `@typescript-eslint` from the plugins key in your ESLint config.
-- Let the `ts` module of **@nish1896/eslint-config** manage the plugin initialization.
+- Let the `ts` module of **@nish1896/eslint-flat-config** manage the plugin initialization.
 - Configure or turn off any rule in the `rules` key of eslint config.
 
 This approach ensures no duplication while retaining flexibility for rule customization.
