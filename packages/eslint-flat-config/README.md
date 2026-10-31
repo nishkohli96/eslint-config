@@ -15,24 +15,26 @@
 ![GitHub Release Date - Published_At](https://img.shields.io/github/release-date/nishkohli96/eslint-config)
 
 **A modern, modular ESLint flat config for JavaScript, TypeScript, React, and Next.js.**
-Built for ESLint v9+ with a focus on:
+Built for ESLint `v9` with a focus on:
 - Developer experience
 - Readability
 - Real-world usability
 
-> **ℹ️ Note**
+> ⚠️ **Deprecated ESLint Version**
 >
-> ESLint v10 support is planned, but a release will only be published once `eslint-config-next` officially supports ESLint v10. This ensures compatibility with Next.js projects and avoids introducing breaking issues caused by upstream dependencies.
+> ESLint `v9` is deprecated. Upgrade to ESLint `v10` to continue receiving support and benefit from the latest improvements.
+>
+> 👉 Follow the [migration guide](https://nish1896-eslint-config.vercel.app/migration/eslint-flat-config/v3-to-v4) for a smooth and minimal-change upgrade process.
 
 ✨ Features
-- ✅ ESLint v9 flat config support
+- ✅ ESLint `v9` flat config support
 - ✅ Modular (use only what you need)
 - ✅ TypeScript-aware linting
 - ✅ React & accessibility support
 - ✅ Works seamlessly with Next.js
 - ✅ Clean, consistent stylistic rules via @stylistic
 
->This package is compatible with eslint **v9** and above. For usage with eslint `8.57.1` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
+>This package is compatible with eslint **v9**. For usage with eslint `8.57.1` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
 ## Quick Setup
 
