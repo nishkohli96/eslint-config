@@ -61,7 +61,7 @@ importers:
         specifier: ~5.8.3
         version: 5.8.3
 
-  examples/eslint-v10/js-v10:
+  examples/eslint-v10/js:
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
