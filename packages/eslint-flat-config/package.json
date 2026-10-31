@@ -62,7 +62,13 @@
   },
   "peerDependencies": {
     "@eslint/js": ">=10",
-    "eslint": ">=10"
+    "eslint": ">=10",
+    "typescript": ">=4.8.4 <6.1.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   },
   "license": "MIT",
   "keywords": [
