@@ -5,12 +5,10 @@ description: Usage of @nish1896/eslint-flat-config with eslint version 10 for no
 title: Usage with Eslint version 10
 ---
 
-:::note
-If you are upgrading from **version 1** of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).
-:::
+The latest version of this package requires ESLint **v10**. For ESLint 9, use `@nish1896/eslint-flat-config@3`. The `ts` and `next-ts` modules use `typescript-eslint`, which supports `typescript` **below 6.1** only, so pin it to `~6.0` if your starter ships TypeScript 7.
 
-:::info
-This version needs ESLint and `@eslint/js` **v10 or above**. For ESLint 9, use `@nish1896/eslint-flat-config@4`. The `ts` and `next-ts` modules use `typescript-eslint`, which supports `typescript` **below 6.1** only, so pin it to `~6.0` if your starter ships TypeScript 7.
+:::note
+If you are upgrading from **version 3** of this package, please refer the [migration guide](../migration/eslint-flat-config/v3_to_v4.md).
 :::
 
 If you have specified `"type": "module"` in the `package.json` of your application, create a `eslint.config.js` file, else use `eslint.config.mjs` file. 

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 sidebar_label: Modify Rules
 description: Disable or ammend existing rules of the configuration file.
 title: Modification or disabling of rules defined in the configuration file.
