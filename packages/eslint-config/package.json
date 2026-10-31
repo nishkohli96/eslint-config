@@ -38,7 +38,7 @@
   },
   "peerDependencies": {
     "eslint": ">=7 <9",
-    "typescript": ">=4"
+    "typescript": ">=4 <7"
   },
   "license": "MIT",
   "keywords": [

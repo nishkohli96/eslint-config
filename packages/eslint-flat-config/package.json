@@ -52,12 +52,12 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "globals": "^17.8.0",
-    "typescript-eslint": "^8.65.0"
+    "globals": "^17.13.0",
+    "typescript-eslint": "^8.72.1"
   },
   "peerDependencies": {
-    "@eslint/js": ">=9",
-    "eslint": ">=9"
+    "@eslint/js": ">=10",
+    "eslint": ">=10"
   },
   "license": "MIT",
   "keywords": [
