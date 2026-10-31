@@ -21,46 +21,59 @@ Built for ESLint `v10` with a focus on:
 - Real-world usability
 
 ✨ Features
-- ✅ ESLint v10 flat config support
+- ✅ ESLint `v10` flat config support
 - ✅ Modular (use only what you need)
 - ✅ TypeScript-aware linting
 - ✅ React & accessibility support
 - ✅ Works seamlessly with Next.js
 - ✅ Clean, consistent stylistic rules via @stylistic
 
->This package is compatible with eslint **v10** and above (use `@nish1896/eslint-flat-config@4` for ESLint v9). For usage with eslint `8.57.1` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
+>This package is compatible with eslint **v10** and above (use `@nish1896/eslint-flat-config@3` for ESLint `v9`). For usage with eslint `8.57.1` or below check [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config).
 
 ## Requirements
 
 | Requirement | Version |
 |-|-|
 | Node.js | `^20.19.0 \|\| ^22.13.0 \|\| >=24` |
-| `eslint` and `@eslint/js` | `>=10` |
+| `eslint` | `>=10` |
 | `typescript` (only for the `ts` / `next-ts` modules) | `>=4.8.4 <6.1.0` |
 
 > `typescript-eslint` does not support TypeScript 7 yet. Some starters, such as the `create-vite` React + TypeScript template, ship `typescript ~7`. Pin `typescript` to `~6.0` until `typescript-eslint` adds support.
 
 ## Installation
 
-```bash
-npm i -D eslint @eslint/js @nish1896/eslint-flat-config
-```
-```bash
-pnpm add -D eslint @eslint/js @nish1896/eslint-flat-config
-```
-```bash
-yarn add -D eslint @eslint/js @nish1896/eslint-flat-config
-```
+<details open>
+<summary><b>npm</b></summary>
 
-Add `typescript` to the command only if your project uses TypeScript.
+```bash
+npm i -D eslint @nish1896/eslint-flat-config
+```
+</details>
+
+<details>
+<summary><b>pnpm</b></summary>
+
+```bash
+pnpm add -D eslint @nish1896/eslint-flat-config
+```
+</details>
+
+<details>
+<summary><b>yarn</b></summary>
+
+```bash
+yarn add -D eslint @nish1896/eslint-flat-config
+```
+</details>
+
 
 ## Quick Setup
 
 Copy the code snippet most relevant to your application and paste it in the `eslint.config.mjs` file in your project root.
 
-### Node.js
-
 Use the `ts` module only if your code is written in **Typescript**.
+
+### Node.js
 
 ```js
 import jsConfig from '@nish1896/eslint-flat-config/js';
@@ -119,7 +132,7 @@ export default eslintConfig;
 
 ⚠️ Important Notes
 - Do NOT use `jsxConfig` with `nextConfig`
-- Next.js 15 and `eslint-config-next@15` only support ESLint 9 and below, so use `@nish1896/eslint-flat-config@4` there
+- Next.js 15 and `eslint-config-next@15` only support ESLint 9 and below, so use `@nish1896/eslint-flat-config@3` there
 - This config complements [Next.js ESLint](https://nextjs.org/docs/app/api-reference/config/eslint) — it does not replace it
 - TypeScript configs require a valid tsconfig.json
 

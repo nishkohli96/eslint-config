@@ -12,7 +12,11 @@ const config: Config = {
   tagline: 'You focus on the code logic, we\'ll take care of formatting and finding errors !',
   favicon: 'img/favicon.ico',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
+  },
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
