@@ -8,7 +8,7 @@ title: Usage
 
 This guide explains how to use the package with ESLint version 9 and above. It provides module imports tailored for [Node.js](https://nodejs.org/en), [React](https://react.dev/), [Vite](https://vite.dev/) or [Next.js](https://nextjs.org/) applications, ensuring compatibility and streamlined integration for diverse project environments.
 
-Starting from **version 2**, this package has been modularized into the following independent components, enabling developers to apply rules specific to their framework and whether their project uses **TypeScript**:
+This package has been modularized into the following independent components, enabling developers to apply rules specific to their framework and whether their project uses **TypeScript**:
 
 - `js`: [Eslint](https://eslint.org/docs/latest/rules/) and [stylistic](https://eslint.style/packages/js) rules for javascript
 - `ts`: TypeScript-specific rules, including [stylistic](https://eslint.style/packages/ts) and [typescript-eslint](https://typescript-eslint.io/rules/)
@@ -16,4 +16,4 @@ Starting from **version 2**, this package has been modularized into the followin
 - `next`:  Includes additional JSX rules along with the ones from `eslint-plugin-next` package 
 - `next-ts`: [Typescript-eslint](https://typescript-eslint.io/rules/) and [Stylistic-ts](https://eslint.style/packages/ts) rules tailored for [Next.js](https://nextjs.org/) apps.
 
-Example applications that utilize the `eslint-flat-config` can be viewed [here](https://github.com/nishkohli96/eslint-config/tree/main/examples/eslint-v9).
+Example applications that utilize the `eslint-flat-config` can be viewed [here](https://github.com/nishkohli96/eslint-config/tree/main/examples/eslint-v10).

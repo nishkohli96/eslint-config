@@ -1,3 +1,4 @@
+import reactVersion from '../common/react-version.mjs';
 /**
  * Adding stylistic jsx rules alongside the eslint rules from
  * "eslint-plugin-next" which includes recommended rule-sets
@@ -34,7 +35,7 @@ const nextConfig = [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: reactVersion,
         'jsx-runtime': true
       }
     },

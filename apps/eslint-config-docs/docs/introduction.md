@@ -25,6 +25,6 @@ title: Introduction
 
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
-✅ Fully compatible with ESLint `v9` and above, with continued support for `v8`.
+✅ Fully compatible with ESLint `v10`, with continued support for `v8` & `v9`.
 
 If you found this config useful, please don't forget to star the repository. It would make my day if you consider [buying me a coffee](https://www.buymeacoffee.com/nish1896)

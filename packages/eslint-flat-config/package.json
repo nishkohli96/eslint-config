@@ -1,10 +1,10 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "3.1.6",
-  "description": "Linting rules configured for ESLint v9 and above to catch potential errors and ensure consistent code formatting.",
+  "version": "4.0.0",
+  "description": "Linting rules configured for ESLint v10 and above to catch potential errors and ensure consistent code formatting.",
   "author": "Nishant Kohli",
   "engines": {
-    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+    "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "type": "module",
   "main": "./lib/js/index.mjs",
@@ -48,26 +48,37 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
+    "@eslint/compat": "^2.1.1",
     "@stylistic/eslint-plugin": "^5.10.0",
+    "@typescript-eslint/parser": "^8.72.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "globals": "^17.8.0",
-    "typescript-eslint": "^8.65.0"
+    "globals": "^17.13.0",
+    "typescript-eslint": "^8.72.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
-    "@eslint/js": ">=9",
-    "eslint": ">=9"
+    "@eslint/js": ">=10",
+    "eslint": ">=10",
+    "typescript": ">=4.8.4 <6.1.0"
+  },
+  "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    }
   },
   "license": "MIT",
   "keywords": [
     "@nish1896",
     "@nish1896/eslint-flat-config",
     "eslint",
-    "eslint9",
-    "eslint-9",
-    "eslint-v9",
-    "eslint9-config",
+    "eslint10",
+    "eslint-10",
+    "eslint-v10",
+    "eslint10-config",
     "eslintconfig",
     "eslint-config",
     "eslint-config-flat",

@@ -12,7 +12,11 @@ const config: Config = {
   tagline: 'You focus on the code logic, we\'ll take care of formatting and finding errors !',
   favicon: 'img/favicon.ico',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    }
+  },
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -52,7 +56,23 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '4.0',
+              label: 'v5',
+            },
+            '4.0': {
+              label: 'v4',
+              path: 'v4',
+            },
+            '3.0': {
+              label: 'v3',
+              path: 'v3',
+            },
+            '2.1': {
+              label: 'v2.1',
+              path: 'v2.1',
+            },
+            '2.0': {
+              label: 'v2.0',
+              path: 'v2.0',
             },
           },
         },

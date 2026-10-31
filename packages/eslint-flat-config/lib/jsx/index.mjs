@@ -1,3 +1,5 @@
+import reactVersion from '../common/react-version.mjs';
+import { fixupPluginRules } from '@eslint/compat';
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin'
 import jsxA11y from 'eslint-plugin-jsx-a11y';
@@ -33,6 +35,8 @@ const jsxConfig = [
   },
   {
     ...reactPlugin.configs.flat.recommended,
+    // eslint-plugin-react still calls context APIs removed in ESLint 10
+    plugins: { react: fixupPluginRules(reactPlugin) },
     files: ['**/*.{jsx,tsx}']
   },
   {
@@ -48,7 +52,7 @@ const jsxConfig = [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: reactVersion,
         'jsx-runtime': true
       }
     },

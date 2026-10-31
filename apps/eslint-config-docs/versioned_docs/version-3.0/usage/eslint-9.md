@@ -148,7 +148,7 @@ export default eslintConfig;
 For ESLint 9, the error _**"Cannot redefine plugin @typescript-eslint"**_ or anything similar occurs because the `@typescript-eslint` plugin is initialized twice: once from the `ts` config of this package and then from your current configuration. To fix this:
 
 - Remove `@typescript-eslint` from the plugins key in your ESLint config.
-- Let the `ts` module of **@nish1896/eslint-config** manage the plugin initialization.
+- Let the `ts` module of **@nish1896/eslint-flat-config** manage the plugin initialization.
 - Configure or turn off any rule in the `rules` key of eslint config.
 
 This approach ensures no duplication while retaining flexibility for rule customization.

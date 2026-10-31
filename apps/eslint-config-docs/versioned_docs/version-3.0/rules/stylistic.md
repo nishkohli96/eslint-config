@@ -83,7 +83,7 @@ All rule names start with `@stylistic/jsx` prefix.
 |[jsx-closing-tag-location](https://eslint.style/rules/jsx/jsx-closing-tag-location)||
 |[jsx-curly-newline](https://eslint.style/rules/jsx/jsx-curly-newline)| `consistent` |
 |[jsx-curly-spacing](https://eslint.style/rules/jsx/jsx-curly-spacing)||
-|[jsx-equals-spacing](https://eslint.style/rules/jsx/jsx-curly-spacing)||
+|[jsx-equals-spacing](https://eslint.style/rules/jsx/jsx-equals-spacing)||
 |[jsx-indent](https://eslint.style/rules/jsx/jsx-indent)| 2 |
 |[jsx-indent-props](https://eslint.style/rules/jsx/jsx-indent-props)| 2 |
 |[jsx-one-expression-per-line](https://eslint.style/rules/jsx/jsx-one-expression-per-line)| `{ allow: 'literal' }` |

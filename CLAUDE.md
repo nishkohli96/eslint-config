@@ -2,13 +2,14 @@
 
 ## Repository Guidelines
 
-This repository contains `@nish1896/eslint-config` and `@nish1896/eslint-flat-config` —
-shareable ESLint + Stylistic rule configs, published as separate npm packages:
+This repository contains `@nish1896/eslint-flat-config` —
+a shareable ESLint + Stylistic rule config for ESLint 10 and above, published to npm.
+The legacy `@nish1896/eslint-config` (ESLint 8 and below) and ESLint 9 support live on
+the `version-4` branch and in older npm releases.
 
-- `packages/eslint-config` — legacy (`.eslintrc`) config for ESLint 8 and below.
-- `packages/eslint-flat-config` — flat config for ESLint 9 and above.
-- `apps/eslint-config-docs` — Docusaurus site documenting both configs.
-- `examples/eslint-v8/*` and `examples/eslint-v9/*` — sample projects (js, next, react, vite) used to manually verify each config against real lint runs.
+- `packages/eslint-flat-config` — flat config for ESLint 10 and above.
+- `apps/eslint-config-docs` — Docusaurus site documenting the config (older versions are versioned docs).
+- `examples/eslint-v10/*` — sample projects (js, next, vite) used to manually verify the config against real lint runs.
 - `changelog/vX.md` — per-major-version changelog.
 
 Package source lives directly under each package's `lib/` directory (no separate build step

@@ -25,7 +25,7 @@ html[data-theme='light'] {
   --ifm-color-gray-0: #f1f3f6;
   --ifm-color-gray-100: #e6e9ef;
   --ifm-color-gray-200: #dce0e8;
-  --ifm-background-color: #edeff4;
+  --ifm-background-color: #e4e7ee;
   --ifm-background-surface-color: var(--ifm-color-gray-0);
   --ifm-code-background: #e2e5eb;
   --ifm-hover-overlay: rgba(0, 0, 0, 0.045);

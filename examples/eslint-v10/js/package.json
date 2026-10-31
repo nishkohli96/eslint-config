@@ -1,0 +1,23 @@
+{
+  "name": "js-eslint-10",
+  "version": "1.0.0",
+  "description": "Format code with eslint v10 using this configuration",
+  "author": "Nishant Kohli",
+  "scripts": {
+    "lint": "eslint __tests__",
+    "lint:fix": "eslint --fix __tests__"
+  },
+  "homepage": "https://github.com/nishkohli96/eslint-config#readme",
+  "repository": {
+    "url": "git+https://github.com/nishkohli96/eslint-config.git"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@nish1896/eslint-flat-config": "workspace:*",
+    "eslint": "^10.14.0"
+  },
+  "engines": {
+    "node": "^20.19.0 || ^22.13.0 || >=24"
+  },
+  "license": "ISC"
+}

@@ -62,7 +62,7 @@ These rules are included in the `@nish1896/eslint-flat-config/jsx` and `@nish189
 |[jsx-closing-tag-location](https://eslint.style/rules/default/jsx-closing-tag-location)||
 |[jsx-curly-newline](https://eslint.style/rules/default/jsx-curly-newline)|consistent |
 |[jsx-curly-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
-|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-curly-spacing)||
+|[jsx-equals-spacing](https://eslint.style/rules/default/jsx-equals-spacing)||
 |[jsx-indent](https://eslint.style/rules/default/jsx-indent)| 2 |
 |[jsx-indent-props](https://eslint.style/rules/default/jsx-indent-props)| 2 |
 |[jsx-one-expression-per-line](https://eslint.style/rules/default/jsx-one-expression-per-line)| `{ allow: 'literal' }` |

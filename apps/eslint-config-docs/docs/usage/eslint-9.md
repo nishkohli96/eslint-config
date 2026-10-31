@@ -1,12 +1,14 @@
 ---
-sidebar_position: 1
-sidebar_label: Eslint v9
-description: Usage of @nish1896/eslint-flat-config with eslint version 9 for node, react and next.js applications.
+sidebar_position: 2
+sidebar_label: Eslint v9 (deprecated)
+description: Usage of @nish1896/eslint-flat-config v3 with eslint version 9 for node, react and next.js applications.
 title: Usage with Eslint version 9
 ---
 
-:::note
-If you are upgrading from **version 1** of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).
+:::warning Deprecated
+ESLint `v9` is no longer supported by the latest `@nish1896/eslint-flat-config`, which requires ESLint **v10** or above. This page applies to **v3.x** of the package only (`npm i -D @nish1896/eslint-flat-config@3`).
+
+To move to ESLint 10, follow the [v3 to v4 migration guide](../migration/eslint-flat-config/v3_to_v4.md) and the [usage guide for ESLint 10](./eslint-10.md).
 :::
 
 If you have specified `"type": "module"` in the `package.json` of your application, create a `eslint.config.js` file, else use `eslint.config.mjs` file. 
@@ -17,7 +19,7 @@ touch eslint.config.mjs
 
 ## Node.js
 
-The `js` import extends rules from the [typescript-eslint](https://www.npmjs.com/package/typescript-eslint) package. 
+The `js` import extends the recommended rules of [ESLint](https://eslint.org/docs/latest/rules/) and adds [stylistic](https://eslint.style/packages/js) rules. Use the `ts` import for TypeScript.
 
 ```js title="eslint.config.mjs"
 import jsConfig from '@nish1896/eslint-flat-config/js';
@@ -81,7 +83,7 @@ export default [
 
 ## Next.js
 
-A dedicated ESLint configuration for [Next.js](https://nextjs.org/) applications is now available from version **1.1.0** of the package. It integrates seamlessly with the `create-next-app` boilerplate, which sets up projects using Next.js **version 15**. This simplifies setup, ensuring compatibility and optimized linting rules tailored for Next.js applications.
+A dedicated ESLint configuration for [Next.js](https://nextjs.org/) applications integrates seamlessly with the `create-next-app` boilerplate, which sets up projects using Next.js **version 15**. This simplifies setup, ensuring compatibility and optimized linting rules tailored for Next.js applications.
 
 The `next` and `next-ts` modules in this package consolidates rules from both `jsx` and `typescript` configurations, extending the respective [stylistic](https://eslint.style/packages/default) plugin. It leverages the `typescript-eslint` and other React plugins provided by [eslint-config-next](https://www.npmjs.com/package/eslint-config-next), ensuring no need to duplicate plugin configurations for Next.js projects and to prevent the [redefine plugin error](#duplicate-import-error).
 
@@ -172,7 +174,7 @@ export default eslintConfig;
 For ESLint 9, the error _**"Cannot redefine plugin @typescript-eslint"**_ or anything similar occurs because the `@typescript-eslint` plugin is initialized twice: once from the `ts` config of this package and then from your current configuration. To fix this:
 
 - Remove `@typescript-eslint` from the plugins key in your ESLint config.
-- Let the `ts` module of **@nish1896/eslint-config** manage the plugin initialization.
+- Let the `ts` module of **@nish1896/eslint-flat-config** manage the plugin initialization.
 - Configure or turn off any rule in the `rules` key of eslint config.
 
 This approach ensures no duplication while retaining flexibility for rule customization.
