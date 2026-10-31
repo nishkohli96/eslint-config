@@ -17,7 +17,7 @@ However, since **ESLint v8 and below are now deprecated**, upgrading to v9 is re
 :::note
 In case you are upgrading to eslint **v9** , please check the [eslint 8 to 9 migration guide](./migration/eslint-8_to_9.md).
 
-📘 This version of the documentation focuses on the installation and usage of `@nish1896/eslint-flat-config`. For information on `@nish1896/eslint-config`, please refer to [version 3](/3.0/installation) of the docs.
+📘 This version of the documentation focuses on the installation and usage of `@nish1896/eslint-flat-config`. For information on `@nish1896/eslint-config`, please refer to [version 3](/v3/installation) of the docs.
 :::
 
 You'll first need to install [ESLint](https://eslint.org/). If you project is a monorepo, consider creating a separate eslint-config for each package.

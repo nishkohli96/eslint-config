@@ -3,8 +3,6 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type { ThemeConfig } from '@docusaurus/preset-classic';
 
-const { ALGOLIA_APP_ID, ALGOLIA_SEARCH_API_KEY, ALGOLIA_INDEX_NAME } = process.env;
-
 const config: Config = {
   url: 'https://nish1896-eslint-config.vercel.app/',
   baseUrl: '/',
@@ -58,7 +56,23 @@ const config: Config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '5.0',
+              label: 'v5',
+            },
+            '4.0': {
+              label: 'v4',
+              path: 'v4',
+            },
+            '3.0': {
+              label: 'v3',
+              path: 'v3',
+            },
+            '2.1': {
+              label: 'v2.1',
+              path: 'v2.1',
+            },
+            '2.0': {
+              label: 'v2.0',
+              path: 'v2.0',
             },
           },
         },
@@ -116,21 +130,6 @@ const config: Config = {
       ],
       copyright: 'Made with ❤️ by Nish!!!!'
     },
-    /**
-     * Only the latest version is crawled by Algolia, so contextual
-     * (per-version) filtering is off to keep search working on older versions.
-     */
-    ...(ALGOLIA_APP_ID && ALGOLIA_SEARCH_API_KEY && ALGOLIA_INDEX_NAME && {
-      algolia: {
-        appId: ALGOLIA_APP_ID,
-        apiKey: ALGOLIA_SEARCH_API_KEY,
-        indexName: ALGOLIA_INDEX_NAME,
-        contextualSearch: false,
-        searchParameters: {
-          hitsPerPage: 10,
-        },
-      },
-    }),
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.vsDark
