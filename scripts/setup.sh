@@ -3,30 +3,25 @@
 # Install Dependencies & Build Package
 echo '🏁 Initiating Setup...'
 
-echo 'Checking yarn installation...'
-# Check if yarn is installed
-if ! command -v yarn >/dev/null 2>&1; then
-  echo '🚀 yarn not found! Installing globally...'
-  # Install yarn globally using npm
-  npm install -g yarn
-  # Verify installation
-  if command -v yarn >/dev/null 2>&1; then
-    echo '✅ yarn installed successfully!'
+echo 'Checking pnpm installation...'
+# Check if pnpm is installed
+if ! command -v pnpm >/dev/null 2>&1; then
+  echo '🚀 pnpm not found! Enabling via corepack...'
+  corepack enable pnpm
+  if command -v pnpm >/dev/null 2>&1; then
+    echo '✅ pnpm installed successfully!'
   else
-    echo '❌ Failed to install yarn. Check npm settings.'
+    echo '❌ Failed to enable pnpm. Install it from https://pnpm.io/installation'
     exit 1
   fi
 else
-  echo '✅ yarn is already installed!'
+  echo '✅ pnpm is already installed!'
 fi
 
 echo 'Installing Dependencies & Building Packages 🛠️'
 
-yarn install
+pnpm install
 
 sh ./scripts/pack.sh
-sh ./scripts/link-v8.sh
-sh ./scripts/link-v9.sh
-sh ./scripts/link-v10.sh
 
 echo "Setup complete! 🎉"

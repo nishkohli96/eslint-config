@@ -16,8 +16,10 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@nish1896/eslint-flat-config": "workspace:*",
     "eslint": "^9",
     "eslint-config-next": "15.2.3",
-    "eslint-plugin-jsx-a11y": "^6.10.2"
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "typescript": "^5.9.3"
   }
 }

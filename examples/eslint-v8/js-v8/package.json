@@ -12,6 +12,7 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "devDependencies": {
+    "@nish1896/eslint-config": "workspace:*",
     "eslint": "^8.57.1"
   },
   "engines": {

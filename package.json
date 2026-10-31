@@ -4,32 +4,21 @@
   "description": "eslint and stylistic rules to help you focus more on the code logic, while they take care of the code formatting",
   "author": "Nishant Kohli",
   "private": true,
-  "workspaces": [
-    "packages/*",
-    "examples/**/*",
-    "apps/*"
-  ],
   "scripts": {
     "setup": "sh ./scripts/setup.sh",
     "pkgs": "sh ./scripts/pack.sh",
-    "link-v8": "sh ./scripts/link-v8.sh",
-    "link-v9": "sh ./scripts/link-v9.sh",
-    "config:link": "yarn workspace @nish1896/eslint-config link:local",
-    "flat-config:link": "yarn workspace @nish1896/eslint-flat-config link:local",
-    "config:unlink": "npm unlink @nish1896/eslint-config",
-    "flat-config:unlink": "npm unlink @nish1896/eslint-flat-config",
-    "docs": "yarn workspace @nish1896/eslint-config-docs start",
-    "docs:build": "yarn workspace @nish1896/eslint-config-docs build",
-    "js-v8:lint": "yarn workspace js-v8 lint",
-    "next-v14:lint": "yarn workspace next-v14 lint",
-    "react-v18:lint": "yarn workspace react-v18 lint",
-    "js-v9:lint": "yarn workspace js-v9 lint",
-    "next-v15-js:lint": "yarn workspace next-v15-js lint",
-    "next-v15-ts:lint": "yarn workspace next-v15-ts lint",
-    "next-v16-ts:lint": "yarn workspace next-v16-ts lint",
-    "react-v19:lint": "yarn workspace react-v19 lint",
-    "vite:lint": "yarn workspace vite lint",
-    "next-v16:lint": "yarn workspace next-v16 lint"
+    "docs": "pnpm --filter @nish1896/eslint-config-docs start",
+    "docs:build": "pnpm --filter @nish1896/eslint-config-docs build",
+    "js-v8:lint": "pnpm --filter js-v8 lint",
+    "next-v14:lint": "pnpm --filter next-v14 lint",
+    "react-v18:lint": "pnpm --filter react-v18 lint",
+    "js-v9:lint": "pnpm --filter js-v9 lint",
+    "next-v15-js:lint": "pnpm --filter next-v15-js lint",
+    "next-v15-ts:lint": "pnpm --filter next-v15-ts lint",
+    "next-v16-ts:lint": "pnpm --filter next-v16-ts lint",
+    "react-v19:lint": "pnpm --filter react-v19 lint",
+    "vite:lint": "pnpm --filter vite lint",
+    "next-v16:lint": "pnpm --filter next-eslint-10 lint"
   },
   "devDependencies": {
     "rimraf": "^6.1.3"
@@ -38,5 +27,6 @@
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "packageManager": "pnpm@11.9.0"
 }

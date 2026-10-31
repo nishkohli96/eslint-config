@@ -15,6 +15,7 @@
     "react-dom": "19.3.1"
   },
   "devDependencies": {
+    "@nish1896/eslint-flat-config": "workspace:*",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^26",
     "@types/react": "^19",

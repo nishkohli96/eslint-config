@@ -22,8 +22,7 @@ sh scripts/setup.sh
 
 Runs the `setup.sh` in the **scripts** folder which:
 
-- Checks or installs `yarn` globally
+- Checks for `pnpm`, enabling it via `corepack` if missing
 - Installs all the dependencies and devDependencies in the `node_modules` folder
 - Generate a tarball of both the **eslint-configs** in the `packages` folder
-- Links [eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config) to all the workspaces in `examples/eslint-v8` folder
-- Links [eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) to all the workspaces in `examples/eslint-v9` folder
+- Workspaces in `examples` consume the local [eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config) / [eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) packages via `workspace:*`
