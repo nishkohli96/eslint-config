@@ -37,13 +37,13 @@ pnpm add -D eslint
 Next, install `@nish1896/eslint-flat-config`.
 
 ```bash
-npm install @nish1896/eslint-flat-config  --save-dev
+npm install @nish1896/eslint-flat-config@latest-v3 --save-dev
 ```
 ```bash
-yarn add -D @nish1896/eslint-flat-config
+yarn add -D @nish1896/eslint-flat-config@latest-v3
 ```
 ```bash
-pnpm add -D @nish1896/eslint-flat-config
+pnpm add -D @nish1896/eslint-flat-config@latest-v3
 ```
 
 ### Setup

@@ -5,8 +5,10 @@ description: Usage of @nish1896/eslint-flat-config with eslint version 9 for nod
 title: Usage with Eslint version 9
 ---
 
-:::note
-If you are upgrading from **version 1** of this package, please refer the [migration guide](../migration/eslint-flat-config/v1_to_v2.md).
+:::warning Deprecated
+This version of the docs is for **ESLint v9** and is deprecated. The latest `@nish1896/eslint-flat-config` requires ESLint **v10**.
+
+To move to ESLint 10, follow the [v3 to v4 migration guide](/migration/eslint-flat-config/v3_to_v4).
 :::
 
 If you have specified `"type": "module"` in the `package.json` of your application, create a `eslint.config.js` file, else use `eslint.config.mjs` file. 

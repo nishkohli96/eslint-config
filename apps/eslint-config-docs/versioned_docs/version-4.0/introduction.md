@@ -5,6 +5,12 @@ description: A brief introduction of @nish1896/eslint-config and what sets of ru
 title: Introduction
 ---
 
+:::warning Deprecated
+This version of the docs is for **ESLint v9** and is deprecated. The latest `@nish1896/eslint-flat-config` requires ESLint **v10**.
+
+To move to ESLint 10, follow the [v3 to v4 migration guide](/migration/eslint-flat-config/v3_to_v4).
+:::
+
 # nish1896-eslint-config
 
 **[@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config)**
@@ -25,6 +31,6 @@ title: Introduction
 
 **A set of developer-friendly [eslint](https://eslint.org/), [stylistic](https://eslint.style/), [typescript](https://www.typescriptlang.org/) and [accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) configuration rules to help you and fellow developers follow the industry-recommended coding practices for easier readability, maintenance and productivity !**
 
-✅ Fully compatible with ESLint `v9` and above, with continued support for `v8`.
+✅  Compatible with ESLint `v9`.
 
 If you found this config useful, please don't forget to star the repository. It would make my day if you consider [buying me a coffee](https://www.buymeacoffee.com/nish1896)
