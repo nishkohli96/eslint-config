@@ -9,9 +9,6 @@
     "pkgs": "sh ./scripts/pack.sh",
     "doc": "pnpm --filter @nish1896/eslint-config-docs start",
     "docs:build": "pnpm --filter @nish1896/eslint-config-docs build",
-    "js-v8:lint": "pnpm --filter js-v8 lint",
-    "next-v14:lint": "pnpm --filter next-v14 lint",
-    "react-v18:lint": "pnpm --filter react-v18 lint",
     "js-10:lint": "pnpm --filter js-eslint-10 lint",
     "next-10:lint": "pnpm --filter next-eslint-10 lint",
     "vite-10:lint": "pnpm --filter vite-eslint-10 lint"
