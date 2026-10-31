@@ -41,4 +41,4 @@ Delete the `.eslintrc` or `.eslintrc.js` or `.eslintrc.json` file and create `es
 touch eslint.config.mjs
 ```
 
-Refer the [usage guide for eslint-flat-config](../usage/eslint-9.md) to configure the appropriate modules based on your application framework. 🚀
+Refer the [usage guide for eslint-flat-config](../usage/eslint-10.md) to configure the appropriate modules based on your application framework. 🚀

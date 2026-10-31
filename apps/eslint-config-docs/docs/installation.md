@@ -12,7 +12,7 @@ Depending on the ESLint version used in your project, you can choose:
 - [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for ESLint v10
 - [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config) for ESLint v8
 
-However, since **ESLint v8 and below are now deprecated**, upgrading to v9 is recommended for ongoing support and improvements.
+However, since **ESLint v8 and below are now deprecated**, upgrading to v10 is recommended for ongoing support and improvements.
 
 :::note
 In case you are upgrading to eslint **v9 or above** , please check the [eslint 8 to 9 migration guide](./migration/eslint-8_to_9.md).
@@ -25,14 +25,18 @@ You'll first need to install [ESLint](https://eslint.org/). If you project is a 
 Please do refer the official docs to [install eslint](https://eslint.org/docs/latest/use/getting-started) if needed.
 
 ```bash
-npm i eslint --save-dev
+npm i eslint @eslint/js --save-dev
 ```
 ```bash
-yarn add -D eslint
+yarn add -D eslint @eslint/js
 ```
 ```bash
-pnpm add -D eslint
+pnpm add -D eslint @eslint/js
 ```
+
+:::info
+Requires Node.js `^20.19.0 || ^22.13.0 || >=24` and ESLint `>=10`. If you use the `ts` or `next-ts` modules, install `typescript` `>=4.8.4 <6.1.0`, because `typescript-eslint` does not support TypeScript 7 yet.
+:::
 
 Next, install `@nish1896/eslint-flat-config`.
 
