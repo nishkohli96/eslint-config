@@ -110,6 +110,19 @@ const config: Config = {
       ],
       copyright: 'Made with ❤️ by Nish!!!!'
     },
+    // Only the latest version is crawled by Algolia, so contextual
+    // (per-version) filtering is off to keep search working on older versions.
+    ...(process.env.ALGOLIA_APP_ID && {
+      algolia: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_SEARCH_API_KEY!,
+        indexName: process.env.ALGOLIA_INDEX_NAME!,
+        contextualSearch: false,
+        searchParameters: {
+          hitsPerPage: 10,
+        },
+      },
+    }),
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.vsDark
