@@ -3,7 +3,7 @@ name: Publish eslint-flat-config
 on:
   push:
     tags:
-      - 'v*'
+      - 'v3.*'
 
 permissions:
   id-token: write
@@ -13,11 +13,11 @@ jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-      - uses: actions/setup-node@v6
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: '24.14.0'
           registry-url: 'https://registry.npmjs.org'
       - run: sh scripts/pack.sh
-      - run: npm publish --tag version-3
+      - run: npm publish --tag latest-v3
         working-directory: packages/eslint-flat-config
