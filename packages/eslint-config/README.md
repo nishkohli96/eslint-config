@@ -1,6 +1,6 @@
 <p align="center">
   <img
-    src="https://github.com/nishkohli96/eslint-config/blob/8e89ede2f096989b6060801a74564aa95184a6bd/apps/eslint-config-docs/static/img/logo-transparent.png"
+    src="https://github.com/nishkohli96/eslint-config/blob/9a62a22ad6d2158051b3dcde8d02263448fa80e5/apps/eslint-config-docs/static/img/logo-transparent.png"
     alt="brand-logo"
     width="200"
   />
@@ -20,7 +20,7 @@ This package is compatible with eslint `8.57.1` or below. For usage with eslint 
 
 > ⚠️ **Deprecated ESLint Version**
 >
-> You might be using ESLint v8 with this package, which is deprecated. It is recommended to upgrade to ESLint v9 and [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for continued support and improvements.
+> You might be using ESLint v8 with this package, which is deprecated. It is recommended to upgrade to ESLint v10 and [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for continued support and improvements.
 >
 > 👉 Follow the [migration guide](https://nish1896-eslint-config.vercel.app/migration/eslint-8_to_9) for a smooth and minimal-change upgrade process.
 
