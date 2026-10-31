@@ -1,7 +1,7 @@
 {
   "name": "@nish1896/eslint-flat-config",
   "version": "4.0.0",
-  "description": "Linting rules configured for ESLint v9 and above to catch potential errors and ensure consistent code formatting.",
+  "description": "Linting rules configured for ESLint v10 and above to catch potential errors and ensure consistent code formatting.",
   "author": "Nishant Kohli",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
@@ -48,6 +48,7 @@
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
+    "@eslint/compat": "^2.1.1",
     "@stylistic/eslint-plugin": "^5.10.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
@@ -67,10 +68,10 @@
     "@nish1896",
     "@nish1896/eslint-flat-config",
     "eslint",
-    "eslint9",
-    "eslint-9",
-    "eslint-v9",
-    "eslint9-config",
+    "eslint10",
+    "eslint-10",
+    "eslint-v10",
+    "eslint10-config",
     "eslintconfig",
     "eslint-config",
     "eslint-config-flat",

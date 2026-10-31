@@ -9,7 +9,7 @@ title: Installation
 
 Depending on the ESLint version used in your project, you can choose:
 
-- [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for ESLint v9
+- [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for ESLint v10
 - [@nish1896/eslint-config](https://www.npmjs.com/package/@nish1896/eslint-config) for ESLint v8
 
 However, since **ESLint v8 and below are now deprecated**, upgrading to v9 is recommended for ongoing support and improvements.

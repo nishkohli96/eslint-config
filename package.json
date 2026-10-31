@@ -12,13 +12,9 @@
     "js-v8:lint": "pnpm --filter js-v8 lint",
     "next-v14:lint": "pnpm --filter next-v14 lint",
     "react-v18:lint": "pnpm --filter react-v18 lint",
-    "js-v9:lint": "pnpm --filter js-v9 lint",
-    "next-v15-js:lint": "pnpm --filter next-v15-js lint",
-    "next-v15-ts:lint": "pnpm --filter next-v15-ts lint",
-    "next-v16-ts:lint": "pnpm --filter next-v16-ts lint",
-    "react-v19:lint": "pnpm --filter react-v19 lint",
-    "vite:lint": "pnpm --filter vite lint",
-    "next-v16:lint": "pnpm --filter next-eslint-10 lint"
+    "next-10:lint": "pnpm --filter next-eslint-10 lint",
+    "js-10:lint": "pnpm --filter js-eslint-10 lint",
+    "vite-10:lint": "pnpm --filter vite-eslint-10 lint"
   },
   "devDependencies": {
     "rimraf": "^6.1.3"

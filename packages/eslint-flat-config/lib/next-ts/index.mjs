@@ -1,3 +1,4 @@
+import reactVersion from '../common/react-version.mjs';
 import globals from 'globals';
 import stylistic from '@stylistic/eslint-plugin';
 import parserTs from '@typescript-eslint/parser';
@@ -28,7 +29,7 @@ const nextTsConfig = [
     },
     settings: {
       react: {
-        version: 'detect',
+        version: reactVersion,
         'jsx-runtime': true
       }
     },

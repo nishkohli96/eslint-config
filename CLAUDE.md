@@ -8,7 +8,7 @@ shareable ESLint + Stylistic rule configs, published as separate npm packages:
 - `packages/eslint-config` — legacy (`.eslintrc`) config for ESLint 8 and below.
 - `packages/eslint-flat-config` — flat config for ESLint 9 and above.
 - `apps/eslint-config-docs` — Docusaurus site documenting both configs.
-- `examples/eslint-v8/*` and `examples/eslint-v9/*` — sample projects (js, next, react, vite) used to manually verify each config against real lint runs.
+- `examples/eslint-v8/*` and `examples/eslint-v10/*` — sample projects (js, next, react, vite) used to manually verify each config against real lint runs.
 - `changelog/vX.md` — per-major-version changelog.
 
 Package source lives directly under each package's `lib/` directory (no separate build step

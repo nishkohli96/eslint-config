@@ -16,4 +16,4 @@ Starting from **version 2**, this package has been modularized into the followin
 - `next`:  Includes additional JSX rules along with the ones from `eslint-plugin-next` package 
 - `next-ts`: [Typescript-eslint](https://typescript-eslint.io/rules/) and [Stylistic-ts](https://eslint.style/packages/ts) rules tailored for [Next.js](https://nextjs.org/) apps.
 
-Example applications that utilize the `eslint-flat-config` can be viewed [here](https://github.com/nishkohli96/eslint-config/tree/main/examples/eslint-v9).
+Example applications that utilize the `eslint-flat-config` can be viewed [here](https://github.com/nishkohli96/eslint-config/tree/main/examples/eslint-v10).
