@@ -10,6 +10,14 @@ export default [
   ...jsConfig,
   ...jsxConfig,
   {
+    files: ['**/*.js'],
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: { jsx: true }
+      }
+    }
+  },
+  {
     rules: {}
   }
 ];
