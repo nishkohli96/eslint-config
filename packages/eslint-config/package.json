@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "3.0.13",
+  "version": "3.0.14",
   "description": "eslint and stylistic rules for eslint 8.57.1 or below to catch potential errors and take care of the code formatting.",
   "author": "Nishant Kohli",
   "main": "./lib/js/index.js",
@@ -38,7 +38,7 @@
   },
   "peerDependencies": {
     "eslint": ">=7 <9",
-    "typescript": ">=4"
+    "typescript": ">=4 <7"
   },
   "license": "MIT",
   "keywords": [
