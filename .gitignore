@@ -6,3 +6,6 @@ publish.sh
 .env
 build
 dist
+
+.claude
+graft

@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "3.1.5",
+  "version": "3.1.6",
   "description": "Linting rules configured for ESLint v9 and above to catch potential errors and ensure consistent code formatting.",
   "author": "Nishant Kohli",
   "engines": {
@@ -52,8 +52,8 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "globals": "^17.6.0",
-    "typescript-eslint": "^8.60.0"
+    "globals": "^17.8.0",
+    "typescript-eslint": "^8.65.0"
   },
   "peerDependencies": {
     "@eslint/js": ">=9",
@@ -62,7 +62,6 @@
   "license": "MIT",
   "keywords": [
     "@nish1896",
-    "@nish1896/eslint-config",
     "@nish1896/eslint-flat-config",
     "eslint",
     "eslint9",
@@ -70,22 +69,24 @@
     "eslint-v9",
     "eslint9-config",
     "eslintconfig",
-    "eslint config",
     "eslint-config",
     "eslint-config-flat",
-    "eslint shareable config",
+    "eslint-flat-config",
+    "flat-config",
     "eslint flat config",
-    "flat eslint config",
-    "eslint-config-js",
     "eslint-config-jsx",
     "eslint-config-react",
     "eslint-react",
+    "react",
+    "nextjs",
+    "typescript",
+    "typescript-eslint",
     "lint-config",
     "lint-rules",
     "react-eslint",
     "shareable-config",
-    "typescript-eslint",
     "code-style",
+    "code-quality",
     "eslint-stylistic",
     "eslint-style",
     "stylistic-eslint"
