@@ -12,7 +12,7 @@
 
 Compatible with eslint `v10` and above! For ESLint 9 use `@nish1896/eslint-flat-config@latest-v3`, and for ESLint **v8** use `@nish1896/eslint-config`.
 
-This monorepo contains the source code for [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) as well as its [docs](https://nish1896-eslint-config.vercel.app/) 📖. Also included are example apps for [Node.js](https://nodejs.org/en), [Next.js](https://nextjs.org/) and [Vite](https://vite.dev/) to experiment with new and existing rules.
+This monorepo contains the source code for [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) as well as its [docs](https://eslint-config.nishkohli.in/) 📖. Also included are example apps for [Node.js](https://nodejs.org/en), [Next.js](https://nextjs.org/) and [Vite](https://vite.dev/) to experiment with new and existing rules.
 
 ## Setup
 

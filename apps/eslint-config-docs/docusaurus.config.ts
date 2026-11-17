@@ -4,7 +4,7 @@ import type { Config } from '@docusaurus/types';
 import type { ThemeConfig } from '@docusaurus/preset-classic';
 
 const config: Config = {
-  url: 'https://nish1896-eslint-config.vercel.app/',
+  url: 'https://eslint-config.nishkohli.in/',
   baseUrl: '/',
   projectName: 'eslint-config',
   organizationName: 'nish1896',

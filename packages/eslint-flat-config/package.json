@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-flat-config",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Linting rules configured for ESLint v10 and above to catch potential errors and ensure consistent code formatting.",
   "author": "Nishant Kohli",
   "engines": {
@@ -43,19 +43,19 @@
     "link:local": "npm link",
     "unlink:local": "npm unlink @nish1896/eslint-flat-config"
   },
-  "homepage": "https://nish1896-eslint-config.vercel.app/",
+  "homepage": "https://eslint-config.nishkohli.in/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
   "dependencies": {
     "@eslint/compat": "^2.1.1",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@typescript-eslint/parser": "^8.72.1",
+    "@typescript-eslint/parser": "^8.73.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "globals": "^17.13.0",
-    "typescript-eslint": "^8.72.1"
+    "globals": "^17.14.0",
+    "typescript-eslint": "^8.73.0"
   },
   "devDependencies": {
     "typescript": "^5.9.3"
