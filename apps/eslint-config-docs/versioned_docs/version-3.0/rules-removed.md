@@ -11,7 +11,7 @@ These rules were once included, but later removed in subsequent versions due to 
 
 | Rule Name | Reason |
 |-|-|
-|[@stylistic/array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline) & [@stylisticarray-element-newline](https://eslint.style/rules/default/array-element-newline)| Sometimes smaller array elements with more than 4 items can be wrapped in one line, whereas 3 items with longer character length, like list of urls need to be wrapped in new line | 
+|[@stylistic/array-bracket-newline](https://eslint.style/rules/default/array-bracket-newline) & [@stylistic/array-element-newline](https://eslint.style/rules/default/array-element-newline)| Sometimes smaller array elements with more than 4 items can be wrapped in one line, whereas 3 items with longer character length, like list of urls need to be wrapped in new line | 
 |[@stylistic/comma-dangle](https://eslint.style/rules/default/comma-dangle) | Personal preference to retain or remove comma in arrays, objects, function args, imports and exports |
 |[@stylistic/lines-around-comment](https://eslint.style/rules/default/lines-around-comment)| Sometimes reqd, when writing block comments above functions, but don't need when writing block comment between 2 lines of code |
 |[@stylistic/no-mixed-operators](https://eslint.style/rules/default/no-mixed-operators)| gave err in `a + b * c`, assuming dev is sensible enough to add parens themselves when too many operators being used in a single line of code  |
