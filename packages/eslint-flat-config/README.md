@@ -136,6 +136,6 @@ export default eslintConfig;
 - This config complements [Next.js ESLint](https://nextjs.org/docs/app/api-reference/config/eslint) — it does not replace it
 - TypeScript configs require a valid tsconfig.json
 
-For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://nish1896-eslint-config.vercel.app/introduction) 📖.
+For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://eslint-config.nishkohli.in/introduction) 📖.
 
 **If you're a React developer looking to build forms and Material UI interfaces faster, check out my open-source packages: [@nish1896/mui-components](https://www.npmjs.com/package/@nish1896/mui-components) and [@nish1896/rhf-mui-components](https://www.npmjs.com/package/@nish1896/rhf-mui-components).**

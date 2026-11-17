@@ -16,7 +16,7 @@
   "devDependencies": {
     "rimraf": "^6.1.3"
   },
-  "homepage": "https://nish1896-eslint-config.vercel.app/",
+  "homepage": "https://eslint-config.nishkohli.in/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },

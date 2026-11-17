@@ -12,7 +12,7 @@ description: Migration guide from v2 to v3 for @nish1896/eslint-config.
 
 To ensure compatibility, continued updates, and improved linting performance, it is strongly advised to upgrade your project to ESLint `v10` by uninstalling this package and installing [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config).
 
-Refer the installation guide for [eslint-flat-config](https://nish1896-eslint-config.vercel.app/installation).
+Refer the installation guide for [eslint-flat-config](https://eslint-config.nishkohli.in/installation).
 
 
 ## What's Changed ?

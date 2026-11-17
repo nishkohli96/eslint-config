@@ -43,7 +43,7 @@
     "link:local": "npm link",
     "unlink:local": "npm unlink @nish1896/eslint-flat-config"
   },
-  "homepage": "https://nish1896-eslint-config.vercel.app/",
+  "homepage": "https://eslint-config.nishkohli.in/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },
