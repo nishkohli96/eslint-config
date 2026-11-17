@@ -1,6 +1,6 @@
 {
   "name": "@nish1896/eslint-config",
-  "version": "3.0.14",
+  "version": "3.0.15",
   "description": "eslint and stylistic rules for eslint 8.57.1 or below to catch potential errors and take care of the code formatting.",
   "author": "Nishant Kohli",
   "main": "./lib/js/index.js",
@@ -17,7 +17,7 @@
     "link:local": "npm link",
     "unlink:local": "npm unlink @nish1896/eslint-config"
   },
-  "homepage": "https://nish1896-eslint-config.vercel.app/",
+  "homepage": "https://eslint-config.nishkohli.in/",
   "repository": {
     "url": "git+https://github.com/nishkohli96/eslint-config.git"
   },

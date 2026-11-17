@@ -22,7 +22,7 @@ This package is compatible with eslint `8.57.1` or below. For usage with eslint 
 >
 > You might be using ESLint v8 with this package, which is deprecated. It is recommended to upgrade to ESLint v10 and [@nish1896/eslint-flat-config](https://www.npmjs.com/package/@nish1896/eslint-flat-config) for continued support and improvements.
 >
-> 👉 Follow the [migration guide](https://nish1896-eslint-config.vercel.app/migration/eslint-8_to_9) for a smooth and minimal-change upgrade process.
+> 👉 Follow the [migration guide](https://eslint-config.nishkohli.in/migration/eslint-8_to_9) for a smooth and minimal-change upgrade process.
 
 ## Quick Setup
 
@@ -69,6 +69,6 @@ module.exports = {
 }
 ```
 
-For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://nish1896-eslint-config.vercel.app/introduction) 📖.
+For comprehensive details on installation, setup, rules, and usage, please refer the [Documentation](https://eslint-config.nishkohli.in/introduction) 📖.
 
 **If you're a React developer looking to build forms and Material UI interfaces faster, check out my open-source packages: [@nish1896/mui-components](https://www.npmjs.com/package/@nish1896/mui-components) and [@nish1896/rhf-mui-components](https://www.npmjs.com/package/@nish1896/rhf-mui-components).**
